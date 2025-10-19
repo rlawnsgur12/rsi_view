@@ -5,7 +5,7 @@
   <title>RSI Viewer</title>
   <style>
     table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; cursor: pointer; }
     th { background-color: #f0f0f0; }
   </style>
 </head>
@@ -14,11 +14,11 @@
   <table>
     <thead>
       <tr>
-        <th>Ticker</th>
-        <th>RSI</th>
-        <th>RSI ≤ 30</th>
-        <th>30 < RSI ≤ 35</th>
-        <th>최근 7일 내 RSI ≤ 30</th>
+        <th onclick="sortTable(0)">Ticker</th>
+        <th onclick="sortTable(1)">RSI</th>
+        <th onclick="sortTable(2)">RSI ≤ 30</th>
+        <th onclick="sortTable(3)">30 < RSI ≤ 35</th>
+        <th onclick="sortTable(4)">최근 7일 내 RSI ≤ 30</th>
       </tr>
     </thead>
     <tbody id="rsi-table-body">
