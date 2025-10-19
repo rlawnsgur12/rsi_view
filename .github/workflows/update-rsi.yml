@@ -34,15 +34,15 @@ jobs:
       - name: Print JSON content
         run: cat data/rsi_data.json
 
+      # 6️⃣ Git commit & push
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/rsi_data.json
-          git diff --quiet && echo "No changes to commit" || (
-            git commit -m "🔄 Update RSI $(date '+%Y-%m-%d %H:%M:%S')"
-            git push
-          )
+          # 항상 commit
+          git commit -m "🔄 Update RSI $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push
 
 
 
