@@ -3,9 +3,9 @@
 fetch("data/rsi_data.json")
   .then(response => response.json())
   .then(data => {
-    const tableBody = document.getElementById("rsi-table-body");
+    const tbody = document.getElementById("rsi-table-body");
 
-    data.forEach((item) => {
+    data.forEach(item => {
       const row = document.createElement("tr");
 
       // Ticker
@@ -16,7 +16,7 @@ fetch("data/rsi_data.json")
       // RSI
       const rsiCell = document.createElement("td");
       rsiCell.textContent = item.RSI;
-      // flag에 따라 색상 표시
+      // flag 색상 적용
       if(item.flag === "low") rsiCell.style.color = "blue";
       else if(item.flag === "warn") rsiCell.style.color = "orange";
       row.appendChild(rsiCell);
@@ -36,7 +36,7 @@ fetch("data/rsi_data.json")
       recentCell.textContent = item["최근7일내_RSI30이하"];
       row.appendChild(recentCell);
 
-      tableBody.appendChild(row);
+      tbody.appendChild(row);
     });
   })
   .catch(err => console.error("JSON 불러오기 실패:", err));
@@ -45,33 +45,32 @@ fetch("data/rsi_data.json")
 // 🔹 테이블 정렬 함수
 function sortTable(n) {
   const table = document.querySelector("table");
-  let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  switching = true;
-  dir = "asc"; // 오름차순 시작
+  const tbody = table.querySelector("tbody");
+  const rows = Array.from(tbody.querySelectorAll("tr"));
+
+  let dir = "asc";
+  let switching = true;
+
   while (switching) {
     switching = false;
-    rows = table.rows;
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      let xContent = isNaN(parseFloat(x.textContent)) ? x.textContent : parseFloat(x.textContent);
-      let yContent = isNaN(parseFloat(y.textContent)) ? y.textContent : parseFloat(y.textContent);
-      if (dir === "asc") {
-        if (xContent > yContent) { shouldSwitch = true; break; }
-      } else if (dir === "desc") {
-        if (xContent < yContent) { shouldSwitch = true; break; }
+    for (let i = 0; i < rows.length - 1; i++) {
+      const x = rows[i].getElementsByTagName("td")[n].textContent;
+      const y = rows[i + 1].getElementsByTagName("td")[n].textContent;
+
+      const xVal = isNaN(parseFloat(x)) ? x : parseFloat(x);
+      const yVal = isNaN(parseFloat(y)) ? y : parseFloat(y);
+
+      const shouldSwitch = (dir === "asc") ? xVal > yVal : xVal < yVal;
+      if (shouldSwitch) {
+        tbody.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        break;
       }
     }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+
+    if (!switching && dir === "asc") {
+      dir = "desc";
       switching = true;
-      switchcount++;
-    } else {
-      if (switchcount === 0 && dir === "asc") {
-        dir = "desc";
-        switching = true;
-      }
     }
   }
 }
