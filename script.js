@@ -1,19 +1,11 @@
 // script.js
 
-// JSON 파일 불러오기
 fetch("data/rsi_data.json")
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return response.json();
-  })
+  .then(response => response.json())
   .then(data => {
-    // data가 배열 형태라고 가정
     const tableBody = document.getElementById("rsi-table-body");
 
-    data.forEach((item, index) => {
-      // 새로운 tr 요소 생성
+    data.forEach((item) => {
       const row = document.createElement("tr");
 
       // Ticker
@@ -24,17 +16,27 @@ fetch("data/rsi_data.json")
       // RSI
       const rsiCell = document.createElement("td");
       rsiCell.textContent = item.RSI;
+      // flag에 따라 색상 표시
+      if(item.flag === "low") rsiCell.style.color = "blue";
+      else if(item.flag === "warn") rsiCell.style.color = "orange";
       row.appendChild(rsiCell);
 
-      // Price
-      const priceCell = document.createElement("td");
-      priceCell.textContent = item.Price;
-      row.appendChild(priceCell);
+      // RSI_30이하
+      const rsi30Cell = document.createElement("td");
+      rsi30Cell.textContent = item["RSI_30이하"];
+      row.appendChild(rsi30Cell);
 
-      // 테이블에 추가
+      // RSI_30초과_35이하
+      const rsi30_35Cell = document.createElement("td");
+      rsi30_35Cell.textContent = item["RSI_30초과_35이하"];
+      row.appendChild(rsi30_35Cell);
+
+      // 최근7일내_RSI30이하
+      const recentCell = document.createElement("td");
+      recentCell.textContent = item["최근7일내_RSI30이하"];
+      row.appendChild(recentCell);
+
       tableBody.appendChild(row);
     });
   })
-  .catch(error => {
-    console.error("Error fetching RSI JSON:", error);
-  });
+  .catch(err => console.error("JSON 불러오기 실패:", err));

@@ -23,28 +23,61 @@ tickers = ["AAPL", "MSFT", "GOOGL", "NVDA", "TSLA", "PLTR", "IONQ"]
 
 results = []
 
+def compute_rsi_ema(close, period=14):
+    delta = close.diff()
+    gain = delta.clip(lower=0)
+    loss = -delta.clip(upper=0)
+    avg_gain = gain.ewm(alpha=1/period, min_periods=period).mean()
+    avg_loss = loss.ewm(alpha=1/period, min_periods=period).mean()
+    rs = avg_gain / avg_loss
+    rsi = 100 - (100 / (1 + rs))
+    return rsi
+
+rsi_list = []
+
 for ticker in tickers:
-    print(f"📥 {ticker} 다운로드 중...")
-
     try:
-        df = yf.download(ticker, period="3mo", interval="1d", progress=False)
+        print(f"ticker 시작 : {ticker}")
+        yf_ticker = ticker.replace("-", ".")
+        data = yf.download(yf_ticker, period='2mo', interval='1d', progress=False, auto_adjust=False)
 
-        if df.empty:
-            print(f"⚠️ {ticker}: 데이터 없음")
+        if data.empty or 'Close' not in data:
+            print(f"{ticker}: 데이터 없음")
             continue
 
-        df['RSI'] = compute_rsi(df)
-        last_rsi = float(df['RSI'].iloc[-1])  # ✅ float으로 변환 (JSON 직렬화 오류 방지)
+        close_data = data['Close']
 
-        results.append({
-            "Ticker": ticker,
-            "RSI": round(last_rsi, 2),
-            "Date": df.index[-1].strftime("%Y-%m-%d"),
-            "Price": round(float(df['Close'].iloc[-1]), 2)
+        # Close가 DataFrame일 경우 컬럼에서 티커 데이터만 추출
+        if isinstance(close_data, pd.DataFrame):
+            if yf_ticker in close_data.columns:
+                close_data = close_data[yf_ticker]
+            else:
+                print(f"{ticker}: Close 데이터가 DataFrame이나 컬럼이 없음")
+                continue
+
+        rsi_series = compute_rsi_ema(close_data).dropna()
+        if rsi_series.empty:
+            print(f"{ticker}: RSI 계산 불가 (데이터 부족)")
+            continue
+
+        last_rsi = rsi_series.iloc[-1]
+        if isinstance(last_rsi, pd.Series):
+            last_rsi = last_rsi.iloc[0]
+        last_rsi = float(last_rsi)
+
+        last_week_rsi_series = rsi_series.iloc[-7:]
+        rsi_below_30_in_7days = '🕐' if (last_week_rsi_series <= 30).any() else ''
+
+        rsi_list.append({
+            'Ticker': ticker,
+            'RSI': round(last_rsi, 2),
+            'RSI_30이하': '✅' if last_rsi <= 30 else '',
+            'RSI_30초과_35이하': '⚠️' if 30 < last_rsi <= 35 else '',
+            '최근7일내_RSI30이하': rsi_below_30_in_7days
         })
 
     except Exception as e:
-        print(f"❌ {ticker} 처리 중 오류: {e}")
+        print(f"{ticker} 처리 중 오류: {e}")
 
 
 # ✅ data 폴더 없으면 생성
@@ -52,6 +85,6 @@ os.makedirs("data", exist_ok=True)
 
 # ✅ JSON 저장
 with open("data/rsi_data.json", "w", encoding="utf-8") as f:
-    json.dump(results, f, ensure_ascii=False, indent=2)
+    json.dump(rsi_list, f, ensure_ascii=False, indent=2)
 
-print(f"✅ 완료! {len(results)}개 티커 RSI 저장 완료.")
+print(f"✅ 완료! {len(rsi_list)}개 티커 RSI 저장 완료.")

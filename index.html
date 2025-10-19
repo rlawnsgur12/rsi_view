@@ -2,21 +2,28 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>📈 RSI 분석 리포트</title>
-  <link rel="stylesheet" href="style.css">
+  <title>RSI Viewer</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #f0f0f0; }
+  </style>
 </head>
 <body>
-  <h1>📊 RSI 분석 (매일 자동 갱신)</h1>
-  <table id="rsi-table">
+  <h2>RSI 전체 리포트</h2>
+  <table>
     <thead>
       <tr>
         <th>Ticker</th>
         <th>RSI</th>
-        <th>Flag</th>
-        <th>최근 7일 RSI≤30</th>
+        <th>RSI ≤ 30</th>
+        <th>30 < RSI ≤ 35</th>
+        <th>최근 7일 내 RSI ≤ 30</th>
       </tr>
     </thead>
-    <tbody></tbody>
+    <tbody id="rsi-table-body">
+      <!-- JS에서 데이터 추가 -->
+    </tbody>
   </table>
 
   <script src="script.js"></script>
