@@ -1,17 +1,44 @@
 [
-    {
-      "ticker": "AAPL",
-      "rsi": 28.34,
-      "rsi_flag": "✅",
-      "rsi_below_30_recently": true,
-      "date": "2025-10-17"
-    },
-    {
-      "ticker": "MSFT",
-      "rsi": 36.12,
-      "rsi_flag": "⚠️",
-      "rsi_below_30_recently": false,
-      "date": "2025-10-17"
-    }
-  ]
-  
+  {
+    "Ticker": "AAPL",
+    "RSI": 46.47,
+    "Date": "2025-10-17",
+    "Price": 252.29
+  },
+  {
+    "Ticker": "MSFT",
+    "RSI": 48.95,
+    "Date": "2025-10-17",
+    "Price": 513.58
+  },
+  {
+    "Ticker": "GOOGL",
+    "RSI": 61.69,
+    "Date": "2025-10-17",
+    "Price": 253.3
+  },
+  {
+    "Ticker": "NVDA",
+    "RSI": 51.53,
+    "Date": "2025-10-17",
+    "Price": 183.22
+  },
+  {
+    "Ticker": "TSLA",
+    "RSI": 48.87,
+    "Date": "2025-10-17",
+    "Price": 439.31
+  },
+  {
+    "Ticker": "PLTR",
+    "RSI": 49.3,
+    "Date": "2025-10-17",
+    "Price": 178.15
+  },
+  {
+    "Ticker": "IONQ",
+    "RSI": 49.0,
+    "Date": "2025-10-17",
+    "Price": 62.94
+  }
+]
