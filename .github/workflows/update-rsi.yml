@@ -31,6 +31,9 @@ jobs:
       - name: Run update script
         run: python update_rsi.py
 
+      - name: Print JSON content
+        run: cat data/rsi_data.json
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
@@ -40,3 +43,8 @@ jobs:
             git commit -m "🔄 Update RSI $(date '+%Y-%m-%d %H:%M:%S')"
             git push
           )
+
+
+
+
+          
