@@ -19,7 +19,18 @@ def compute_rsi(data, window=14):
 
 
 # ✅ 확인할 티커 리스트 (원하면 수정 가능)
-tickers = ["AAPL", "MSFT", "GOOGL", "NVDA", "TSLA", "PLTR", "IONQ"]
+tickers = [
+    'AAPL', 'MSFT', 'AMZN', 'GOOGL', 'META', 'NVDA', 'TSLA', 'BRK-B', 'JPM', 'JNJ',
+    'V', 'PG', 'UNH', 'MA', 'HD', 'BAC', 'DIS', 'PYPL', 'ADBE', 'NFLX',
+    'INTC', 'CMCSA', 'XOM', 'VZ', 'T', 'KO', 'PFE', 'CSCO', 'PEP', 'ABBV',
+    'ABT', 'CRM', 'CVX', 'WMT', 'MCD', 'NKE', 'DHR', 'TXN', 'LLY', 'MDT',
+    'NEE', 'BMY', 'COST', 'LIN', 'QCOM', 'PM', 'AMGN', 'UPS', 'IBM', 'UNP',
+    'RTX', 'HON', 'LOW', 'INTU', 'SBUX', 'GS', 'BLK', 'CAT', 'ISRG', 'CVS',
+    'ADP', 'FIS', 'SCHW', 'GILD', 'DE', 'ZTS', 'SPGI', 'TMUS', 'CB', 'BDX',
+    'LMT', 'SYK', 'PLD', 'MO', 'CCI', 'NOW', 'VRTX', 'CI', 'DUK', 'EL',
+    'SO', 'TGT', 'ICE', 'GM', 'MET', 'APD', 'F', 'EW', 'CSX', 'GD',
+    'AON', 'ECL', 'NSC', 'MCO', 'CL', 'ITW', 'SHW', 'PNC', 'D', 'AEP'
+]
 
 results = []
 
