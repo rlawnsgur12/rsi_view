@@ -1,0 +1,24 @@
+name: Update RSI JSON
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 매일 오전 6시 KST
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - run: pip install yfinance pandas
+      - run: python update_rsi.py
+      - run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add data/rsi_data.json
+          git commit -m "🔄 Update RSI"
+          git push

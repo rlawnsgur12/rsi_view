@@ -1,0 +1,17 @@
+[
+    {
+      "ticker": "AAPL",
+      "rsi": 28.34,
+      "rsi_flag": "✅",
+      "rsi_below_30_recently": true,
+      "date": "2025-10-17"
+    },
+    {
+      "ticker": "MSFT",
+      "rsi": 36.12,
+      "rsi_flag": "⚠️",
+      "rsi_below_30_recently": false,
+      "date": "2025-10-17"
+    }
+  ]
+  
