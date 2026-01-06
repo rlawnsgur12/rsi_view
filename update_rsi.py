@@ -49,7 +49,8 @@ rsi_list = []
 for ticker in tickers:
     try:
         print(f"ticker 시작 : {ticker}")
-        yf_ticker = ticker.replace("-", ".")
+        #yf_ticker = ticker.replace("-", ".")
+        yf_ticker = ticker
         data = yf.download(yf_ticker, period='2mo', interval='1d', progress=False, auto_adjust=False)
 
         if data.empty or 'Close' not in data:
