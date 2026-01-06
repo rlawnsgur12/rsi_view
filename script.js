@@ -1,5 +1,12 @@
 // script.js
 
+// 🔹 숫자 포맷 함수 (🔴 추가)
+function fmt(val) {
+  if (val === null || val === undefined || val === "") return "";
+  if (isNaN(val)) return val;          // 문자열(✅ 등)
+  return Number(val).toFixed(2);       // 숫자 → 소수 2자리
+}
+
 fetch("data/rsi_data.json")
   .then(response => response.json())
   .then(data => {
@@ -35,6 +42,36 @@ fetch("data/rsi_data.json")
       const recentCell = document.createElement("td");
       recentCell.textContent = item["최근7일내_RSI30이하"];
       row.appendChild(recentCell);
+
+      // PER
+      const perCell = document.createElement("td");
+      perCell.textContent = fmt(item["PER"]);
+      row.appendChild(perCell);
+
+      // PER(예상)
+      const fwdPerCell = document.createElement("td");
+      fwdPerCell.textContent = fmt(item["PER(예상)"]);
+      row.appendChild(fwdPerCell);
+
+      // PBR
+      const pbrCell = document.createElement("td");
+      pbrCell.textContent = fmt(item["PBR"]);
+      row.appendChild(pbrCell);
+
+      // ROE
+      const roeCell = document.createElement("td");
+      roeCell.textContent = fmt(item["ROE"]);
+      row.appendChild(roeCell);
+
+      // EPS
+      const epsCell = document.createElement("td");
+      epsCell.textContent = fmt(item["EPS"]);
+      row.appendChild(epsCell);
+
+      // EPS(예상)
+      const fwdEpsCell = document.createElement("td");
+      fwdEpsCell.textContent = fmt(item["EPS(예상)"]);
+      row.appendChild(fwdEpsCell);
 
       tbody.appendChild(row);
     });

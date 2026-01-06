@@ -80,12 +80,29 @@ for ticker in tickers:
         last_week_rsi_series = rsi_series.iloc[-7:]
         rsi_below_30_in_7days = '🕐' if (last_week_rsi_series <= 30).any() else ''
 
+
+        stock = yf.Ticker(yf_ticker)
+
+        info = stock.info
+        per = info.get("trailingPE")     # PER
+        fwd_per = info.get("forwardPE")  # PEF(예상)
+        pbr = info.get("priceToBook")    # PBR 
+        roe = info.get("returnOnEquity") # ROE 자기자본이익률
+        eps = info.get("trailingEps")    # EPS 주당순이익
+        fwd_eps = info.get("forwardEps") # EPS 주당순이익(예상)
+
         rsi_list.append({
             'Ticker': ticker,
             'RSI': round(last_rsi, 2),
             'RSI_30이하': '✅' if last_rsi <= 30 else '',
             'RSI_30초과_35이하': '⚠️' if 30 < last_rsi <= 35 else '',
-            '최근7일내_RSI30이하': rsi_below_30_in_7days
+            '최근7일내_RSI30이하': rsi_below_30_in_7days,
+            'PER' : per,
+            'PER(예상)' : fwd_per,
+            'PBR' : pbr,
+            'ROE' : roe,
+            'EPS' : eps,
+            'EPS(예상)' : fwd_eps
         })
 
     except Exception as e:
