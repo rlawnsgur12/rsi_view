@@ -15,9 +15,22 @@ fetch("data/rsi_data.json")
     data.forEach(item => {
       const row = document.createElement("tr");
 
-      // Ticker
+      // // Ticker
+      // const tickerCell = document.createElement("td");
+      // tickerCell.textContent = item.Ticker;
+      // row.appendChild(tickerCell);
+      // Ticker (클릭 시 상세 페이지 이동)
       const tickerCell = document.createElement("td");
-      tickerCell.textContent = item.Ticker;
+
+      const ticker = item.Ticker;
+      const link = document.createElement("a");
+      link.href = `stocks/${ticker}.html`;
+      link.textContent = ticker;
+      link.classList.add("ticker-link");
+      link.style.textDecoration = "none";
+      link.style.color = "inherit"; // 기존 색상 유지
+
+      tickerCell.appendChild(link);
       row.appendChild(tickerCell);
 
       // RSI
