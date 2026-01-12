@@ -24,7 +24,7 @@ fetch("data/rsi_data.json")
 
       const ticker = item.Ticker;
       const link = document.createElement("a");
-      link.href = `stocks/${ticker}.html`;
+      link.href = `./stocks/${ticker}.html`;
       link.textContent = ticker;
       link.classList.add("ticker-link");
       link.style.textDecoration = "none";
