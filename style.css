@@ -31,3 +31,16 @@ body {
     background-color: #f1f1f1;
   }
   
+
+  .ticker-link {
+    color: #1f6feb;           /* 링크 블루 */
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .ticker-link:hover {
+    color: #d73a49;
+    text-decoration: none;
+  }
+  

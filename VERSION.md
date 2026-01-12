@@ -12,5 +12,8 @@ requirements로 패키지 변경하도록 변경 수행
 ## v2
 per, pbr, roe, eps 지표 추가
 
+## v3
+티커별 상세 페이지 추가
+
 # 추가 필요 요구사항
 python 64bit -> pandas 설치
