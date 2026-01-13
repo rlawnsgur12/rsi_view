@@ -2,6 +2,7 @@ import yfinance as yf
 import pandas as pd
 from pathlib import Path
 from common import load_tickers
+import json
 
 # =========================
 # 출력 디렉토리
@@ -113,6 +114,21 @@ for ticker in load_tickers():
 
     df_y = df_y.sort_index(ascending=False)
 
+    # =========================
+    # 📦 차트용 JSON 데이터
+    # =========================
+    chart_data = {
+        "years": df_y.index.astype(str).tolist(),
+        "revenue": df_y["매출액"].round(0).tolist(),
+        "net_income": df_y["순이익"].round(0).tolist(),
+        "operating_income": df_y["영업이익"].round(0).tolist(),
+        "fcf": df_y["잉여현금흐름"].round(0).tolist(),
+        "op_margin": (
+            df_y["영업이익"] / df_y["매출액"] * 100
+        ).round(1).tolist()
+    }
+
+
     # 포맷 적용
     df_y_fmt = df_y.copy()
     for col in ["매출액", "순이익", "영업이익", "잉여현금흐름"]:
@@ -126,6 +142,11 @@ for ticker in load_tickers():
     ]:
         df_y_fmt[col] = df_y_fmt[col].map(fmt_pct)
 
+    chart_json_path = OUT / f"{ticker}_chart.json"
+    with open(chart_json_path, "w", encoding="utf-8") as jf:
+        json.dump(chart_data, jf, ensure_ascii=False)
+
+
     # =====================================================
     # 🧾 HTML 생성
     # =====================================================
@@ -134,6 +155,10 @@ for ticker in load_tickers():
     <head>
         <meta charset="utf-8">
         <title>{ticker} 재무 요약</title>
+
+        <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
         <style>
             body {{ font-family: Arial; padding: 20px; }}
             h1 {{ margin-bottom: 10px; }}
@@ -153,6 +178,61 @@ for ticker in load_tickers():
 
     <h2>📈 최근 5개년 연간 재무</h2>
     {df_y_fmt.to_html()}
+
+    <h2>📊 재무 차트</h2>
+
+    <div id="chart-revenue" style="height:400px;"></div>
+    <div id="chart-income" style="height:400px;"></div>
+    <div id="chart-margin" style="height:400px;"></div>
+    <div id="chart-fcf" style="height:400px;"></div>
+
+    <script>
+    fetch("{ticker}_chart.json")
+    .then(r => r.json())
+    .then(d => {
+
+        Plotly.newPlot("chart-revenue", [{
+        x: d.years,
+        y: d.revenue,
+        type: "bar",
+        name: "매출액"
+        }], { title: "매출 추이" });
+
+        Plotly.newPlot("chart-income", [
+        {
+            x: d.years,
+            y: d.net_income,
+            type: "line",
+            name: "순이익"
+        },
+        {
+            x: d.years,
+            y: d.operating_income,
+            type: "line",
+            name: "영업이익"
+        }
+        ], { title: "순이익 vs 영업이익" });
+
+        Plotly.newPlot("chart-margin", [{
+        x: d.years,
+        y: d.op_margin,
+        type: "line",
+        name: "영업이익률"
+        }], {
+        title: "영업이익률 (%)",
+        yaxis: { ticksuffix: "%" }
+        });
+
+        Plotly.newPlot("chart-fcf", [{
+        x: d.years,
+        y: d.fcf,
+        type: "bar",
+        name: "잉여현금흐름"
+        }], { title: "Free Cash Flow" });
+
+    });
+    </script>
+
 
     </body>
     </html>
