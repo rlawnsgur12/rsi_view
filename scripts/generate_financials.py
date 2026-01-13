@@ -46,7 +46,7 @@ for ticker in load_tickers():
     cf = t.cashflow
 
     # =====================================================
-    # 📊 최근 2개년 분기 재무 (YoY)
+    # 📊 최근 2개년 분기 재무 (QoQ)
     # =====================================================
     df_q = pd.DataFrame({
         "매출액": safe_row(q, ["Total Revenue"]),
@@ -57,25 +57,16 @@ for ticker in load_tickers():
         "영업이익": safe_row(q, ["Operating Income"])
     }).head(8)
 
-    # 🔑 반드시 시간순 정렬 (YoY 핵심)
     df_q = df_q.sort_index()
 
-    df_q["매출 성장률 (QoQ)"] = df_q["매출액"].pct_change(
-        periods=1, fill_method=None
-    ) * 100
+    # df_q["매출 성장률 (QoQ)"] = df_q["매출액"].pct_change() * 100
+    # df_q["순이익 성장률 (QoQ)"] = df_q["순이익"].pct_change() * 100
+    df_q["매출 성장률 (QoQ)"] = df_q["매출액"].pct_change(fill_method=None) * 100
+    df_q["순이익 성장률 (QoQ)"] = df_q["순이익"].pct_change(fill_method=None) * 100
+    df_q["영업이익률 (%)"] = df_q["영업이익"] / df_q["매출액"] * 100
 
-    df_q["순이익 성장률 (QoQ)"] = df_q["순이익"].pct_change(
-        periods=1, fill_method=None
-    ) * 100
-
-    df_q["영업이익률 (%)"] = (
-        df_q["영업이익"] / df_q["매출액"] * 100
-    )
-
-    # 다시 최신 분기부터
     df_q = df_q.sort_index(ascending=False)
 
-    # 포맷 적용
     df_q_fmt = df_q.copy()
     for col in ["매출액", "순이익", "영업이익"]:
         df_q_fmt[col] = df_q_fmt[col].map(fmt_money)
@@ -96,147 +87,168 @@ for ticker in load_tickers():
         "잉여현금흐름": cf.loc["Free Cash Flow"]
     }).head(5)
 
-    # 시간순 정렬
     df_y = df_y.sort_index()
 
-    df_y["매출 성장률 (YoY)"] = (
-        df_y["매출액"].pct_change(fill_method=None) * 100
-    )
-    df_y["순이익 성장률 (YoY)"] = (
-        df_y["순이익"].pct_change(fill_method=None) * 100
-    )
-    df_y["영업이익률 (%)"] = (
-        df_y["영업이익"] / df_y["매출액"] * 100
-    )
-    df_y["FCF 마진 (%)"] = (
-        df_y["잉여현금흐름"] / df_y["매출액"] * 100
-    )
+    df_y["매출 성장률 (YoY)"] = df_y["매출액"].pct_change() * 100
+    df_y["순이익 성장률 (YoY)"] = df_y["순이익"].pct_change() * 100
+    df_y["영업이익률 (%)"] = df_y["영업이익"] / df_y["매출액"] * 100
+    df_y["FCF 마진 (%)"] = df_y["잉여현금흐름"] / df_y["매출액"] * 100
 
-    df_y = df_y.sort_index(ascending=False)
+    #아래 df_chart에서 소팅
+    #df_y = df_y.sort_index(ascending=False)
 
     # =========================
-    # 📦 차트용 JSON 데이터
+    # 🔧 숫자형 강제 변환 (차트용)
+    # =========================
+    for col in ["매출액", "순이익", "영업이익", "잉여현금흐름"]:
+        df_y[col] = pd.to_numeric(df_y[col], errors="coerce")
+
+    # =========================
+    # 📦 차트용 데이터 (NaN 제거)
+    # =========================
+    df_chart = (
+        df_y
+        .sort_index(ascending=True)   # ⭐ 추가
+        .loc[
+            df_y["매출액"].notna() &
+            df_y["순이익"].notna() &
+            df_y["영업이익"].notna()
+        ]
+    )
+
+    # =========================
+    # 📦 차트용 JSON (⚠ df_chart 사용)
     # =========================
     chart_data = {
-        "years": df_y.index.astype(str).tolist(),
-        "revenue": df_y["매출액"].round(0).tolist(),
-        "net_income": df_y["순이익"].round(0).tolist(),
-        "operating_income": df_y["영업이익"].round(0).tolist(),
-        "fcf": df_y["잉여현금흐름"].round(0).tolist(),
+        "years": df_chart.index.astype(str).tolist(),
+        "revenue": df_chart["매출액"].round(0).tolist(),
+        "net_income": df_chart["순이익"].round(0).tolist(),
+        "operating_income": df_chart["영업이익"].round(0).tolist(),
+        "fcf": df_chart["잉여현금흐름"].round(0).tolist(),
         "op_margin": (
-            df_y["영업이익"] / df_y["매출액"] * 100
+            df_chart["영업이익"] / df_chart["매출액"] * 100
         ).round(1).tolist()
     }
 
 
-    # 포맷 적용
+    with open(OUT / f"{ticker}_chart.json", "w", encoding="utf-8") as jf:
+        json.dump(chart_data, jf, ensure_ascii=False)
+
+    # 포맷
     df_y_fmt = df_y.copy()
     for col in ["매출액", "순이익", "영업이익", "잉여현금흐름"]:
         df_y_fmt[col] = df_y_fmt[col].map(fmt_money)
 
-    for col in [
-        "매출 성장률 (YoY)",
-        "순이익 성장률 (YoY)",
-        "영업이익률 (%)",
-        "FCF 마진 (%)"
-    ]:
+    for col in ["매출 성장률 (YoY)", "순이익 성장률 (YoY)", "영업이익률 (%)", "FCF 마진 (%)"]:
         df_y_fmt[col] = df_y_fmt[col].map(fmt_pct)
 
-    chart_json_path = OUT / f"{ticker}_chart.json"
-    with open(chart_json_path, "w", encoding="utf-8") as jf:
-        json.dump(chart_data, jf, ensure_ascii=False)
-
-
     # =====================================================
-    # 🧾 HTML 생성
+    # 🧾 HTML (⚠ f-string 아님)
     # =====================================================
-    html = f"""
-    <html>
-    <head>
-        <meta charset="utf-8">
-        <title>{ticker} 재무 요약</title>
+    html = """
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{TICKER}} 재무 요약</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        h1 { margin-bottom: 10px; }
+        h2 { margin-top: 40px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: right; }
+        th { background: #f5f5f5; }
+        td:first-child, th:first-child { text-align: left; }
+    </style>
+</head>
+<body>
 
-        <!-- Plotly -->
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<h1>{{TICKER}} 재무 요약</h1>
 
-        <style>
-            body {{ font-family: Arial; padding: 20px; }}
-            h1 {{ margin-bottom: 10px; }}
-            h2 {{ margin-top: 40px; }}
-            table {{ border-collapse: collapse; width: 100%; }}
-            th, td {{ border: 1px solid #ddd; padding: 8px; text-align: right; }}
-            th {{ background: #f5f5f5; }}
-            td:first-child, th:first-child {{ text-align: left; }}
-        </style>
-    </head>
-    <body>
+<h2>📊 최근 2개년 분기 재무</h2>
+{{Q_TABLE}}
 
-    <h1>{ticker} 재무 요약</h1>
+<h2>📈 최근 5개년 연간 재무</h2>
+{{Y_TABLE}}
 
-    <h2>📊 최근 2개년 분기 재무 (전년동기 대비)</h2>
-    {df_q_fmt.to_html()}
+<h2>📊 재무 차트</h2>
 
-    <h2>📈 최근 5개년 연간 재무</h2>
-    {df_y_fmt.to_html()}
+<div id="chart-revenue" style="height:400px;"></div>
+<div id="chart-income" style="height:400px;"></div>
+<div id="chart-margin" style="height:400px;"></div>
+<div id="chart-fcf" style="height:400px;"></div>
 
-    <h2>📊 재무 차트</h2>
-
-    <div id="chart-revenue" style="height:400px;"></div>
-    <div id="chart-income" style="height:400px;"></div>
-    <div id="chart-margin" style="height:400px;"></div>
-    <div id="chart-fcf" style="height:400px;"></div>
-
-    <script>
-    fetch("{ticker}_chart.json")
-    .then(r => r.json())
-    .then(d => {
-
-        Plotly.newPlot("chart-revenue", [{
+<script>
+fetch("{{TICKER}}_chart.json")
+.then(r => r.json())
+.then(d => {
+    Plotly.newPlot("chart-revenue", [{
         x: d.years,
         y: d.revenue,
         type: "bar",
-        name: "매출액"
-        }], { title: "매출 추이" });
-
-        Plotly.newPlot("chart-income", [
-        {
-            x: d.years,
-            y: d.net_income,
-            type: "line",
-            name: "순이익"
+        width: 0.4   // ⭐ 핵심 (기본값 ≈ 0.8)
+    }], {
+        title: {
+            text: "매출 추이",
+            x: 0.5,
+            font: { size: 20 }
         },
-        {
-            x: d.years,
-            y: d.operating_income,
-            type: "line",
-            name: "영업이익"
-        }
-        ], { title: "순이익 vs 영업이익" });
-
-        Plotly.newPlot("chart-margin", [{
-        x: d.years,
-        y: d.op_margin,
-        type: "line",
-        name: "영업이익률"
-        }], {
-        title: "영업이익률 (%)",
-        yaxis: { ticksuffix: "%" }
+        margin: { t: 60 },
+        xaxis: { type: "category" }   // ⭐ 핵심
         });
 
-        Plotly.newPlot("chart-fcf", [{
+    Plotly.newPlot("chart-income", [
+        { x: d.years, y: d.net_income, type: "line", name: "순이익" },
+        { x: d.years, y: d.operating_income, type: "line", name: "영업이익" }
+    ], {
+        title: {
+            text: "순이익 VS 영업이익",
+            x: 0.5,
+            font: { size: 20 }
+        },
+        margin: { t: 60 }
+      });
+
+    Plotly.newPlot("chart-margin", [{
+        x: d.years,
+        y: d.op_margin,
+        type: "line"
+    }], {
+        title: {
+            text: "영업이익률 (%)",
+            x: 0.5,
+            font: { size: 20 }
+        },
+        margin: { t: 60 },
+        yaxis: { ticksuffix: "%" }
+    });
+
+    Plotly.newPlot("chart-fcf", [{
         x: d.years,
         y: d.fcf,
         type: "bar",
-        name: "잉여현금흐름"
-        }], { title: "Free Cash Flow" });
+        width: 0.4   // ⭐ 핵심 (기본값 ≈ 0.8)
+    }], {
+        title: {
+            text: "Free Cash Flow",
+            x: 0.5,
+            font: { size: 20 }
+        },
+        margin: { t: 60 },
+        xaxis: { type: "category" }   // ⭐ 핵심
+        });
+});
+</script>
 
-    });
-    </script>
+</body>
+</html>
+"""
 
-
-    </body>
-    </html>
-    """
+    html = (
+        html.replace("{{TICKER}}", ticker)
+            .replace("{{Q_TABLE}}", df_q_fmt.to_html())
+            .replace("{{Y_TABLE}}", df_y_fmt.to_html())
+    )
 
     with open(OUT / f"{ticker}.html", "w", encoding="utf-8") as f:
         f.write(html)
