@@ -15,5 +15,8 @@ per, pbr, roe, eps 지표 추가
 ## v3
 티커별 상세 페이지 추가
 
+## v4
+재무정보 비교 그래프 추가(Plotly)
+
 # 추가 필요 요구사항
 python 64bit -> pandas 설치
