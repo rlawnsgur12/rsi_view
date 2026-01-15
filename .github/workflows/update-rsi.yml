@@ -35,7 +35,7 @@ jobs:
         run: python update_rsi.py
 
       - name: Run update detail script
-        run: python generate_financials.py
+        run: python scripts/generate_financials.py
 
       - name: Print JSON content
         run: cat data/rsi_data.json
