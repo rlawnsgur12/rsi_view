@@ -194,7 +194,12 @@ fetch("{{TICKER}}_chart.json")
             font: { size: 20 }
         },
         margin: { t: 60 },
-        xaxis: { type: "category" }   // ⭐ 핵심
+        xaxis: {
+            type: "category", // ⭐ 핵심
+            fixedrange: true  // ← 드래그 비활성
+        }
+        yaxis: { fixedrange: true },  // ← 드래그 비활성
+        hovermode: "x unified"        // ← 마우스 올리면 표시
         });
 
     Plotly.newPlot("chart-income", [
@@ -207,6 +212,9 @@ fetch("{{TICKER}}_chart.json")
             font: { size: 20 }
         },
         margin: { t: 60 }
+        xaxis: { fixedrange: true },  // ← 드래그 비활성
+        yaxis: { fixedrange: true },  // ← 드래그 비활성
+        hovermode: "x unified"        // ← 마우스 올리면 표시
       });
 
     Plotly.newPlot("chart-margin", [{
@@ -220,7 +228,12 @@ fetch("{{TICKER}}_chart.json")
             font: { size: 20 }
         },
         margin: { t: 60 },
-        yaxis: { ticksuffix: "%" }
+        xaxis: { fixedrange: true },  // ← 드래그 비활성
+        yaxis: {
+            ticksuffix: "%",
+            fixedrange: true
+        },
+        hovermode: "x unified"        // ← 마우스 올리면 표시
     });
 
     Plotly.newPlot("chart-fcf", [{
@@ -235,7 +248,12 @@ fetch("{{TICKER}}_chart.json")
             font: { size: 20 }
         },
         margin: { t: 60 },
-        xaxis: { type: "category" }   // ⭐ 핵심
+        xaxis: {
+            type: "category", // ⭐ 핵심
+            fixedrange: true  // ← 드래그 비활성
+        }
+        yaxis: { fixedrange: true },  // ← 드래그 비활성
+        hovermode: "x unified"        // ← 마우스 올리면 표시
         });
 });
 </script>
