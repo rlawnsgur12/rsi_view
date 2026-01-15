@@ -9,7 +9,8 @@ import math
 # =========================
 # 출력 디렉토리
 # =========================
-OUT = Path("../stocks")
+BASE_DIR = Path(__file__).resolve().parent.parent
+OUT = BASE_DIR / "stocks"
 OUT.mkdir(exist_ok=True)
 
 # =========================
