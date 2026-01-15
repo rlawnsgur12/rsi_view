@@ -1,11 +1,13 @@
-
 import json
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-# scripts/common.py 기준 → rsi_view/
+def load_tickers():
+    # 이 파일(common.py) 기준 경로
+    base_dir = Path(__file__).resolve().parent.parent
+    ticker_path = base_dir / "tickers.json"
 
-def load_tickers(path="tickers.json"):
-    ticker_path = BASE_DIR / path
+    if not ticker_path.exists():
+        raise FileNotFoundError(f"tickers.json not found: {ticker_path}")
+
     with open(ticker_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return json.load(f)["tickers"]

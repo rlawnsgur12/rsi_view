@@ -15,11 +15,22 @@ OUT.mkdir(exist_ok=True)
 # =========================
 # 안전한 Row 추출
 # =========================
+# def safe_row(df, names):
+#     for n in names:
+#         if n in df.index:
+#             return df.loc[n]
+#     return None
 def safe_row(df, names):
+    if df is None or df.empty:
+        return pd.Series(dtype="float64")
+
     for n in names:
         if n in df.index:
             return df.loc[n]
-    return None
+
+    # 컬럼 개수만큼 NaN Series 반환
+    return pd.Series([pd.NA] * len(df.columns), index=df.columns)
+
 
 # =========================
 # 금액 포맷 (억 단위)
@@ -86,7 +97,10 @@ for ticker in load_tickers():
             "Net Income"
         ]),
         "영업이익": safe_row(y, ["Operating Income"]),
-        "잉여현금흐름": cf.loc["Free Cash Flow"]
+        "잉여현금흐름": safe_row(cf, [
+            "Free Cash Flow",
+            "FreeCashFlow"
+        ])
     }).head(5)
 
     df_y = df_y.sort_index()
