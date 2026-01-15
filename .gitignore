@@ -1,2 +1,7 @@
-stocks/
-data/
+# 폴더 안의 파일만 무시
+stocks/*
+data/*
+
+# 하지만 이 파일은 예외
+!stocks/.gitkeep
+!data/.gitkeep
