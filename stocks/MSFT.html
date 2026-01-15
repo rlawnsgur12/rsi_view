@@ -1,0 +1,267 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MSFT 재무 요약</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        h1 { margin-bottom: 10px; }
+        h2 { margin-top: 40px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: right; }
+        th { background: #f5f5f5; }
+        td:first-child, th:first-child { text-align: left; }
+    </style>
+</head>
+<body>
+
+<h1>MSFT 재무 요약</h1>
+
+<h2>📊 최근 2개년 분기 재무</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>매출액</th>
+      <th>순이익</th>
+      <th>영업이익</th>
+      <th>매출 성장률 (QoQ)</th>
+      <th>순이익 성장률 (QoQ)</th>
+      <th>영업이익률 (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2025-09-30</th>
+      <td>776.7억</td>
+      <td>277.5억</td>
+      <td>379.6억</td>
+      <td>2%</td>
+      <td>2%</td>
+      <td>49%</td>
+    </tr>
+    <tr>
+      <th>2025-06-30</th>
+      <td>764.4억</td>
+      <td>272.3억</td>
+      <td>343.2억</td>
+      <td>9%</td>
+      <td>5%</td>
+      <td>45%</td>
+    </tr>
+    <tr>
+      <th>2025-03-31</th>
+      <td>700.7억</td>
+      <td>258.2억</td>
+      <td>320.0억</td>
+      <td>1%</td>
+      <td>7%</td>
+      <td>46%</td>
+    </tr>
+    <tr>
+      <th>2024-12-31</th>
+      <td>696.3억</td>
+      <td>241.1억</td>
+      <td>316.5억</td>
+      <td>6%</td>
+      <td>-2%</td>
+      <td>45%</td>
+    </tr>
+    <tr>
+      <th>2024-09-30</th>
+      <td>655.9억</td>
+      <td>246.7억</td>
+      <td>305.5억</td>
+      <td></td>
+      <td></td>
+      <td>47%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>📈 최근 5개년 연간 재무</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>매출액</th>
+      <th>순이익</th>
+      <th>영업이익</th>
+      <th>잉여현금흐름</th>
+      <th>매출 성장률 (YoY)</th>
+      <th>순이익 성장률 (YoY)</th>
+      <th>영업이익률 (%)</th>
+      <th>FCF 마진 (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2025-06-30</th>
+      <td>2,817.2억</td>
+      <td>1,018.3억</td>
+      <td>1,285.3억</td>
+      <td>716.1억</td>
+      <td>15%</td>
+      <td>16%</td>
+      <td>46%</td>
+      <td>25%</td>
+    </tr>
+    <tr>
+      <th>2024-06-30</th>
+      <td>2,451.2억</td>
+      <td>881.4억</td>
+      <td>1,094.3억</td>
+      <td>740.7억</td>
+      <td>16%</td>
+      <td>22%</td>
+      <td>45%</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <th>2023-06-30</th>
+      <td>2,119.2억</td>
+      <td>723.6억</td>
+      <td>885.2억</td>
+      <td>594.8억</td>
+      <td>7%</td>
+      <td>-1%</td>
+      <td>42%</td>
+      <td>28%</td>
+    </tr>
+    <tr>
+      <th>2022-06-30</th>
+      <td>1,982.7억</td>
+      <td>727.4억</td>
+      <td>833.8억</td>
+      <td>651.5억</td>
+      <td></td>
+      <td></td>
+      <td>42%</td>
+      <td>33%</td>
+    </tr>
+    <tr>
+      <th>2021-06-30</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>📊 재무 차트</h2>
+
+<div id="chart-revenue" style="height:400px;"></div>
+<div id="chart-income" style="height:400px;"></div>
+<div id="chart-margin" style="height:400px;"></div>
+<div id="chart-fcf" style="height:400px;"></div>
+
+<script>
+fetch("MSFT_chart.json")
+.then(r => r.json())
+.then(d => {
+
+    const annotations = [];
+
+    for (let i = 1; i < d.years.length; i++) {
+        const pct = d.revenue_yoy[i];
+        const yPrev = d.revenue[i - 1];
+        const yCurr = d.revenue[i];
+
+        if (pct == null || yPrev == null || yCurr == null) continue;
+
+        annotations.push({
+            x: d.years[i],
+            y: Math.max(yPrev, yCurr) * 1.08,
+            text: `${pct > 0 ? "▲" : "▼"} ${pct.toFixed(1)}%`,
+            showarrow: false,
+            font: {
+                size: 16,
+                color: pct > 0 ? "red" : "blue", // Plotly 기본 컬러
+                family: "Arial Black"
+            }
+        });
+    }
+
+
+    Plotly.newPlot("chart-revenue", [{
+        x: d.years,
+        y: d.revenue,
+        type: "bar",
+        width: 0.4,   // ⭐ 핵심 (기본값 ≈ 0.8)
+        textposition: "outside"
+    }], {
+        title: {
+            text: "매출 추이",
+            x: 0.5,
+            font: { size: 20 }
+        },
+        margin: { t: 60 },
+        xaxis: {
+            type: "category", // ⭐ 핵심
+            fixedrange: true  // ← 드래그 비활성
+        },
+        yaxis: { fixedrange: true },   // ← 드래그 비활성
+        annotations: annotations   // ⭐ 핵심
+        });
+
+    Plotly.newPlot("chart-income", [
+        { x: d.years, y: d.net_income, type: "line", name: "순이익" },
+        { x: d.years, y: d.operating_income, type: "line", name: "영업이익" }
+    ], {
+        title: {
+            text: "순이익 VS 영업이익",
+            x: 0.5,
+            font: { size: 20 }
+        },
+        margin: { t: 60 },
+        xaxis: { fixedrange: true },  // ← 드래그 비활성
+        yaxis: { fixedrange: true }   // ← 드래그 비활성
+      });
+
+    Plotly.newPlot("chart-margin", [{
+        x: d.years,
+        y: d.op_margin,
+        type: "line"
+    }], {
+        title: {
+            text: "영업이익률 (%)",
+            x: 0.5,
+            font: { size: 20 }
+        },
+        margin: { t: 60 },
+        xaxis: { fixedrange: true },  // ← 드래그 비활성
+        yaxis: {
+            ticksuffix: "%",
+            fixedrange: true
+        }
+    });
+
+    Plotly.newPlot("chart-fcf", [{
+        x: d.years,
+        y: d.fcf,
+        type: "bar",
+        width: 0.4   // ⭐ 핵심 (기본값 ≈ 0.8)
+    }], {
+        title: {
+            text: "Free Cash Flow",
+            x: 0.5,
+            font: { size: 20 }
+        },
+        margin: { t: 60 },
+        xaxis: {
+            type: "category", // ⭐ 핵심
+            fixedrange: true  // ← 드래그 비활성
+        },
+        yaxis: { fixedrange: true }  // ← 드래그 비활성
+        });
+});
+</script>
+
+</body>
+</html>
