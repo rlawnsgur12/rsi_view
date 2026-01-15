@@ -3,6 +3,8 @@ import pandas as pd
 from pathlib import Path
 from common import load_tickers
 import json
+import math
+
 
 # =========================
 # 출력 디렉토리
@@ -89,13 +91,15 @@ for ticker in load_tickers():
 
     df_y = df_y.sort_index()
 
-    df_y["매출 성장률 (YoY)"] = df_y["매출액"].pct_change() * 100
-    df_y["순이익 성장률 (YoY)"] = df_y["순이익"].pct_change() * 100
+    # df_y["매출 성장률 (YoY)"] = df_y["매출액"].pct_change() * 100
+    # df_y["순이익 성장률 (YoY)"] = df_y["순이익"].pct_change() * 100
+    df_y["매출 성장률 (YoY)"] = df_y["매출액"].pct_change(fill_method=None) * 100
+    df_y["순이익 성장률 (YoY)"] = df_y["순이익"].pct_change(fill_method=None) * 100
     df_y["영업이익률 (%)"] = df_y["영업이익"] / df_y["매출액"] * 100
     df_y["FCF 마진 (%)"] = df_y["잉여현금흐름"] / df_y["매출액"] * 100
 
     #아래 df_chart에서 소팅
-    #df_y = df_y.sort_index(ascending=False)
+    df_y = df_y.sort_index(ascending=False)
 
     # =========================
     # 🔧 숫자형 강제 변환 (차트용)
@@ -116,12 +120,25 @@ for ticker in load_tickers():
         ]
     )
 
+    # 화살표 표시용
+    revenue_yoy = [
+        None if (v is None or (isinstance(v, float) and math.isnan(v))) else v
+        for v in (
+            df_chart["매출액"]
+            .pct_change(fill_method=None)
+            .mul(100)
+            .round(1)
+            .tolist()
+        )
+    ]
+
     # =========================
     # 📦 차트용 JSON (⚠ df_chart 사용)
     # =========================
     chart_data = {
         "years": df_chart.index.astype(str).tolist(),
         "revenue": df_chart["매출액"].round(0).tolist(),
+        "revenue_yoy": revenue_yoy,   # ⭐ 화살표 표시용 추가
         "net_income": df_chart["순이익"].round(0).tolist(),
         "operating_income": df_chart["영업이익"].round(0).tolist(),
         "fcf": df_chart["잉여현금흐름"].round(0).tolist(),
@@ -182,11 +199,36 @@ for ticker in load_tickers():
 fetch("{{TICKER}}_chart.json")
 .then(r => r.json())
 .then(d => {
+
+    const annotations = [];
+
+    for (let i = 1; i < d.years.length; i++) {
+        const pct = d.revenue_yoy[i];
+        const yPrev = d.revenue[i - 1];
+        const yCurr = d.revenue[i];
+
+        if (pct == null || yPrev == null || yCurr == null) continue;
+
+        annotations.push({
+            x: d.years[i],
+            y: Math.max(yPrev, yCurr) * 1.08,
+            text: `${pct > 0 ? "▲" : "▼"} ${pct.toFixed(1)}%`,
+            showarrow: false,
+            font: {
+                size: 16,
+                color: pct > 0 ? "red" : "blue", // Plotly 기본 컬러
+                family: "Arial Black"
+            }
+        });
+    }
+
+
     Plotly.newPlot("chart-revenue", [{
         x: d.years,
         y: d.revenue,
         type: "bar",
-        width: 0.4   // ⭐ 핵심 (기본값 ≈ 0.8)
+        width: 0.4,   // ⭐ 핵심 (기본값 ≈ 0.8)
+        textposition: "outside"
     }], {
         title: {
             text: "매출 추이",
@@ -194,7 +236,12 @@ fetch("{{TICKER}}_chart.json")
             font: { size: 20 }
         },
         margin: { t: 60 },
-        xaxis: { type: "category" }   // ⭐ 핵심
+        xaxis: {
+            type: "category", // ⭐ 핵심
+            fixedrange: true  // ← 드래그 비활성
+        },
+        yaxis: { fixedrange: true },   // ← 드래그 비활성
+        annotations: annotations   // ⭐ 핵심
         });
 
     Plotly.newPlot("chart-income", [
@@ -206,7 +253,9 @@ fetch("{{TICKER}}_chart.json")
             x: 0.5,
             font: { size: 20 }
         },
-        margin: { t: 60 }
+        margin: { t: 60 },
+        xaxis: { fixedrange: true },  // ← 드래그 비활성
+        yaxis: { fixedrange: true }   // ← 드래그 비활성
       });
 
     Plotly.newPlot("chart-margin", [{
@@ -220,7 +269,11 @@ fetch("{{TICKER}}_chart.json")
             font: { size: 20 }
         },
         margin: { t: 60 },
-        yaxis: { ticksuffix: "%" }
+        xaxis: { fixedrange: true },  // ← 드래그 비활성
+        yaxis: {
+            ticksuffix: "%",
+            fixedrange: true
+        }
     });
 
     Plotly.newPlot("chart-fcf", [{
@@ -235,7 +288,11 @@ fetch("{{TICKER}}_chart.json")
             font: { size: 20 }
         },
         margin: { t: 60 },
-        xaxis: { type: "category" }   // ⭐ 핵심
+        xaxis: {
+            type: "category", // ⭐ 핵심
+            fixedrange: true  // ← 드래그 비활성
+        },
+        yaxis: { fixedrange: true }  // ← 드래그 비활성
         });
 });
 </script>

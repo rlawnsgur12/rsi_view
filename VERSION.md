@@ -18,5 +18,8 @@ per, pbr, roe, eps 지표 추가
 ## v4
 재무정보 비교 그래프 추가(Plotly)
 
+### v4.1
+Git Ignore 추가, 차트 화면 고정, 차트 표시 수정, 표 정렬 수정, github action 추가
+
 # 추가 필요 요구사항
 python 64bit -> pandas 설치
