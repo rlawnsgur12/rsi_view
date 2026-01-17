@@ -2,38 +2,11 @@ import yfinance as yf
 import pandas as pd
 import json
 import os
-from datetime import datetime, timedelta
+from pathlib import Path
 
-# ✅ RSI 계산 함수
-def compute_rsi(data, window=14):
-    delta = data['Close'].diff()
-    gain = delta.clip(lower=0)
-    loss = -delta.clip(upper=0)
-
-    avg_gain = gain.rolling(window=window, min_periods=1).mean()
-    avg_loss = loss.rolling(window=window, min_periods=1).mean()
-
-    rs = avg_gain / avg_loss
-    rsi = 100 - (100 / (1 + rs))
-    return rsi
-
-
-# ✅ 확인할 티커 리스트 (원하면 수정 가능)
-tickers = [
-    'AAPL', 'MSFT', 'AMZN', 'GOOGL', 'META', 'NVDA', 'TSLA', 'BRK-B', 'JPM', 'JNJ',
-    'V', 'PG', 'UNH', 'MA', 'HD', 'BAC', 'DIS', 'PYPL', 'ADBE', 'NFLX',
-    'INTC', 'CMCSA', 'XOM', 'VZ', 'T', 'KO', 'PFE', 'CSCO', 'PEP', 'ABBV',
-    'ABT', 'CRM', 'CVX', 'WMT', 'MCD', 'NKE', 'DHR', 'TXN', 'LLY', 'MDT',
-    'NEE', 'BMY', 'COST', 'LIN', 'QCOM', 'PM', 'AMGN', 'UPS', 'IBM', 'UNP',
-    'RTX', 'HON', 'LOW', 'INTU', 'SBUX', 'GS', 'BLK', 'CAT', 'ISRG', 'CVS',
-    'ADP', 'FIS', 'SCHW', 'GILD', 'DE', 'ZTS', 'SPGI', 'TMUS', 'CB', 'BDX',
-    'LMT', 'SYK', 'PLD', 'MO', 'CCI', 'NOW', 'VRTX', 'CI', 'DUK', 'EL',
-    'SO', 'TGT', 'ICE', 'GM', 'MET', 'APD', 'F', 'EW', 'CSX', 'GD',
-    'AON', 'ECL', 'NSC', 'MCO', 'CL', 'ITW', 'SHW', 'PNC', 'D', 'AEP'
-]
-
-results = []
-
+# =====================
+# RSI 계산 함수
+# =====================
 def compute_rsi_ema(close, period=14):
     delta = close.diff()
     gain = delta.clip(lower=0)
@@ -44,76 +17,84 @@ def compute_rsi_ema(close, period=14):
     rsi = 100 - (100 / (1 + rs))
     return rsi
 
-rsi_list = []
+# =====================
+# 티커 리스트 → JSON 저장 함수
+# =====================
+def process_tickers(ticker_list, output_path):
+    rsi_list = []
 
-for ticker in tickers:
-    try:
-        print(f"ticker 시작 : {ticker}")
-        #yf_ticker = ticker.replace("-", ".")
-        yf_ticker = ticker
-        data = yf.download(yf_ticker, period='2mo', interval='1d', progress=False, auto_adjust=False)
-
-        if data.empty or 'Close' not in data:
-            print(f"{ticker}: 데이터 없음")
-            continue
-
-        close_data = data['Close']
-
-        # Close가 DataFrame일 경우 컬럼에서 티커 데이터만 추출
-        if isinstance(close_data, pd.DataFrame):
-            if yf_ticker in close_data.columns:
-                close_data = close_data[yf_ticker]
-            else:
-                print(f"{ticker}: Close 데이터가 DataFrame이나 컬럼이 없음")
+    for ticker in ticker_list:
+        try:
+            print(f"처리 중: {ticker}")
+            data = yf.download(ticker, period='2mo', interval='1d', progress=False, auto_adjust=False)
+            if data.empty or 'Close' not in data:
+                print(f"{ticker}: 데이터 없음")
                 continue
 
-        rsi_series = compute_rsi_ema(close_data).dropna()
-        if rsi_series.empty:
-            print(f"{ticker}: RSI 계산 불가 (데이터 부족)")
-            continue
+            close_data = data['Close']
+            if isinstance(close_data, pd.DataFrame) and ticker in close_data.columns:
+                close_data = close_data[ticker]
 
-        last_rsi = rsi_series.iloc[-1]
-        if isinstance(last_rsi, pd.Series):
-            last_rsi = last_rsi.iloc[0]
-        last_rsi = float(last_rsi)
+            rsi_series = compute_rsi_ema(close_data).dropna()
+            if rsi_series.empty:
+                continue
 
-        last_week_rsi_series = rsi_series.iloc[-7:]
-        rsi_below_30_in_7days = '🕐' if (last_week_rsi_series <= 30).any() else ''
+            last_rsi = float(rsi_series.iloc[-1])
+            last_week_rsi_series = rsi_series.iloc[-7:]
+            rsi_below_30_in_7days = '🕐' if (last_week_rsi_series <= 30).any() else ''
 
+            stock = yf.Ticker(ticker)
+            info = stock.info
+            per = info.get("trailingPE")
+            fwd_per = info.get("forwardPE")
+            pbr = info.get("priceToBook")
+            roe = info.get("returnOnEquity")
+            eps = info.get("trailingEps")
+            fwd_eps = info.get("forwardEps")
 
-        stock = yf.Ticker(yf_ticker)
+            rsi_list.append({
+                'Ticker': ticker,
+                'RSI': round(last_rsi, 2),
+                'RSI_30이하': '✅' if last_rsi <= 30 else '',
+                'RSI_30초과_35이하': '⚠️' if 30 < last_rsi <= 35 else '',
+                '최근7일내_RSI30이하': rsi_below_30_in_7days,
+                'PER': per,
+                'PER(예상)': fwd_per,
+                'PBR': pbr,
+                'ROE': roe,
+                'EPS': eps,
+                'EPS(예상)': fwd_eps
+            })
 
-        info = stock.info
-        per = info.get("trailingPE")     # PER
-        fwd_per = info.get("forwardPE")  # PEF(예상)
-        pbr = info.get("priceToBook")    # PBR 
-        roe = info.get("returnOnEquity") # ROE 자기자본이익률
-        eps = info.get("trailingEps")    # EPS 주당순이익
-        fwd_eps = info.get("forwardEps") # EPS 주당순이익(예상)
+        except Exception as e:
+            print(f"{ticker} 처리 중 오류: {e}")
 
-        rsi_list.append({
-            'Ticker': ticker,
-            'RSI': round(last_rsi, 2),
-            'RSI_30이하': '✅' if last_rsi <= 30 else '',
-            'RSI_30초과_35이하': '⚠️' if 30 < last_rsi <= 35 else '',
-            '최근7일내_RSI30이하': rsi_below_30_in_7days,
-            'PER' : per,
-            'PER(예상)' : fwd_per,
-            'PBR' : pbr,
-            'ROE' : roe,
-            'EPS' : eps,
-            'EPS(예상)' : fwd_eps
-        })
+    # JSON 저장
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(rsi_list, f, ensure_ascii=False, indent=2)
+    print(f"✅ 완료! {len(rsi_list)}개 티커 저장: {output_path}")
 
-    except Exception as e:
-        print(f"{ticker} 처리 중 오류: {e}")
+# =====================
+# tickers_info 폴더 하위 모든 JSON 자동 처리
+# =====================
+BASE_DIR = Path(__file__).resolve().parent
+TICKERS_DIR = BASE_DIR / "tickers_info"
+OUT_DIR = BASE_DIR / "data"
+OUT_DIR.mkdir(exist_ok=True)
 
+json_files = list(TICKERS_DIR.glob("*.json"))
 
-# ✅ data 폴더 없으면 생성
-os.makedirs("data", exist_ok=True)
+for jf in json_files:
+    with open(jf, "r", encoding="utf-8") as f:
+        data = json.load(f)
+        tickers = data.get("tickers", [])
 
-# ✅ JSON 저장
-with open("data/rsi_data.json", "w", encoding="utf-8") as f:
-    json.dump(rsi_list, f, ensure_ascii=False, indent=2)
+    if not tickers:
+        print(f"{jf}: 티커 리스트 비어 있음, 건너뜀")
+        continue
 
-print(f"✅ 완료! {len(rsi_list)}개 티커 RSI 저장 완료.")
+    # 출력 파일 이름: tickers_ 제거 후 data 폴더에 저장
+    output_file = OUT_DIR / (jf.stem.replace("tickers_", "") + ".json")
+
+    process_tickers(tickers, output_file)

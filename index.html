@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>RSI Viewer</title>
-  <style>
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
-    th { background-color: #f0f0f0; cursor: pointer; }  /* 헤더만 클릭 커서 */
-    td { cursor: default; }
-  </style>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>RSI 전체 리포트</h2>
+  <h2>미국 주식 리포트</h2>
+  <div class="tabs">
+    <button class="active" onclick="loadTab('rsi_data', this)">Top 1~100</button>
+    <button onclick="loadTab('top_101_200', this)">Top 101~200</button>
+    <button onclick="loadTab('custom', this)">Custom</button>
+  </div>
   <table>
     <thead>
       <tr>

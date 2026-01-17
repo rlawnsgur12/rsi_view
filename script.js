@@ -7,89 +7,150 @@ function fmt(val) {
   return Number(val).toFixed(2);       // 숫자 → 소수 2자리
 }
 
-fetch("data/rsi_data.json")
-  .then(response => response.json())
-  .then(data => {
-    const tbody = document.getElementById("rsi-table-body");
+async function loadTab(name, btn) {
+
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  const tbody = document.getElementById("rsi-table-body");
+  tbody.innerHTML = "";
+
+  try {
+    const res = await fetch(`data/${name}.json`);
+
+    if (!res.ok) throw new Error("파일 없음");
+
+    const data = await res.json();
+
+    if (data.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="11">📭 데이터 없음</td></tr>`;
+      return;
+    }
 
     data.forEach(item => {
       const row = document.createElement("tr");
 
-      // // Ticker
-      // const tickerCell = document.createElement("td");
-      // tickerCell.textContent = item.Ticker;
-      // row.appendChild(tickerCell);
-      // Ticker (클릭 시 상세 페이지 이동)
-      const tickerCell = document.createElement("td");
+      const cols = [
+        "Ticker","RSI","RSI_30이하","RSI_30초과_35이하","최근7일내_RSI30이하",
+        "PER","PER(예상)","PBR","ROE","EPS","EPS(예상)"
+      ];
 
-      const ticker = item.Ticker;
-      const link = document.createElement("a");
-      link.href = `./stocks/${ticker}.html`;
-      link.textContent = ticker;
-      link.classList.add("ticker-link");
-      link.style.textDecoration = "none";
-      link.style.color = "inherit"; // 기존 색상 유지
+      cols.forEach(col => {
+        const cell = document.createElement("td");
 
-      tickerCell.appendChild(link);
-      row.appendChild(tickerCell);
+        if (col === "Ticker") {
+          const link = document.createElement("a");
+          link.href = `./stocks/${item.Ticker}.html`;
+          link.textContent = item.Ticker;
+          link.classList.add("ticker-link");
+          link.style.textDecoration = "none";
+          link.style.color = "inherit"; // 기존 색상 유지
+          cell.appendChild(link);
+        } else {
+          cell.textContent = fmt(item[col]);
+        }
 
-      // RSI
-      const rsiCell = document.createElement("td");
-      rsiCell.textContent = item.RSI;
-      // flag 색상 적용
-      if(item.flag === "low") rsiCell.style.color = "blue";
-      else if(item.flag === "warn") rsiCell.style.color = "orange";
-      row.appendChild(rsiCell);
-
-      // RSI_30이하
-      const rsi30Cell = document.createElement("td");
-      rsi30Cell.textContent = item["RSI_30이하"];
-      row.appendChild(rsi30Cell);
-
-      // RSI_30초과_35이하
-      const rsi30_35Cell = document.createElement("td");
-      rsi30_35Cell.textContent = item["RSI_30초과_35이하"];
-      row.appendChild(rsi30_35Cell);
-
-      // 최근7일내_RSI30이하
-      const recentCell = document.createElement("td");
-      recentCell.textContent = item["최근7일내_RSI30이하"];
-      row.appendChild(recentCell);
-
-      // PER
-      const perCell = document.createElement("td");
-      perCell.textContent = fmt(item["PER"]);
-      row.appendChild(perCell);
-
-      // PER(예상)
-      const fwdPerCell = document.createElement("td");
-      fwdPerCell.textContent = fmt(item["PER(예상)"]);
-      row.appendChild(fwdPerCell);
-
-      // PBR
-      const pbrCell = document.createElement("td");
-      pbrCell.textContent = fmt(item["PBR"]);
-      row.appendChild(pbrCell);
-
-      // ROE
-      const roeCell = document.createElement("td");
-      roeCell.textContent = fmt(item["ROE"]);
-      row.appendChild(roeCell);
-
-      // EPS
-      const epsCell = document.createElement("td");
-      epsCell.textContent = fmt(item["EPS"]);
-      row.appendChild(epsCell);
-
-      // EPS(예상)
-      const fwdEpsCell = document.createElement("td");
-      fwdEpsCell.textContent = fmt(item["EPS(예상)"]);
-      row.appendChild(fwdEpsCell);
+        row.appendChild(cell);
+      });
 
       tbody.appendChild(row);
     });
-  })
-  .catch(err => console.error("JSON 불러오기 실패:", err));
+
+  } catch (err) {
+    console.warn(`${name}.json 없음`);
+    tbody.innerHTML = `<tr><td colspan="11">⚠️ 데이터 파일이 없습니다</td></tr>`;
+  }
+}
+
+
+
+
+// 기본 첫 탭 로드
+loadTab("rsi_data", document.querySelector(".tabs button.active"));
+
+// fetch("data/rsi_data.json")
+//   .then(response => response.json())
+//   .then(data => {
+//     const tbody = document.getElementById("rsi-table-body");
+
+//     data.forEach(item => {
+//       const row = document.createElement("tr");
+
+//       // // Ticker
+//       // const tickerCell = document.createElement("td");
+//       // tickerCell.textContent = item.Ticker;
+//       // row.appendChild(tickerCell);
+//       // Ticker (클릭 시 상세 페이지 이동)
+//       const tickerCell = document.createElement("td");
+
+//       const ticker = item.Ticker;
+//       const link = document.createElement("a");
+//       link.href = `./stocks/${ticker}.html`;
+//       link.textContent = ticker;
+//       link.classList.add("ticker-link");
+//       link.style.textDecoration = "none";
+//       link.style.color = "inherit"; // 기존 색상 유지
+
+//       tickerCell.appendChild(link);
+//       row.appendChild(tickerCell);
+
+//       // RSI
+//       const rsiCell = document.createElement("td");
+//       rsiCell.textContent = item.RSI;
+//       // flag 색상 적용
+//       if(item.flag === "low") rsiCell.style.color = "blue";
+//       else if(item.flag === "warn") rsiCell.style.color = "orange";
+//       row.appendChild(rsiCell);
+
+//       // RSI_30이하
+//       const rsi30Cell = document.createElement("td");
+//       rsi30Cell.textContent = item["RSI_30이하"];
+//       row.appendChild(rsi30Cell);
+
+//       // RSI_30초과_35이하
+//       const rsi30_35Cell = document.createElement("td");
+//       rsi30_35Cell.textContent = item["RSI_30초과_35이하"];
+//       row.appendChild(rsi30_35Cell);
+
+//       // 최근7일내_RSI30이하
+//       const recentCell = document.createElement("td");
+//       recentCell.textContent = item["최근7일내_RSI30이하"];
+//       row.appendChild(recentCell);
+
+//       // PER
+//       const perCell = document.createElement("td");
+//       perCell.textContent = fmt(item["PER"]);
+//       row.appendChild(perCell);
+
+//       // PER(예상)
+//       const fwdPerCell = document.createElement("td");
+//       fwdPerCell.textContent = fmt(item["PER(예상)"]);
+//       row.appendChild(fwdPerCell);
+
+//       // PBR
+//       const pbrCell = document.createElement("td");
+//       pbrCell.textContent = fmt(item["PBR"]);
+//       row.appendChild(pbrCell);
+
+//       // ROE
+//       const roeCell = document.createElement("td");
+//       roeCell.textContent = fmt(item["ROE"]);
+//       row.appendChild(roeCell);
+
+//       // EPS
+//       const epsCell = document.createElement("td");
+//       epsCell.textContent = fmt(item["EPS"]);
+//       row.appendChild(epsCell);
+
+//       // EPS(예상)
+//       const fwdEpsCell = document.createElement("td");
+//       fwdEpsCell.textContent = fmt(item["EPS(예상)"]);
+//       row.appendChild(fwdEpsCell);
+
+//       tbody.appendChild(row);
+//     });
+//   })
+//   .catch(err => console.error("JSON 불러오기 실패:", err));
 
 
 // 🔹 테이블 정렬 함수
