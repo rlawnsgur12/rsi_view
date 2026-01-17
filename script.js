@@ -42,6 +42,9 @@ async function loadTab(name, btn) {
           const link = document.createElement("a");
           link.href = `./stocks/${item.Ticker}.html`;
           link.textContent = item.Ticker;
+          link.classList.add("ticker-link");
+          link.style.textDecoration = "none";
+          link.style.color = "inherit"; // 기존 색상 유지
           cell.appendChild(link);
         } else {
           cell.textContent = fmt(item[col]);

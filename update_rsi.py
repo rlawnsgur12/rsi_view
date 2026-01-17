@@ -2,6 +2,7 @@ import yfinance as yf
 import pandas as pd
 import json
 import os
+from pathlib import Path
 
 # =====================
 # RSI 계산 함수
@@ -75,19 +76,25 @@ def process_tickers(ticker_list, output_path):
     print(f"✅ 완료! {len(rsi_list)}개 티커 저장: {output_path}")
 
 # =====================
-# 티커 파일 읽어서 처리
+# tickers_info 폴더 하위 모든 JSON 자동 처리
 # =====================
-ticker_files = {
-    "data/rsi_data.json": "tickers_info/tickers_rsi_data.json",
-    "data/top_101_200.json": "tickers_info/tickers_top_101_200.json",
-    "data/custom.json": "tickers_info/tickers_custom.json"
-}
+BASE_DIR = Path(__file__).resolve().parent
+TICKERS_DIR = BASE_DIR / "tickers_info"
+OUT_DIR = BASE_DIR / "data"
+OUT_DIR.mkdir(exist_ok=True)
 
-for output_file, input_file in ticker_files.items():
-    with open(input_file, "r", encoding="utf-8") as f:
+json_files = list(TICKERS_DIR.glob("*.json"))
+
+for jf in json_files:
+    with open(jf, "r", encoding="utf-8") as f:
         data = json.load(f)
-        tickers = data.get("tickers", [])  # ✅ 여기 수정
+        tickers = data.get("tickers", [])
+
     if not tickers:
-        print(f"{input_file}: 티커 리스트 비어 있음, 건너뜀")
+        print(f"{jf}: 티커 리스트 비어 있음, 건너뜀")
         continue
+
+    # 출력 파일 이름: tickers_ 제거 후 data 폴더에 저장
+    output_file = OUT_DIR / (jf.stem.replace("tickers_", "") + ".json")
+
     process_tickers(tickers, output_file)
