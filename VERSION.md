@@ -21,5 +21,8 @@ per, pbr, roe, eps 지표 추가
 ### v4.1
 Git Ignore 추가, 차트 화면 고정, 차트 표시 수정, 표 정렬 수정, github action 추가
 
+### v5
+탭 추가, 탭 추가에 따른 공통화
+
 # 추가 필요 요구사항
 python 64bit -> pandas 설치
