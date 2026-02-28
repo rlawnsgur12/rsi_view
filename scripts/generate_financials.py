@@ -59,7 +59,14 @@ json_files = list(TICKERS_DIR.glob("*.json"))
 for jf in json_files:
     with open(jf, "r", encoding="utf-8") as f:
         data = json.load(f)
-        tickers = data.get("tickers", [])  # ✅ 안전하게 리스트 꺼내기
+
+    # 🔥 JSON 구조 자동 감지
+    if isinstance(data, dict):
+        tickers = list(data.keys())
+    elif isinstance(data, list):
+        tickers = data
+    else:
+        tickers = []
 
     if not tickers:
         print(f"{jf}: 티커 리스트 비어 있음, 건너뜀")

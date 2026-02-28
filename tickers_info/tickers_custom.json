@@ -1,5 +1,5 @@
 {
-  "tickers": [
-    "D", "AEP"
-  ]
+  "NVDA": { "Name": "NVIDIA", "Sector": "Technology" },
+  "AAPL": { "Name": "Apple", "Sector": "Technology" },
+  "MSFT": { "Name": "Microsoft", "Sector": "Technology" }
 }

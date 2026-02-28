@@ -23,7 +23,7 @@ async function loadTab(name, btn) {
     const data = await res.json();
 
     if (data.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="11">📭 데이터 없음</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="13">📭 데이터 없음</td></tr>`;
       return;
     }
 
@@ -31,20 +31,30 @@ async function loadTab(name, btn) {
       const row = document.createElement("tr");
 
       const cols = [
-        "Ticker","RSI","RSI_30이하","RSI_30초과_35이하","최근7일내_RSI30이하",
-        "PER","PER(예상)","PBR","ROE","EPS","EPS(예상)"
+        "Ticker",
+        "Name",       // 추가
+        "Sector",     // 추가
+        "RSI",
+        "RSI_30이하",
+        "RSI_30초과_35이하",
+        "최근7일내_RSI30이하",
+        "PER",
+        "PER(예상)",
+        "PBR",
+        "ROE",
+        "EPS",
+        "EPS(예상)"
       ];
 
       cols.forEach(col => {
         const cell = document.createElement("td");
-
-        if (col === "Ticker") {
+        if (col === "Ticker" || col === "Name") {
           const link = document.createElement("a");
           link.href = `./stocks/${item.Ticker}.html`;
-          link.textContent = item.Ticker;
+          link.textContent = item[col];
           link.classList.add("ticker-link");
           link.style.textDecoration = "none";
-          link.style.color = "inherit"; // 기존 색상 유지
+          link.style.color = "inherit";
           cell.appendChild(link);
         } else {
           cell.textContent = fmt(item[col]);
@@ -58,7 +68,7 @@ async function loadTab(name, btn) {
 
   } catch (err) {
     console.warn(`${name}.json 없음`);
-    tbody.innerHTML = `<tr><td colspan="11">⚠️ 데이터 파일이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="13">⚠️ 데이터 파일이 없습니다</td></tr>`;
   }
 }
 
@@ -155,33 +165,30 @@ loadTab("rsi_data", document.querySelector(".tabs button.active"));
 
 // 🔹 테이블 정렬 함수
 function sortTable(n) {
-  const table = document.querySelector("table");
-  const tbody = table.querySelector("tbody");
+  const tbody = document.querySelector("table tbody");
   const rows = Array.from(tbody.querySelectorAll("tr"));
 
-  let dir = "asc";
-  let switching = true;
+  const getValue = (row) => {
+    const text = row.children[n].textContent.trim();
+    const num = parseFloat(text);
+    return isNaN(num) ? text : num;
+  };
 
-  while (switching) {
-    switching = false;
-    for (let i = 0; i < rows.length - 1; i++) {
-      const x = rows[i].getElementsByTagName("td")[n].textContent;
-      const y = rows[i + 1].getElementsByTagName("td")[n].textContent;
+  const asc = !tbody.classList.contains("asc");
+  tbody.classList.toggle("asc", asc);
 
-      const xVal = isNaN(parseFloat(x)) ? x : parseFloat(x);
-      const yVal = isNaN(parseFloat(y)) ? y : parseFloat(y);
+  rows.sort((a, b) => {
+    const x = getValue(a);
+    const y = getValue(b);
 
-      const shouldSwitch = (dir === "asc") ? xVal > yVal : xVal < yVal;
-      if (shouldSwitch) {
-        tbody.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-        break;
-      }
+    if (typeof x === "number" && typeof y === "number") {
+      return asc ? x - y : y - x;
     }
+    return asc
+      ? String(x).localeCompare(String(y))
+      : String(y).localeCompare(String(x));
+  });
 
-    if (!switching && dir === "asc") {
-      dir = "desc";
-      switching = true;
-    }
-  }
+  tbody.innerHTML = "";
+  rows.forEach(row => tbody.appendChild(row));
 }
