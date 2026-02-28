@@ -20,7 +20,7 @@ def compute_rsi_ema(close, period=14):
 # =====================
 # 티커 리스트 → JSON 저장 함수
 # =====================
-def process_tickers(ticker_list, output_path):
+def process_tickers(ticker_list, output_path, ticker_info_map=None):
     rsi_list = []
 
     for ticker in ticker_list:
@@ -52,8 +52,14 @@ def process_tickers(ticker_list, output_path):
             eps = info.get("trailingEps")
             fwd_eps = info.get("forwardEps")
 
+            info_extra = {}
+            if ticker_info_map:
+                info_extra = ticker_info_map.get(ticker, {})
+
             rsi_list.append({
                 'Ticker': ticker,
+                'Name': info_extra.get('Name', '-'),
+                'Sector': info_extra.get('Sector', '-'),
                 'RSI': round(last_rsi, 2),
                 'RSI_30이하': '✅' if last_rsi <= 30 else '',
                 'RSI_30초과_35이하': '⚠️' if 30 < last_rsi <= 35 else '',
@@ -88,7 +94,14 @@ json_files = list(TICKERS_DIR.glob("*.json"))
 for jf in json_files:
     with open(jf, "r", encoding="utf-8") as f:
         data = json.load(f)
-        tickers = data.get("tickers", [])
+
+    # JSON이 딕셔너리 구조면 → key가 티커
+    if isinstance(data, dict):
+        tickers = list(data.keys())
+        ticker_info_map = data
+    else:
+        tickers = []
+        ticker_info_map = {}
 
     if not tickers:
         print(f"{jf}: 티커 리스트 비어 있음, 건너뜀")
@@ -97,4 +110,4 @@ for jf in json_files:
     # 출력 파일 이름: tickers_ 제거 후 data 폴더에 저장
     output_file = OUT_DIR / (jf.stem.replace("tickers_", "") + ".json")
 
-    process_tickers(tickers, output_file)
+    process_tickers(tickers, output_file, ticker_info_map)
