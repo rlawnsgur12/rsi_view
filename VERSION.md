@@ -26,6 +26,8 @@ Git Ignore 추가, 차트 화면 고정, 차트 표시 수정, 표 정렬 수정
 
 ### v6
 name, sector 추가, 정렬 기능 수정
+#### v6.1
+rsi 비교 컬럼 길이 강제 할당
 
 # 추가 필요 요구사항
 python 64bit -> pandas 설치
