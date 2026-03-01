@@ -45,7 +45,10 @@ td {
   cursor: default;
 }
 
-
+.rsi-col {
+  width: 60px;
+  min-width: 60px;
+}
 
 /* ===== TAB UI ===== */
 .tabs {
