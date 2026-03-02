@@ -62,7 +62,8 @@ async function loadTab(name, btn) {
           const tvLink = document.createElement("a");
           const symbol = item.Ticker;
         
-          tvLink.href = `https://www.tradingview.com/chart/?symbol=${symbol}`;
+          //tvLink.href = `https://www.tradingview.com/chart/?symbol=${symbol}`;
+          tvLink.href = `https://www.tradingview.com/symbols/${symbol}/`;
           tvLink.target = "_blank";
           tvLink.textContent = "📈";
           tvLink.style.textDecoration = "none";
