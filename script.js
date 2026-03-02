@@ -60,16 +60,9 @@ async function loadTab(name, btn) {
         } else if (col === "Chart") {
 
           const tvLink = document.createElement("a");
-          let symbol = item.Ticker;
+          const symbol = item.Ticker;
         
-          // 한국주식(.KS) 처리
-          if (symbol.endsWith(".KS")) {
-            symbol = symbol.replace(".KS", "");
-            tvLink.href = `https://www.tradingview.com/chart/?symbol=KRX:${symbol}`;
-          } else {
-            tvLink.href = `https://www.tradingview.com/chart/?symbol=NASDAQ:${symbol}`;
-          }
-        
+          tvLink.href = `https://www.tradingview.com/chart/?symbol=${symbol}`;
           tvLink.target = "_blank";
           tvLink.textContent = "📈";
           tvLink.style.textDecoration = "none";
