@@ -30,7 +30,7 @@ name, sector 추가, 정렬 기능 수정
 rsi 비교 컬럼 길이 강제 할당
 
 ### v6
-tradingview 차트 링크 추가
+tradingview 차트 링크 추가, 앱으로 이동 변경
 
 # 추가 필요 요구사항
 python 64bit -> pandas 설치
