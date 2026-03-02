@@ -23,7 +23,7 @@ async function loadTab(name, btn) {
     const data = await res.json();
 
     if (data.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="13">📭 데이터 없음</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="14">📭 데이터 없음</td></tr>`;
       return;
     }
 
@@ -34,6 +34,7 @@ async function loadTab(name, btn) {
         "Ticker",
         "Name",       // 추가
         "Sector",     // 추가
+        "Chart",
         "RSI",
         "RSI_30이하",
         "RSI_30초과_35이하",
@@ -56,6 +57,24 @@ async function loadTab(name, btn) {
           link.style.textDecoration = "none";
           link.style.color = "inherit";
           cell.appendChild(link);
+        } else if (col === "Chart") {
+
+          const tvLink = document.createElement("a");
+          let symbol = item.Ticker;
+        
+          // 한국주식(.KS) 처리
+          if (symbol.endsWith(".KS")) {
+            symbol = symbol.replace(".KS", "");
+            tvLink.href = `https://www.tradingview.com/chart/?symbol=KRX:${symbol}`;
+          } else {
+            tvLink.href = `https://www.tradingview.com/chart/?symbol=NASDAQ:${symbol}`;
+          }
+        
+          tvLink.target = "_blank";
+          tvLink.textContent = "📈";
+          tvLink.style.textDecoration = "none";
+        
+          cell.appendChild(tvLink);
         } else {
           cell.textContent = fmt(item[col]);
         }
@@ -68,7 +87,7 @@ async function loadTab(name, btn) {
 
   } catch (err) {
     console.warn(`${name}.json 없음`);
-    tbody.innerHTML = `<tr><td colspan="13">⚠️ 데이터 파일이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="14">⚠️ 데이터 파일이 없습니다</td></tr>`;
   }
 }
 
