@@ -5,14 +5,12 @@ body {
   color: #333;
 }
 
-h1 {
+h1, h2 {
   color: #2c3e50;
 }
 
-
 .ticker-link {
   color: #1f6feb;
-  /* 링크 블루 */
   text-decoration: underline;
   font-weight: 600;
   cursor: pointer;
@@ -26,21 +24,25 @@ h1 {
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 13px;
+  background: #fff;
 }
 
-th,
-td {
+th, td {
   border: 1px solid #ccc;
-  padding: 8px;
+  padding: 6px 8px;
   text-align: center;
+  white-space: nowrap;
 }
 
 th {
   background-color: #f0f0f0;
   cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-/* 헤더만 클릭 커서 */
 td {
   cursor: default;
 }
@@ -55,6 +57,7 @@ td {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 .tabs button {
@@ -77,4 +80,140 @@ td {
   background: #222;
   color: white;
   border-color: #222;
+}
+
+/* ===== Market Widget ===== */
+.market-widget {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.market-widget-loading {
+  color: #888;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.market-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-width: 150px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.market-card .market-label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.market-card .market-ticker {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+
+.market-card .market-price {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.market-card .market-change {
+  font-size: 13px;
+}
+
+.market-card .market-rsi {
+  font-size: 12px;
+  margin-top: 4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+/* ===== 검색/필터 컨트롤 ===== */
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+#search-box {
+  padding: 7px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 240px;
+  outline: none;
+}
+
+#search-box:focus {
+  border-color: #1f6feb;
+  box-shadow: 0 0 0 2px rgba(31,111,235,0.15);
+}
+
+.filter-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chip:hover {
+  background: #eee;
+}
+
+.chip.active {
+  background: #1f6feb;
+  color: #fff;
+  border-color: #1f6feb;
+}
+
+#sector-filter {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.result-count {
+  margin-left: auto;
+  font-size: 13px;
+  color: #666;
+  font-weight: 600;
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 768px) {
+  body { padding: 10px; }
+  table { font-size: 11px; }
+  th, td { padding: 4px 6px; }
+  .market-card { min-width: 120px; padding: 8px 10px; }
+  #search-box { width: 100%; }
+  .controls { flex-direction: column; align-items: stretch; }
+  .result-count { margin-left: 0; }
 }

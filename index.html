@@ -2,16 +2,39 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RSI Viewer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h2>미국 주식 리포트</h2>
+
+  <!-- 시장 벤치마크 위젯 -->
+  <div id="market-widget" class="market-widget">
+    <span class="market-widget-loading">시장 지표 로딩 중...</span>
+  </div>
+
   <div class="tabs">
     <button class="active" onclick="loadTab('rsi_data', this)">Top 1~100</button>
     <button onclick="loadTab('top_101_200', this)">Top 101~200</button>
     <button onclick="loadTab('custom', this)">Custom</button>
   </div>
+
+  <!-- 검색 + 필터 컨트롤 -->
+  <div class="controls">
+    <input id="search-box" type="text" placeholder="🔍 티커 또는 종목명 검색" oninput="applyFilters()">
+    <div class="filter-chips">
+      <button class="chip" data-filter="all" onclick="setFilter('all', this)">전체</button>
+      <button class="chip" data-filter="oversold" onclick="setFilter('oversold', this)">RSI ≤ 30</button>
+      <button class="chip" data-filter="warning" onclick="setFilter('warning', this)">RSI ≤ 35</button>
+      <button class="chip" data-filter="recent7" onclick="setFilter('recent7', this)">최근 7일 과매도</button>
+    </div>
+    <select id="sector-filter" onchange="applyFilters()">
+      <option value="">모든 섹터</option>
+    </select>
+    <span id="result-count" class="result-count"></span>
+  </div>
+
   <table>
     <thead>
       <tr>
@@ -23,12 +46,16 @@
         <th class="rsi-col" onclick="sortTable(5)">RSI ≤ 30</th>
         <th class="rsi-col" onclick="sortTable(6)">30 < RSI ≤ 35</th>
         <th class="rsi-col" onclick="sortTable(7)">최근 7일 내 RSI ≤ 30</th>
-        <th onclick="sortTable(8)">PER</th>
-        <th onclick="sortTable(9)">PER(예상)</th>
-        <th onclick="sortTable(10)">PBR</th>
-        <th onclick="sortTable(11)">ROE</th>
-        <th onclick="sortTable(12)">EPS</th>
-        <th onclick="sortTable(13)">EPS(예상)</th>
+        <th onclick="sortTable(8)">현재가</th>
+        <th onclick="sortTable(9)">일변동(%)</th>
+        <th onclick="sortTable(10)">52주 위치(%)</th>
+        <th onclick="sortTable(11)">거래량 비율</th>
+        <th onclick="sortTable(12)">PER</th>
+        <th onclick="sortTable(13)">PER(예상)</th>
+        <th onclick="sortTable(14)">PBR</th>
+        <th onclick="sortTable(15)">ROE</th>
+        <th onclick="sortTable(16)">EPS</th>
+        <th onclick="sortTable(17)">EPS(예상)</th>
       </tr>
     </thead>
     <tbody id="rsi-table-body">
