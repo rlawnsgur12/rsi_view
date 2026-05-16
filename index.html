@@ -25,8 +25,10 @@
     <input id="search-box" type="text" placeholder="🔍 티커 또는 종목명 검색" oninput="applyFilters()">
     <div class="filter-chips">
       <button class="chip" data-filter="all" onclick="setFilter('all', this)">전체</button>
-      <button class="chip" data-filter="oversold" onclick="setFilter('oversold', this)">RSI ≤ 30</button>
-      <button class="chip" data-filter="warning" onclick="setFilter('warning', this)">RSI ≤ 35</button>
+      <button class="chip" data-filter="oversold" onclick="setFilter('oversold', this)">일 RSI ≤ 30</button>
+      <button class="chip" data-filter="warning" onclick="setFilter('warning', this)">일 RSI ≤ 35</button>
+      <button class="chip" data-filter="weekly_oversold" onclick="setFilter('weekly_oversold', this)">주 RSI ≤ 35</button>
+      <button class="chip chip-highlight" data-filter="dual" onclick="setFilter('dual', this)">🎯 일·주 동시 ≤ 35</button>
       <button class="chip" data-filter="recent7" onclick="setFilter('recent7', this)">최근 7일 과매도</button>
     </div>
     <select id="sector-filter" onchange="applyFilters()">
@@ -42,20 +44,26 @@
         <th onclick="sortTable(1)">Name</th>
         <th onclick="sortTable(2)">Sector</th>
         <th onclick="sortTable(3)">Chart</th>
-        <th onclick="sortTable(4)">RSI</th>
-        <th class="rsi-col" onclick="sortTable(5)">RSI ≤ 30</th>
-        <th class="rsi-col" onclick="sortTable(6)">30 < RSI ≤ 35</th>
-        <th class="rsi-col" onclick="sortTable(7)">최근 7일 내 RSI ≤ 30</th>
-        <th onclick="sortTable(8)">현재가</th>
-        <th onclick="sortTable(9)">일변동(%)</th>
-        <th onclick="sortTable(10)">52주 위치(%)</th>
-        <th onclick="sortTable(11)">거래량 비율</th>
-        <th onclick="sortTable(12)">PER</th>
-        <th onclick="sortTable(13)">PER(예상)</th>
-        <th onclick="sortTable(14)">PBR</th>
-        <th onclick="sortTable(15)">ROE</th>
-        <th onclick="sortTable(16)">EPS</th>
-        <th onclick="sortTable(17)">EPS(예상)</th>
+        <th onclick="sortTable(4)">일 RSI</th>
+        <th onclick="sortTable(5)">일 RSI 30일 추세</th>
+        <th onclick="sortTable(6)">주 RSI</th>
+        <th onclick="sortTable(7)">주 RSI 30주 추세</th>
+        <th class="rsi-col" onclick="sortTable(8)">🎯 쌍과매도</th>
+        <th class="rsi-col" onclick="sortTable(9)">일 RSI ≤ 30</th>
+        <th class="rsi-col" onclick="sortTable(10)">30 < 일 RSI ≤ 35</th>
+        <th class="rsi-col" onclick="sortTable(11)">최근 7일 내 일 RSI ≤ 30</th>
+        <th onclick="sortTable(12)">현재가</th>
+        <th onclick="sortTable(13)">일변동(%)</th>
+        <th onclick="sortTable(14)">52주 위치(%)</th>
+        <th onclick="sortTable(15)">거래량 비율</th>
+        <th onclick="sortTable(16)">📈 EPS 성장(%)</th>
+        <th onclick="sortTable(17)">📈 매출 YoY(%)</th>
+        <th onclick="sortTable(18)">PER</th>
+        <th onclick="sortTable(19)">PER(예상)</th>
+        <th onclick="sortTable(20)">PBR</th>
+        <th onclick="sortTable(21)">ROE</th>
+        <th onclick="sortTable(22)">EPS</th>
+        <th onclick="sortTable(23)">EPS(예상)</th>
       </tr>
     </thead>
     <tbody id="rsi-table-body">

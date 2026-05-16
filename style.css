@@ -130,13 +130,44 @@ td {
   font-size: 13px;
 }
 
-.market-card .market-rsi {
-  font-size: 12px;
+.market-card .market-rsi-row {
+  display: flex;
+  gap: 4px;
   margin-top: 4px;
+}
+
+.market-card .market-rsi {
+  font-size: 11px;
   padding: 2px 6px;
   border-radius: 4px;
   display: inline-block;
-  align-self: flex-start;
+}
+
+/* ===== RSI 스파크라인 ===== */
+svg.spark {
+  display: block;
+  margin: 0 auto;
+}
+
+/* 쌍과매도 강조 행 */
+.row-dual {
+  background: rgba(30, 100, 220, 0.06);
+}
+
+.row-dual td {
+  border-top: 1px solid rgba(30, 100, 220, 0.3);
+  border-bottom: 1px solid rgba(30, 100, 220, 0.3);
+}
+
+/* 강조 필터칩 (쌍과매도) */
+.chip-highlight {
+  border-color: #1f6feb;
+  color: #1f6feb;
+}
+
+.chip-highlight.active {
+  background: #1f6feb;
+  color: #fff;
 }
 
 /* ===== 검색/필터 컨트롤 ===== */

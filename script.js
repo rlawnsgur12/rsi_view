@@ -27,16 +27,13 @@ function fmtPos(val) {
 }
 
 // ===== RSI 색상 그라데이션 =====
-// 0~30: 진한 파랑(과매도 매수신호) → 50: 회색 → 70~100: 진한 빨강(과매수)
 function rsiColor(rsi) {
   if (rsi === null || rsi === undefined || isNaN(rsi)) return "";
   const v = Math.max(0, Math.min(100, Number(rsi)));
   let bg, fg = "#fff";
   if (v <= 30) {
-    // 짙은 파랑
     bg = `rgba(30, 100, 220, ${0.7 + (30 - v) / 100})`;
   } else if (v <= 45) {
-    // 옅은 파랑
     bg = `rgba(100, 150, 230, ${0.4})`;
     fg = "#1a1a1a";
   } else if (v < 55) {
@@ -46,13 +43,11 @@ function rsiColor(rsi) {
     bg = `rgba(240, 150, 100, ${0.4})`;
     fg = "#1a1a1a";
   } else {
-    // 짙은 빨강
     bg = `rgba(220, 60, 60, ${0.6 + (v - 70) / 100})`;
   }
   return `background:${bg};color:${fg};font-weight:600;`;
 }
 
-// 일변동률 색상
 function changeColor(pct) {
   if (pct === null || pct === undefined || isNaN(pct)) return "";
   const n = Number(pct);
@@ -61,7 +56,6 @@ function changeColor(pct) {
   return "";
 }
 
-// 52주 위치 색상 (낮을수록 파랑)
 function posColor(pos) {
   if (pos === null || pos === undefined || isNaN(pos)) return "";
   const n = Number(pos);
@@ -71,13 +65,73 @@ function posColor(pos) {
   return "";
 }
 
-// 거래량 비율 색상 (1.5 이상 강조)
 function volColor(ratio) {
   if (ratio === null || ratio === undefined || isNaN(ratio)) return "";
   const n = Number(ratio);
   if (n >= 2.0) return "background:rgba(220,140,40,0.5);color:#fff;font-weight:700;";
   if (n >= 1.5) return "background:rgba(240,180,80,0.4);font-weight:600;";
   return "";
+}
+
+// 우상향(성장률) 색상 — 강한 양수 진한 초록, 음수 빨강
+function growthColor(pct) {
+  if (pct === null || pct === undefined || isNaN(pct)) return "";
+  const n = Number(pct);
+  if (n >= 20) return "background:rgba(46,160,67,0.5);color:#fff;font-weight:700;";
+  if (n >= 10) return "background:rgba(46,160,67,0.3);font-weight:600;";
+  if (n > 0) return "color:#2ea043;font-weight:600;";
+  if (n < 0) return "background:rgba(220,60,60,0.25);color:#a8071a;font-weight:600;";
+  return "";
+}
+
+function fmtGrowth(val) {
+  if (val === null || val === undefined || val === "") return "";
+  const n = Number(val);
+  if (isNaN(n)) return "";
+  const sign = n > 0 ? "+" : "";
+  return `${sign}${n.toFixed(1)}%`;
+}
+
+// ===== RSI 스파크라인 SVG =====
+// 30/70 가이드 라인 포함, 30 이하 진입 구간은 파랑 점으로 표시
+function renderSparkline(series, opts = {}) {
+  if (!Array.isArray(series) || series.length < 2) return "";
+  const width = opts.width || 110;
+  const height = opts.height || 32;
+  const padX = 2, padY = 3;
+  const innerW = width - padX * 2;
+  const innerH = height - padY * 2;
+
+  // Y축은 0~100 고정 (RSI 범위)
+  const yMin = 0, yMax = 100;
+  const n = series.length;
+
+  const xAt = (i) => padX + (i / (n - 1)) * innerW;
+  const yAt = (v) => padY + (1 - (v - yMin) / (yMax - yMin)) * innerH;
+
+  // 30/70 가이드라인 y 좌표
+  const y30 = yAt(30);
+  const y70 = yAt(70);
+
+  const path = series.map((v, i) => `${i === 0 ? "M" : "L"}${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(" ");
+
+  // 30 이하 구간 강조 점
+  const dots = series.map((v, i) => {
+    if (v <= 30) return `<circle cx="${xAt(i).toFixed(1)}" cy="${yAt(v).toFixed(1)}" r="1.8" fill="#1e64dc"/>`;
+    if (v >= 70) return `<circle cx="${xAt(i).toFixed(1)}" cy="${yAt(v).toFixed(1)}" r="1.8" fill="#dc3c3c"/>`;
+    return "";
+  }).join("");
+
+  const lastV = series[series.length - 1];
+  const lastColor = lastV <= 30 ? "#1e64dc" : (lastV >= 70 ? "#dc3c3c" : "#666");
+
+  return `<svg class="spark" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+    <line x1="${padX}" y1="${y30.toFixed(1)}" x2="${width - padX}" y2="${y30.toFixed(1)}" stroke="#bcd2f0" stroke-dasharray="2,2" stroke-width="0.8"/>
+    <line x1="${padX}" y1="${y70.toFixed(1)}" x2="${width - padX}" y2="${y70.toFixed(1)}" stroke="#f0bcbc" stroke-dasharray="2,2" stroke-width="0.8"/>
+    <path d="${path}" fill="none" stroke="${lastColor}" stroke-width="1.4"/>
+    ${dots}
+    <circle cx="${xAt(n-1).toFixed(1)}" cy="${yAt(lastV).toFixed(1)}" r="2.4" fill="${lastColor}"/>
+  </svg>`;
 }
 
 // ===== 시장 위젯 로드 =====
@@ -91,12 +145,16 @@ async function loadMarket() {
     widget.innerHTML = items.map(it => {
       const chgStyle = changeColor(it.DayChangePct);
       const rsiStyle = rsiColor(it.RSI);
+      const wRsiStyle = rsiColor(it.WeeklyRSI);
       return `<div class="market-card">
         <div class="market-label">${it.Label}</div>
         <div class="market-ticker">${it.Ticker}</div>
         <div class="market-price">$${fmt(it.Price)}</div>
         <div class="market-change" style="${chgStyle}">${fmtPct(it.DayChangePct)}</div>
-        <div class="market-rsi" style="${rsiStyle}">RSI ${fmt(it.RSI)}</div>
+        <div class="market-rsi-row">
+          <span class="market-rsi" style="${rsiStyle}">일 ${fmt(it.RSI)}</span>
+          <span class="market-rsi" style="${wRsiStyle}">주 ${fmt(it.WeeklyRSI)}</span>
+        </div>
       </div>`;
     }).join("");
   } catch (err) {
@@ -109,12 +167,11 @@ async function loadTab(name, btn) {
   document.querySelectorAll(".tabs button").forEach(b => b.classList.remove("active"));
   btn.classList.add("active");
 
-  // 탭 변경 시 필터 초기화
   document.getElementById("search-box").value = "";
   setFilter("all", document.querySelector(`.chip[data-filter="all"]`));
 
   const tbody = document.getElementById("rsi-table-body");
-  tbody.innerHTML = `<tr><td colspan="18">⏳ 로딩 중...</td></tr>`;
+  tbody.innerHTML = `<tr><td colspan="24">⏳ 로딩 중...</td></tr>`;
 
   try {
     const res = await fetch(`data/${name}.json`);
@@ -122,7 +179,7 @@ async function loadTab(name, btn) {
     const data = await res.json();
 
     if (!data.length) {
-      tbody.innerHTML = `<tr><td colspan="18">📭 데이터 없음</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="24">📭 데이터 없음</td></tr>`;
       currentData = [];
       return;
     }
@@ -133,12 +190,11 @@ async function loadTab(name, btn) {
 
   } catch (err) {
     console.warn(`${name}.json 없음`);
-    tbody.innerHTML = `<tr><td colspan="18">⚠️ 데이터 파일이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="24">⚠️ 데이터 파일이 없습니다</td></tr>`;
     currentData = [];
   }
 }
 
-// ===== 섹터 옵션 채우기 =====
 function populateSectorFilter(data) {
   const sel = document.getElementById("sector-filter");
   const sectors = [...new Set(data.map(d => d.Sector).filter(s => s && s !== "-"))].sort();
@@ -152,64 +208,66 @@ function renderTable(data) {
   tbody.innerHTML = "";
 
   if (!data.length) {
-    tbody.innerHTML = `<tr><td colspan="18">🔎 조건에 맞는 종목이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="24">🔎 조건에 맞는 종목이 없습니다</td></tr>`;
     updateResultCount(0);
     return;
   }
 
-  const cols = [
-    "Ticker", "Name", "Sector", "Chart",
-    "RSI", "RSI_30이하", "RSI_30초과_35이하", "최근7일내_RSI30이하",
-    "Price", "DayChangePct", "Pos52w", "VolRatio",
-    "PER", "PER(예상)", "PBR", "ROE", "EPS", "EPS(예상)"
-  ];
-
   data.forEach(item => {
     const row = document.createElement("tr");
-    cols.forEach(col => {
+    if (item.DualOversold) row.classList.add("row-dual");
+
+    const append = (html, style = "") => {
       const cell = document.createElement("td");
-
-      if (col === "Ticker" || col === "Name") {
-        const link = document.createElement("a");
-        link.href = `./stocks/${item.Ticker}.html`;
-        link.textContent = item[col] ?? "";
-        link.classList.add("ticker-link");
-        link.style.textDecoration = "none";
-        link.style.color = "inherit";
-        cell.appendChild(link);
-
-      } else if (col === "Chart") {
-        const tvLink = document.createElement("a");
-        tvLink.href = `https://www.tradingview.com/symbols/${item.Ticker}/`;
-        tvLink.target = "_blank";
-        tvLink.textContent = "📈";
-        tvLink.style.textDecoration = "none";
-        cell.appendChild(tvLink);
-
-      } else if (col === "RSI") {
-        cell.textContent = fmt(item[col]);
-        cell.style.cssText = rsiColor(item[col]);
-
-      } else if (col === "Price") {
-        cell.textContent = item[col] != null ? `$${fmt(item[col])}` : "";
-
-      } else if (col === "DayChangePct") {
-        cell.textContent = fmtPct(item[col]);
-        cell.style.cssText = changeColor(item[col]);
-
-      } else if (col === "Pos52w") {
-        cell.textContent = fmtPos(item[col]);
-        cell.style.cssText = posColor(item[col]);
-
-      } else if (col === "VolRatio") {
-        cell.textContent = item[col] != null ? `${fmt(item[col])}x` : "";
-        cell.style.cssText = volColor(item[col]);
-
-      } else {
-        cell.textContent = fmt(item[col]);
-      }
+      cell.innerHTML = html;
+      if (style) cell.style.cssText = style;
       row.appendChild(cell);
-    });
+    };
+
+    // Ticker
+    append(`<a href="./stocks/${item.Ticker}.html" class="ticker-link" style="text-decoration:none;color:inherit;">${item.Ticker ?? ""}</a>`);
+    // Name
+    append(`<a href="./stocks/${item.Ticker}.html" class="ticker-link" style="text-decoration:none;color:inherit;">${item.Name ?? ""}</a>`);
+    // Sector
+    append(item.Sector ?? "");
+    // Chart link
+    append(`<a href="https://www.tradingview.com/symbols/${item.Ticker}/" target="_blank" style="text-decoration:none;">📈</a>`);
+    // 일 RSI
+    append(fmt(item.RSI), rsiColor(item.RSI));
+    // 일 RSI 스파크라인
+    append(renderSparkline(item.RSI_Series));
+    // 주 RSI
+    append(fmt(item.WeeklyRSI), rsiColor(item.WeeklyRSI));
+    // 주 RSI 스파크라인
+    append(renderSparkline(item.WeeklyRSI_Series));
+    // 쌍과매도
+    append(item.DualOversold || "", item.DualOversold ? "background:rgba(30,100,220,0.25);font-weight:700;" : "");
+    // 일 RSI ≤ 30
+    append(item["RSI_30이하"] || "");
+    // 30 < 일 RSI ≤ 35
+    append(item["RSI_30초과_35이하"] || "");
+    // 최근 7일 일 RSI ≤ 30
+    append(item["최근7일내_RSI30이하"] || "");
+    // 현재가
+    append(item.Price != null ? `$${fmt(item.Price)}` : "");
+    // 일변동
+    append(fmtPct(item.DayChangePct), changeColor(item.DayChangePct));
+    // 52주 위치
+    append(fmtPos(item.Pos52w), posColor(item.Pos52w));
+    // 거래량 비율
+    append(item.VolRatio != null ? `${fmt(item.VolRatio)}x` : "", volColor(item.VolRatio));
+    // 📈 EPS 성장
+    append(fmtGrowth(item.EPS_Growth), growthColor(item.EPS_Growth));
+    // 📈 매출 YoY
+    append(fmtGrowth(item.Revenue_YoY), growthColor(item.Revenue_YoY));
+    // PER ~ EPS(예상)
+    append(fmt(item.PER));
+    append(fmt(item["PER(예상)"]));
+    append(fmt(item.PBR));
+    append(fmt(item.ROE));
+    append(fmt(item.EPS));
+    append(fmt(item["EPS(예상)"]));
+
     tbody.appendChild(row);
   });
 
@@ -252,6 +310,10 @@ function applyFilters() {
     filtered = filtered.filter(d => Number(d.RSI) <= 30);
   } else if (activeFilter === "warning") {
     filtered = filtered.filter(d => Number(d.RSI) <= 35);
+  } else if (activeFilter === "weekly_oversold") {
+    filtered = filtered.filter(d => d.WeeklyRSI != null && Number(d.WeeklyRSI) <= 35);
+  } else if (activeFilter === "dual") {
+    filtered = filtered.filter(d => d.DualOversold);
   } else if (activeFilter === "recent7") {
     filtered = filtered.filter(d => d["최근7일내_RSI30이하"]);
   }
@@ -260,13 +322,21 @@ function applyFilters() {
 }
 
 // ===== 정렬 =====
+// 스파크라인 컬럼(5, 7)은 마지막 값 기준
 function sortTable(n) {
   const tbody = document.querySelector("table tbody");
   const rows = Array.from(tbody.querySelectorAll("tr"));
 
   const getValue = (row) => {
-    const text = row.children[n].textContent.trim()
-      .replace(/[$x%+,]/g, "");
+    const cell = row.children[n];
+    // 스파크라인 셀: data-last 속성 없으면 그냥 텍스트로
+    const svg = cell.querySelector("svg.spark");
+    if (svg) {
+      // 마지막 점 cy로 값 추정은 비효율적 → 인접 컬럼(일 RSI=4, 주 RSI=6) 값으로 정렬
+      if (n === 5) return parseFloat(row.children[4].textContent.trim()) || 0;
+      if (n === 7) return parseFloat(row.children[6].textContent.trim()) || 0;
+    }
+    const text = cell.textContent.trim().replace(/[$x%+,]/g, "");
     const num = parseFloat(text);
     return isNaN(num) ? text : num;
   };
@@ -292,5 +362,4 @@ function sortTable(n) {
 // ===== 초기 로드 =====
 loadMarket();
 loadTab("rsi_data", document.querySelector(".tabs button.active"));
-// 기본 필터칩 active
 document.querySelector(`.chip[data-filter="all"]`)?.classList.add("active");
