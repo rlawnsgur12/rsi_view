@@ -170,6 +170,26 @@ svg.spark {
   color: #fff;
 }
 
+/* ===== 백테스트 셀 ===== */
+.bt-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.bt-cell .bt-sep {
+  opacity: 0.5;
+}
+
+.bt-cell .bt-n {
+  font-size: 10px;
+  opacity: 0.6;
+  margin-left: 4px;
+}
+
 /* ===== 검색/필터 컨트롤 ===== */
 .controls {
   display: flex;

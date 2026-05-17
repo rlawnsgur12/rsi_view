@@ -158,6 +158,9 @@ def process_tickers(ticker_list, output_path, ticker_info_map=None):
             if ticker_info_map:
                 info_extra = ticker_info_map.get(ticker, {})
 
+            # 백테스트 캐시에서 통계 조회 (없으면 None으로 채워짐)
+            bt = BACKTEST_CACHE.get(ticker, {})
+
             rsi_list.append({
                 'Ticker': ticker,
                 'Name': info_extra.get('Name', '-'),
@@ -183,7 +186,15 @@ def process_tickers(ticker_list, output_path, ticker_info_map=None):
                 'EPS': eps,
                 'EPS(예상)': fwd_eps,
                 'EPS_Growth': eps_growth,
-                'Revenue_YoY': revenue_yoy
+                'Revenue_YoY': revenue_yoy,
+                # 백테스트 통계 (5년치, RSI≤30 진입 후 N개월 평균 수익률/승률)
+                'BT_Events': bt.get('events'),
+                'BT_1M_Avg': bt.get('ret_1m_avg'),
+                'BT_1M_Win': bt.get('ret_1m_winrate'),
+                'BT_3M_Avg': bt.get('ret_3m_avg'),
+                'BT_3M_Win': bt.get('ret_3m_winrate'),
+                'BT_6M_Avg': bt.get('ret_6m_avg'),
+                'BT_6M_Win': bt.get('ret_6m_winrate'),
             })
 
         except Exception as e:
@@ -248,6 +259,17 @@ BASE_DIR = Path(__file__).resolve().parent
 TICKERS_DIR = BASE_DIR / "tickers_info"
 OUT_DIR = BASE_DIR / "data"
 OUT_DIR.mkdir(exist_ok=True)
+
+# 백테스트 캐시 로드 (scripts/backtest.py가 생성)
+BACKTEST_CACHE = {}
+backtest_path = OUT_DIR / "backtest.json"
+if backtest_path.exists():
+    try:
+        with open(backtest_path, "r", encoding="utf-8") as f:
+            BACKTEST_CACHE = json.load(f)
+        print(f"✅ 백테스트 캐시 로드: {len(BACKTEST_CACHE)}개 종목")
+    except Exception as e:
+        print(f"백테스트 캐시 로드 실패: {e}")
 
 build_market_snapshot(OUT_DIR / "market.json")
 
