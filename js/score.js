@@ -1,49 +1,55 @@
-// 배점: RSI신호(40) + 백테스트3M(25) + EPS성장(20) + Forward PER(10) + 매출성장(5)
+// 배점: 백테스트3M승률(40) + Forward PER저평가(25) + EPS성장(20) + 매출YoY(15)
+// RSI는 진입 조건이므로 점수에서 제외 — 저평가+우상향 가능성만 평가
 export function calcScore(item) {
-  let score = 0;
+  let score   = 0;
+  let maxScore = 0; // 데이터 있는 항목만 분모로
 
-  const rsi  = Number(item.RSI);
-  const wRsi = Number(item.WeeklyRSI);
-  if (item.DualOversold)                          score += 40;
-  else if (rsi <= 30)                             score += 32;
-  else if (!isNaN(wRsi) && wRsi <= 30)            score += 28;
-  else if (rsi <= 35 || item["최근7일내_RSI30이하"]) score += 22;
-  else if (!isNaN(wRsi) && wRsi <= 35)            score += 15;
-
+  // --- 백테스트 3M 승률 (40점) ---
   const bt3m    = Number(item.BT_3M_Avg);
   const bt3mWin = Number(item.BT_3M_Win);
-  if (!isNaN(bt3m)) {
-    if      (bt3m >= 10 && bt3mWin >= 70) score += 25;
-    else if (bt3m >= 5  && bt3mWin >= 60) score += 20;
-    else if (bt3m >= 3)                   score += 15;
-    else if (bt3m > 0)                    score += 10;
+  if (!isNaN(bt3m) && !isNaN(bt3mWin)) {
+    maxScore += 40;
+    if      (bt3m >= 10 && bt3mWin >= 70) score += 40;
+    else if (bt3m >= 7  && bt3mWin >= 60) score += 32;
+    else if (bt3m >= 4  && bt3mWin >= 55) score += 24;
+    else if (bt3m > 0   && bt3mWin >= 50) score += 16;
+    else if (bt3m > 0)                    score += 8;
   }
 
+  // --- Forward PER 저평가 (25점) ---
+  const fwdPer = Number(item["PER(예상)"]);
+  if (!isNaN(fwdPer) && fwdPer > 0) {
+    maxScore += 25;
+    if      (fwdPer < 12) score += 25;
+    else if (fwdPer < 17) score += 20;
+    else if (fwdPer < 22) score += 14;
+    else if (fwdPer < 28) score += 8;
+    else if (fwdPer < 40) score += 3;
+  }
+
+  // --- EPS 성장 (20점) ---
   const epsG = Number(item.EPS_Growth);
   if (!isNaN(epsG)) {
+    maxScore += 20;
     if      (epsG >= 30) score += 20;
     else if (epsG >= 15) score += 15;
     else if (epsG >= 5)  score += 10;
-    else if (epsG >= 0)  score += 5;
+    else if (epsG >= 0)  score += 4;
   }
 
-  const fwdPer = Number(item["PER(예상)"]);
-  if (!isNaN(fwdPer) && fwdPer > 0) {
-    if      (fwdPer < 15) score += 10;
-    else if (fwdPer < 20) score += 8;
-    else if (fwdPer < 25) score += 5;
-    else if (fwdPer < 35) score += 3;
-    else                  score += 1;
-  }
-
+  // --- 매출 YoY (15점) ---
   const revYoy = Number(item.Revenue_YoY);
   if (!isNaN(revYoy)) {
-    if      (revYoy >= 15) score += 5;
-    else if (revYoy >= 5)  score += 3;
-    else if (revYoy > 0)   score += 1;
+    maxScore += 15;
+    if      (revYoy >= 20) score += 15;
+    else if (revYoy >= 10) score += 11;
+    else if (revYoy >= 5)  score += 7;
+    else if (revYoy > 0)   score += 3;
   }
 
-  return Math.min(100, score);
+  // 데이터 없는 항목은 제외하고 100점 만점으로 환산
+  if (maxScore === 0) return 0;
+  return Math.round(Math.min(100, (score / maxScore) * 100));
 }
 
 export function scoreLabel(score) {
