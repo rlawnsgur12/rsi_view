@@ -4,6 +4,7 @@ import { calcScore, scoreLabel, calcScoreBreakdown } from "./score.js";
 import { renderSparkline } from "./sparkline.js";
 import { isWatched, toggleWatchlist } from "./watchlist.js";
 import { getNote, saveNote, hasNote } from "./ai_notes.js";
+import { buildPrompt, PROMPT_VERSIONS, getPromptVersion, setPromptVersion } from "./prompts.js";
 
 let _aiPrompt = "";
 
@@ -138,54 +139,6 @@ function showScoreModal(item, score, lbl, breakdown) {
     </div>`;
 }
 
-function buildPrompt(item) {
-  const n   = v => (v != null && !isNaN(v)) ? v : "데이터없음";
-  const pct = v => (v != null && !isNaN(v)) ? `${Number(v) >= 0 ? "+" : ""}${Number(v).toFixed(1)}%` : "데이터없음";
-  const dual = item.DualOversold ? " ⚠️ 일·주봉 쌍과매도" : "";
-  const earningsLine = item.EarningsDate
-    ? `★ 다음 실적 발표 예정일: ${item.EarningsDate}`
-    : "★ 다음 실적 발표 예정일: 데이터없음";
-
-  return `[종목명: ${item.Ticker} (${item.Name}) 매수 검토 요청]
-
-현재가: $${n(item.Price)} (일변동 ${pct(item.DayChangePct)})
-52주 위치: ${item.Pos52w != null ? item.Pos52w + "%" : "데이터없음"} | 거래량 비율: ${item.VolRatio != null ? item.VolRatio + "x" : "데이터없음"}
-섹터: ${item.Sector}
-${earningsLine}
-
-📊 RSI 현황
-- 일 RSI: ${n(item.RSI)}${item["RSI_30이하"] ? " (≤30 과매도)" : item["RSI_30초과_35이하"] ? " (≤35 경계)" : ""}
-- 주 RSI: ${n(item.WeeklyRSI)}${dual}
-
-📈 성장성
-- EPS 성장: ${pct(item.EPS_Growth)}
-- 매출 YoY: ${pct(item.Revenue_YoY)}
-
-💰 밸류에이션
-- Forward PER: ${n(item["PER(예상)"])} | PER: ${n(item.PER)}
-- PBR: ${n(item.PBR)} | ROE: ${item.ROE != null ? (item.ROE * 100).toFixed(1) + "%" : "데이터없음"}
-
-🧪 백테스트 (RSI≤30 진입 기준, 과거 5년)
-- 1M: 평균 ${n(item.BT_1M_Avg)}%, 승률 ${n(item.BT_1M_Win)}%
-- 3M: 평균 ${n(item.BT_3M_Avg)}%, 승률 ${n(item.BT_3M_Win)}% (진입 ${n(item.BT_Events)}건)
-
-위 데이터를 바탕으로 아래 가이드라인에 맞춰 투자 가치를 '심층 분석 리포트' 형식으로 작성해 주세요. 질문을 쪼개지 말고 한 번에 결론 위주로 상세히 분석해 주시기 바랍니다.
-
-1. 밸류에이션 및 저평가 여부 판단 (착시 지표 자동 필터링)
-- 제공된 지표 중 특이사항(예: 마이너스 PBR, 음수 EPS, 극단적인 PER 등)이 있다면, 이를 단순 부실 위험으로 보지 말고 '자사주 매입/소각'이나 '업종별 회계 특성' 등 실질적인 원인을 파악해 착시 현상인지 분석해 주세요.
-- 과거 평균 밸류에이션 밴드 및 이익 성장성 대비 현재 주가가 진성 저평가 구간인지 펀더멘탈 결론을 내려주세요.
-
-2. RSI 과매도 반등 전략의 유효성 타점 분석
-- 일봉/주봉 RSI 현황과 과거 5년 백테스트 데이터를 결합하여, 현재 진입 시 승률과 적절한 보유 기간(또는 분할 매수 전략)을 통계적으로 짚어주세요.
-
-3. 실적 발표일 연계 일정 매매 전략 ★
-- 다가오는 실적 발표일을 기준으로, 발표 전 '기대감 선반영 분할 진입'이 유리한지 아니면 '실적 확인 후 불확실성 해소 진입'이 유리한지 최근 가이던스 트렌드와 결합하여 행동 지침을 주세요. 실적 발표 전후 예상되는 단기 변동성 대응 방안도 포함해 주세요.
-
-4. 1년 뒤 주가 전망 및 매크로 결합 최종 의견
-- 향후 이익 전망(Forward 지표)과 최근 섹터 트렌드, 리스크 요인을 종합하여 1년 시계열에서의 상승 가능성을 확률적으로 예측해 주세요.
-- 최종 결론은 투자의견(강력매수/매수/보유/매도)과 타점, 실적 발표일 대응 팁을 요약한 '종합 의견' 블록으로 명확하게 마무리해 주세요.`;
-}
-
 function aiButtons(item) {
   const prompt = buildPrompt(item);
   _aiPrompt = prompt;
@@ -211,19 +164,27 @@ function showAiModal(item, onSave) {
   modal.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:9999;display:flex;align-items:center;justify-content:center;";
   modal.addEventListener("click", e => { if (e.target === modal) modal.remove(); });
 
-  const prompt = buildPrompt(item);
-  const saved  = getNote(item.Ticker);
+  const saved = getNote(item.Ticker);
+
+  const versionOptions = PROMPT_VERSIONS
+    .map(v => `<option value="${v.id}"${v.id === getPromptVersion() ? " selected" : ""}>${v.label}</option>`)
+    .join("");
 
   modal.innerHTML = `
-    <div style="background:#fff;border-radius:12px;padding:28px 32px;min-width:400px;max-width:580px;max-height:90vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,0.2);">
+    <div style="background:#fff;border-radius:12px;padding:28px 32px;min-width:400px;max-width:600px;max-height:90vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,0.2);">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
         <strong style="font-size:1.05em;">🤖 ${item.Ticker} AI 분석</strong>
         <span style="cursor:pointer;font-size:1.3em;" onclick="document.getElementById('ai-modal').remove()">✕</span>
       </div>
 
-      <textarea readonly style="width:100%;height:180px;font-size:0.8em;border:1px solid #ddd;border-radius:8px;padding:10px;resize:none;box-sizing:border-box;color:#444;">${prompt}</textarea>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+        <label style="font-size:0.82em;color:#666;white-space:nowrap;">프롬프트 버전:</label>
+        <select id="prompt-version" style="flex:1;padding:5px 8px;border:1px solid #ddd;border-radius:6px;font-size:0.82em;">${versionOptions}</select>
+      </div>
+
+      <textarea id="ai-prompt-area" readonly style="width:100%;height:180px;font-size:0.8em;border:1px solid #ddd;border-radius:8px;padding:10px;resize:none;box-sizing:border-box;color:#444;"></textarea>
       <p style="font-size:0.78em;color:#888;margin:6px 0 10px;">Claude는 프롬프트가 자동 입력됩니다. ChatGPT·Gemini는 클립보드에 복사 후 붙여넣기 하세요.</p>
-      ${aiButtons(item)}
+      <div id="ai-buttons-container"></div>
 
       <hr style="border:none;border-top:1px solid #eee;margin:18px 0;">
 
@@ -236,6 +197,17 @@ function showAiModal(item, onSave) {
     </div>`;
 
   document.body.appendChild(modal);
+
+  const refreshPrompt = () => {
+    document.getElementById("ai-prompt-area").value      = buildPrompt(item);
+    document.getElementById("ai-buttons-container").innerHTML = aiButtons(item);
+  };
+  refreshPrompt();
+
+  document.getElementById("prompt-version").addEventListener("change", e => {
+    setPromptVersion(e.target.value);
+    refreshPrompt();
+  });
 
   document.getElementById("ai-note-save").addEventListener("click", () => {
     const text = document.getElementById("ai-note-area").value;
