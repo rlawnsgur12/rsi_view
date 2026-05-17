@@ -31,14 +31,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run backtest
+        run: python scripts/backtest.py
+
       - name: Run update script
         run: python scripts/update_stocks.py
 
-      - name: Run update detail script
+      - name: Run generate pages
         run: python scripts/generate_pages.py
-
-      - name: Print JSON content
-        run: cat data/rsi_data.json
 
       # 6️⃣ Git commit & push
       - name: Commit and push changes

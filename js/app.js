@@ -1,6 +1,7 @@
 import { loadMarket } from "./market.js";
-import { renderTable, populateSectorFilter, updateResultCount } from "./table.js";
+import { renderTable, populateSectorFilter } from "./table.js";
 import { sortTable } from "./sort.js";
+import { getWatchlist } from "./watchlist.js";
 
 // ===== 상태 =====
 let currentData  = [];
@@ -32,8 +33,8 @@ function applyFilters() {
   renderTable(filtered);
 }
 
-// ===== 탭 로드 =====
-async function loadTab(name, btn) {
+// ===== 관심종목 탭 =====
+async function loadWatchlist(btn) {
   document.querySelectorAll(".tabs button").forEach(b => b.classList.remove("active"));
   btn.classList.add("active");
 
@@ -42,14 +43,22 @@ async function loadTab(name, btn) {
   setFilter("all", allChip);
 
   const tbody = document.getElementById("rsi-table-body");
-  tbody.innerHTML = `<tr><td colspan="27">⏳ 로딩 중...</td></tr>`;
+  tbody.innerHTML = `<tr><td colspan="29">⏳ 로딩 중...</td></tr>`;
+
+  const tickers = getWatchlist();
+  if (!tickers.length) {
+    tbody.innerHTML = `<tr><td colspan="29">⭐ 관심종목이 없습니다. 종목 옆 ☆을 눌러 추가하세요.</td></tr>`;
+    currentData = [];
+    return;
+  }
 
   try {
-    const res = await fetch(`data/${name}.json`);
-    if (!res.ok) throw new Error("파일 없음");
-    const data = await res.json();
+    const files = ["top100", "top101_200", "custom"];
+    const all   = (await Promise.all(files.map(f => fetch(`data/${f}.json`).then(r => r.ok ? r.json() : [])))).flat();
+    const data  = all.filter(d => tickers.includes(d.Ticker));
+
     if (!data.length) {
-      tbody.innerHTML = `<tr><td colspan="27">📭 데이터 없음</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="29">📭 관심종목 데이터를 찾을 수 없습니다.</td></tr>`;
       currentData = [];
       return;
     }
@@ -57,30 +66,56 @@ async function loadTab(name, btn) {
     populateSectorFilter(data);
     renderTable(data);
   } catch {
-    tbody.innerHTML = `<tr><td colspan="27">⚠️ 데이터 파일이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="29">⚠️ 데이터 로드 실패</td></tr>`;
+    currentData = [];
+  }
+}
+
+// ===== 탭 로드 =====
+async function loadTab(name, btn) {
+  if (name === "watchlist") return loadWatchlist(btn);
+
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  document.getElementById("search-box").value = "";
+  const allChip = document.querySelector(`.chip[data-filter="all"]`);
+  setFilter("all", allChip);
+
+  const tbody = document.getElementById("rsi-table-body");
+  tbody.innerHTML = `<tr><td colspan="29">⏳ 로딩 중...</td></tr>`;
+
+  try {
+    const res = await fetch(`data/${name}.json`);
+    if (!res.ok) throw new Error("파일 없음");
+    const data = await res.json();
+    if (!data.length) {
+      tbody.innerHTML = `<tr><td colspan="29">📭 데이터 없음</td></tr>`;
+      currentData = [];
+      return;
+    }
+    currentData = data;
+    populateSectorFilter(data);
+    renderTable(data);
+  } catch {
+    tbody.innerHTML = `<tr><td colspan="29">⚠️ 데이터 파일이 없습니다</td></tr>`;
     currentData = [];
   }
 }
 
 // ===== 이벤트 바인딩 =====
 function bindEvents() {
-  // 탭
   document.querySelectorAll(".tabs button").forEach(btn => {
     btn.addEventListener("click", () => loadTab(btn.dataset.tab, btn));
   });
 
-  // 필터칩
   document.querySelectorAll(".chip").forEach(chip => {
     chip.addEventListener("click", () => setFilter(chip.dataset.filter, chip));
   });
 
-  // 검색
   document.getElementById("search-box").addEventListener("input", applyFilters);
-
-  // 섹터 드롭다운
   document.getElementById("sector-filter").addEventListener("change", applyFilters);
 
-  // 테이블 헤더 정렬
   document.querySelectorAll("thead th").forEach((th, i) => {
     th.addEventListener("click", () => sortTable(i));
   });
