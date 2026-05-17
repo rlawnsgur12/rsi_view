@@ -9,29 +9,27 @@
 <body>
   <h2>미국 주식 리포트</h2>
 
-  <!-- 시장 벤치마크 위젯 -->
   <div id="market-widget" class="market-widget">
     <span class="market-widget-loading">시장 지표 로딩 중...</span>
   </div>
 
   <div class="tabs">
-    <button class="active" onclick="loadTab('rsi_data', this)">Top 1~100</button>
-    <button onclick="loadTab('top_101_200', this)">Top 101~200</button>
-    <button onclick="loadTab('custom', this)">Custom</button>
+    <button class="active" data-tab="top100">Top 1~100</button>
+    <button data-tab="top101_200">Top 101~200</button>
+    <button data-tab="custom">Custom</button>
   </div>
 
-  <!-- 검색 + 필터 컨트롤 -->
   <div class="controls">
-    <input id="search-box" type="text" placeholder="🔍 티커 또는 종목명 검색" oninput="applyFilters()">
+    <input id="search-box" type="text" placeholder="🔍 티커 또는 종목명 검색">
     <div class="filter-chips">
-      <button class="chip" data-filter="all" onclick="setFilter('all', this)">전체</button>
-      <button class="chip" data-filter="oversold" onclick="setFilter('oversold', this)">일 RSI ≤ 30</button>
-      <button class="chip" data-filter="warning" onclick="setFilter('warning', this)">일 RSI ≤ 35</button>
-      <button class="chip" data-filter="weekly_oversold" onclick="setFilter('weekly_oversold', this)">주 RSI ≤ 35</button>
-      <button class="chip chip-highlight" data-filter="dual" onclick="setFilter('dual', this)">🎯 일·주 동시 ≤ 35</button>
-      <button class="chip" data-filter="recent7" onclick="setFilter('recent7', this)">최근 7일 과매도</button>
+      <button class="chip" data-filter="all">전체</button>
+      <button class="chip" data-filter="oversold">일 RSI ≤ 30</button>
+      <button class="chip" data-filter="warning">일 RSI ≤ 35</button>
+      <button class="chip" data-filter="weekly_oversold">주 RSI ≤ 35</button>
+      <button class="chip chip-highlight" data-filter="dual">🎯 일·주 동시 ≤ 35</button>
+      <button class="chip" data-filter="recent7">최근 7일 과매도</button>
     </div>
-    <select id="sector-filter" onchange="applyFilters()">
+    <select id="sector-filter">
       <option value="">모든 섹터</option>
     </select>
     <span id="result-count" class="result-count"></span>
@@ -40,40 +38,39 @@
   <table>
     <thead>
       <tr>
-        <th onclick="sortTable(0)">Ticker</th>
-        <th onclick="sortTable(1)">Name</th>
-        <th onclick="sortTable(2)">Sector</th>
-        <th onclick="sortTable(3)">Chart</th>
-        <th onclick="sortTable(4)">일 RSI</th>
-        <th onclick="sortTable(5)">일 RSI 30일 추세</th>
-        <th onclick="sortTable(6)">주 RSI</th>
-        <th onclick="sortTable(7)">주 RSI 30주 추세</th>
-        <th class="rsi-col" onclick="sortTable(8)">🎯 쌍과매도</th>
-        <th class="rsi-col" onclick="sortTable(9)">일 RSI ≤ 30</th>
-        <th class="rsi-col" onclick="sortTable(10)">30 < 일 RSI ≤ 35</th>
-        <th class="rsi-col" onclick="sortTable(11)">최근 7일 내 일 RSI ≤ 30</th>
-        <th onclick="sortTable(12)">현재가</th>
-        <th onclick="sortTable(13)">일변동(%)</th>
-        <th onclick="sortTable(14)">52주 위치(%)</th>
-        <th onclick="sortTable(15)">거래량 비율</th>
-        <th onclick="sortTable(16)">📈 EPS 성장(%)</th>
-        <th onclick="sortTable(17)">📈 매출 YoY(%)</th>
-        <th onclick="sortTable(18)" title="과거 5년 RSI≤30 진입 후 1개월 평균 수익률 / 승률 (진입 N건)">🧪 1M 평균/승률</th>
-        <th onclick="sortTable(19)" title="과거 5년 RSI≤30 진입 후 3개월 평균 수익률 / 승률 (진입 N건)">🧪 3M 평균/승률</th>
-        <th onclick="sortTable(20)">PER</th>
-        <th onclick="sortTable(21)">PER(예상)</th>
-        <th onclick="sortTable(22)">PBR</th>
-        <th onclick="sortTable(23)">ROE</th>
-        <th onclick="sortTable(24)">EPS</th>
-        <th onclick="sortTable(25)">EPS(예상)</th>
-        <th onclick="sortTable(26)" title="RSI신호(40)+백테스트3M(25)+EPS성장(20)+Forward PER(10)+매출성장(5)">📊 종합의견</th>
+        <th>Ticker</th>
+        <th>Name</th>
+        <th>Sector</th>
+        <th>Chart</th>
+        <th>일 RSI</th>
+        <th>일 RSI 30일 추세</th>
+        <th>주 RSI</th>
+        <th>주 RSI 30주 추세</th>
+        <th class="rsi-col">🎯 쌍과매도</th>
+        <th class="rsi-col">일 RSI ≤ 30</th>
+        <th class="rsi-col">30 &lt; 일 RSI ≤ 35</th>
+        <th class="rsi-col">최근 7일 내 일 RSI ≤ 30</th>
+        <th>현재가</th>
+        <th>일변동(%)</th>
+        <th>52주 위치(%)</th>
+        <th>거래량 비율</th>
+        <th>📈 EPS 성장(%)</th>
+        <th>📈 매출 YoY(%)</th>
+        <th title="과거 5년 RSI≤30 진입 후 1개월 평균 수익률 / 승률 (진입 N건)">🧪 1M 평균/승률</th>
+        <th title="과거 5년 RSI≤30 진입 후 3개월 평균 수익률 / 승률 (진입 N건)">🧪 3M 평균/승률</th>
+        <th>PER</th>
+        <th>PER(예상)</th>
+        <th>PBR</th>
+        <th>ROE</th>
+        <th>EPS</th>
+        <th>EPS(예상)</th>
+        <th title="RSI신호(40)+백테스트3M(25)+EPS성장(20)+Forward PER(10)+매출성장(5)">📊 종합의견</th>
       </tr>
     </thead>
     <tbody id="rsi-table-body">
-      <!-- JS에서 데이터 추가 -->
     </tbody>
   </table>
 
-  <script src="script.js"></script>
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>

@@ -20,29 +20,17 @@ import yfinance as yf
 import pandas as pd
 import json
 from pathlib import Path
+from utils import compute_rsi_ema
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 TICKERS_DIR = BASE_DIR / "tickers_info"
 OUT_DIR = BASE_DIR / "data"
 OUT_DIR.mkdir(exist_ok=True)
 
-# 보유 기간 (거래일 기준)
 HOLD_1M = 21
 HOLD_3M = 63
 HOLD_6M = 126
-
-# 백테스트 기간
 LOOKBACK = "5y"
-
-
-def compute_rsi_ema(close, period=14):
-    delta = close.diff()
-    gain = delta.clip(lower=0)
-    loss = -delta.clip(upper=0)
-    avg_gain = gain.ewm(alpha=1/period, min_periods=period).mean()
-    avg_loss = loss.ewm(alpha=1/period, min_periods=period).mean()
-    rs = avg_gain / avg_loss
-    return 100 - (100 / (1 + rs))
 
 
 def backtest_ticker(ticker):
