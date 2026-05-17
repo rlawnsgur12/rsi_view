@@ -130,6 +130,53 @@ def process_tickers(ticker_list, output_path, ticker_info_map=None):
     print(f"✅ 완료! {len(rsi_list)}개 티커 저장: {output_path}")
 
 
+MARKET_TICKERS = [
+    {"Ticker": "SPY", "Label": "S&P 500"},
+    {"Ticker": "QQQ", "Label": "NASDAQ"},
+    {"Ticker": "DIA", "Label": "DOW"},
+    {"Ticker": "IWM", "Label": "Russell 2000"},
+]
+
+def generate_market():
+    result = []
+    for item in MARKET_TICKERS:
+        ticker = item["Ticker"]
+        try:
+            data = yf.download(ticker, period="2y", interval="1d", progress=False, auto_adjust=False)
+            if data.empty:
+                continue
+            close = data["Close"]
+            if isinstance(close, pd.DataFrame) and ticker in close.columns:
+                close = close[ticker]
+
+            rsi_series = compute_rsi_ema(close).dropna()
+            weekly_close = close.resample("W").last().dropna()
+            wrsi = compute_rsi_ema(weekly_close).dropna()
+
+            curr = round(float(close.iloc[-1]), 2)
+            prev = float(close.iloc[-2]) if len(close) >= 2 else None
+            change = round((curr - prev) / prev * 100, 2) if prev else None
+
+            result.append({
+                "Ticker":      ticker,
+                "Label":       item["Label"],
+                "Price":       curr,
+                "DayChangePct": change,
+                "RSI":         round(float(rsi_series.iloc[-1]), 2) if not rsi_series.empty else None,
+                "WeeklyRSI":   round(float(wrsi.iloc[-1]), 2) if not wrsi.empty else None,
+            })
+            print(f"✅ 시장 지표: {ticker}")
+        except Exception as e:
+            print(f"{ticker} 시장 지표 오류: {e}")
+
+    market_path = OUT_DIR / "market.json"
+    with open(market_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    print(f"✅ market.json 저장 완료")
+
+
+generate_market()
+
 for jf in sorted(TICKERS_DIR.glob("*.json")):
     with open(jf, "r", encoding="utf-8") as f:
         data = json.load(f)
