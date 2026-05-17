@@ -138,12 +138,16 @@ function buildPrompt(item) {
   const n   = v => (v != null && !isNaN(v)) ? v : "데이터없음";
   const pct = v => (v != null && !isNaN(v)) ? `${Number(v) >= 0 ? "+" : ""}${Number(v).toFixed(1)}%` : "데이터없음";
   const dual = item.DualOversold ? " ⚠️ 일·주봉 쌍과매도" : "";
+  const earningsLine = item.EarningsDate
+    ? `★ 다음 실적 발표 예정일: ${item.EarningsDate}`
+    : "★ 다음 실적 발표 예정일: 데이터없음";
 
   return `[종목명: ${item.Ticker} (${item.Name}) 매수 검토 요청]
 
 현재가: $${n(item.Price)} (일변동 ${pct(item.DayChangePct)})
 52주 위치: ${item.Pos52w != null ? item.Pos52w + "%" : "데이터없음"} | 거래량 비율: ${item.VolRatio != null ? item.VolRatio + "x" : "데이터없음"}
 섹터: ${item.Sector}
+${earningsLine}
 
 📊 RSI 현황
 - 일 RSI: ${n(item.RSI)}${item["RSI_30이하"] ? " (≤30 과매도)" : item["RSI_30초과_35이하"] ? " (≤35 경계)" : ""}
@@ -170,9 +174,12 @@ function buildPrompt(item) {
 2. RSI 과매도 반등 전략의 유효성 타점 분석
 - 일봉/주봉 RSI 현황과 과거 5년 백테스트 데이터를 결합하여, 현재 진입 시 승률과 적절한 보유 기간(또는 분할 매수 전략)을 통계적으로 짚어주세요.
 
-3. 1년 뒤 주가 전망 및 매크로 결합 최종 의견
+3. 실적 발표일 연계 일정 매매 전략 ★
+- 다가오는 실적 발표일을 기준으로, 발표 전 '기대감 선반영 분할 진입'이 유리한지 아니면 '실적 확인 후 불확실성 해소 진입'이 유리한지 최근 가이던스 트렌드와 결합하여 행동 지침을 주세요. 실적 발표 전후 예상되는 단기 변동성 대응 방안도 포함해 주세요.
+
+4. 1년 뒤 주가 전망 및 매크로 결합 최종 의견
 - 향후 이익 전망(Forward 지표)과 최근 섹터 트렌드, 리스크 요인을 종합하여 1년 시계열에서의 상승 가능성을 확률적으로 예측해 주세요.
-- 최종 결론은 투자의견(강력매수/매수/보유/매도)과 타점을 요약한 '종합 의견' 블록으로 명확하게 마무리해 주세요.`;
+- 최종 결론은 투자의견(강력매수/매수/보유/매도)과 타점, 실적 발표일 대응 팁을 요약한 '종합 의견' 블록으로 명확하게 마무리해 주세요.`;
 }
 
 function aiButtons(item) {

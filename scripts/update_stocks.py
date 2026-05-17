@@ -3,7 +3,17 @@ import yfinance as yf
 import pandas as pd
 import json
 from pathlib import Path
+from datetime import datetime, timezone
 from utils import compute_rsi_ema
+
+def format_earnings_date(ts):
+    if ts is None:
+        return None
+    try:
+        dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+        return f"{dt.year}년 {dt.month}월 {dt.day}일"
+    except Exception:
+        return None
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -120,6 +130,7 @@ def process_tickers(ticker_list, output_path, ticker_info_map=None):
                 "ROE":                 info.get("returnOnEquity"),
                 "EPS":                 info.get("trailingEps"),
                 "EPS(예상)":           info.get("forwardEps"),
+                "EarningsDate":        format_earnings_date(info.get("earningsTimestamp")),
             })
 
         except Exception as e:
