@@ -12,11 +12,21 @@
                 th, td { border: 1px solid #ddd; padding: 8px; text-align: right; }
                 th { background: #f5f5f5; }
                 td:first-child, th:first-child { text-align: left; }
+                .back { display:inline-block; margin-bottom:10px; color:#1f6feb; text-decoration:none; font-weight:600; }
+                .back:hover { text-decoration:underline; }
             </style>
         </head>
         <body>
 
+        <a href="../index.html" class="back">← 목록으로</a>
         <h1>BTI 재무 요약</h1>
+
+        <h2>📈 RSI 추세 (일봉 6개월 / 주봉 2년)</h2>
+        <p style="color:#666;font-size:13px;margin:0 0 10px 0;">
+          가격 차트와 RSI를 겹쳐 봅니다. 30 이하 진입 후 반등 + 주봉 RSI도 같은 신호면 쌍돌파 후보입니다.
+        </p>
+        <div id="chart-rsi-daily" style="height:380px;"></div>
+        <div id="chart-rsi-weekly" style="height:380px;"></div>
 
         <h2>📊 최근 2개년 분기 재무</h2>
         <table border="1" class="dataframe">
@@ -121,100 +131,125 @@
         .then(r => r.json())
         .then(d => {
 
-            const annotations = [];
+            // ===== RSI 일봉 차트 (가격 + RSI 듀얼 축) =====
+            if (d.daily_dates && d.daily_dates.length) {
+                Plotly.newPlot("chart-rsi-daily", [
+                    {
+                        x: d.daily_dates, y: d.daily_price,
+                        type: "scatter", mode: "lines", name: "가격",
+                        line: { color: "#333", width: 1.5 },
+                        yaxis: "y1"
+                    },
+                    {
+                        x: d.daily_dates, y: d.daily_rsi,
+                        type: "scatter", mode: "lines", name: "일봉 RSI",
+                        line: { color: "#1f6feb", width: 1.8 },
+                        yaxis: "y2"
+                    }
+                ], {
+                    title: { text: "일봉 RSI + 가격 (6개월)", x: 0.5, font: { size: 16 } },
+                    margin: { t: 50, r: 60 },
+                    xaxis: { fixedrange: true },
+                    yaxis: { title: "가격", fixedrange: true, side: "left" },
+                    yaxis2: {
+                        title: "RSI", overlaying: "y", side: "right",
+                        range: [0, 100], fixedrange: true,
+                        tickvals: [0, 30, 50, 70, 100]
+                    },
+                    shapes: [
+                        { type: "line", xref: "paper", x0: 0, x1: 1, yref: "y2", y0: 30, y1: 30, line: { color: "#1f6feb", width: 1, dash: "dash" } },
+                        { type: "line", xref: "paper", x0: 0, x1: 1, yref: "y2", y0: 70, y1: 70, line: { color: "#dc3c3c", width: 1, dash: "dash" } }
+                    ],
+                    legend: { orientation: "h", y: -0.15 }
+                }, { displayModeBar: false });
+            }
 
+            // ===== RSI 주봉 차트 =====
+            if (d.weekly_dates && d.weekly_dates.length) {
+                Plotly.newPlot("chart-rsi-weekly", [
+                    {
+                        x: d.weekly_dates, y: d.weekly_price,
+                        type: "scatter", mode: "lines", name: "가격(주봉)",
+                        line: { color: "#333", width: 1.5 },
+                        yaxis: "y1"
+                    },
+                    {
+                        x: d.weekly_dates, y: d.weekly_rsi,
+                        type: "scatter", mode: "lines", name: "주봉 RSI",
+                        line: { color: "#8e44ad", width: 1.8 },
+                        yaxis: "y2"
+                    }
+                ], {
+                    title: { text: "주봉 RSI + 가격 (2년)", x: 0.5, font: { size: 16 } },
+                    margin: { t: 50, r: 60 },
+                    xaxis: { fixedrange: true },
+                    yaxis: { title: "가격", fixedrange: true, side: "left" },
+                    yaxis2: {
+                        title: "RSI", overlaying: "y", side: "right",
+                        range: [0, 100], fixedrange: true,
+                        tickvals: [0, 30, 50, 70, 100]
+                    },
+                    shapes: [
+                        { type: "line", xref: "paper", x0: 0, x1: 1, yref: "y2", y0: 30, y1: 30, line: { color: "#1f6feb", width: 1, dash: "dash" } },
+                        { type: "line", xref: "paper", x0: 0, x1: 1, yref: "y2", y0: 70, y1: 70, line: { color: "#dc3c3c", width: 1, dash: "dash" } }
+                    ],
+                    legend: { orientation: "h", y: -0.15 }
+                }, { displayModeBar: false });
+            }
+
+            // ===== 재무 차트 =====
+            const annotations = [];
             for (let i = 1; i < d.years.length; i++) {
                 const pct = d.revenue_yoy[i];
                 const yPrev = d.revenue[i - 1];
                 const yCurr = d.revenue[i];
-
                 if (pct == null || yPrev == null || yCurr == null) continue;
-
                 annotations.push({
                     x: d.years[i],
                     y: Math.max(yPrev, yCurr) * 1.08,
                     text: `${pct > 0 ? "▲" : "▼"} ${pct.toFixed(1)}%`,
                     showarrow: false,
-                    font: {
-                        size: 16,
-                        color: pct > 0 ? "red" : "blue", // Plotly 기본 컬러
-                        family: "Arial Black"
-                    }
+                    font: { size: 16, color: pct > 0 ? "red" : "blue", family: "Arial Black" }
                 });
             }
 
-
             Plotly.newPlot("chart-revenue", [{
-                x: d.years,
-                y: d.revenue,
-                type: "bar",
-                width: 0.4,   // ⭐ 핵심 (기본값 ≈ 0.8)
-                textposition: "outside"
+                x: d.years, y: d.revenue, type: "bar", width: 0.4, textposition: "outside"
             }], {
-                title: {
-                    text: "매출 추이",
-                    x: 0.5,
-                    font: { size: 20 }
-                },
+                title: { text: "매출 추이", x: 0.5, font: { size: 20 } },
                 margin: { t: 60 },
-                xaxis: {
-                    type: "category", // ⭐ 핵심
-                    fixedrange: true  // ← 드래그 비활성
-                },
-                yaxis: { fixedrange: true },   // ← 드래그 비활성
-                annotations: annotations   // ⭐ 핵심
-                });
+                xaxis: { type: "category", fixedrange: true },
+                yaxis: { fixedrange: true },
+                annotations: annotations
+            });
 
             Plotly.newPlot("chart-income", [
                 { x: d.years, y: d.net_income, type: "line", name: "순이익" },
                 { x: d.years, y: d.operating_income, type: "line", name: "영업이익" }
             ], {
-                title: {
-                    text: "순이익 VS 영업이익",
-                    x: 0.5,
-                    font: { size: 20 }
-                },
+                title: { text: "순이익 VS 영업이익", x: 0.5, font: { size: 20 } },
                 margin: { t: 60 },
-                xaxis: { fixedrange: true },  // ← 드래그 비활성
-                yaxis: { fixedrange: true }   // ← 드래그 비활성
+                xaxis: { fixedrange: true },
+                yaxis: { fixedrange: true }
             });
 
             Plotly.newPlot("chart-margin", [{
-                x: d.years,
-                y: d.op_margin,
-                type: "line"
+                x: d.years, y: d.op_margin, type: "line"
             }], {
-                title: {
-                    text: "영업이익률 (%)",
-                    x: 0.5,
-                    font: { size: 20 }
-                },
+                title: { text: "영업이익률 (%)", x: 0.5, font: { size: 20 } },
                 margin: { t: 60 },
-                xaxis: { fixedrange: true },  // ← 드래그 비활성
-                yaxis: {
-                    ticksuffix: "%",
-                    fixedrange: true
-                }
+                xaxis: { fixedrange: true },
+                yaxis: { ticksuffix: "%", fixedrange: true }
             });
 
             Plotly.newPlot("chart-fcf", [{
-                x: d.years,
-                y: d.fcf,
-                type: "bar",
-                width: 0.4   // ⭐ 핵심 (기본값 ≈ 0.8)
+                x: d.years, y: d.fcf, type: "bar", width: 0.4
             }], {
-                title: {
-                    text: "Free Cash Flow",
-                    x: 0.5,
-                    font: { size: 20 }
-                },
+                title: { text: "Free Cash Flow", x: 0.5, font: { size: 20 } },
                 margin: { t: 60 },
-                xaxis: {
-                    type: "category", // ⭐ 핵심
-                    fixedrange: true  // ← 드래그 비활성
-                },
-                yaxis: { fixedrange: true }  // ← 드래그 비활성
-                });
+                xaxis: { type: "category", fixedrange: true },
+                yaxis: { fixedrange: true }
+            });
         });
         </script>
 
