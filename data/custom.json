@@ -80,13 +80,20 @@
     "Pos52w": 90.0,
     "VolRatio": 1.17,
     "PER": 46.077713,
-    "PER(예상)": 19.71483,
+    "PER(예상)": 19.820166,
     "PBR": 34.814587,
     "ROE": 1.01485,
     "EPS": 4.89,
-    "EPS(예상)": 11.42896,
-    "EPS_Growth": 133.7,
-    "Revenue_YoY": 73.2
+    "EPS(예상)": 11.36822,
+    "EPS_Growth": 132.5,
+    "Revenue_YoY": 73.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "AAPL",
@@ -175,7 +182,14 @@
     "EPS": 8.26,
     "EPS(예상)": 9.5861,
     "EPS_Growth": 16.1,
-    "Revenue_YoY": 16.6
+    "Revenue_YoY": 16.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MSFT",
@@ -264,6 +278,13 @@
     "EPS": 16.79,
     "EPS(예상)": 19.37103,
     "EPS_Growth": 15.4,
-    "Revenue_YoY": 18.3
+    "Revenue_YoY": 18.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   }
 ]

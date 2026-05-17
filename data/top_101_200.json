@@ -80,13 +80,20 @@
     "Pos52w": 9.9,
     "VolRatio": 1.16,
     "PER": 18.416527,
-    "PER(예상)": 15.9979725,
+    "PER(예상)": 16.001524,
     "PBR": -12.356169,
     "ROE": null,
     "EPS": 11.86,
-    "EPS(예상)": 13.65298,
+    "EPS(예상)": 13.64995,
     "EPS_Growth": 15.1,
-    "Revenue_YoY": 10.9
+    "Revenue_YoY": 10.9,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SYK",
@@ -175,7 +182,14 @@
     "EPS": 8.65,
     "EPS(예상)": 16.71226,
     "EPS_Growth": 93.2,
-    "Revenue_YoY": 11.4
+    "Revenue_YoY": 11.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PDD",
@@ -258,13 +272,20 @@
     "Pos52w": 0.6,
     "VolRatio": 1.06,
     "PER": 9.859054,
-    "PER(예상)": 6.7574096,
+    "PER(예상)": 6.782722,
     "PBR": 2.242195,
     "ROE": 0.26928,
     "EPS": 9.72,
-    "EPS(예상)": 14.18147,
-    "EPS_Growth": 45.9,
-    "Revenue_YoY": 12.0
+    "EPS(예상)": 14.128547,
+    "EPS_Growth": 45.4,
+    "Revenue_YoY": 12.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SMFG",
@@ -353,7 +374,14 @@
     "EPS": 1.57,
     "EPS(예상)": 0.41,
     "EPS_Growth": -73.9,
-    "Revenue_YoY": 24.6
+    "Revenue_YoY": 24.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "APP",
@@ -442,7 +470,14 @@
     "EPS": 11.52,
     "EPS(예상)": 21.92634,
     "EPS_Growth": 90.3,
-    "Revenue_YoY": 59.0
+    "Revenue_YoY": 59.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ETN",
@@ -531,7 +566,14 @@
     "EPS": 10.23,
     "EPS(예상)": 15.72393,
     "EPS_Growth": 53.7,
-    "Revenue_YoY": 16.8
+    "Revenue_YoY": 16.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "WELL",
@@ -620,7 +662,14 @@
     "EPS": 2.07,
     "EPS(예상)": 3.33,
     "EPS_Growth": 60.9,
-    "Revenue_YoY": 38.4
+    "Revenue_YoY": 38.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "NEM",
@@ -709,7 +758,14 @@
     "EPS": 7.71,
     "EPS(예상)": 11.33615,
     "EPS_Growth": 47.0,
-    "Revenue_YoY": 45.8
+    "Revenue_YoY": 45.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BX",
@@ -798,7 +854,14 @@
     "EPS": 3.9,
     "EPS(예상)": 7.52286,
     "EPS_Growth": 92.9,
-    "Revenue_YoY": 38.3
+    "Revenue_YoY": 38.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SONY",
@@ -882,12 +945,19 @@
     "VolRatio": 0.99,
     "PER": 20.467888,
     "PER(예상)": 18.747898,
-    "PBR": 2.5468318,
+    "PBR": 2.5528393,
     "ROE": 0.12367,
     "EPS": 1.09,
     "EPS(예상)": 1.19,
     "EPS_Growth": 9.2,
-    "Revenue_YoY": 0.5
+    "Revenue_YoY": 0.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "COP",
@@ -976,7 +1046,14 @@
     "EPS": 5.9,
     "EPS(예상)": 8.95737,
     "EPS_Growth": 51.8,
-    "Revenue_YoY": -4.6
+    "Revenue_YoY": -4.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PLD",
@@ -1065,7 +1142,14 @@
     "EPS": 3.98,
     "EPS(예상)": 3.39788,
     "EPS_Growth": -14.6,
-    "Revenue_YoY": 7.4
+    "Revenue_YoY": 7.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BTI",
@@ -1154,7 +1238,14 @@
     "EPS": 4.72,
     "EPS(예상)": 5.3206,
     "EPS_Growth": 12.7,
-    "Revenue_YoY": null
+    "Revenue_YoY": null,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ARM",
@@ -1243,7 +1334,14 @@
     "EPS": 0.86,
     "EPS(예상)": 3.05319,
     "EPS_Growth": 255.0,
-    "Revenue_YoY": 26.3
+    "Revenue_YoY": 26.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BKNG",
@@ -1332,7 +1430,14 @@
     "EPS": 7.58,
     "EPS(예상)": 12.30405,
     "EPS_Growth": 62.3,
-    "Revenue_YoY": 16.2
+    "Revenue_YoY": 16.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CB",
@@ -1421,7 +1526,14 @@
     "EPS": 28.27,
     "EPS(예상)": 29.23477,
     "EPS_Growth": 3.4,
-    "Revenue_YoY": 10.7
+    "Revenue_YoY": 10.7,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SPGI",
@@ -1510,7 +1622,14 @@
     "EPS": 15.8,
     "EPS(예상)": 22.20438,
     "EPS_Growth": 40.5,
-    "Revenue_YoY": 10.4
+    "Revenue_YoY": 10.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BBVA",
@@ -1599,7 +1718,14 @@
     "EPS": 2.13,
     "EPS(예상)": 2.40924,
     "EPS_Growth": 13.1,
-    "Revenue_YoY": 14.2
+    "Revenue_YoY": 14.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "GLW",
@@ -1688,7 +1814,14 @@
     "EPS": 2.07,
     "EPS(예상)": 4.22354,
     "EPS_Growth": 104.0,
-    "Revenue_YoY": 20.0
+    "Revenue_YoY": 20.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "UBS",
@@ -1777,7 +1910,14 @@
     "EPS": 2.79,
     "EPS(예상)": 4.0215,
     "EPS_Growth": 44.1,
-    "Revenue_YoY": 14.9
+    "Revenue_YoY": 14.9,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ACN",
@@ -1866,7 +2006,14 @@
     "EPS": 12.21,
     "EPS(예상)": 14.90768,
     "EPS_Growth": 22.1,
-    "Revenue_YoY": 8.3
+    "Revenue_YoY": 8.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PH",
@@ -1955,7 +2102,14 @@
     "EPS": 27.09,
     "EPS(예상)": 34.03701,
     "EPS_Growth": 25.6,
-    "Revenue_YoY": 10.6
+    "Revenue_YoY": 10.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BMY",
@@ -2044,7 +2198,14 @@
     "EPS": 3.57,
     "EPS(예상)": 6.17049,
     "EPS_Growth": 72.8,
-    "Revenue_YoY": 2.6
+    "Revenue_YoY": 2.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "VRTX",
@@ -2133,7 +2294,14 @@
     "EPS": 16.87,
     "EPS(예상)": 21.56175,
     "EPS_Growth": 27.8,
-    "Revenue_YoY": 7.8
+    "Revenue_YoY": 7.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "AEM",
@@ -2222,7 +2390,14 @@
     "EPS": 10.62,
     "EPS(예상)": 14.17024,
     "EPS_Growth": 33.4,
-    "Revenue_YoY": 66.1
+    "Revenue_YoY": 66.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MDT",
@@ -2311,7 +2486,14 @@
     "EPS": 3.58,
     "EPS(예상)": 6.06287,
     "EPS_Growth": 69.4,
-    "Revenue_YoY": 8.7
+    "Revenue_YoY": 8.7,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PGR",
@@ -2400,7 +2582,14 @@
     "EPS": 19.65,
     "EPS(예상)": 16.17914,
     "EPS_Growth": -17.7,
-    "Revenue_YoY": 8.7
+    "Revenue_YoY": 8.7,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "COF",
@@ -2489,7 +2678,14 @@
     "EPS": 3.26,
     "EPS(예상)": 24.14436,
     "EPS_Growth": 640.6,
-    "Revenue_YoY": 51.1
+    "Revenue_YoY": 51.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PANW",
@@ -2578,7 +2774,14 @@
     "EPS": 1.8,
     "EPS(예상)": 3.9701,
     "EPS_Growth": 120.6,
-    "Revenue_YoY": 14.9
+    "Revenue_YoY": 14.9,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MCK",
@@ -2667,7 +2870,14 @@
     "EPS": 38.41,
     "EPS(예상)": 50.32361,
     "EPS_Growth": 31.0,
-    "Revenue_YoY": 11.4
+    "Revenue_YoY": 11.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CEG",
@@ -2756,7 +2966,14 @@
     "EPS": 11.52,
     "EPS(예상)": 13.56624,
     "EPS_Growth": 17.8,
-    "Revenue_YoY": 12.9
+    "Revenue_YoY": 12.9,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "GSK",
@@ -2840,12 +3057,19 @@
     "VolRatio": 0.91,
     "PER": 12.9348955,
     "PER(예상)": 9.490562,
-    "PBR": 4.4830847,
+    "PBR": 4.114641,
     "ROE": 0.40905997,
     "EPS": 3.84,
     "EPS(예상)": 5.23362,
     "EPS_Growth": 36.3,
-    "Revenue_YoY": 1.5
+    "Revenue_YoY": 1.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "HCA",
@@ -2934,7 +3158,14 @@
     "EPS": 29.02,
     "EPS(예상)": 33.15209,
     "EPS_Growth": 14.2,
-    "Revenue_YoY": 4.3
+    "Revenue_YoY": 4.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SNY",
@@ -3023,7 +3254,14 @@
     "EPS": 2.32,
     "EPS(예상)": 5.18666,
     "EPS_Growth": 123.6,
-    "Revenue_YoY": 6.0
+    "Revenue_YoY": 6.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ENB",
@@ -3106,13 +3344,20 @@
     "Pos52w": 92.7,
     "VolRatio": 0.89,
     "PER": 25.72558,
-    "PER(예상)": 24.030233,
+    "PER(예상)": 24.084578,
     "PBR": 2.8510745,
     "ROE": 0.10127,
     "EPS": 2.15,
-    "EPS(예상)": 2.301684,
-    "EPS_Growth": 7.1,
-    "Revenue_YoY": 5.9
+    "EPS(예상)": 2.2964904,
+    "EPS_Growth": 6.8,
+    "Revenue_YoY": 5.9,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MO",
@@ -3201,7 +3446,14 @@
     "EPS": 4.79,
     "EPS(예상)": 5.86742,
     "EPS_Growth": 22.5,
-    "Revenue_YoY": 5.3
+    "Revenue_YoY": 5.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CME",
@@ -3290,7 +3542,14 @@
     "EPS": 11.72,
     "EPS(예상)": 12.87456,
     "EPS_Growth": 9.9,
-    "Revenue_YoY": 14.5
+    "Revenue_YoY": 14.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BSX",
@@ -3379,7 +3638,14 @@
     "EPS": 2.39,
     "EPS(예상)": 3.76398,
     "EPS_Growth": 57.5,
-    "Revenue_YoY": 11.6
+    "Revenue_YoY": 11.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "INTU",
@@ -3468,7 +3734,14 @@
     "EPS": 15.37,
     "EPS(예상)": 26.48361,
     "EPS_Growth": 72.3,
-    "Revenue_YoY": 17.4
+    "Revenue_YoY": 17.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "NOW",
@@ -3557,7 +3830,14 @@
     "EPS": 1.68,
     "EPS(예상)": 5.02558,
     "EPS_Growth": 199.1,
-    "Revenue_YoY": 22.1
+    "Revenue_YoY": 22.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MFG",
@@ -3646,7 +3926,14 @@
     "EPS": 0.53,
     "EPS(예상)": 1.39,
     "EPS_Growth": 162.3,
-    "Revenue_YoY": 11.2
+    "Revenue_YoY": 11.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SBUX",
@@ -3735,7 +4022,14 @@
     "EPS": 1.31,
     "EPS(예상)": 3.02645,
     "EPS_Growth": 131.0,
-    "Revenue_YoY": 8.8
+    "Revenue_YoY": 8.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CMCSA",
@@ -3824,7 +4118,14 @@
     "EPS": 5.1,
     "EPS(예상)": 3.81225,
     "EPS_Growth": -25.2,
-    "Revenue_YoY": 5.3
+    "Revenue_YoY": 5.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SO",
@@ -3913,7 +4214,14 @@
     "EPS": 3.91,
     "EPS(예상)": 4.91799,
     "EPS_Growth": 25.8,
-    "Revenue_YoY": 8.0
+    "Revenue_YoY": 8.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SOMN",
@@ -3986,7 +4294,14 @@
     "EPS": null,
     "EPS(예상)": null,
     "EPS_Growth": null,
-    "Revenue_YoY": 8.0
+    "Revenue_YoY": 8.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "IBN",
@@ -4075,7 +4390,14 @@
     "EPS": 1.56,
     "EPS(예상)": 1.91,
     "EPS_Growth": 22.4,
-    "Revenue_YoY": 10.3
+    "Revenue_YoY": 10.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ADBE",
@@ -4164,7 +4486,14 @@
     "EPS": 17.16,
     "EPS(예상)": 26.38602,
     "EPS_Growth": 53.8,
-    "Revenue_YoY": 12.0
+    "Revenue_YoY": 12.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SPOT",
@@ -4253,7 +4582,14 @@
     "EPS": 15.12,
     "EPS(예상)": 18.481012,
     "EPS_Growth": 22.2,
-    "Revenue_YoY": 8.2
+    "Revenue_YoY": 8.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "HWM",
@@ -4342,7 +4678,14 @@
     "EPS": 4.32,
     "EPS(예상)": 5.95231,
     "EPS_Growth": 37.8,
-    "Revenue_YoY": 19.1
+    "Revenue_YoY": 19.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PBR",
@@ -4431,7 +4774,14 @@
     "EPS": 3.23,
     "EPS(예상)": 3.80333,
     "EPS_Growth": 17.8,
-    "Revenue_YoY": 13.4
+    "Revenue_YoY": 13.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PBR-A",
@@ -4520,7 +4870,14 @@
     "EPS": 3.23,
     "EPS(예상)": 2.46,
     "EPS_Growth": -23.8,
-    "Revenue_YoY": 13.4
+    "Revenue_YoY": 13.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "NOC",
@@ -4609,7 +4966,14 @@
     "EPS": 31.9,
     "EPS(예상)": 30.1831,
     "EPS_Growth": -5.4,
-    "Revenue_YoY": 4.4
+    "Revenue_YoY": 4.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "TT",
@@ -4698,7 +5062,14 @@
     "EPS": 13.11,
     "EPS(예상)": 17.03499,
     "EPS_Growth": 29.9,
-    "Revenue_YoY": 6.0
+    "Revenue_YoY": 6.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "DUK",
@@ -4787,7 +5158,14 @@
     "EPS": 6.5,
     "EPS(예상)": 7.16774,
     "EPS_Growth": 10.3,
-    "Revenue_YoY": 11.3
+    "Revenue_YoY": 11.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BMO",
@@ -4870,13 +5248,20 @@
     "Pos52w": 95.1,
     "VolRatio": 0.62,
     "PER": 17.426285,
-    "PER(예상)": 13.032092,
-    "PBR": 1.7537676,
+    "PER(예상)": 13.0615635,
+    "PBR": 1.7601461,
     "ROE": 0.10471,
     "EPS": 8.75,
-    "EPS(예상)": 11.700347,
-    "EPS_Growth": 33.7,
-    "Revenue_YoY": 6.3
+    "EPS(예상)": 11.673946,
+    "EPS_Growth": 33.4,
+    "Revenue_YoY": 6.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CVS",
@@ -4965,7 +5350,14 @@
     "EPS": 2.28,
     "EPS(예상)": 8.36284,
     "EPS_Growth": 266.8,
-    "Revenue_YoY": 6.2
+    "Revenue_YoY": 6.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BP",
@@ -5054,7 +5446,14 @@
     "EPS": 1.24,
     "EPS(예상)": 4.11294,
     "EPS_Growth": 231.7,
-    "Revenue_YoY": 11.4
+    "Revenue_YoY": 11.4,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BN",
@@ -5143,7 +5542,14 @@
     "EPS": 0.51,
     "EPS(예상)": 5.87,
     "EPS_Growth": 1051.0,
-    "Revenue_YoY": 3.8
+    "Revenue_YoY": 3.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "UPS",
@@ -5232,7 +5638,14 @@
     "EPS": 6.18,
     "EPS(예상)": 8.00236,
     "EPS_Growth": 29.5,
-    "Revenue_YoY": -3.2
+    "Revenue_YoY": -3.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "DELL",
@@ -5321,7 +5734,14 @@
     "EPS": 8.69,
     "EPS(예상)": 14.75624,
     "EPS_Growth": 69.8,
-    "Revenue_YoY": 39.5
+    "Revenue_YoY": 39.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "FCX",
@@ -5410,7 +5830,14 @@
     "EPS": 1.89,
     "EPS(예상)": 3.71716,
     "EPS_Growth": 96.7,
-    "Revenue_YoY": -1.5
+    "Revenue_YoY": -1.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "VRT",
@@ -5499,7 +5926,14 @@
     "EPS": 3.97,
     "EPS(예상)": 8.8119,
     "EPS_Growth": 122.0,
-    "Revenue_YoY": 30.1
+    "Revenue_YoY": 30.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "WM",
@@ -5588,7 +6022,14 @@
     "EPS": 6.9,
     "EPS(예상)": 9.24706,
     "EPS_Growth": 34.0,
-    "Revenue_YoY": 3.5
+    "Revenue_YoY": 3.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ITUB",
@@ -5677,7 +6118,14 @@
     "EPS": 0.82,
     "EPS(예상)": 0.98964,
     "EPS_Growth": 20.7,
-    "Revenue_YoY": 24.6
+    "Revenue_YoY": 24.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "GD",
@@ -5766,7 +6214,14 @@
     "EPS": 15.89,
     "EPS(예상)": 18.09406,
     "EPS_Growth": 13.9,
-    "Revenue_YoY": 10.3
+    "Revenue_YoY": 10.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "EQIX",
@@ -5855,7 +6310,14 @@
     "EPS": 14.41,
     "EPS(예상)": 18.82571,
     "EPS_Growth": 30.6,
-    "Revenue_YoY": 9.8
+    "Revenue_YoY": 9.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "WDC",
@@ -5944,7 +6406,14 @@
     "EPS": 16.73,
     "EPS(예상)": 17.42049,
     "EPS_Growth": 4.1,
-    "Revenue_YoY": 45.5
+    "Revenue_YoY": 45.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SNDK",
@@ -6033,7 +6502,14 @@
     "EPS": 29.28,
     "EPS(예상)": 171.5141,
     "EPS_Growth": 485.8,
-    "Revenue_YoY": 251.0
+    "Revenue_YoY": 251.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CRWD",
@@ -6122,7 +6598,14 @@
     "EPS": -0.65,
     "EPS(예상)": 6.17212,
     "EPS_Growth": 1049.6,
-    "Revenue_YoY": 23.3
+    "Revenue_YoY": 23.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BNS",
@@ -6205,13 +6688,20 @@
     "Pos52w": 94.9,
     "VolRatio": 0.76,
     "PER": 15.666667,
-    "PER(예상)": 11.542634,
-    "PBR": 1.4890206,
+    "PER(예상)": 11.568737,
+    "PBR": 1.492388,
     "ROE": 0.10333,
     "EPS": 4.92,
-    "EPS(예상)": 6.677852,
-    "EPS_Growth": 35.7,
-    "Revenue_YoY": 6.7
+    "EPS(예상)": 6.6627846,
+    "EPS_Growth": 35.4,
+    "Revenue_YoY": 6.7,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ICE",
@@ -6300,7 +6790,14 @@
     "EPS": 6.87,
     "EPS(예상)": 8.78615,
     "EPS_Growth": 27.9,
-    "Revenue_YoY": 13.5
+    "Revenue_YoY": 13.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "NGG",
@@ -6389,7 +6886,14 @@
     "EPS": 4.06,
     "EPS(예상)": 6.50506,
     "EPS_Growth": 60.2,
-    "Revenue_YoY": null
+    "Revenue_YoY": null,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CM",
@@ -6472,13 +6976,20 @@
     "Pos52w": 98.0,
     "VolRatio": 0.64,
     "PER": 15.900001,
-    "PER(예상)": 13.856734,
+    "PER(예상)": 13.88807,
     "PBR": 2.2024446,
     "ROE": 0.14748,
     "EPS": 7.0,
-    "EPS(예상)": 8.032196,
-    "EPS_Growth": 14.7,
-    "Revenue_YoY": 14.7
+    "EPS(예상)": 8.014072,
+    "EPS_Growth": 14.5,
+    "Revenue_YoY": 14.7,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "NKE",
@@ -6567,7 +7078,14 @@
     "EPS": 1.52,
     "EPS(예상)": 1.82486,
     "EPS_Growth": 20.1,
-    "Revenue_YoY": 0.1
+    "Revenue_YoY": 0.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "STX",
@@ -6656,7 +7174,14 @@
     "EPS": 10.58,
     "EPS(예상)": 26.18439,
     "EPS_Growth": 147.5,
-    "Revenue_YoY": 44.1
+    "Revenue_YoY": 44.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "WMB",
@@ -6745,7 +7270,14 @@
     "EPS": 2.28,
     "EPS(예상)": 2.59266,
     "EPS_Growth": 13.7,
-    "Revenue_YoY": -0.6
+    "Revenue_YoY": -0.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CNQ",
@@ -6834,7 +7366,14 @@
     "EPS": 4.07,
     "EPS(예상)": 3.7011933,
     "EPS_Growth": -9.1,
-    "Revenue_YoY": -3.2
+    "Revenue_YoY": -3.2,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "FDX",
@@ -6923,7 +7462,14 @@
     "EPS": 18.71,
     "EPS(예상)": 22.36822,
     "EPS_Growth": 19.6,
-    "Revenue_YoY": 6.8
+    "Revenue_YoY": 6.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MAR",
@@ -7012,7 +7558,14 @@
     "EPS": 9.54,
     "EPS(예상)": 13.08608,
     "EPS_Growth": 37.2,
-    "Revenue_YoY": 4.1
+    "Revenue_YoY": 4.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MRSH",
@@ -7101,7 +7654,14 @@
     "EPS": 8.0,
     "EPS(예상)": 11.31812,
     "EPS_Growth": 41.5,
-    "Revenue_YoY": 7.6
+    "Revenue_YoY": 7.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "SHW",
@@ -7190,7 +7750,14 @@
     "EPS": 10.41,
     "EPS(예상)": 13.26703,
     "EPS_Growth": 27.4,
-    "Revenue_YoY": 6.8
+    "Revenue_YoY": 6.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "AMT",
@@ -7279,7 +7846,14 @@
     "EPS": 6.19,
     "EPS(예상)": 6.90612,
     "EPS_Growth": 11.6,
-    "Revenue_YoY": 6.8
+    "Revenue_YoY": 6.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MELI",
@@ -7368,7 +7942,14 @@
     "EPS": 37.9,
     "EPS(예상)": 60.18843,
     "EPS_Growth": 58.8,
-    "Revenue_YoY": 44.6
+    "Revenue_YoY": 44.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "JCI",
@@ -7457,7 +8038,14 @@
     "EPS": 3.28,
     "EPS(예상)": 5.68597,
     "EPS_Growth": 73.4,
-    "Revenue_YoY": 6.8
+    "Revenue_YoY": 6.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MMM",
@@ -7546,7 +8134,14 @@
     "EPS": 5.19,
     "EPS(예상)": 9.45522,
     "EPS_Growth": 82.2,
-    "Revenue_YoY": 1.3
+    "Revenue_YoY": 1.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ECL",
@@ -7635,7 +8230,14 @@
     "EPS": 7.38,
     "EPS(예상)": 9.61716,
     "EPS_Growth": 30.3,
-    "Revenue_YoY": 4.8
+    "Revenue_YoY": 4.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ADP",
@@ -7724,7 +8326,14 @@
     "EPS": 10.72,
     "EPS(예상)": 12.1552,
     "EPS_Growth": 13.4,
-    "Revenue_YoY": 7.0
+    "Revenue_YoY": 7.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PNC",
@@ -7813,7 +8422,14 @@
     "EPS": 17.22,
     "EPS(예상)": 20.99834,
     "EPS_Growth": 21.9,
-    "Revenue_YoY": 13.0
+    "Revenue_YoY": 13.0,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "B",
@@ -7902,7 +8518,14 @@
     "EPS": 3.62,
     "EPS(예상)": 4.58327,
     "EPS_Growth": 26.6,
-    "Revenue_YoY": 64.5
+    "Revenue_YoY": 64.5,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "USB",
@@ -7991,7 +8614,14 @@
     "EPS": 4.77,
     "EPS(예상)": 5.65134,
     "EPS_Growth": 18.5,
-    "Revenue_YoY": 4.8
+    "Revenue_YoY": 4.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "EMR",
@@ -8080,7 +8710,14 @@
     "EPS": 4.32,
     "EPS(예상)": 7.15615,
     "EPS_Growth": 65.7,
-    "Revenue_YoY": 2.9
+    "Revenue_YoY": 2.9,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MCO",
@@ -8169,7 +8806,14 @@
     "EPS": 13.94,
     "EPS(예상)": 18.60304,
     "EPS_Growth": 33.5,
-    "Revenue_YoY": 8.1
+    "Revenue_YoY": 8.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "PWR",
@@ -8258,7 +8902,14 @@
     "EPS": 7.31,
     "EPS(예상)": 16.40507,
     "EPS_Growth": 124.4,
-    "Revenue_YoY": 26.3
+    "Revenue_YoY": 26.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "RCL",
@@ -8347,7 +8998,14 @@
     "EPS": 16.4,
     "EPS(예상)": 20.00926,
     "EPS_Growth": 22.0,
-    "Revenue_YoY": 11.3
+    "Revenue_YoY": 11.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ING",
@@ -8436,7 +9094,14 @@
     "EPS": 2.57,
     "EPS(예상)": 3.1528,
     "EPS_Growth": 22.7,
-    "Revenue_YoY": 3.3
+    "Revenue_YoY": 3.3,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BCS",
@@ -8525,7 +9190,14 @@
     "EPS": 2.35,
     "EPS(예상)": 3.38925,
     "EPS_Growth": 44.2,
-    "Revenue_YoY": 5.9
+    "Revenue_YoY": 5.9,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "ITW",
@@ -8614,7 +9286,14 @@
     "EPS": 10.77,
     "EPS(예상)": 12.17339,
     "EPS_Growth": 13.0,
-    "Revenue_YoY": 4.1
+    "Revenue_YoY": 4.1,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "MNST",
@@ -8703,7 +9382,14 @@
     "EPS": 2.07,
     "EPS(예상)": 2.5757,
     "EPS_Growth": 24.4,
-    "Revenue_YoY": 17.6
+    "Revenue_YoY": 17.6,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "CDNS",
@@ -8792,7 +9478,14 @@
     "EPS": 4.31,
     "EPS(예상)": 9.38068,
     "EPS_Growth": 117.6,
-    "Revenue_YoY": 18.7
+    "Revenue_YoY": 18.7,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   },
   {
     "Ticker": "BK",
@@ -8881,6 +9574,13 @@
     "EPS": 8.06,
     "EPS(예상)": 9.64209,
     "EPS_Growth": 19.6,
-    "Revenue_YoY": 13.8
+    "Revenue_YoY": 13.8,
+    "BT_Events": null,
+    "BT_1M_Avg": null,
+    "BT_1M_Win": null,
+    "BT_3M_Avg": null,
+    "BT_3M_Win": null,
+    "BT_6M_Avg": null,
+    "BT_6M_Win": null
   }
 ]
