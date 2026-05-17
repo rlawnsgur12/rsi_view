@@ -52,6 +52,55 @@ export function calcScore(item) {
   return Math.round(Math.min(100, (score / maxScore) * 100));
 }
 
+export function calcScoreBreakdown(item) {
+  const rows = [];
+
+  const bt3m    = Number(item.BT_3M_Avg);
+  const bt3mWin = Number(item.BT_3M_Win);
+  if (!isNaN(bt3m) && !isNaN(bt3mWin)) {
+    let s = 0;
+    if      (bt3m >= 10 && bt3mWin >= 70) s = 40;
+    else if (bt3m >= 7  && bt3mWin >= 60) s = 32;
+    else if (bt3m >= 4  && bt3mWin >= 55) s = 24;
+    else if (bt3m > 0   && bt3mWin >= 50) s = 16;
+    else if (bt3m > 0)                    s = 8;
+    rows.push({ label: "백테스트 3M", score: s, max: 40, detail: `평균 +${bt3m.toFixed(1)}%, 승률 ${bt3mWin.toFixed(0)}%` });
+  }
+
+  const fwdPer = Number(item["PER(예상)"]);
+  if (!isNaN(fwdPer) && fwdPer > 0) {
+    let s = 0;
+    if      (fwdPer < 12) s = 25;
+    else if (fwdPer < 17) s = 20;
+    else if (fwdPer < 22) s = 14;
+    else if (fwdPer < 28) s = 8;
+    else if (fwdPer < 40) s = 3;
+    rows.push({ label: "Forward PER", score: s, max: 25, detail: `PER ${fwdPer.toFixed(1)}` });
+  }
+
+  const epsG = Number(item.EPS_Growth);
+  if (!isNaN(epsG)) {
+    let s = 0;
+    if      (epsG >= 30) s = 20;
+    else if (epsG >= 15) s = 15;
+    else if (epsG >= 5)  s = 10;
+    else if (epsG >= 0)  s = 4;
+    rows.push({ label: "EPS 성장", score: s, max: 20, detail: `${epsG >= 0 ? "+" : ""}${epsG.toFixed(1)}%` });
+  }
+
+  const revYoy = Number(item.Revenue_YoY);
+  if (!isNaN(revYoy)) {
+    let s = 0;
+    if      (revYoy >= 20) s = 15;
+    else if (revYoy >= 10) s = 11;
+    else if (revYoy >= 5)  s = 7;
+    else if (revYoy > 0)   s = 3;
+    rows.push({ label: "매출 YoY", score: s, max: 15, detail: `${revYoy >= 0 ? "+" : ""}${revYoy.toFixed(1)}%` });
+  }
+
+  return rows;
+}
+
 export function scoreLabel(score) {
   if (score >= 75) return { text: "🟢 강력매수", style: "background:rgba(46,160,67,0.55);color:#fff;font-weight:700;" };
   if (score >= 60) return { text: "🔵 매수",     style: "background:rgba(30,100,220,0.45);color:#fff;font-weight:700;" };

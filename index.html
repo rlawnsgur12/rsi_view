@@ -17,6 +17,7 @@
     <button class="active" data-tab="top100">Top 1~100</button>
     <button data-tab="top101_200">Top 101~200</button>
     <button data-tab="custom">Custom</button>
+    <button data-tab="watchlist">⭐ 관심종목</button>
   </div>
 
   <div class="controls">
@@ -38,6 +39,7 @@
   <table>
     <thead>
       <tr>
+        <th>⭐</th>
         <th>Ticker</th>
         <th>Name</th>
         <th>Sector</th>
@@ -64,7 +66,8 @@
         <th>ROE</th>
         <th>EPS</th>
         <th>EPS(예상)</th>
-        <th title="백테스트3M승률(40)+Forward PER저평가(25)+EPS성장(20)+매출YoY(15) — 저평가+우상향 가능성 평가">📊 종합의견</th>
+        <th title="백테스트3M승률(40)+Forward PER저평가(25)+EPS성장(20)+매출YoY(15) — 저평가+우상향 가능성 평가 / 클릭 시 상세">📊 종합의견</th>
+        <th title="Claude.ai AI 분석">🤖</th>
       </tr>
     </thead>
     <tbody id="rsi-table-body">
