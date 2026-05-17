@@ -1,8 +1,11 @@
+import sys
 import yfinance as yf
 import pandas as pd
 from pathlib import Path
 import json
 import math
+
+sys.stdout.reconfigure(encoding="utf-8")
 
 # =========================
 # 출력 디렉토리
