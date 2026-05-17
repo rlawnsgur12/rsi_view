@@ -3,6 +3,7 @@ import { rsiColor, changeColor, posColor, volColor, growthColor, btColor } from 
 import { calcScore, scoreLabel, calcScoreBreakdown } from "./score.js";
 import { renderSparkline } from "./sparkline.js";
 import { isWatched, toggleWatchlist } from "./watchlist.js";
+import { getNote, saveNote, hasNote } from "./ai_notes.js";
 
 let _aiPrompt = "";
 
@@ -88,8 +89,11 @@ export function renderTable(data) {
     row.appendChild(scoreTd);
 
     const aiTd = document.createElement("td");
-    aiTd.innerHTML = `<span style="cursor:pointer;font-size:1.1em;" title="AI 분석">🤖</span>`;
-    aiTd.addEventListener("click", () => showAiModal(item));
+    const aiIcon = () => hasNote(item.Ticker) ? "🤖✓" : "🤖";
+    aiTd.innerHTML = `<span style="cursor:pointer;font-size:1.1em;" title="AI 분석">${aiIcon()}</span>`;
+    aiTd.addEventListener("click", () => showAiModal(item, () => {
+      aiTd.querySelector("span").textContent = aiIcon();
+    }));
     row.appendChild(aiTd);
 
     tbody.appendChild(row);
@@ -199,7 +203,7 @@ function aiButtons(item) {
     </div>`;
 }
 
-function showAiModal(item) {
+function showAiModal(item, onSave) {
   let modal = document.getElementById("ai-modal");
   if (modal) modal.remove();
   modal = document.createElement("div");
@@ -208,17 +212,43 @@ function showAiModal(item) {
   modal.addEventListener("click", e => { if (e.target === modal) modal.remove(); });
 
   const prompt = buildPrompt(item);
+  const saved  = getNote(item.Ticker);
+
   modal.innerHTML = `
-    <div style="background:#fff;border-radius:12px;padding:28px 32px;min-width:400px;max-width:560px;box-shadow:0 8px 32px rgba(0,0,0,0.2);">
+    <div style="background:#fff;border-radius:12px;padding:28px 32px;min-width:400px;max-width:580px;max-height:90vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,0.2);">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
         <strong style="font-size:1.05em;">🤖 ${item.Ticker} AI 분석</strong>
         <span style="cursor:pointer;font-size:1.3em;" onclick="document.getElementById('ai-modal').remove()">✕</span>
       </div>
-      <textarea readonly style="width:100%;height:220px;font-size:0.8em;border:1px solid #ddd;border-radius:8px;padding:10px;resize:none;box-sizing:border-box;color:#444;">${prompt}</textarea>
-      <p style="font-size:0.78em;color:#888;margin:8px 0 14px;">Claude는 프롬프트가 자동 입력됩니다. ChatGPT·Gemini는 클립보드에 복사 후 붙여넣기 하세요.</p>
+
+      <textarea readonly style="width:100%;height:180px;font-size:0.8em;border:1px solid #ddd;border-radius:8px;padding:10px;resize:none;box-sizing:border-box;color:#444;">${prompt}</textarea>
+      <p style="font-size:0.78em;color:#888;margin:6px 0 10px;">Claude는 프롬프트가 자동 입력됩니다. ChatGPT·Gemini는 클립보드에 복사 후 붙여넣기 하세요.</p>
       ${aiButtons(item)}
+
+      <hr style="border:none;border-top:1px solid #eee;margin:18px 0;">
+
+      <div style="font-size:0.88em;font-weight:600;color:#444;margin-bottom:8px;">📝 AI 분석 결과 메모 <span style="font-weight:400;color:#aaa;font-size:0.85em;">(붙여넣기 후 저장)</span></div>
+      <textarea id="ai-note-area" style="width:100%;height:200px;font-size:0.82em;border:1px solid #ddd;border-radius:8px;padding:10px;resize:vertical;box-sizing:border-box;color:#333;">${saved}</textarea>
+      <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:8px;">
+        <button id="ai-note-clear" style="padding:6px 14px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;color:#666;cursor:pointer;font-size:0.85em;">삭제</button>
+        <button id="ai-note-save"  style="padding:6px 14px;border-radius:8px;border:none;background:#4a90d9;color:#fff;cursor:pointer;font-size:0.85em;font-weight:600;">저장</button>
+      </div>
     </div>`;
+
   document.body.appendChild(modal);
+
+  document.getElementById("ai-note-save").addEventListener("click", () => {
+    const text = document.getElementById("ai-note-area").value;
+    saveNote(item.Ticker, text);
+    if (onSave) onSave();
+    modal.remove();
+  });
+
+  document.getElementById("ai-note-clear").addEventListener("click", () => {
+    document.getElementById("ai-note-area").value = "";
+    saveNote(item.Ticker, "");
+    if (onSave) onSave();
+  });
 }
 
 window.openAiSite = function(url) {
