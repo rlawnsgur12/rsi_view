@@ -130,6 +130,7 @@ def process_tickers(ticker_list, output_path, ticker_info_map=None):
             roe = info.get("returnOnEquity")
             eps = info.get("trailingEps")
             fwd_eps = info.get("forwardEps")
+            target_price = info.get("targetMeanPrice")
 
             # ----- 우상향 지표 -----
             # EPS 컨센서스 성장률 = (Forward EPS - Trailing EPS) / |Trailing EPS| * 100
@@ -153,6 +154,25 @@ def process_tickers(ticker_list, output_path, ticker_info_map=None):
                             revenue_yoy = round((cur - base) / abs(base) * 100, 1)
             except Exception:
                 revenue_yoy = None
+
+            # PEG = Forward PER / EPS 성장률(%) — 성장 대비 밸류에이션 (1 이하 저평가)
+            peg = None
+            peg_base_per = fwd_per if fwd_per is not None else per
+            if peg_base_per is not None and eps_growth is not None and eps_growth > 0:
+                try:
+                    peg = round(float(peg_base_per) / eps_growth, 2)
+                except Exception:
+                    peg = None
+
+            # 목표주가 상승여력(%) = 애널리스트 평균 목표주가 대비 현재가 괴리율
+            target_upside = None
+            if target_price is not None and price_metrics["Price"]:
+                try:
+                    target_upside = round(
+                        (float(target_price) - price_metrics["Price"]) / price_metrics["Price"] * 100, 1
+                    )
+                except Exception:
+                    target_upside = None
 
             info_extra = {}
             if ticker_info_map:
@@ -187,14 +207,20 @@ def process_tickers(ticker_list, output_path, ticker_info_map=None):
                 'EPS(예상)': fwd_eps,
                 'EPS_Growth': eps_growth,
                 'Revenue_YoY': revenue_yoy,
-                # 백테스트 통계 (5년치, RSI≤30 진입 후 N개월 평균 수익률/승률)
+                'PEG': peg,
+                'TargetPrice': target_price,
+                'TargetUpside': target_upside,
+                # 백테스트 통계 (5년치, RSI≤30 진입 후 N개월 평균 수익률/승률/최대낙폭)
                 'BT_Events': bt.get('events'),
                 'BT_1M_Avg': bt.get('ret_1m_avg'),
                 'BT_1M_Win': bt.get('ret_1m_winrate'),
+                'BT_1M_MDD': bt.get('ret_1m_min'),
                 'BT_3M_Avg': bt.get('ret_3m_avg'),
                 'BT_3M_Win': bt.get('ret_3m_winrate'),
+                'BT_3M_MDD': bt.get('ret_3m_min'),
                 'BT_6M_Avg': bt.get('ret_6m_avg'),
                 'BT_6M_Win': bt.get('ret_6m_winrate'),
+                'BT_6M_MDD': bt.get('ret_6m_min'),
             })
 
         except Exception as e:

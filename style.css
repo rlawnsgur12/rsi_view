@@ -190,6 +190,13 @@ svg.spark {
   margin-left: 4px;
 }
 
+.bt-cell .bt-mdd {
+  font-size: 10px;
+  opacity: 0.75;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
 /* ===== 검색/필터 컨트롤 ===== */
 .controls {
   display: flex;
@@ -239,6 +246,21 @@ svg.spark {
   background: #1f6feb;
   color: #fff;
   border-color: #1f6feb;
+}
+
+.risk-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a8071a;
+  cursor: pointer;
+  user-select: none;
+}
+
+.risk-toggle input {
+  cursor: pointer;
 }
 
 #sector-filter {

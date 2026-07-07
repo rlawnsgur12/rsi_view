@@ -92,8 +92,29 @@ function fmtGrowth(val) {
   return `${sign}${n.toFixed(1)}%`;
 }
 
-// 백테스트 셀: "+5.2% / 65% (N=12)" 형태로 평균·승률·진입수 한 셀에
-function fmtBacktest(avg, winrate, events) {
+// PEG 색상: 1 이하 저평가(초록), 1~2 적정, 2 초과 고평가(빨강)
+function pegColor(peg) {
+  if (peg === null || peg === undefined || isNaN(peg)) return "";
+  const n = Number(peg);
+  if (n <= 0) return "";
+  if (n <= 1) return "background:rgba(46,160,67,0.4);font-weight:700;";
+  if (n <= 2) return "color:#333;";
+  return "background:rgba(220,60,60,0.25);color:#a8071a;font-weight:600;";
+}
+
+// 목표주가 상승여력 색상: 괴리율이 클수록(양수) 진한 초록, 음수(고평가)면 빨강
+function upsideColor(pct) {
+  if (pct === null || pct === undefined || isNaN(pct)) return "";
+  const n = Number(pct);
+  if (n >= 20) return "background:rgba(46,160,67,0.5);color:#fff;font-weight:700;";
+  if (n >= 10) return "background:rgba(46,160,67,0.3);font-weight:600;";
+  if (n > 0) return "color:#2ea043;font-weight:600;";
+  if (n < 0) return "background:rgba(220,60,60,0.25);color:#a8071a;font-weight:600;";
+  return "";
+}
+
+// 백테스트 셀: "+5.2% / 65% (N=12) [MDD -18%]" 형태로 평균·승률·진입수·최대낙폭 한 셀에
+function fmtBacktest(avg, winrate, events, mdd) {
   if (avg === null || avg === undefined || isNaN(avg)) return "";
   const a = Number(avg);
   const w = winrate !== null && winrate !== undefined && !isNaN(winrate) ? Number(winrate) : null;
@@ -101,7 +122,10 @@ function fmtBacktest(avg, winrate, events) {
   const avgStr = `${sign}${a.toFixed(1)}%`;
   const winStr = w !== null ? `${w.toFixed(0)}%` : "-";
   const nStr = events ? `<span class="bt-n">N=${events}</span>` : "";
-  return `<div class="bt-cell"><span class="bt-avg">${avgStr}</span><span class="bt-sep">/</span><span class="bt-win">${winStr}</span>${nStr}</div>`;
+  const mddStr = mdd !== null && mdd !== undefined && !isNaN(mdd)
+    ? `<span class="bt-mdd" title="진입 후 보유 기간 중 최대 낙폭">MDD ${Number(mdd).toFixed(1)}%</span>`
+    : "";
+  return `<div class="bt-cell"><span class="bt-avg">${avgStr}</span><span class="bt-sep">/</span><span class="bt-win">${winStr}</span>${nStr}${mddStr}</div>`;
 }
 
 // 백테스트 셀 색상 (평균 수익률 기준)
@@ -197,7 +221,7 @@ async function loadTab(name, btn) {
   setFilter("all", document.querySelector(`.chip[data-filter="all"]`));
 
   const tbody = document.getElementById("rsi-table-body");
-  tbody.innerHTML = `<tr><td colspan="26">⏳ 로딩 중...</td></tr>`;
+  tbody.innerHTML = `<tr><td colspan="28">⏳ 로딩 중...</td></tr>`;
 
   try {
     const res = await fetch(`data/${name}.json`);
@@ -205,7 +229,7 @@ async function loadTab(name, btn) {
     const data = await res.json();
 
     if (!data.length) {
-      tbody.innerHTML = `<tr><td colspan="26">📭 데이터 없음</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="28">📭 데이터 없음</td></tr>`;
       currentData = [];
       return;
     }
@@ -216,7 +240,7 @@ async function loadTab(name, btn) {
 
   } catch (err) {
     console.warn(`${name}.json 없음`);
-    tbody.innerHTML = `<tr><td colspan="26">⚠️ 데이터 파일이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="28">⚠️ 데이터 파일이 없습니다</td></tr>`;
     currentData = [];
   }
 }
@@ -234,7 +258,7 @@ function renderTable(data) {
   tbody.innerHTML = "";
 
   if (!data.length) {
-    tbody.innerHTML = `<tr><td colspan="26">🔎 조건에 맞는 종목이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="28">🔎 조건에 맞는 종목이 없습니다</td></tr>`;
     updateResultCount(0);
     return;
   }
@@ -287,9 +311,9 @@ function renderTable(data) {
     // 📈 매출 YoY
     append(fmtGrowth(item.Revenue_YoY), growthColor(item.Revenue_YoY));
     // 🧪 백테스트 1M
-    append(fmtBacktest(item.BT_1M_Avg, item.BT_1M_Win, item.BT_Events), btColor(item.BT_1M_Avg, item.BT_1M_Win));
+    append(fmtBacktest(item.BT_1M_Avg, item.BT_1M_Win, item.BT_Events, item.BT_1M_MDD), btColor(item.BT_1M_Avg, item.BT_1M_Win));
     // 🧪 백테스트 3M
-    append(fmtBacktest(item.BT_3M_Avg, item.BT_3M_Win, item.BT_Events), btColor(item.BT_3M_Avg, item.BT_3M_Win));
+    append(fmtBacktest(item.BT_3M_Avg, item.BT_3M_Win, item.BT_Events, item.BT_3M_MDD), btColor(item.BT_3M_Avg, item.BT_3M_Win));
     // PER ~ EPS(예상)
     append(fmt(item.PER));
     append(fmt(item["PER(예상)"]));
@@ -297,6 +321,10 @@ function renderTable(data) {
     append(fmt(item.ROE));
     append(fmt(item.EPS));
     append(fmt(item["EPS(예상)"]));
+    // PEG
+    append(fmt(item.PEG), pegColor(item.PEG));
+    // 목표주가 상승여력(%)
+    append(fmtGrowth(item.TargetUpside), upsideColor(item.TargetUpside));
 
     tbody.appendChild(row);
   });
@@ -334,6 +362,16 @@ function applyFilters() {
 
   if (sector) {
     filtered = filtered.filter(d => d.Sector === sector);
+  }
+
+  const hideRisk = document.getElementById("hide-risk")?.checked;
+  if (hideRisk) {
+    // 회피조건(§7): 적자기업(EPS<0) 또는 52주 위치 10% 미만
+    filtered = filtered.filter(d => {
+      const epsNegative = d.EPS != null && Number(d.EPS) < 0;
+      const near52wLow = d.Pos52w != null && Number(d.Pos52w) < 10;
+      return !epsNegative && !near52wLow;
+    });
   }
 
   if (activeFilter === "oversold") {

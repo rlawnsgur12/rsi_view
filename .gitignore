@@ -8,3 +8,6 @@ data/*
 
 # 개인 매매 전략 (로컬 전용)
 STRATEGY.md
+
+# Python 캐시
+__pycache__/
