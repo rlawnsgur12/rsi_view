@@ -7,8 +7,8 @@
     "ret_3m_avg": 2.72,
     "ret_3m_winrate": 50.0,
     "ret_3m_min": -10.29,
-    "ret_6m_avg": 18.18,
-    "ret_6m_winrate": 90.0,
+    "ret_6m_avg": 18.39,
+    "ret_6m_winrate": 90.9,
     "ret_6m_min": -3.81
   },
   "ABBV": {
@@ -84,15 +84,15 @@
     "ret_6m_min": -18.0
   },
   "AEM": {
-    "events": 13,
-    "ret_1m_avg": 8.84,
-    "ret_1m_winrate": 75.0,
-    "ret_1m_min": -5.24,
-    "ret_3m_avg": 7.89,
-    "ret_3m_winrate": 75.0,
+    "events": 12,
+    "ret_1m_avg": 10.12,
+    "ret_1m_winrate": 81.8,
+    "ret_1m_min": -2.05,
+    "ret_3m_avg": 8.43,
+    "ret_3m_winrate": 72.7,
     "ret_3m_min": -8.6,
-    "ret_6m_avg": 16.92,
-    "ret_6m_winrate": 81.8,
+    "ret_6m_avg": 18.58,
+    "ret_6m_winrate": 80.0,
     "ret_6m_min": -5.87
   },
   "AMAT": {
@@ -144,15 +144,15 @@
     "ret_6m_min": -18.16
   },
   "AMZN": {
-    "events": 13,
-    "ret_1m_avg": 1.28,
-    "ret_1m_winrate": 61.5,
+    "events": 12,
+    "ret_1m_avg": 1.15,
+    "ret_1m_winrate": 58.3,
     "ret_1m_min": -12.04,
-    "ret_3m_avg": 13.27,
-    "ret_3m_winrate": 84.6,
+    "ret_3m_avg": 14.08,
+    "ret_3m_winrate": 83.3,
     "ret_3m_min": -2.22,
-    "ret_6m_avg": 7.35,
-    "ret_6m_winrate": 66.7,
+    "ret_6m_avg": 9.24,
+    "ret_6m_winrate": 72.7,
     "ret_6m_min": -23.29
   },
   "ANET": {
@@ -252,15 +252,15 @@
     "ret_6m_min": -5.73
   },
   "B": {
-    "events": 20,
-    "ret_1m_avg": 4.87,
-    "ret_1m_winrate": 70.0,
+    "events": 19,
+    "ret_1m_avg": 5.16,
+    "ret_1m_winrate": 73.7,
     "ret_1m_min": -11.14,
-    "ret_3m_avg": 6.88,
-    "ret_3m_winrate": 75.0,
+    "ret_3m_avg": 7.33,
+    "ret_3m_winrate": 78.9,
     "ret_3m_min": -17.7,
-    "ret_6m_avg": 12.39,
-    "ret_6m_winrate": 73.7,
+    "ret_6m_avg": 13.08,
+    "ret_6m_winrate": 77.8,
     "ret_6m_min": -19.22
   },
   "BA": {
@@ -589,8 +589,8 @@
   },
   "CME": {
     "events": 13,
-    "ret_1m_avg": -2.2,
-    "ret_1m_winrate": 27.3,
+    "ret_1m_avg": -2.42,
+    "ret_1m_winrate": 25.0,
     "ret_1m_min": -10.38,
     "ret_3m_avg": 1.75,
     "ret_3m_winrate": 60.0,
@@ -744,15 +744,15 @@
     "ret_6m_min": -19.79
   },
   "DIS": {
-    "events": 27,
-    "ret_1m_avg": 0.6,
-    "ret_1m_winrate": 59.3,
+    "events": 28,
+    "ret_1m_avg": 0.8,
+    "ret_1m_winrate": 60.7,
     "ret_1m_min": -11.35,
-    "ret_3m_avg": 2.09,
-    "ret_3m_winrate": 44.4,
+    "ret_3m_avg": 1.96,
+    "ret_3m_winrate": 42.9,
     "ret_3m_min": -25.82,
-    "ret_6m_avg": -1.24,
-    "ret_6m_winrate": 38.5,
+    "ret_6m_avg": -1.81,
+    "ret_6m_winrate": 37.0,
     "ret_6m_min": -34.44
   },
   "DUK": {
@@ -840,15 +840,15 @@
     "ret_6m_min": -21.18
   },
   "FDX": {
-    "events": 19,
-    "ret_1m_avg": -0.14,
-    "ret_1m_winrate": 52.6,
+    "events": 18,
+    "ret_1m_avg": -0.03,
+    "ret_1m_winrate": 55.6,
     "ret_1m_min": -23.17,
-    "ret_3m_avg": 1.89,
-    "ret_3m_winrate": 52.6,
-    "ret_3m_min": -14.3,
-    "ret_6m_avg": 1.96,
-    "ret_6m_winrate": 47.4,
+    "ret_3m_avg": 2.82,
+    "ret_3m_winrate": 55.6,
+    "ret_3m_min": -13.5,
+    "ret_6m_avg": 2.56,
+    "ret_6m_winrate": 50.0,
     "ret_6m_min": -16.97
   },
   "GD": {
@@ -937,15 +937,15 @@
   },
   "GS": {
     "events": 13,
-    "ret_1m_avg": 5.39,
+    "ret_1m_avg": 5.43,
     "ret_1m_winrate": 76.9,
     "ret_1m_min": -13.06,
-    "ret_3m_avg": 15.64,
-    "ret_3m_winrate": 84.6,
+    "ret_3m_avg": 15.8,
+    "ret_3m_winrate": 92.3,
     "ret_3m_min": -1.8,
-    "ret_6m_avg": 21.14,
+    "ret_6m_avg": 21.01,
     "ret_6m_winrate": 75.0,
-    "ret_6m_min": -8.74
+    "ret_6m_min": -10.35
   },
   "GSK": {
     "events": 15,
@@ -991,8 +991,8 @@
     "ret_3m_avg": -0.03,
     "ret_3m_winrate": 64.7,
     "ret_3m_min": -23.51,
-    "ret_6m_avg": -3.15,
-    "ret_6m_winrate": 30.8,
+    "ret_6m_avg": -4.41,
+    "ret_6m_winrate": 28.6,
     "ret_6m_min": -26.54
   },
   "HON": {
@@ -1057,8 +1057,8 @@
   },
   "ICE": {
     "events": 26,
-    "ret_1m_avg": -0.08,
-    "ret_1m_winrate": 47.8,
+    "ret_1m_avg": -0.2,
+    "ret_1m_winrate": 45.8,
     "ret_1m_min": -16.32,
     "ret_3m_avg": 6.97,
     "ret_3m_winrate": 72.7,
@@ -1080,15 +1080,15 @@
     "ret_6m_min": -28.25
   },
   "INTC": {
-    "events": 16,
-    "ret_1m_avg": -0.96,
-    "ret_1m_winrate": 43.8,
+    "events": 17,
+    "ret_1m_avg": -0.81,
+    "ret_1m_winrate": 47.1,
     "ret_1m_min": -19.11,
-    "ret_3m_avg": 4.63,
-    "ret_3m_winrate": 31.2,
+    "ret_3m_avg": 4.1,
+    "ret_3m_winrate": 29.4,
     "ret_3m_min": -22.45,
-    "ret_6m_avg": 1.52,
-    "ret_6m_winrate": 18.8,
+    "ret_6m_avg": 0.64,
+    "ret_6m_winrate": 17.6,
     "ret_6m_min": -37.47
   },
   "INTU": {
@@ -1224,15 +1224,15 @@
     "ret_6m_min": -6.58
   },
   "LMT": {
-    "events": 25,
-    "ret_1m_avg": 1.74,
-    "ret_1m_winrate": 56.0,
+    "events": 24,
+    "ret_1m_avg": 1.93,
+    "ret_1m_winrate": 58.3,
     "ret_1m_min": -8.23,
-    "ret_3m_avg": 4.28,
-    "ret_3m_winrate": 50.0,
+    "ret_3m_avg": 4.72,
+    "ret_3m_winrate": 52.2,
     "ret_3m_min": -15.33,
-    "ret_6m_avg": 12.27,
-    "ret_6m_winrate": 75.0,
+    "ret_6m_avg": 12.42,
+    "ret_6m_winrate": 73.9,
     "ret_6m_min": -13.53
   },
   "LOW": {
@@ -1264,12 +1264,12 @@
     "ret_1m_avg": 4.58,
     "ret_1m_winrate": 60.0,
     "ret_1m_min": -2.7,
-    "ret_3m_avg": 7.01,
+    "ret_3m_avg": 6.92,
     "ret_3m_winrate": 60.0,
-    "ret_3m_min": -5.33,
-    "ret_6m_avg": 9.75,
+    "ret_3m_min": -6.18,
+    "ret_6m_avg": 10.37,
     "ret_6m_winrate": 75.0,
-    "ret_6m_min": -8.03
+    "ret_6m_min": -5.3
   },
   "MAR": {
     "events": 6,
@@ -1399,8 +1399,8 @@
     "ret_3m_avg": 5.08,
     "ret_3m_winrate": 60.0,
     "ret_3m_min": -8.88,
-    "ret_6m_avg": 9.1,
-    "ret_6m_winrate": 71.4,
+    "ret_6m_avg": 10.48,
+    "ret_6m_winrate": 73.3,
     "ret_6m_min": -7.58
   },
   "MRK": {
@@ -1507,8 +1507,8 @@
     "ret_3m_avg": 11.27,
     "ret_3m_winrate": 78.6,
     "ret_3m_min": -41.89,
-    "ret_6m_avg": 21.09,
-    "ret_6m_winrate": 60.0,
+    "ret_6m_avg": 17.65,
+    "ret_6m_winrate": 54.5,
     "ret_6m_min": -67.05
   },
   "NGG": {
@@ -2112,15 +2112,15 @@
     "ret_6m_min": -23.8
   },
   "TMUS": {
-    "events": 16,
-    "ret_1m_avg": 3.96,
-    "ret_1m_winrate": 62.5,
+    "events": 18,
+    "ret_1m_avg": 2.89,
+    "ret_1m_winrate": 55.6,
     "ret_1m_min": -8.73,
-    "ret_3m_avg": 2.14,
-    "ret_3m_winrate": 53.3,
-    "ret_3m_min": -15.28,
-    "ret_6m_avg": 3.93,
-    "ret_6m_winrate": 50.0,
+    "ret_3m_avg": 0.08,
+    "ret_3m_winrate": 47.1,
+    "ret_3m_min": -16.79,
+    "ret_6m_avg": 1.95,
+    "ret_6m_winrate": 43.8,
     "ret_6m_min": -14.93
   },
   "TSLA": {
@@ -2149,13 +2149,13 @@
   },
   "TT": {
     "events": 13,
-    "ret_1m_avg": 1.54,
-    "ret_1m_winrate": 61.5,
+    "ret_1m_avg": 0.62,
+    "ret_1m_winrate": 53.8,
     "ret_1m_min": -13.81,
-    "ret_3m_avg": 2.9,
+    "ret_3m_avg": 2.42,
     "ret_3m_winrate": 46.2,
     "ret_3m_min": -16.56,
-    "ret_6m_avg": 4.97,
+    "ret_6m_avg": 4.54,
     "ret_6m_winrate": 53.8,
     "ret_6m_min": -21.26
   },
