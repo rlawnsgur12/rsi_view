@@ -3,7 +3,7 @@
     "Ticker": "LOW",
     "Name": "Lowe's Companies, Inc.",
     "Sector": "Home Improvement Retail",
-    "RSI": 36.44,
+    "RSI": 44.28,
     "RSI_Series": [
       52.44,
       52.12,
@@ -34,9 +34,9 @@
       37.4,
       38.58,
       36.44,
-      36.44
+      44.28
     ],
-    "WeeklyRSI": 34.7,
+    "WeeklyRSI": 36.9,
     "WeeklyRSI_Series": [
       52.94,
       62.49,
@@ -67,16 +67,16 @@
       45.77,
       38.52,
       37.36,
-      34.7
+      36.9
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.94,
+    "Price": 207.64,
+    "DayChangePct": 2.83,
+    "Pos52w": 8.8,
+    "VolRatio": 1.13,
     "EPS_Growth": -0.7,
     "Revenue_YoY": 10.3,
     "BT_1M_Avg": -0.28,
@@ -96,7 +96,7 @@
     "Ticker": "SYK",
     "Name": "Stryker Corporation",
     "Sector": "Medical Devices",
-    "RSI": 50.49,
+    "RSI": 56.29,
     "RSI_Series": [
       48.16,
       52.87,
@@ -127,9 +127,9 @@
       47.48,
       44.6,
       50.49,
-      50.49
+      56.29
     ],
-    "WeeklyRSI": 45.45,
+    "WeeklyRSI": 49.69,
     "WeeklyRSI_Series": [
       38.29,
       49.72,
@@ -160,16 +160,16 @@
       47.99,
       49.17,
       45.76,
-      45.45
+      49.69
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.87,
+    "Price": 330.25,
+    "DayChangePct": 3.54,
+    "Pos52w": 40.0,
+    "VolRatio": 0.91,
     "EPS_Growth": 14.2,
     "Revenue_YoY": 2.6,
     "BT_1M_Avg": 3.67,
@@ -189,7 +189,7 @@
     "Ticker": "PDD",
     "Name": "PDD Holdings Inc.",
     "Sector": "Internet Retail",
-    "RSI": 48.29,
+    "RSI": 46.68,
     "RSI_Series": [
       31.69,
       32.44,
@@ -220,9 +220,9 @@
       52.06,
       49.0,
       48.29,
-      48.29
+      46.68
     ],
-    "WeeklyRSI": 37.47,
+    "WeeklyRSI": 36.95,
     "WeeklyRSI_Series": [
       47.26,
       51.08,
@@ -253,16 +253,16 @@
       35.5,
       38.97,
       38.17,
-      37.47
+      36.95
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.56,
+    "Price": 82.66,
+    "DayChangePct": -0.77,
+    "Pos52w": 15.9,
+    "VolRatio": 0.65,
     "EPS_Growth": -14.9,
     "Revenue_YoY": 11.0,
     "BT_1M_Avg": 5.65,
@@ -271,18 +271,18 @@
     "BT_3M_Win": 68.4,
     "BT_Events": 21,
     "PER": 8.682773,
-    "PER(예상)": 6.778723,
+    "PER(예상)": 6.7778506,
     "PBR": 1.8564495,
     "ROE": 0.254,
     "EPS": 9.52,
-    "EPS(예상)": 12.194038,
+    "EPS(예상)": 12.195607,
     "EarningsDate": "2026년 5월 27일"
   },
   {
     "Ticker": "SMFG",
     "Name": "Sumitomo Mitsui Financial Group, Inc.",
     "Sector": "Banks - Diversified",
-    "RSI": 60.03,
+    "RSI": 62.16,
     "RSI_Series": [
       65.81,
       69.92,
@@ -313,9 +313,9 @@
       60.91,
       62.07,
       60.03,
-      60.03
+      62.16
     ],
-    "WeeklyRSI": 65.85,
+    "WeeklyRSI": 66.6,
     "WeeklyRSI_Series": [
       69.45,
       72.84,
@@ -346,16 +346,16 @@
       63.68,
       67.36,
       62.88,
-      65.85
+      66.6
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.77,
+    "Price": 26.18,
+    "DayChangePct": 1.04,
+    "Pos52w": 95.8,
+    "VolRatio": 0.83,
     "EPS_Growth": null,
     "Revenue_YoY": null,
     "BT_1M_Avg": 2.39,
@@ -375,7 +375,7 @@
     "Ticker": "APP",
     "Name": "AppLovin Corporation",
     "Sector": "Advertising Agencies",
-    "RSI": 32.45,
+    "RSI": 31.38,
     "RSI_Series": [
       41.26,
       45.47,
@@ -406,9 +406,9 @@
       37.36,
       34.61,
       32.45,
-      32.45
+      31.38
     ],
-    "WeeklyRSI": 42.03,
+    "WeeklyRSI": 41.54,
     "WeeklyRSI_Series": [
       55.08,
       57.32,
@@ -439,16 +439,16 @@
       53.02,
       51.09,
       43.99,
-      42.03
+      41.54
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "⚠️",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.87,
+    "Price": 391.98,
+    "DayChangePct": -1.72,
+    "Pos52w": 8.6,
+    "VolRatio": 0.88,
     "EPS_Growth": 113.1,
     "Revenue_YoY": 59.0,
     "BT_1M_Avg": -0.69,
@@ -468,7 +468,7 @@
     "Ticker": "ETN",
     "Name": "Eaton Corporation plc",
     "Sector": "Specialty Industrial Machinery",
-    "RSI": 54.19,
+    "RSI": 49.11,
     "RSI_Series": [
       47.52,
       46.69,
@@ -499,9 +499,9 @@
       48.91,
       50.67,
       54.19,
-      54.19
+      49.11
     ],
-    "WeeklyRSI": 58.67,
+    "WeeklyRSI": 55.62,
     "WeeklyRSI_Series": [
       42.8,
       41.86,
@@ -532,16 +532,16 @@
       54.55,
       57.03,
       54.37,
-      58.67
+      55.62
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.57,
+    "Price": 404.07,
+    "DayChangePct": -2.66,
+    "Pos52w": 73.8,
+    "VolRatio": 0.7,
     "EPS_Growth": -9.4,
     "Revenue_YoY": 16.8,
     "BT_1M_Avg": 4.39,
@@ -561,7 +561,7 @@
     "Ticker": "WELL",
     "Name": "Welltower Inc.",
     "Sector": "REIT - Healthcare Facilities",
-    "RSI": 70.57,
+    "RSI": 74.12,
     "RSI_Series": [
       52.13,
       55.57,
@@ -592,9 +592,9 @@
       71.34,
       68.98,
       70.57,
-      70.57
+      74.12
     ],
-    "WeeklyRSI": 70.58,
+    "WeeklyRSI": 72.15,
     "WeeklyRSI_Series": [
       57.81,
       56.97,
@@ -625,16 +625,16 @@
       68.32,
       64.76,
       69.26,
-      70.58
+      72.15
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.92,
+    "Price": 252.07,
+    "DayChangePct": 2.03,
+    "Pos52w": 99.1,
+    "VolRatio": 1.12,
     "EPS_Growth": 157.9,
     "Revenue_YoY": 38.3,
     "BT_1M_Avg": -2.99,
@@ -654,7 +654,7 @@
     "Ticker": "NEM",
     "Name": "Newmont Corporation",
     "Sector": "Gold",
-    "RSI": 47.44,
+    "RSI": 44.93,
     "RSI_Series": [
       38.29,
       42.33,
@@ -685,9 +685,9 @@
       43.1,
       49.15,
       47.44,
-      47.44
+      44.93
     ],
-    "WeeklyRSI": 44.68,
+    "WeeklyRSI": 43.55,
     "WeeklyRSI_Series": [
       69.32,
       73.56,
@@ -718,16 +718,16 @@
       45.02,
       43.99,
       40.77,
-      44.68
+      43.55
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.95,
+    "Price": 93.19,
+    "DayChangePct": -1.62,
+    "Pos52w": 43.0,
+    "VolRatio": 1.18,
     "EPS_Growth": 11.4,
     "Revenue_YoY": 15.1,
     "BT_1M_Avg": 2.47,
@@ -747,7 +747,7 @@
     "Ticker": "BX",
     "Name": "Blackstone Inc.",
     "Sector": "Asset Management",
-    "RSI": 54.0,
+    "RSI": 61.81,
     "RSI_Series": [
       53.94,
       56.46,
@@ -778,9 +778,9 @@
       53.6,
       51.17,
       54.0,
-      54.0
+      61.81
     ],
-    "WeeklyRSI": 48.78,
+    "WeeklyRSI": 53.18,
     "WeeklyRSI_Series": [
       52.64,
       51.59,
@@ -811,18 +811,18 @@
       47.38,
       47.63,
       50.75,
-      48.78
+      53.18
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.98,
-    "EPS_Growth": 3.9,
-    "Revenue_YoY": 5.7,
+    "Price": 130.0,
+    "DayChangePct": 4.42,
+    "Pos52w": 32.0,
+    "VolRatio": 1.32,
+    "EPS_Growth": 57.3,
+    "Revenue_YoY": 28.6,
     "BT_1M_Avg": 2.91,
     "BT_1M_Win": 64.3,
     "BT_3M_Avg": 4.99,
@@ -830,8 +830,8 @@
     "BT_Events": 14,
     "PER": 29.082775,
     "PER(예상)": 17.437914,
-    "PBR": 11.749819,
-    "ROE": 0.29533002,
+    "PBR": 11.536073,
+    "ROE": 0.31374002,
     "EPS": 4.47,
     "EPS(예상)": 7.45502,
     "EarningsDate": "2026년 7월 23일"
@@ -840,7 +840,7 @@
     "Ticker": "SONY",
     "Name": "Sony Group Corporation",
     "Sector": "Consumer Electronics",
-    "RSI": 47.45,
+    "RSI": 51.45,
     "RSI_Series": [
       44.74,
       39.86,
@@ -871,9 +871,9 @@
       51.87,
       50.51,
       47.45,
-      47.45
+      51.45
     ],
-    "WeeklyRSI": 43.81,
+    "WeeklyRSI": 45.17,
     "WeeklyRSI_Series": [
       44.83,
       41.76,
@@ -904,16 +904,16 @@
       44.02,
       44.34,
       45.85,
-      43.81
+      45.17
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.77,
+    "Price": 20.98,
+    "DayChangePct": 1.4,
+    "Pos52w": 15.1,
+    "VolRatio": 0.84,
     "EPS_Growth": -57.4,
     "Revenue_YoY": 8.3,
     "BT_1M_Avg": 1.52,
@@ -933,7 +933,7 @@
     "Ticker": "COP",
     "Name": "ConocoPhillips",
     "Sector": "Oil & Gas Exploration & Production",
-    "RSI": 66.7,
+    "RSI": 66.79,
     "RSI_Series": [
       43.74,
       46.95,
@@ -964,9 +964,9 @@
       62.55,
       64.58,
       66.7,
-      66.7
+      66.79
     ],
-    "WeeklyRSI": 57.01,
+    "WeeklyRSI": 57.05,
     "WeeklyRSI_Series": [
       55.38,
       56.28,
@@ -997,16 +997,16 @@
       43.36,
       47.63,
       52.69,
-      57.01
+      57.05
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.5,
+    "Price": 120.26,
+    "DayChangePct": 0.05,
+    "Pos52w": 69.0,
+    "VolRatio": 0.65,
     "EPS_Growth": -20.2,
     "Revenue_YoY": -5.3,
     "BT_1M_Avg": 3.96,
@@ -1026,7 +1026,7 @@
     "Ticker": "PLD",
     "Name": "Prologis, Inc.",
     "Sector": "REIT - Industrial",
-    "RSI": 52.26,
+    "RSI": 56.43,
     "RSI_Series": [
       58.57,
       61.28,
@@ -1057,9 +1057,9 @@
       62.45,
       51.54,
       52.26,
-      52.26
+      56.43
     ],
-    "WeeklyRSI": 56.78,
+    "WeeklyRSI": 59.79,
     "WeeklyRSI_Series": [
       62.86,
       63.24,
@@ -1090,15 +1090,15 @@
       52.68,
       54.27,
       62.64,
-      56.78
+      59.79
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 147.63,
+    "DayChangePct": 1.73,
+    "Pos52w": 88.5,
     "VolRatio": 1.51,
     "EPS_Growth": 85.3,
     "Revenue_YoY": 12.3,
@@ -1119,7 +1119,7 @@
     "Ticker": "BTI",
     "Name": "British American Tobacco p.l.c.",
     "Sector": "Tobacco",
-    "RSI": 45.23,
+    "RSI": 49.53,
     "RSI_Series": [
       50.93,
       54.62,
@@ -1150,9 +1150,9 @@
       51.21,
       53.64,
       45.23,
-      45.23
+      49.53
     ],
-    "WeeklyRSI": 50.15,
+    "WeeklyRSI": 52.08,
     "WeeklyRSI_Series": [
       60.19,
       55.27,
@@ -1183,16 +1183,16 @@
       54.28,
       50.96,
       55.67,
-      50.15
+      52.08
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.64,
+    "Price": 60.96,
+    "DayChangePct": 1.87,
+    "Pos52w": 63.6,
+    "VolRatio": 0.67,
     "EPS_Growth": null,
     "Revenue_YoY": 0.1,
     "BT_1M_Avg": 3.54,
@@ -1202,7 +1202,7 @@
     "BT_Events": 18,
     "PER": 13.053533,
     "PER(예상)": 11.653047,
-    "PBR": 10.741962,
+    "PBR": 10.802684,
     "ROE": 0.15824,
     "EPS": 4.67,
     "EPS(예상)": 5.23125,
@@ -1212,7 +1212,7 @@
     "Ticker": "ARM",
     "Name": "Arm Holdings plc",
     "Sector": "Semiconductors",
-    "RSI": 43.23,
+    "RSI": 38.24,
     "RSI_Series": [
       58.25,
       63.81,
@@ -1243,9 +1243,9 @@
       44.7,
       43.32,
       43.23,
-      43.23
+      38.24
     ],
-    "WeeklyRSI": 55.0,
+    "WeeklyRSI": 52.12,
     "WeeklyRSI_Series": [
       38.9,
       37.82,
@@ -1276,15 +1276,15 @@
       60.78,
       61.62,
       53.11,
-      55.0
+      52.12
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 260.01,
+    "DayChangePct": -8.14,
+    "Pos52w": 45.4,
     "VolRatio": 0.78,
     "EPS_Growth": 47.9,
     "Revenue_YoY": 20.1,
@@ -1305,7 +1305,7 @@
     "Ticker": "BKNG",
     "Name": "Booking Holdings Inc.",
     "Sector": "Travel Services",
-    "RSI": 45.31,
+    "RSI": 51.01,
     "RSI_Series": [
       47.72,
       49.68,
@@ -1336,9 +1336,9 @@
       53.36,
       51.34,
       45.31,
-      45.31
+      51.01
     ],
-    "WeeklyRSI": 46.83,
+    "WeeklyRSI": 49.21,
     "WeeklyRSI_Series": [
       52.59,
       56.93,
@@ -1369,16 +1369,16 @@
       53.2,
       49.83,
       51.59,
-      46.83
+      49.21
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.74,
+    "Price": 177.46,
+    "DayChangePct": 2.68,
+    "Pos52w": 33.5,
+    "VolRatio": 0.75,
     "EPS_Growth": 240.0,
     "Revenue_YoY": 16.2,
     "BT_1M_Avg": 9.78,
@@ -1398,7 +1398,7 @@
     "Ticker": "CB",
     "Name": "Chubb Limited",
     "Sector": "Insurance - Property & Casualty",
-    "RSI": 56.45,
+    "RSI": 60.01,
     "RSI_Series": [
       55.87,
       56.07,
@@ -1429,9 +1429,9 @@
       59.39,
       50.09,
       56.45,
-      56.45
+      60.01
     ],
-    "WeeklyRSI": 62.6,
+    "WeeklyRSI": 64.78,
     "WeeklyRSI_Series": [
       64.51,
       61.51,
@@ -1462,16 +1462,16 @@
       68.56,
       60.7,
       62.21,
-      62.6
+      64.78
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.92,
+    "Price": 359.75,
+    "DayChangePct": 1.84,
+    "Pos52w": 94.5,
+    "VolRatio": 1.06,
     "EPS_Growth": -0.7,
     "Revenue_YoY": 6.0,
     "BT_1M_Avg": 6.18,
@@ -1481,7 +1481,7 @@
     "BT_Events": 9,
     "PER": 12.7570915,
     "PER(예상)": 12.360331,
-    "PBR": 1.8676766,
+    "PBR": 1.8406242,
     "ROE": 0.14822,
     "EPS": 28.2,
     "EPS(예상)": 29.10521,
@@ -1491,7 +1491,7 @@
     "Ticker": "SPGI",
     "Name": "S&P Global Inc.",
     "Sector": "Financial Data & Stock Exchanges",
-    "RSI": 48.27,
+    "RSI": 51.46,
     "RSI_Series": [
       45.27,
       48.99,
@@ -1522,9 +1522,9 @@
       53.99,
       52.84,
       48.27,
-      48.27
+      51.46
     ],
-    "WeeklyRSI": 49.57,
+    "WeeklyRSI": 51.04,
     "WeeklyRSI_Series": [
       51.9,
       61.14,
@@ -1555,16 +1555,16 @@
       55.56,
       52.93,
       57.61,
-      49.57
+      51.04
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.53,
+    "Price": 426.4,
+    "DayChangePct": 1.52,
+    "Pos52w": 35.0,
+    "VolRatio": 0.67,
     "EPS_Growth": 32.5,
     "Revenue_YoY": 10.4,
     "BT_1M_Avg": 3.33,
@@ -1584,7 +1584,7 @@
     "Ticker": "BBVA",
     "Name": "Banco Bilbao Vizcaya Argentaria, S.A.",
     "Sector": "Banks - Diversified",
-    "RSI": 53.3,
+    "RSI": 58.63,
     "RSI_Series": [
       55.88,
       57.41,
@@ -1615,9 +1615,9 @@
       59.54,
       64.37,
       53.3,
-      53.3
+      58.63
     ],
-    "WeeklyRSI": 62.04,
+    "WeeklyRSI": 64.39,
     "WeeklyRSI_Series": [
       79.09,
       76.12,
@@ -1648,16 +1648,16 @@
       64.54,
       64.84,
       61.36,
-      62.04
+      64.39
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.8,
+    "Price": 25.95,
+    "DayChangePct": 2.53,
+    "Pos52w": 96.0,
+    "VolRatio": 0.87,
     "EPS_Growth": 13.3,
     "Revenue_YoY": 11.9,
     "BT_1M_Avg": 6.86,
@@ -1677,7 +1677,7 @@
     "Ticker": "GLW",
     "Name": "Corning Incorporated",
     "Sector": "Electronic Components",
-    "RSI": 39.37,
+    "RSI": 36.43,
     "RSI_Series": [
       47.53,
       48.83,
@@ -1708,9 +1708,9 @@
       40.96,
       38.39,
       39.37,
-      39.37
+      36.43
     ],
-    "WeeklyRSI": 49.18,
+    "WeeklyRSI": 46.54,
     "WeeklyRSI_Series": [
       74.18,
       62.2,
@@ -1741,16 +1741,16 @@
       63.34,
       60.95,
       48.74,
-      49.18
+      46.54
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.51,
+    "Price": 146.65,
+    "DayChangePct": -6.03,
+    "Pos52w": 42.3,
+    "VolRatio": 0.58,
     "EPS_Growth": 138.9,
     "Revenue_YoY": 20.0,
     "BT_1M_Avg": 1.8,
@@ -1770,7 +1770,7 @@
     "Ticker": "UBS",
     "Name": "UBS Group AG",
     "Sector": "Banks - Diversified",
-    "RSI": 52.06,
+    "RSI": 52.91,
     "RSI_Series": [
       60.29,
       63.49,
@@ -1801,9 +1801,9 @@
       56.37,
       57.63,
       52.06,
-      52.06
+      52.91
     ],
-    "WeeklyRSI": 65.75,
+    "WeeklyRSI": 66.43,
     "WeeklyRSI_Series": [
       72.46,
       73.25,
@@ -1834,16 +1834,16 @@
       67.4,
       69.14,
       70.21,
-      65.75
+      66.43
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.97,
+    "Price": 51.74,
+    "DayChangePct": 0.37,
+    "Pos52w": 82.2,
+    "VolRatio": 1.04,
     "EPS_Growth": 84.4,
     "Revenue_YoY": 13.8,
     "BT_1M_Avg": 10.93,
@@ -1863,7 +1863,7 @@
     "Ticker": "ACN",
     "Name": "Accenture plc",
     "Sector": "Information Technology Services",
-    "RSI": 44.61,
+    "RSI": 53.13,
     "RSI_Series": [
       39.19,
       42.38,
@@ -1894,9 +1894,9 @@
       46.57,
       45.87,
       44.61,
-      44.61
+      53.13
     ],
-    "WeeklyRSI": 33.09,
+    "WeeklyRSI": 35.94,
     "WeeklyRSI_Series": [
       46.97,
       57.32,
@@ -1927,16 +1927,16 @@
       30.67,
       30.22,
       34.29,
-      33.09
+      35.94
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.48,
+    "Price": 146.99,
+    "DayChangePct": 5.95,
+    "Pos52w": 16.7,
+    "VolRatio": 0.66,
     "EPS_Growth": 9.0,
     "Revenue_YoY": 5.6,
     "BT_1M_Avg": -1.59,
@@ -1956,7 +1956,7 @@
     "Ticker": "PH",
     "Name": "Parker-Hannifin Corporation",
     "Sector": "Specialty Industrial Machinery",
-    "RSI": 62.35,
+    "RSI": 62.88,
     "RSI_Series": [
       56.22,
       56.49,
@@ -1987,9 +1987,9 @@
       55.06,
       58.39,
       62.35,
-      62.35
+      62.88
     ],
-    "WeeklyRSI": 61.66,
+    "WeeklyRSI": 61.91,
     "WeeklyRSI_Series": [
       73.62,
       76.57,
@@ -2020,16 +2020,16 @@
       59.13,
       58.83,
       57.27,
-      61.66
+      61.91
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.03,
+    "Price": 987.54,
+    "DayChangePct": 0.21,
+    "Pos52w": 86.2,
+    "VolRatio": 1.23,
     "EPS_Growth": -4.2,
     "Revenue_YoY": 10.6,
     "BT_1M_Avg": 8.25,
@@ -2049,7 +2049,7 @@
     "Ticker": "BMY",
     "Name": "Bristol-Myers Squibb Company",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 62.16,
+    "RSI": 63.85,
     "RSI_Series": [
       49.93,
       50.92,
@@ -2080,9 +2080,9 @@
       60.67,
       59.91,
       62.16,
-      62.16
+      63.85
     ],
-    "WeeklyRSI": 60.75,
+    "WeeklyRSI": 61.79,
     "WeeklyRSI_Series": [
       63.38,
       68.12,
@@ -2113,16 +2113,16 @@
       53.9,
       52.44,
       59.27,
-      60.75
+      61.79
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.07,
+    "Price": 62.09,
+    "DayChangePct": 0.94,
+    "Pos52w": 96.1,
+    "VolRatio": 1.08,
     "EPS_Growth": 9.2,
     "Revenue_YoY": 2.6,
     "BT_1M_Avg": -1.08,
@@ -2142,7 +2142,7 @@
     "Ticker": "VRTX",
     "Name": "Vertex Pharmaceuticals Incorporated",
     "Sector": "Biotechnology",
-    "RSI": 46.34,
+    "RSI": 49.09,
     "RSI_Series": [
       53.92,
       53.84,
@@ -2173,9 +2173,9 @@
       51.32,
       46.01,
       46.34,
-      46.34
+      49.09
     ],
-    "WeeklyRSI": 53.63,
+    "WeeklyRSI": 54.8,
     "WeeklyRSI_Series": [
       55.8,
       59.03,
@@ -2206,15 +2206,15 @@
       71.07,
       57.16,
       57.21,
-      53.63
+      54.8
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 477.36,
+    "DayChangePct": 0.9,
+    "Pos52w": 67.1,
     "VolRatio": 0.66,
     "EPS_Growth": 61.4,
     "Revenue_YoY": 7.8,
@@ -2235,7 +2235,7 @@
     "Ticker": "AEM",
     "Name": "Agnico Eagle Mines Limited",
     "Sector": "Gold",
-    "RSI": 42.11,
+    "RSI": 42.93,
     "RSI_Series": [
       35.31,
       39.93,
@@ -2266,9 +2266,9 @@
       37.36,
       44.55,
       42.11,
-      42.11
+      42.93
     ],
-    "WeeklyRSI": 39.11,
+    "WeeklyRSI": 39.37,
     "WeeklyRSI_Series": [
       59.36,
       67.51,
@@ -2299,16 +2299,16 @@
       40.26,
       38.31,
       35.66,
-      39.11
+      39.37
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "🕐",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.64,
+    "Price": 145.13,
+    "DayChangePct": 0.43,
+    "Pos52w": 17.2,
+    "VolRatio": 0.7,
     "EPS_Growth": 108.6,
     "Revenue_YoY": 66.1,
     "BT_1M_Avg": 7.43,
@@ -2328,7 +2328,7 @@
     "Ticker": "MDT",
     "Name": "Medtronic plc",
     "Sector": "Medical Devices",
-    "RSI": 51.69,
+    "RSI": 55.37,
     "RSI_Series": [
       53.73,
       53.28,
@@ -2359,9 +2359,9 @@
       52.77,
       51.31,
       51.69,
-      51.69
+      55.37
     ],
-    "WeeklyRSI": 44.48,
+    "WeeklyRSI": 46.38,
     "WeeklyRSI_Series": [
       52.11,
       54.59,
@@ -2392,16 +2392,16 @@
       46.27,
       47.41,
       46.36,
-      44.48
+      46.38
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.43,
+    "Price": 83.21,
+    "DayChangePct": 1.46,
+    "Pos52w": 30.0,
+    "VolRatio": 0.54,
     "EPS_Growth": 18.3,
     "Revenue_YoY": 9.9,
     "BT_1M_Avg": 0.78,
@@ -2421,7 +2421,7 @@
     "Ticker": "PGR",
     "Name": "The Progressive Corporation",
     "Sector": "Insurance - Property & Casualty",
-    "RSI": 43.47,
+    "RSI": 49.79,
     "RSI_Series": [
       54.61,
       55.69,
@@ -2452,9 +2452,9 @@
       41.84,
       40.88,
       43.47,
-      43.47
+      49.79
     ],
-    "WeeklyRSI": 47.74,
+    "WeeklyRSI": 51.33,
     "WeeklyRSI_Series": [
       37.59,
       39.58,
@@ -2485,15 +2485,15 @@
       63.87,
       62.69,
       48.2,
-      47.74
+      51.33
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 213.83,
+    "DayChangePct": 3.26,
+    "Pos52w": 37.5,
     "VolRatio": 0.68,
     "EPS_Growth": 5.0,
     "Revenue_YoY": 7.3,
@@ -2514,7 +2514,7 @@
     "Ticker": "COF",
     "Name": "Capital One Financial Corporation",
     "Sector": "Credit Services",
-    "RSI": 48.52,
+    "RSI": 52.1,
     "RSI_Series": [
       45.97,
       49.55,
@@ -2545,9 +2545,9 @@
       56.57,
       50.21,
       48.52,
-      48.52
+      52.1
     ],
-    "WeeklyRSI": 50.13,
+    "WeeklyRSI": 51.89,
     "WeeklyRSI_Series": [
       66.4,
       66.9,
@@ -2578,16 +2578,16 @@
       53.96,
       51.59,
       55.41,
-      50.13
+      51.89
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.58,
+    "Price": 202.84,
+    "DayChangePct": 1.44,
+    "Pos52w": 33.5,
+    "VolRatio": 0.79,
     "EPS_Growth": null,
     "Revenue_YoY": null,
     "BT_1M_Avg": 3.84,
@@ -2607,7 +2607,7 @@
     "Ticker": "PANW",
     "Name": "Palo Alto Networks, Inc.",
     "Sector": "Software - Infrastructure",
-    "RSI": 51.21,
+    "RSI": 50.4,
     "RSI_Series": [
       64.81,
       64.84,
@@ -2638,9 +2638,9 @@
       58.84,
       55.54,
       51.21,
-      51.21
+      50.4
     ],
-    "WeeklyRSI": 66.87,
+    "WeeklyRSI": 66.37,
     "WeeklyRSI_Series": [
       41.94,
       47.41,
@@ -2671,15 +2671,15 @@
       82.17,
       73.51,
       77.32,
-      66.87
+      66.37
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 323.79,
+    "DayChangePct": -0.57,
+    "Pos52w": 80.4,
     "VolRatio": 0.69,
     "EPS_Growth": null,
     "Revenue_YoY": 31.1,
@@ -2700,7 +2700,7 @@
     "Ticker": "MCK",
     "Name": "McKesson Corporation",
     "Sector": "Medical Distribution",
-    "RSI": 58.03,
+    "RSI": 62.16,
     "RSI_Series": [
       55.4,
       54.03,
@@ -2731,9 +2731,9 @@
       60.64,
       55.14,
       58.03,
-      58.03
+      62.16
     ],
-    "WeeklyRSI": 52.03,
+    "WeeklyRSI": 54.58,
     "WeeklyRSI_Series": [
       60.65,
       58.72,
@@ -2764,16 +2764,16 @@
       46.73,
       49.72,
       54.66,
-      52.03
+      54.58
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.6,
+    "Price": 840.9,
+    "DayChangePct": 1.99,
+    "Pos52w": 56.3,
+    "VolRatio": 0.78,
     "EPS_Growth": 37.2,
     "Revenue_YoY": 6.0,
     "BT_1M_Avg": -1.05,
@@ -2793,7 +2793,7 @@
     "Ticker": "CEG",
     "Name": "Constellation Energy Corporation",
     "Sector": "Utilities - Independent Power Producers",
-    "RSI": 61.79,
+    "RSI": 60.64,
     "RSI_Series": [
       35.23,
       39.88,
@@ -2824,9 +2824,9 @@
       53.66,
       61.41,
       61.79,
-      61.79
+      60.64
     ],
-    "WeeklyRSI": 48.0,
+    "WeeklyRSI": 47.71,
     "WeeklyRSI_Series": [
       59.69,
       50.91,
@@ -2857,16 +2857,16 @@
       38.38,
       41.64,
       41.92,
-      48.0
+      47.71
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.69,
+    "Price": 274.35,
+    "DayChangePct": -0.45,
+    "Pos52w": 24.8,
+    "VolRatio": 0.8,
     "EPS_Growth": 1091.0,
     "Revenue_YoY": 63.8,
     "BT_1M_Avg": 13.25,
@@ -2886,7 +2886,7 @@
     "Ticker": "GSK",
     "Name": "GSK plc",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 44.51,
+    "RSI": 48.11,
     "RSI_Series": [
       58.08,
       58.92,
@@ -2917,9 +2917,9 @@
       44.69,
       44.6,
       44.51,
-      44.51
+      48.11
     ],
-    "WeeklyRSI": 47.27,
+    "WeeklyRSI": 48.69,
     "WeeklyRSI_Series": [
       76.21,
       77.87,
@@ -2950,15 +2950,15 @@
       54.36,
       52.18,
       49.69,
-      47.27
+      48.69
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 51.35,
+    "DayChangePct": 1.2,
+    "Pos52w": 58.5,
     "VolRatio": 1.48,
     "EPS_Growth": 8.4,
     "Revenue_YoY": 1.5,
@@ -2969,7 +2969,7 @@
     "BT_Events": 15,
     "PER": 13.513158,
     "PER(예상)": 9.950894,
-    "PBR": 4.331544,
+    "PBR": 4.340031,
     "ROE": 0.40905997,
     "EPS": 3.8,
     "EPS(예상)": 5.16034,
@@ -2979,7 +2979,7 @@
     "Ticker": "HCA",
     "Name": "HCA Healthcare, Inc.",
     "Sector": "Medical Care Facilities",
-    "RSI": 44.14,
+    "RSI": 47.34,
     "RSI_Series": [
       38.55,
       44.65,
@@ -3010,9 +3010,9 @@
       41.94,
       41.45,
       44.14,
-      44.14
+      47.34
     ],
-    "WeeklyRSI": 37.27,
+    "WeeklyRSI": 38.97,
     "WeeklyRSI_Series": [
       60.9,
       61.33,
@@ -3043,15 +3043,15 @@
       43.54,
       42.65,
       35.59,
-      37.27
+      38.97
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 382.19,
+    "DayChangePct": 1.51,
+    "Pos52w": 22.5,
     "VolRatio": 1.63,
     "EPS_Growth": 11.6,
     "Revenue_YoY": 8.7,
@@ -3061,18 +3061,18 @@
     "BT_3M_Win": 65.0,
     "BT_Events": 24,
     "PER": 12.820866,
-    "PER(예상)": 11.692341,
+    "PER(예상)": 11.695918,
     "PBR": -13.493505,
     "ROE": null,
     "EPS": 29.81,
-    "EPS(예상)": 32.68721,
+    "EPS(예상)": 32.67721,
     "EarningsDate": "2026년 7월 24일"
   },
   {
     "Ticker": "SNY",
     "Name": "Sanofi",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 49.1,
+    "RSI": 49.03,
     "RSI_Series": [
       49.69,
       50.5,
@@ -3103,9 +3103,9 @@
       51.78,
       52.03,
       49.1,
-      49.1
+      49.03
     ],
-    "WeeklyRSI": 43.95,
+    "WeeklyRSI": 43.93,
     "WeeklyRSI_Series": [
       46.4,
       48.78,
@@ -3136,15 +3136,15 @@
       42.5,
       43.72,
       47.78,
-      43.95
+      43.93
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 43.35,
+    "DayChangePct": -0.02,
+    "Pos52w": 20.9,
     "VolRatio": 0.89,
     "EPS_Growth": -11.7,
     "Revenue_YoY": 6.0,
@@ -3165,7 +3165,7 @@
     "Ticker": "ENB",
     "Name": "Enbridge Inc.",
     "Sector": "Oil & Gas Midstream",
-    "RSI": 56.23,
+    "RSI": 58.94,
     "RSI_Series": [
       55.18,
       55.41,
@@ -3196,9 +3196,9 @@
       50.4,
       55.34,
       56.23,
-      56.23
+      58.94
     ],
-    "WeeklyRSI": 57.51,
+    "WeeklyRSI": 58.83,
     "WeeklyRSI_Series": [
       55.34,
       42.59,
@@ -3229,16 +3229,16 @@
       52.19,
       53.65,
       58.49,
-      57.51
+      58.83
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.56,
+    "Price": 56.86,
+    "DayChangePct": 0.82,
+    "Pos52w": 88.5,
+    "VolRatio": 0.75,
     "EPS_Growth": -26.2,
     "Revenue_YoY": 20.8,
     "BT_1M_Avg": 2.79,
@@ -3247,18 +3247,18 @@
     "BT_3M_Win": 85.7,
     "BT_Events": 7,
     "PER": 27.205744,
-    "PER(예상)": 25.111351,
+    "PER(예상)": 25.142906,
     "PBR": 3.0081372,
     "ROE": 0.10127,
     "EPS": 2.09,
-    "EPS(예상)": 2.2643147,
+    "EPS(예상)": 2.261473,
     "EarningsDate": "2026년 7월 31일"
   },
   {
     "Ticker": "MO",
     "Name": "Altria Group, Inc.",
     "Sector": "Tobacco",
-    "RSI": 49.97,
+    "RSI": 53.51,
     "RSI_Series": [
       51.75,
       53.67,
@@ -3289,9 +3289,9 @@
       53.51,
       50.32,
       49.97,
-      49.97
+      53.51
     ],
-    "WeeklyRSI": 54.93,
+    "WeeklyRSI": 56.47,
     "WeeklyRSI_Series": [
       39.78,
       40.72,
@@ -3322,15 +3322,15 @@
       57.03,
       55.47,
       58.68,
-      54.93
+      56.47
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 72.99,
+    "DayChangePct": 1.26,
+    "Pos52w": 88.9,
     "VolRatio": 0.67,
     "EPS_Growth": 106.3,
     "Revenue_YoY": 5.3,
@@ -3351,7 +3351,7 @@
     "Ticker": "CME",
     "Name": "CME Group Inc.",
     "Sector": "Financial Data & Stock Exchanges",
-    "RSI": 57.14,
+    "RSI": 57.88,
     "RSI_Series": [
       40.06,
       46.97,
@@ -3382,9 +3382,9 @@
       41.51,
       53.19,
       57.14,
-      57.14
+      57.88
     ],
-    "WeeklyRSI": 44.44,
+    "WeeklyRSI": 44.82,
     "WeeklyRSI_Series": [
       49.31,
       45.03,
@@ -3415,20 +3415,20 @@
       37.21,
       38.7,
       40.69,
-      44.44
+      44.82
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.49,
+    "Price": 255.31,
+    "DayChangePct": 0.39,
+    "Pos52w": 33.4,
+    "VolRatio": 0.51,
     "EPS_Growth": 2.5,
-    "Revenue_YoY": 1.0,
-    "BT_1M_Avg": NaN,
-    "BT_1M_Win": 23.1,
+    "Revenue_YoY": 0.8,
+    "BT_1M_Avg": -1.81,
+    "BT_1M_Win": 30.8,
     "BT_3M_Avg": 1.32,
     "BT_3M_Win": 60.0,
     "BT_Events": 13,
@@ -3444,7 +3444,7 @@
     "Ticker": "BSX",
     "Name": "Boston Scientific Corporation",
     "Sector": "Medical Devices",
-    "RSI": 41.59,
+    "RSI": 45.59,
     "RSI_Series": [
       29.71,
       29.11,
@@ -3475,9 +3475,9 @@
       38.56,
       37.7,
       41.59,
-      41.59
+      45.59
     ],
-    "WeeklyRSI": 23.64,
+    "WeeklyRSI": 24.47,
     "WeeklyRSI_Series": [
       43.51,
       48.13,
@@ -3508,19 +3508,19 @@
       24.72,
       24.47,
       23.96,
-      23.64
+      24.47
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.9,
+    "Price": 44.25,
+    "DayChangePct": 1.54,
+    "Pos52w": 3.0,
+    "VolRatio": 1.08,
     "EPS_Growth": 100.0,
     "Revenue_YoY": 11.6,
-    "BT_1M_Avg": NaN,
+    "BT_1M_Avg": -1.75,
     "BT_1M_Win": 38.9,
     "BT_3M_Avg": -10.63,
     "BT_3M_Win": 28.6,
@@ -3537,7 +3537,7 @@
     "Ticker": "INTU",
     "Name": "Intuit Inc.",
     "Sector": "Software - Application",
-    "RSI": 47.0,
+    "RSI": 54.82,
     "RSI_Series": [
       32.62,
       32.59,
@@ -3568,9 +3568,9 @@
       51.47,
       48.55,
       47.0,
-      47.0
+      54.82
     ],
-    "WeeklyRSI": 31.62,
+    "WeeklyRSI": 33.92,
     "WeeklyRSI_Series": [
       41.64,
       45.36,
@@ -3601,16 +3601,16 @@
       28.94,
       28.91,
       32.69,
-      31.62
+      33.92
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.69,
+    "Price": 296.33,
+    "DayChangePct": 5.26,
+    "Pos52w": 7.8,
+    "VolRatio": 0.74,
     "EPS_Growth": 10.7,
     "Revenue_YoY": 10.4,
     "BT_1M_Avg": -0.47,
@@ -3630,7 +3630,7 @@
     "Ticker": "NOW",
     "Name": "ServiceNow, Inc.",
     "Sector": "Software - Application",
-    "RSI": 36.18,
+    "RSI": 45.7,
     "RSI_Series": [
       46.97,
       46.25,
@@ -3661,9 +3661,9 @@
       46.97,
       39.49,
       36.18,
-      36.18
+      45.7
     ],
-    "WeeklyRSI": 40.33,
+    "WeeklyRSI": 43.06,
     "WeeklyRSI_Series": [
       32.64,
       30.42,
@@ -3694,17 +3694,17 @@
       46.37,
       47.06,
       45.04,
-      40.33
+      43.06
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.2,
-    "EPS_Growth": -21.5,
+    "Price": 98.78,
+    "DayChangePct": 7.44,
+    "Pos52w": 14.6,
+    "VolRatio": 1.33,
+    "EPS_Growth": -21.9,
     "Revenue_YoY": 24.0,
     "BT_1M_Avg": 0.95,
     "BT_1M_Win": 50.0,
@@ -3712,18 +3712,18 @@
     "BT_3M_Win": 50.0,
     "BT_Events": 16,
     "PER": 61.7375,
-    "PER(예상)": 19.707716,
+    "PER(예상)": 19.729206,
     "PBR": 8.686247,
     "ROE": 0.14244,
     "EPS": 1.6,
-    "EPS(예상)": 5.01225,
+    "EPS(예상)": 5.00679,
     "EarningsDate": "2026년 7월 22일"
   },
   {
     "Ticker": "MFG",
     "Name": "Mizuho Financial Group, Inc.",
     "Sector": "Banks - Regional",
-    "RSI": 61.08,
+    "RSI": 62.07,
     "RSI_Series": [
       59.77,
       62.69,
@@ -3754,9 +3754,9 @@
       57.66,
       59.95,
       61.08,
-      61.08
+      62.07
     ],
-    "WeeklyRSI": 64.2,
+    "WeeklyRSI": 64.56,
     "WeeklyRSI_Series": [
       65.39,
       71.28,
@@ -3787,16 +3787,16 @@
       62.91,
       66.65,
       59.37,
-      64.2
+      64.56
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.7,
+    "Price": 10.63,
+    "DayChangePct": 0.57,
+    "Pos52w": 96.8,
+    "VolRatio": 0.74,
     "EPS_Growth": 679.8,
     "Revenue_YoY": 44.9,
     "BT_1M_Avg": 3.01,
@@ -3806,7 +3806,7 @@
     "BT_Events": 8,
     "PER": 17.14516,
     "PER(예상)": 7.6474824,
-    "PBR": 1.8595454,
+    "PBR": 1.8544267,
     "ROE": 0.11439,
     "EPS": 0.62,
     "EPS(예상)": 1.39,
@@ -3816,7 +3816,7 @@
     "Ticker": "SBUX",
     "Name": "Starbucks Corporation",
     "Sector": "Restaurants",
-    "RSI": 48.03,
+    "RSI": 48.16,
     "RSI_Series": [
       56.49,
       58.23,
@@ -3847,9 +3847,9 @@
       51.58,
       50.24,
       48.03,
-      48.03
+      48.16
     ],
-    "WeeklyRSI": 54.84,
+    "WeeklyRSI": 54.89,
     "WeeklyRSI_Series": [
       46.16,
       52.91,
@@ -3880,15 +3880,15 @@
       56.98,
       58.57,
       57.88,
-      54.84
+      54.89
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 103.25,
+    "DayChangePct": 0.04,
+    "Pos52w": 80.9,
     "VolRatio": 0.91,
     "EPS_Growth": 32.6,
     "Revenue_YoY": 8.8,
@@ -3909,7 +3909,7 @@
     "Ticker": "CMCSA",
     "Name": "Comcast Corporation",
     "Sector": "Telecom Services",
-    "RSI": 34.08,
+    "RSI": 38.44,
     "RSI_Series": [
       35.52,
       43.76,
@@ -3940,9 +3940,9 @@
       50.39,
       47.14,
       34.08,
-      34.08
+      38.44
     ],
-    "WeeklyRSI": 32.17,
+    "WeeklyRSI": 33.22,
     "WeeklyRSI_Series": [
       44.29,
       48.68,
@@ -3973,16 +3973,16 @@
       37.54,
       36.83,
       38.1,
-      32.17
+      33.22
     ],
-    "DualOversold": "🎯",
+    "DualOversold": "",
     "RSI_30이하": "",
-    "RSI_30초과_35이하": "⚠️",
+    "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.16,
+    "Price": 22.3,
+    "DayChangePct": 1.73,
+    "Pos52w": 8.8,
+    "VolRatio": 1.17,
     "EPS_Growth": -66.8,
     "Revenue_YoY": -1.2,
     "BT_1M_Avg": 1.03,
@@ -3992,7 +3992,7 @@
     "BT_Events": 29,
     "PER": 7.1458335,
     "PER(예상)": 6.141738,
-    "PBR": 0.829242,
+    "PBR": 0.88084227,
     "ROE": 0.114879996,
     "EPS": 3.12,
     "EPS(예상)": 3.63008,
@@ -4002,7 +4002,7 @@
     "Ticker": "SO",
     "Name": "The Southern Company",
     "Sector": "Utilities - Regulated Electric",
-    "RSI": 55.17,
+    "RSI": 57.24,
     "RSI_Series": [
       51.24,
       53.92,
@@ -4033,9 +4033,9 @@
       45.26,
       52.54,
       55.17,
-      55.17
+      57.24
     ],
-    "WeeklyRSI": 55.22,
+    "WeeklyRSI": 56.38,
     "WeeklyRSI_Series": [
       41.54,
       41.18,
@@ -4066,16 +4066,16 @@
       58.62,
       53.37,
       52.7,
-      55.22
+      56.38
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.78,
+    "Price": 97.25,
+    "DayChangePct": 0.67,
+    "Pos52w": 78.9,
+    "VolRatio": 0.99,
     "EPS_Growth": -0.8,
     "Revenue_YoY": 8.0,
     "BT_1M_Avg": -0.19,
@@ -4095,7 +4095,7 @@
     "Ticker": "SOMN",
     "Name": "The Southern Company",
     "Sector": "Utilities - Regulated Electric",
-    "RSI": 53.26,
+    "RSI": 55.11,
     "RSI_Series": [
       49.05,
       38.68,
@@ -4126,9 +4126,9 @@
       44.94,
       52.39,
       53.26,
-      53.26
+      55.11
     ],
-    "WeeklyRSI": 49.13,
+    "WeeklyRSI": 50.33,
     "WeeklyRSI_Series": [
       71.64,
       72.3,
@@ -4153,15 +4153,15 @@
       50.02,
       46.12,
       46.94,
-      49.13
+      50.33
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 50.63,
+    "DayChangePct": 0.46,
+    "Pos52w": 45.1,
     "VolRatio": 0.11,
     "EPS_Growth": -0.8,
     "Revenue_YoY": 8.0,
@@ -4182,7 +4182,7 @@
     "Ticker": "IBN",
     "Name": "ICICI Bank Limited",
     "Sector": "Banks - Regional",
-    "RSI": 54.02,
+    "RSI": 56.91,
     "RSI_Series": [
       63.14,
       65.69,
@@ -4213,9 +4213,9 @@
       65.63,
       56.77,
       54.02,
-      54.02
+      56.91
     ],
-    "WeeklyRSI": 54.17,
+    "WeeklyRSI": 55.67,
     "WeeklyRSI_Series": [
       41.49,
       46.61,
@@ -4246,16 +4246,16 @@
       56.41,
       53.69,
       57.15,
-      54.17
+      55.67
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.34,
+    "Price": 29.51,
+    "DayChangePct": 0.92,
+    "Pos52w": 49.0,
+    "VolRatio": 0.4,
     "EPS_Growth": 13.8,
     "Revenue_YoY": 11.4,
     "BT_1M_Avg": 4.97,
@@ -4265,7 +4265,7 @@
     "BT_Events": 9,
     "PER": 18.44375,
     "PER(예상)": 15.959979,
-    "PBR": 2.695198,
+    "PBR": 2.6816883,
     "ROE": 0.16073999,
     "EPS": 1.6,
     "EPS(예상)": 1.849,
@@ -4275,7 +4275,7 @@
     "Ticker": "ADBE",
     "Name": "Adobe Inc.",
     "Sector": "Software - Application",
-    "RSI": 42.34,
+    "RSI": 51.43,
     "RSI_Series": [
       34.33,
       29.38,
@@ -4306,9 +4306,9 @@
       52.45,
       46.18,
       42.34,
-      42.34
+      51.43
     ],
-    "WeeklyRSI": 38.62,
+    "WeeklyRSI": 41.6,
     "WeeklyRSI_Series": [
       42.33,
       42.6,
@@ -4339,16 +4339,16 @@
       38.52,
       39.98,
       44.85,
-      38.62
+      41.6
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.79,
+    "Price": 225.11,
+    "DayChangePct": 6.1,
+    "Pos52w": 18.8,
+    "VolRatio": 0.81,
     "EPS_Growth": 7.9,
     "Revenue_YoY": 12.7,
     "BT_1M_Avg": 3.87,
@@ -4368,7 +4368,7 @@
     "Ticker": "SPOT",
     "Name": "Spotify Technology S.A.",
     "Sector": "Internet Content & Information",
-    "RSI": 45.29,
+    "RSI": 51.89,
     "RSI_Series": [
       50.19,
       48.8,
@@ -4399,9 +4399,9 @@
       57.56,
       47.59,
       45.29,
-      45.29
+      51.89
     ],
-    "WeeklyRSI": 45.01,
+    "WeeklyRSI": 47.09,
     "WeeklyRSI_Series": [
       41.17,
       36.88,
@@ -4432,16 +4432,16 @@
       47.36,
       46.55,
       46.32,
-      45.01
+      47.09
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.65,
+    "Price": 482.66,
+    "DayChangePct": 2.91,
+    "Pos52w": 22.6,
+    "VolRatio": 0.74,
     "EPS_Growth": 222.4,
     "Revenue_YoY": 8.2,
     "BT_1M_Avg": 3.86,
@@ -4450,18 +4450,18 @@
     "BT_3M_Win": 35.7,
     "BT_Events": 15,
     "PER": 32.789402,
-    "PER(예상)": 26.860342,
+    "PER(예상)": 26.865776,
     "PBR": 10.880044,
     "ROE": 0.37987998,
     "EPS": 14.72,
-    "EPS(예상)": 17.969242,
+    "EPS(예상)": 17.965609,
     "EarningsDate": "2026년 8월 4일"
   },
   {
     "Ticker": "HWM",
     "Name": "Howmet Aerospace Inc.",
     "Sector": "Aerospace & Defense",
-    "RSI": 64.59,
+    "RSI": 66.09,
     "RSI_Series": [
       56.99,
       57.04,
@@ -4492,9 +4492,9 @@
       58.3,
       59.72,
       64.59,
-      64.59
+      66.09
     ],
-    "WeeklyRSI": 67.01,
+    "WeeklyRSI": 67.63,
     "WeeklyRSI_Series": [
       65.34,
       68.21,
@@ -4525,16 +4525,16 @@
       61.42,
       61.57,
       62.14,
-      67.01
+      67.63
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.55,
+    "Price": 289.26,
+    "DayChangePct": 0.76,
+    "Pos52w": 97.0,
+    "VolRatio": 0.68,
     "EPS_Growth": 71.4,
     "Revenue_YoY": 19.1,
     "BT_1M_Avg": 16.08,
@@ -4554,7 +4554,7 @@
     "Ticker": "PBR",
     "Name": "Petróleo Brasileiro S.A. - Petrobras",
     "Sector": "Oil & Gas Integrated",
-    "RSI": 67.34,
+    "RSI": 63.21,
     "RSI_Series": [
       37.37,
       39.78,
@@ -4585,9 +4585,9 @@
       63.11,
       66.37,
       67.34,
-      67.34
+      63.21
     ],
-    "WeeklyRSI": 57.41,
+    "WeeklyRSI": 56.49,
     "WeeklyRSI_Series": [
       46.08,
       45.7,
@@ -4618,20 +4618,20 @@
       43.35,
       49.81,
       52.92,
-      57.41
+      56.49
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 18.77,
+    "DayChangePct": -1.21,
+    "Pos52w": 67.9,
     "VolRatio": 0.95,
     "EPS_Growth": -7.2,
     "Revenue_YoY": 0.4,
-    "BT_1M_Avg": NaN,
-    "BT_1M_Win": 71.4,
+    "BT_1M_Avg": 6.16,
+    "BT_1M_Win": 78.6,
     "BT_3M_Avg": 5.12,
     "BT_3M_Win": 72.7,
     "BT_Events": 14,
@@ -4647,7 +4647,7 @@
     "Ticker": "PBR-A",
     "Name": "Petróleo Brasileiro S.A. - Petrobras",
     "Sector": "Oil & Gas Integrated",
-    "RSI": 66.77,
+    "RSI": 61.26,
     "RSI_Series": [
       37.0,
       36.77,
@@ -4678,9 +4678,9 @@
       61.77,
       65.55,
       66.77,
-      66.77
+      61.26
     ],
-    "WeeklyRSI": 56.12,
+    "WeeklyRSI": 54.83,
     "WeeklyRSI_Series": [
       47.6,
       47.73,
@@ -4711,20 +4711,20 @@
       42.19,
       48.91,
       51.41,
-      56.12
+      54.83
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.79,
+    "Price": 16.62,
+    "DayChangePct": -1.54,
+    "Pos52w": 63.1,
+    "VolRatio": 0.81,
     "EPS_Growth": -7.2,
     "Revenue_YoY": 0.4,
-    "BT_1M_Avg": NaN,
-    "BT_1M_Win": 76.9,
+    "BT_1M_Avg": 6.6,
+    "BT_1M_Win": 84.6,
     "BT_3M_Avg": 4.38,
     "BT_3M_Win": 60.0,
     "BT_Events": 13,
@@ -4740,7 +4740,7 @@
     "Ticker": "NOC",
     "Name": "Northrop Grumman Corporation",
     "Sector": "Aerospace & Defense",
-    "RSI": 51.22,
+    "RSI": 55.08,
     "RSI_Series": [
       46.67,
       45.64,
@@ -4771,9 +4771,9 @@
       40.2,
       47.29,
       51.22,
-      51.22
+      55.08
     ],
-    "WeeklyRSI": 41.03,
+    "WeeklyRSI": 42.82,
     "WeeklyRSI_Series": [
       56.31,
       63.57,
@@ -4804,15 +4804,15 @@
       42.33,
       40.97,
       38.41,
-      41.03
+      42.82
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 542.24,
+    "DayChangePct": 1.64,
+    "Pos52w": 21.4,
     "VolRatio": 0.61,
     "EPS_Growth": -5.8,
     "Revenue_YoY": 5.1,
@@ -4833,7 +4833,7 @@
     "Ticker": "TT",
     "Name": "Trane Technologies plc",
     "Sector": "Building Products & Equipment",
-    "RSI": 52.9,
+    "RSI": 53.65,
     "RSI_Series": [
       49.74,
       48.83,
@@ -4864,9 +4864,9 @@
       46.88,
       49.22,
       52.9,
-      52.9
+      53.65
     ],
-    "WeeklyRSI": 59.53,
+    "WeeklyRSI": 59.91,
     "WeeklyRSI_Series": [
       45.3,
       40.18,
@@ -4897,16 +4897,16 @@
       60.3,
       60.76,
       56.39,
-      59.53
+      59.91
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.53,
+    "Price": 480.99,
+    "DayChangePct": 0.27,
+    "Pos52w": 84.2,
+    "VolRatio": 0.69,
     "EPS_Growth": -2.1,
     "Revenue_YoY": 6.0,
     "BT_1M_Avg": 0.38,
@@ -4926,7 +4926,7 @@
     "Ticker": "DUK",
     "Name": "Duke Energy Corporation",
     "Sector": "Utilities - Regulated Electric",
-    "RSI": 58.99,
+    "RSI": 61.8,
     "RSI_Series": [
       50.09,
       52.34,
@@ -4957,9 +4957,9 @@
       50.35,
       55.85,
       58.99,
-      58.99
+      61.8
     ],
-    "WeeklyRSI": 55.46,
+    "WeeklyRSI": 57.02,
     "WeeklyRSI_Series": [
       43.26,
       42.0,
@@ -4990,15 +4990,15 @@
       56.67,
       49.96,
       49.24,
-      55.46
+      57.02
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 130.52,
+    "DayChangePct": 0.97,
+    "Pos52w": 80.7,
     "VolRatio": 0.76,
     "EPS_Growth": 12.0,
     "Revenue_YoY": 11.3,
@@ -5019,7 +5019,7 @@
     "Ticker": "BMO",
     "Name": "Bank of Montreal",
     "Sector": "Banks - Diversified",
-    "RSI": 52.88,
+    "RSI": 55.26,
     "RSI_Series": [
       68.3,
       70.88,
@@ -5050,9 +5050,9 @@
       58.54,
       59.1,
       52.88,
-      52.88
+      55.26
     ],
-    "WeeklyRSI": 74.45,
+    "WeeklyRSI": 76.42,
     "WeeklyRSI_Series": [
       68.03,
       68.47,
@@ -5083,16 +5083,16 @@
       81.35,
       83.51,
       84.69,
-      74.45
+      76.42
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.51,
+    "Price": 177.77,
+    "DayChangePct": 0.65,
+    "Pos52w": 91.4,
+    "VolRatio": 0.59,
     "EPS_Growth": 41.2,
     "Revenue_YoY": 15.8,
     "BT_1M_Avg": 2.64,
@@ -5101,18 +5101,18 @@
     "BT_3M_Win": 64.3,
     "BT_Events": 14,
     "PER": 19.239178,
-    "PER(예상)": 15.369858,
-    "PBR": 2.0875149,
+    "PER(예상)": 15.39028,
+    "PBR": 2.0901382,
     "ROE": 0.11367,
     "EPS": 9.24,
-    "EPS(예상)": 11.566145,
+    "EPS(예상)": 11.550797,
     "EarningsDate": "2026년 8월 25일"
   },
   {
     "Ticker": "CVS",
     "Name": "CVS Health Corporation",
     "Sector": "Healthcare Plans",
-    "RSI": 59.42,
+    "RSI": 61.42,
     "RSI_Series": [
       72.61,
       74.65,
@@ -5143,9 +5143,9 @@
       74.29,
       63.72,
       59.42,
-      59.42
+      61.42
     ],
-    "WeeklyRSI": 70.27,
+    "WeeklyRSI": 71.43,
     "WeeklyRSI_Series": [
       60.17,
       60.43,
@@ -5176,16 +5176,16 @@
       69.84,
       68.96,
       71.24,
-      70.27
+      71.43
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.53,
+    "Price": 107.74,
+    "DayChangePct": 0.8,
+    "Pos52w": 94.3,
+    "VolRatio": 0.71,
     "EPS_Growth": 63.1,
     "Revenue_YoY": 6.1,
     "BT_1M_Avg": 3.65,
@@ -5205,7 +5205,7 @@
     "Ticker": "BP",
     "Name": "BP p.l.c.",
     "Sector": "Oil & Gas Integrated",
-    "RSI": 68.29,
+    "RSI": 67.37,
     "RSI_Series": [
       43.34,
       44.03,
@@ -5236,9 +5236,9 @@
       63.55,
       65.89,
       68.29,
-      68.29
+      67.37
     ],
-    "WeeklyRSI": 57.86,
+    "WeeklyRSI": 57.64,
     "WeeklyRSI_Series": [
       57.57,
       50.2,
@@ -5269,20 +5269,20 @@
       40.35,
       46.06,
       53.29,
-      57.86
+      57.64
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 43.82,
+    "DayChangePct": -0.25,
+    "Pos52w": 73.3,
     "VolRatio": 0.56,
     "EPS_Growth": 474.5,
     "Revenue_YoY": 11.6,
-    "BT_1M_Avg": NaN,
-    "BT_1M_Win": 76.9,
+    "BT_1M_Avg": 6.86,
+    "BT_1M_Win": 84.6,
     "BT_3M_Avg": 8.88,
     "BT_3M_Win": 81.8,
     "BT_Events": 13,
@@ -5298,7 +5298,7 @@
     "Ticker": "BN",
     "Name": "Brookfield Corporation",
     "Sector": "Asset Management",
-    "RSI": 33.86,
+    "RSI": 38.1,
     "RSI_Series": [
       49.66,
       50.65,
@@ -5329,9 +5329,9 @@
       38.77,
       36.92,
       33.86,
-      33.86
+      38.1
     ],
-    "WeeklyRSI": 40.64,
+    "WeeklyRSI": 41.86,
     "WeeklyRSI_Series": [
       58.22,
       61.12,
@@ -5362,16 +5362,16 @@
       47.3,
       48.33,
       47.99,
-      40.64
+      41.86
     ],
     "DualOversold": "",
     "RSI_30이하": "",
-    "RSI_30초과_35이하": "⚠️",
+    "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.94,
+    "Price": 41.67,
+    "DayChangePct": 1.12,
+    "Pos52w": 32.1,
+    "VolRatio": 0.96,
     "EPS_Growth": 158.8,
     "Revenue_YoY": 7.9,
     "BT_1M_Avg": 7.95,
@@ -5391,7 +5391,7 @@
     "Ticker": "UPS",
     "Name": "United Parcel Service, Inc.",
     "Sector": "Integrated Freight & Logistics",
-    "RSI": 55.9,
+    "RSI": 57.23,
     "RSI_Series": [
       58.21,
       56.9,
@@ -5422,9 +5422,9 @@
       61.57,
       60.28,
       55.9,
-      55.9
+      57.23
     ],
-    "WeeklyRSI": 59.48,
+    "WeeklyRSI": 60.43,
     "WeeklyRSI_Series": [
       58.17,
       66.01,
@@ -5455,16 +5455,16 @@
       58.13,
       59.98,
       64.85,
-      59.48
+      60.43
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.66,
+    "Price": 114.79,
+    "DayChangePct": 0.6,
+    "Pos52w": 81.1,
+    "VolRatio": 0.87,
     "EPS_Growth": -27.2,
     "Revenue_YoY": -1.6,
     "BT_1M_Avg": 0.55,
@@ -5484,7 +5484,7 @@
     "Ticker": "DELL",
     "Name": "Dell Technologies Inc.",
     "Sector": "Computer Hardware",
-    "RSI": 57.03,
+    "RSI": 56.57,
     "RSI_Series": [
       63.88,
       64.53,
@@ -5515,9 +5515,9 @@
       50.44,
       57.61,
       57.03,
-      57.03
+      56.57
     ],
-    "WeeklyRSI": 74.61,
+    "WeeklyRSI": 74.47,
     "WeeklyRSI_Series": [
       47.89,
       43.97,
@@ -5548,16 +5548,16 @@
       77.9,
       81.05,
       70.75,
-      74.61
+      74.47
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.57,
+    "Price": 437.5,
+    "DayChangePct": -0.42,
+    "Pos52w": 91.1,
+    "VolRatio": 0.62,
     "EPS_Growth": 282.5,
     "Revenue_YoY": 87.5,
     "BT_1M_Avg": 9.43,
@@ -5577,7 +5577,7 @@
     "Ticker": "FCX",
     "Name": "Freeport-McMoRan Inc.",
     "Sector": "Copper",
-    "RSI": 53.09,
+    "RSI": 50.95,
     "RSI_Series": [
       53.68,
       57.1,
@@ -5608,9 +5608,9 @@
       51.71,
       56.77,
       53.09,
-      53.09
+      50.95
     ],
-    "WeeklyRSI": 53.88,
+    "WeeklyRSI": 52.94,
     "WeeklyRSI_Series": [
       66.71,
       72.05,
@@ -5641,15 +5641,15 @@
       51.13,
       51.75,
       47.99,
-      53.88
+      52.94
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 62.6,
+    "DayChangePct": -1.42,
+    "Pos52w": 73.9,
     "VolRatio": 0.76,
     "EPS_Growth": 27.1,
     "Revenue_YoY": -7.3,
@@ -5659,18 +5659,18 @@
     "BT_3M_Win": 78.9,
     "BT_Events": 19,
     "PER": 30.686274,
-    "PER(예상)": 15.348968,
+    "PER(예상)": 15.771003,
     "PBR": 4.358117,
     "ROE": 0.14755,
     "EPS": 2.04,
-    "EPS(예상)": 4.07845,
+    "EPS(예상)": 3.96931,
     "EarningsDate": "2026년 7월 23일"
   },
   {
     "Ticker": "VRT",
     "Name": "Vertiv Holdings Co",
     "Sector": "Electrical Equipment & Parts",
-    "RSI": 48.14,
+    "RSI": 43.24,
     "RSI_Series": [
       42.36,
       44.67,
@@ -5701,9 +5701,9 @@
       48.14,
       46.97,
       48.14,
-      48.14
+      43.24
     ],
-    "WeeklyRSI": 55.63,
+    "WeeklyRSI": 52.84,
     "WeeklyRSI_Series": [
       58.43,
       53.26,
@@ -5734,16 +5734,16 @@
       56.61,
       60.23,
       52.66,
-      55.63
+      52.84
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.51,
+    "Price": 290.36,
+    "DayChangePct": -4.5,
+    "Pos52w": 65.7,
+    "VolRatio": 0.6,
     "EPS_Growth": 135.7,
     "Revenue_YoY": 30.1,
     "BT_1M_Avg": 8.37,
@@ -5763,7 +5763,7 @@
     "Ticker": "WM",
     "Name": "Waste Management, Inc.",
     "Sector": "Waste Management",
-    "RSI": 58.51,
+    "RSI": 60.03,
     "RSI_Series": [
       48.9,
       49.86,
@@ -5794,9 +5794,9 @@
       54.31,
       57.61,
       58.51,
-      58.51
+      60.03
     ],
-    "WeeklyRSI": 57.99,
+    "WeeklyRSI": 59.18,
     "WeeklyRSI_Series": [
       49.91,
       52.52,
@@ -5827,15 +5827,15 @@
       54.52,
       56.26,
       59.64,
-      57.99
+      59.18
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 238.75,
+    "DayChangePct": 0.62,
+    "Pos52w": 82.6,
     "VolRatio": 0.64,
     "EPS_Growth": 13.3,
     "Revenue_YoY": 3.5,
@@ -5856,7 +5856,7 @@
     "Ticker": "ITUB",
     "Name": "Itaú Unibanco Holding S.A.",
     "Sector": "Banks - Regional",
-    "RSI": 53.78,
+    "RSI": 51.28,
     "RSI_Series": [
       49.6,
       51.8,
@@ -5887,9 +5887,9 @@
       56.42,
       58.7,
       53.78,
-      53.78
+      51.28
     ],
-    "WeeklyRSI": 53.16,
+    "WeeklyRSI": 52.39,
     "WeeklyRSI_Series": [
       57.32,
       61.0,
@@ -5920,16 +5920,16 @@
       51.22,
       56.8,
       51.47,
-      53.16
+      52.39
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.83,
+    "Price": 8.28,
+    "DayChangePct": -0.84,
+    "Pos52w": 64.0,
+    "VolRatio": 1.48,
     "EPS_Growth": 11.4,
     "Revenue_YoY": -2.1,
     "BT_1M_Avg": 10.75,
@@ -5939,7 +5939,7 @@
     "BT_Events": 9,
     "PER": 10.222222,
     "PER(예상)": 8.381584,
-    "PBR": 2.2066267,
+    "PBR": 2.219332,
     "ROE": 0.21816,
     "EPS": 0.81,
     "EPS(예상)": 0.98788,
@@ -5949,7 +5949,7 @@
     "Ticker": "GD",
     "Name": "General Dynamics Corporation",
     "Sector": "Aerospace & Defense",
-    "RSI": 67.01,
+    "RSI": 69.96,
     "RSI_Series": [
       62.69,
       63.48,
@@ -5980,9 +5980,9 @@
       55.89,
       60.77,
       67.01,
-      67.01
+      69.96
     ],
-    "WeeklyRSI": 62.88,
+    "WeeklyRSI": 64.29,
     "WeeklyRSI_Series": [
       63.96,
       69.43,
@@ -6013,15 +6013,15 @@
       61.36,
       61.83,
       58.53,
-      62.88
+      64.29
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 386.75,
+    "DayChangePct": 1.3,
+    "Pos52w": 98.3,
     "VolRatio": 1.32,
     "EPS_Growth": 12.0,
     "Revenue_YoY": 10.3,
@@ -6042,7 +6042,7 @@
     "Ticker": "EQIX",
     "Name": "Equinix, Inc.",
     "Sector": "REIT - Specialty",
-    "RSI": 47.63,
+    "RSI": 61.62,
     "RSI_Series": [
       41.71,
       46.94,
@@ -6073,9 +6073,9 @@
       45.59,
       45.89,
       47.63,
-      47.63
+      61.62
     ],
-    "WeeklyRSI": 54.44,
+    "WeeklyRSI": 59.7,
     "WeeklyRSI_Series": [
       42.87,
       52.2,
@@ -6106,16 +6106,16 @@
       51.23,
       57.22,
       52.79,
-      54.44
+      59.7
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.32,
+    "Price": 1084.24,
+    "DayChangePct": 4.9,
+    "Pos52w": 89.1,
+    "VolRatio": 1.38,
     "EPS_Growth": 20.0,
     "Revenue_YoY": 12.1,
     "BT_1M_Avg": 2.71,
@@ -6135,7 +6135,7 @@
     "Ticker": "WDC",
     "Name": "Western Digital Corporation",
     "Sector": "Computer Hardware",
-    "RSI": 50.42,
+    "RSI": 45.64,
     "RSI_Series": [
       56.22,
       61.39,
@@ -6166,9 +6166,9 @@
       49.23,
       50.22,
       50.42,
-      50.42
+      45.64
     ],
-    "WeeklyRSI": 59.74,
+    "WeeklyRSI": 57.41,
     "WeeklyRSI_Series": [
       78.59,
       80.97,
@@ -6199,15 +6199,15 @@
       61.93,
       64.66,
       54.5,
-      59.74
+      57.41
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 519.8,
+    "DayChangePct": -6.9,
+    "Pos52w": 61.7,
     "VolRatio": 0.55,
     "EPS_Growth": 482.9,
     "Revenue_YoY": 45.5,
@@ -6228,7 +6228,7 @@
     "Ticker": "SNDK",
     "Name": "Sandisk Corporation",
     "Sector": "Computer Hardware",
-    "RSI": 47.0,
+    "RSI": 42.14,
     "RSI_Series": [
       67.69,
       70.6,
@@ -6259,9 +6259,9 @@
       46.33,
       46.63,
       47.0,
-      47.0
+      42.14
     ],
-    "WeeklyRSI": 57.51,
+    "WeeklyRSI": 54.4,
     "WeeklyRSI_Series": [
       75.09,
       82.75,
@@ -6292,16 +6292,16 @@
       65.41,
       68.28,
       52.78,
-      57.51
+      54.4
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.01,
+    "Price": 1436.56,
+    "DayChangePct": -10.79,
+    "Pos52w": 60.3,
+    "VolRatio": 1.03,
     "EPS_Growth": null,
     "Revenue_YoY": 251.0,
     "BT_1M_Avg": -9.54,
@@ -6321,7 +6321,7 @@
     "Ticker": "CRWD",
     "Name": "CrowdStrike Holdings, Inc.",
     "Sector": "Software - Infrastructure",
-    "RSI": 47.3,
+    "RSI": 47.2,
     "RSI_Series": [
       60.53,
       58.72,
@@ -6352,9 +6352,9 @@
       52.91,
       50.88,
       47.3,
-      47.3
+      47.2
     ],
-    "WeeklyRSI": 63.32,
+    "WeeklyRSI": 63.26,
     "WeeklyRSI_Series": [
       44.47,
       48.5,
@@ -6385,16 +6385,16 @@
       74.29,
       70.1,
       73.82,
-      63.32
+      63.26
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.49,
+    "Price": 183.28,
+    "DayChangePct": -0.08,
+    "Pos52w": 74.0,
+    "VolRatio": 0.56,
     "EPS_Growth": null,
     "Revenue_YoY": 25.6,
     "BT_1M_Avg": 3.95,
@@ -6414,7 +6414,7 @@
     "Ticker": "BNS",
     "Name": "The Bank of Nova Scotia",
     "Sector": "Banks - Diversified",
-    "RSI": 51.26,
+    "RSI": 52.87,
     "RSI_Series": [
       67.48,
       71.35,
@@ -6445,9 +6445,9 @@
       54.87,
       55.61,
       51.26,
-      51.26
+      52.87
     ],
-    "WeeklyRSI": 67.34,
+    "WeeklyRSI": 68.46,
     "WeeklyRSI_Series": [
       83.8,
       72.31,
@@ -6478,16 +6478,16 @@
       71.5,
       74.28,
       76.37,
-      67.34
+      68.46
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.32,
+    "Price": 87.0,
+    "DayChangePct": 0.45,
+    "Pos52w": 90.2,
+    "VolRatio": 0.43,
     "EPS_Growth": 35.4,
     "Revenue_YoY": 12.6,
     "BT_1M_Avg": 1.08,
@@ -6496,18 +6496,18 @@
     "BT_3M_Win": 50.0,
     "BT_Events": 22,
     "PER": 16.893204,
-    "PER(예상)": 13.191088,
-    "PBR": 1.7180085,
+    "PER(예상)": 13.2076645,
+    "PBR": 1.7168233,
     "ROE": 0.11038999,
     "EPS": 5.15,
-    "EPS(예상)": 6.595362,
+    "EPS(예상)": 6.5870843,
     "EarningsDate": "2026년 8월 25일"
   },
   {
     "Ticker": "ICE",
     "Name": "Intercontinental Exchange, Inc.",
     "Sector": "Financial Data & Stock Exchanges",
-    "RSI": 59.33,
+    "RSI": 62.94,
     "RSI_Series": [
       31.85,
       35.98,
@@ -6538,9 +6538,9 @@
       52.17,
       58.33,
       59.33,
-      59.33
+      62.94
     ],
-    "WeeklyRSI": 44.92,
+    "WeeklyRSI": 47.1,
     "WeeklyRSI_Series": [
       45.99,
       52.52,
@@ -6571,20 +6571,20 @@
       34.98,
       37.29,
       41.61,
-      44.92
+      47.1
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.52,
+    "Price": 145.79,
+    "DayChangePct": 1.8,
+    "Pos52w": 35.5,
+    "VolRatio": 0.8,
     "EPS_Growth": 79.7,
     "Revenue_YoY": 20.4,
-    "BT_1M_Avg": NaN,
-    "BT_1M_Win": 46.2,
+    "BT_1M_Avg": 0.49,
+    "BT_1M_Win": 50.0,
     "BT_3M_Avg": 6.97,
     "BT_3M_Win": 72.7,
     "BT_Events": 26,
@@ -6600,7 +6600,7 @@
     "Ticker": "NGG",
     "Name": "National Grid plc",
     "Sector": "Utilities - Regulated Electric",
-    "RSI": 48.4,
+    "RSI": 48.14,
     "RSI_Series": [
       43.71,
       44.86,
@@ -6631,9 +6631,9 @@
       47.07,
       54.12,
       48.4,
-      48.4
+      48.14
     ],
-    "WeeklyRSI": 48.77,
+    "WeeklyRSI": 48.66,
     "WeeklyRSI_Series": [
       64.48,
       67.39,
@@ -6664,16 +6664,16 @@
       49.62,
       49.22,
       51.49,
-      48.77
+      48.66
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.55,
+    "Price": 82.3,
+    "DayChangePct": -0.08,
+    "Pos52w": 54.5,
+    "VolRatio": 0.59,
     "EPS_Growth": 14.4,
     "Revenue_YoY": 2.0,
     "BT_1M_Avg": 1.25,
@@ -6693,7 +6693,7 @@
     "Ticker": "CM",
     "Name": "Canadian Imperial Bank of Commerce",
     "Sector": "Banks - Diversified",
-    "RSI": 51.69,
+    "RSI": 54.35,
     "RSI_Series": [
       55.33,
       59.19,
@@ -6724,9 +6724,9 @@
       54.7,
       55.69,
       51.69,
-      51.69
+      54.35
     ],
-    "WeeklyRSI": 64.31,
+    "WeeklyRSI": 65.88,
     "WeeklyRSI_Series": [
       75.34,
       71.21,
@@ -6757,16 +6757,16 @@
       66.87,
       70.54,
       73.37,
-      64.31
+      65.88
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.36,
+    "Price": 117.44,
+    "DayChangePct": 0.78,
+    "Pos52w": 90.2,
+    "VolRatio": 0.41,
     "EPS_Growth": 24.0,
     "Revenue_YoY": 15.3,
     "BT_1M_Avg": 1.93,
@@ -6775,18 +6775,18 @@
     "BT_3M_Win": 52.2,
     "BT_Events": 23,
     "PER": 16.425175,
-    "PER(예상)": 14.861431,
-    "PBR": 2.3654401,
+    "PER(예상)": 14.880107,
+    "PBR": 2.3684127,
     "ROE": 0.15387,
     "EPS": 7.15,
-    "EPS(예상)": 7.9023347,
+    "EPS(예상)": 7.8924165,
     "EarningsDate": "2026년 8월 27일"
   },
   {
     "Ticker": "NKE",
     "Name": "NIKE, Inc.",
     "Sector": "Footwear & Accessories",
-    "RSI": 39.29,
+    "RSI": 43.25,
     "RSI_Series": [
       56.74,
       51.57,
@@ -6817,9 +6817,9 @@
       47.61,
       44.21,
       39.29,
-      39.29
+      43.25
     ],
-    "WeeklyRSI": 36.12,
+    "WeeklyRSI": 36.97,
     "WeeklyRSI_Series": [
       45.5,
       49.12,
@@ -6850,15 +6850,15 @@
       39.95,
       40.47,
       39.66,
-      36.12
+      36.97
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 41.7,
+    "DayChangePct": 1.73,
+    "Pos52w": 4.2,
     "VolRatio": 1.01,
     "EPS_Growth": 428.0,
     "Revenue_YoY": -1.1,
@@ -6879,7 +6879,7 @@
     "Ticker": "STX",
     "Name": "Seagate Technology Holdings plc",
     "Sector": "Computer Hardware",
-    "RSI": 53.45,
+    "RSI": 47.77,
     "RSI_Series": [
       57.97,
       64.28,
@@ -6910,9 +6910,9 @@
       51.69,
       53.01,
       53.45,
-      53.45
+      47.77
     ],
-    "WeeklyRSI": 63.08,
+    "WeeklyRSI": 60.56,
     "WeeklyRSI_Series": [
       68.51,
       71.35,
@@ -6943,15 +6943,15 @@
       62.58,
       66.6,
       57.54,
-      63.08
+      60.56
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 851.69,
+    "DayChangePct": -6.75,
+    "Pos52w": 70.9,
     "VolRatio": 1.02,
     "EPS_Growth": 108.3,
     "Revenue_YoY": 44.1,
@@ -6972,7 +6972,7 @@
     "Ticker": "WMB",
     "Name": "The Williams Companies, Inc.",
     "Sector": "Oil & Gas Midstream",
-    "RSI": 53.88,
+    "RSI": 48.78,
     "RSI_Series": [
       42.61,
       44.83,
@@ -7003,9 +7003,9 @@
       46.34,
       50.99,
       53.88,
-      53.88
+      48.78
     ],
-    "WeeklyRSI": 55.94,
+    "WeeklyRSI": 54.11,
     "WeeklyRSI_Series": [
       52.74,
       51.44,
@@ -7036,16 +7036,16 @@
       53.34,
       56.04,
       53.15,
-      55.94
+      54.11
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.64,
+    "Price": 74.0,
+    "DayChangePct": -1.66,
+    "Pos52w": 74.9,
+    "VolRatio": 0.83,
     "EPS_Growth": 25.0,
     "Revenue_YoY": 9.0,
     "BT_1M_Avg": 5.06,
@@ -7065,7 +7065,7 @@
     "Ticker": "CNQ",
     "Name": "Canadian Natural Resources Limited",
     "Sector": "Oil & Gas Exploration & Production",
-    "RSI": 70.43,
+    "RSI": 66.3,
     "RSI_Series": [
       44.64,
       44.01,
@@ -7096,9 +7096,9 @@
       62.69,
       66.34,
       70.43,
-      70.43
+      66.3
     ],
-    "WeeklyRSI": 59.19,
+    "WeeklyRSI": 58.27,
     "WeeklyRSI_Series": [
       58.54,
       49.5,
@@ -7129,36 +7129,36 @@
       44.16,
       49.22,
       53.56,
-      59.19
+      58.27
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.77,
+    "Price": 46.44,
+    "DayChangePct": -1.21,
+    "Pos52w": 77.8,
+    "VolRatio": 0.86,
     "EPS_Growth": -45.3,
     "Revenue_YoY": -1.2,
-    "BT_1M_Avg": NaN,
-    "BT_1M_Win": 70.0,
+    "BT_1M_Avg": 11.6,
+    "BT_1M_Win": 80.0,
     "BT_3M_Avg": 9.18,
     "BT_3M_Win": 75.0,
     "BT_Events": 10,
     "PER": 11.786801,
-    "PER(예상)": 12.76098,
+    "PER(예상)": 12.777017,
     "PBR": 3.0565715,
     "ROE": 0.22825001,
     "EPS": 3.94,
-    "EPS(예상)": 3.6392188,
+    "EPS(예상)": 3.6346512,
     "EarningsDate": "2026년 8월 6일"
   },
   {
     "Ticker": "FDX",
     "Name": "FedEx Corporation",
     "Sector": "Integrated Freight & Logistics",
-    "RSI": 49.16,
+    "RSI": 48.64,
     "RSI_Series": [
       61.32,
       61.47,
@@ -7189,9 +7189,9 @@
       48.99,
       53.54,
       49.16,
-      49.16
+      48.64
     ],
-    "WeeklyRSI": 58.83,
+    "WeeklyRSI": 58.56,
     "WeeklyRSI_Series": [
       69.48,
       74.85,
@@ -7222,16 +7222,16 @@
       58.05,
       58.68,
       57.74,
-      58.83
+      58.56
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.44,
+    "Price": 314.96,
+    "DayChangePct": -0.21,
+    "Pos52w": 82.2,
+    "VolRatio": 0.56,
     "EPS_Growth": -4.3,
     "Revenue_YoY": 12.5,
     "BT_1M_Avg": -0.03,
@@ -7241,7 +7241,7 @@
     "BT_Events": 18,
     "PER": 16.978975,
     "PER(예상)": 15.365506,
-    "PBR": 2.3885396,
+    "PBR": 2.3985074,
     "ROE": 0.14846,
     "EPS": 18.55,
     "EPS(예상)": 20.49786,
@@ -7251,7 +7251,7 @@
     "Ticker": "MAR",
     "Name": "Marriott International, Inc.",
     "Sector": "Lodging",
-    "RSI": 41.92,
+    "RSI": 51.36,
     "RSI_Series": [
       67.06,
       69.7,
@@ -7282,9 +7282,9 @@
       44.33,
       46.39,
       41.92,
-      41.92
+      51.36
     ],
-    "WeeklyRSI": 54.21,
+    "WeeklyRSI": 57.69,
     "WeeklyRSI_Series": [
       64.32,
       68.67,
@@ -7315,16 +7315,16 @@
       58.27,
       59.24,
       54.97,
-      54.21
+      57.69
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.82,
+    "Price": 374.43,
+    "DayChangePct": 2.73,
+    "Pos52w": 76.8,
+    "VolRatio": 0.85,
     "EPS_Growth": 1.7,
     "Revenue_YoY": 12.6,
     "BT_1M_Avg": 4.25,
@@ -7344,7 +7344,7 @@
     "Ticker": "MRSH",
     "Name": "Marsh & McLennan Companies, Inc.",
     "Sector": "Insurance Brokers",
-    "RSI": 52.92,
+    "RSI": 58.72,
     "RSI_Series": [
       56.04,
       56.82,
@@ -7375,9 +7375,9 @@
       62.16,
       52.34,
       52.92,
-      52.92
+      58.72
     ],
-    "WeeklyRSI": 51.06,
+    "WeeklyRSI": 54.53,
     "WeeklyRSI_Series": [
       37.63,
       41.68,
@@ -7408,16 +7408,16 @@
       53.27,
       53.09,
       55.78,
-      51.06
+      54.53
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.53,
+    "Price": 180.74,
+    "DayChangePct": 2.46,
+    "Pos52w": 42.2,
+    "VolRatio": 0.73,
     "EPS_Growth": 7.3,
     "Revenue_YoY": 6.2,
     "BT_1M_Avg": 2.73,
@@ -7437,7 +7437,7 @@
     "Ticker": "SHW",
     "Name": "The Sherwin-Williams Company",
     "Sector": "Specialty Chemicals",
-    "RSI": 37.43,
+    "RSI": 43.49,
     "RSI_Series": [
       55.89,
       56.15,
@@ -7468,9 +7468,9 @@
       41.92,
       43.21,
       37.43,
-      37.43
+      43.49
     ],
-    "WeeklyRSI": 43.52,
+    "WeeklyRSI": 45.62,
     "WeeklyRSI_Series": [
       43.36,
       55.78,
@@ -7501,15 +7501,15 @@
       58.78,
       51.44,
       50.46,
-      43.52
+      45.62
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 317.51,
+    "DayChangePct": 2.24,
+    "Pos52w": 30.8,
     "VolRatio": 0.84,
     "EPS_Growth": 7.5,
     "Revenue_YoY": 6.8,
@@ -7530,7 +7530,7 @@
     "Ticker": "AMT",
     "Name": "American Tower Corporation",
     "Sector": "REIT - Specialty",
-    "RSI": 40.27,
+    "RSI": 44.04,
     "RSI_Series": [
       56.35,
       52.95,
@@ -7561,9 +7561,9 @@
       37.06,
       42.11,
       40.27,
-      40.27
+      44.04
     ],
-    "WeeklyRSI": 40.36,
+    "WeeklyRSI": 41.45,
     "WeeklyRSI_Series": [
       35.86,
       32.14,
@@ -7594,15 +7594,15 @@
       40.44,
       42.3,
       43.4,
-      40.36
+      41.45
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 166.67,
+    "DayChangePct": 1.23,
+    "Pos52w": 9.6,
     "VolRatio": 0.99,
     "EPS_Growth": 76.9,
     "Revenue_YoY": 6.8,
@@ -7623,7 +7623,7 @@
     "Ticker": "MELI",
     "Name": "MercadoLibre, Inc.",
     "Sector": "Internet Retail",
-    "RSI": 54.72,
+    "RSI": 55.13,
     "RSI_Series": [
       43.25,
       41.17,
@@ -7654,9 +7654,9 @@
       58.78,
       54.81,
       54.72,
-      54.72
+      55.13
     ],
-    "WeeklyRSI": 49.93,
+    "WeeklyRSI": 50.07,
     "WeeklyRSI_Series": [
       40.65,
       50.83,
@@ -7687,16 +7687,16 @@
       48.35,
       52.74,
       50.74,
-      49.93
+      50.07
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.8,
+    "Price": 1801.44,
+    "DayChangePct": 0.15,
+    "Pos52w": 29.1,
+    "VolRatio": 0.81,
     "EPS_Growth": -15.6,
     "Revenue_YoY": 49.0,
     "BT_1M_Avg": 3.25,
@@ -7705,18 +7705,18 @@
     "BT_3M_Win": 55.6,
     "BT_Events": 9,
     "PER": 47.619347,
-    "PER(예상)": 30.868082,
+    "PER(예상)": 30.861137,
     "PBR": 12.543361,
     "ROE": 0.31258,
     "EPS": 37.83,
-    "EPS(예상)": 58.35931,
+    "EPS(예상)": 58.37244,
     "EarningsDate": "2026년 8월 5일"
   },
   {
     "Ticker": "JCI",
     "Name": "Johnson Controls International plc",
     "Sector": "Building Products & Equipment",
-    "RSI": 52.08,
+    "RSI": 52.23,
     "RSI_Series": [
       53.57,
       54.67,
@@ -7747,9 +7747,9 @@
       49.26,
       50.64,
       52.08,
-      52.08
+      52.23
     ],
-    "WeeklyRSI": 57.84,
+    "WeeklyRSI": 57.9,
     "WeeklyRSI_Series": [
       66.58,
       50.13,
@@ -7780,16 +7780,16 @@
       56.29,
       57.99,
       55.34,
-      57.84
+      57.9
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.51,
+    "Price": 143.37,
+    "DayChangePct": 0.06,
+    "Pos52w": 84.1,
+    "VolRatio": 0.73,
     "EPS_Growth": 38.9,
     "Revenue_YoY": 8.2,
     "BT_1M_Avg": -1.51,
@@ -7809,7 +7809,7 @@
     "Ticker": "MMM",
     "Name": "3M Company",
     "Sector": "Conglomerates",
-    "RSI": 65.82,
+    "RSI": 69.19,
     "RSI_Series": [
       65.42,
       66.12,
@@ -7840,9 +7840,9 @@
       68.5,
       68.5,
       65.82,
-      65.82
+      69.19
     ],
-    "WeeklyRSI": 61.73,
+    "WeeklyRSI": 63.61,
     "WeeklyRSI_Series": [
       52.87,
       55.99,
@@ -7873,16 +7873,16 @@
       54.96,
       52.01,
       54.12,
-      61.73
+      63.61
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.91,
+    "Price": 172.62,
+    "DayChangePct": 1.79,
+    "Pos52w": 87.4,
+    "VolRatio": 1.11,
     "EPS_Growth": 32.8,
     "Revenue_YoY": 2.5,
     "BT_1M_Avg": 1.09,
@@ -7902,7 +7902,7 @@
     "Ticker": "ECL",
     "Name": "Ecolab Inc.",
     "Sector": "Specialty Chemicals",
-    "RSI": 41.12,
+    "RSI": 48.25,
     "RSI_Series": [
       56.01,
       57.55,
@@ -7933,9 +7933,9 @@
       41.32,
       44.96,
       41.12,
-      41.12
+      48.25
     ],
-    "WeeklyRSI": 46.23,
+    "WeeklyRSI": 49.34,
     "WeeklyRSI_Series": [
       47.89,
       53.86,
@@ -7966,16 +7966,16 @@
       58.66,
       52.79,
       51.88,
-      46.23
+      49.34
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.65,
+    "Price": 268.75,
+    "DayChangePct": 2.13,
+    "Pos52w": 38.7,
+    "VolRatio": 0.9,
     "EPS_Growth": 7.8,
     "Revenue_YoY": 10.0,
     "BT_1M_Avg": 0.55,
@@ -7995,7 +7995,7 @@
     "Ticker": "ADP",
     "Name": "Automatic Data Processing, Inc.",
     "Sector": "Software - Application",
-    "RSI": 54.14,
+    "RSI": 60.18,
     "RSI_Series": [
       54.55,
       55.03,
@@ -8026,9 +8026,9 @@
       57.65,
       54.39,
       54.14,
-      54.14
+      60.18
     ],
-    "WeeklyRSI": 55.01,
+    "WeeklyRSI": 58.71,
     "WeeklyRSI_Series": [
       31.35,
       43.26,
@@ -8059,16 +8059,16 @@
       56.59,
       56.4,
       61.68,
-      55.01
+      58.71
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.64,
+    "Price": 250.09,
+    "DayChangePct": 2.97,
+    "Pos52w": 48.5,
+    "VolRatio": 0.67,
     "EPS_Growth": 10.5,
     "Revenue_YoY": 7.0,
     "BT_1M_Avg": 1.68,
@@ -8088,7 +8088,7 @@
     "Ticker": "PNC",
     "Name": "The PNC Financial Services Group, Inc.",
     "Sector": "Banks - Regional",
-    "RSI": 55.39,
+    "RSI": 57.74,
     "RSI_Series": [
       67.63,
       70.98,
@@ -8119,9 +8119,9 @@
       58.63,
       61.33,
       55.39,
-      55.39
+      57.74
     ],
-    "WeeklyRSI": 65.91,
+    "WeeklyRSI": 67.46,
     "WeeklyRSI_Series": [
       63.56,
       66.89,
@@ -8152,15 +8152,15 @@
       67.89,
       68.83,
       69.22,
-      65.91
+      67.46
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 250.99,
+    "DayChangePct": 0.69,
+    "Pos52w": 93.1,
     "VolRatio": 0.52,
     "EPS_Growth": 25.1,
     "Revenue_YoY": 23.6,
@@ -8181,7 +8181,7 @@
     "Ticker": "B",
     "Name": "Barrick Mining Corporation",
     "Sector": "Gold",
-    "RSI": 49.2,
+    "RSI": 48.97,
     "RSI_Series": [
       43.82,
       47.67,
@@ -8212,9 +8212,9 @@
       45.46,
       50.79,
       49.2,
-      49.2
+      48.97
     ],
-    "WeeklyRSI": 45.26,
+    "WeeklyRSI": 45.16,
     "WeeklyRSI_Series": [
       77.17,
       80.95,
@@ -8245,16 +8245,16 @@
       45.76,
       43.18,
       40.38,
-      45.26
+      45.16
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.62,
+    "Price": 37.11,
+    "DayChangePct": -0.13,
+    "Pos52w": 47.9,
+    "VolRatio": 0.63,
     "EPS_Growth": 254.2,
     "Revenue_YoY": 66.7,
     "BT_1M_Avg": 5.0,
@@ -8274,7 +8274,7 @@
     "Ticker": "USB",
     "Name": "U.S. Bancorp",
     "Sector": "Banks - Regional",
-    "RSI": 60.24,
+    "RSI": 62.79,
     "RSI_Series": [
       63.43,
       67.95,
@@ -8305,9 +8305,9 @@
       65.18,
       67.93,
       60.24,
-      60.24
+      62.79
     ],
-    "WeeklyRSI": 68.89,
+    "WeeklyRSI": 69.94,
     "WeeklyRSI_Series": [
       65.25,
       67.78,
@@ -8338,16 +8338,16 @@
       66.23,
       67.36,
       68.57,
-      68.89
+      69.94
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.61,
+    "Price": 63.97,
+    "DayChangePct": 1.01,
+    "Pos52w": 95.9,
+    "VolRatio": 0.79,
     "EPS_Growth": 21.6,
     "Revenue_YoY": 10.4,
     "BT_1M_Avg": 1.25,
@@ -8367,7 +8367,7 @@
     "Ticker": "EMR",
     "Name": "Emerson Electric Co.",
     "Sector": "Specialty Industrial Machinery",
-    "RSI": 58.57,
+    "RSI": 62.61,
     "RSI_Series": [
       53.9,
       55.21,
@@ -8398,9 +8398,9 @@
       49.12,
       49.82,
       58.57,
-      58.57
+      62.61
     ],
-    "WeeklyRSI": 53.9,
+    "WeeklyRSI": 55.91,
     "WeeklyRSI_Series": [
       54.4,
       61.35,
@@ -8431,16 +8431,16 @@
       49.49,
       49.37,
       49.88,
-      53.9
+      55.91
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.43,
+    "Price": 147.94,
+    "DayChangePct": 2.1,
+    "Pos52w": 59.5,
+    "VolRatio": 1.46,
     "EPS_Growth": 27.9,
     "Revenue_YoY": 2.9,
     "BT_1M_Avg": 3.36,
@@ -8460,7 +8460,7 @@
     "Ticker": "MCO",
     "Name": "Moody's Corporation",
     "Sector": "Financial Data & Stock Exchanges",
-    "RSI": 45.99,
+    "RSI": 45.67,
     "RSI_Series": [
       45.07,
       49.45,
@@ -8491,9 +8491,9 @@
       54.94,
       54.37,
       45.99,
-      45.99
+      45.67
     ],
-    "WeeklyRSI": 51.4,
+    "WeeklyRSI": 51.23,
     "WeeklyRSI_Series": [
       52.52,
       60.88,
@@ -8524,15 +8524,15 @@
       58.38,
       57.33,
       62.6,
-      51.4
+      51.23
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 471.5,
+    "DayChangePct": -0.16,
+    "Pos52w": 47.9,
     "VolRatio": 0.93,
     "EPS_Growth": 56.7,
     "Revenue_YoY": 15.1,
@@ -8553,7 +8553,7 @@
     "Ticker": "PWR",
     "Name": "Quanta Services, Inc.",
     "Sector": "Engineering & Construction",
-    "RSI": 45.67,
+    "RSI": 38.86,
     "RSI_Series": [
       45.91,
       51.59,
@@ -8584,9 +8584,9 @@
       40.73,
       42.07,
       45.67,
-      45.67
+      38.86
     ],
-    "WeeklyRSI": 56.33,
+    "WeeklyRSI": 51.52,
     "WeeklyRSI_Series": [
       59.72,
       53.44,
@@ -8617,15 +8617,15 @@
       60.57,
       58.36,
       52.06,
-      56.33
+      51.52
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 625.84,
+    "DayChangePct": -4.28,
+    "Pos52w": 61.7,
     "VolRatio": 0.6,
     "EPS_Growth": 51.0,
     "Revenue_YoY": 26.3,
@@ -8646,7 +8646,7 @@
     "Ticker": "RCL",
     "Name": "Royal Caribbean Cruises Ltd.",
     "Sector": "Travel Services",
-    "RSI": 44.31,
+    "RSI": 51.72,
     "RSI_Series": [
       56.03,
       58.51,
@@ -8677,9 +8677,9 @@
       47.19,
       45.89,
       44.31,
-      44.31
+      51.72
     ],
-    "WeeklyRSI": 48.85,
+    "WeeklyRSI": 51.9,
     "WeeklyRSI_Series": [
       48.92,
       56.34,
@@ -8710,16 +8710,16 @@
       52.57,
       49.47,
       49.93,
-      48.85
+      51.9
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.02,
+    "Price": 293.54,
+    "DayChangePct": 3.57,
+    "Pos52w": 45.7,
+    "VolRatio": 1.18,
     "EPS_Growth": 28.9,
     "Revenue_YoY": 11.3,
     "BT_1M_Avg": 6.6,
@@ -8739,7 +8739,7 @@
     "Ticker": "ING",
     "Name": "ING Groep N.V.",
     "Sector": "Banks - Diversified",
-    "RSI": 53.85,
+    "RSI": 56.69,
     "RSI_Series": [
       49.47,
       53.62,
@@ -8770,9 +8770,9 @@
       61.1,
       62.54,
       53.85,
-      53.85
+      56.69
     ],
-    "WeeklyRSI": 64.66,
+    "WeeklyRSI": 65.89,
     "WeeklyRSI_Series": [
       72.76,
       68.85,
@@ -8803,15 +8803,15 @@
       63.78,
       64.63,
       64.29,
-      64.66
+      65.89
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 32.83,
+    "DayChangePct": 1.2,
+    "Pos52w": 94.2,
     "VolRatio": 0.57,
     "EPS_Growth": 13.7,
     "Revenue_YoY": 2.9,
@@ -8822,7 +8822,7 @@
     "BT_Events": 13,
     "PER": 13.132001,
     "PER(예상)": 10.265759,
-    "PBR": 1.6263738,
+    "PBR": 1.6268299,
     "ROE": 0.16565001,
     "EPS": 2.5,
     "EPS(예상)": 3.19801,
@@ -8832,7 +8832,7 @@
     "Ticker": "BCS",
     "Name": "Barclays PLC",
     "Sector": "Banks - Diversified",
-    "RSI": 55.38,
+    "RSI": 57.25,
     "RSI_Series": [
       56.81,
       61.71,
@@ -8863,9 +8863,9 @@
       58.6,
       59.95,
       55.38,
-      55.38
+      57.25
     ],
-    "WeeklyRSI": 65.44,
+    "WeeklyRSI": 66.79,
     "WeeklyRSI_Series": [
       78.18,
       77.35,
@@ -8896,16 +8896,16 @@
       67.14,
       65.4,
       66.49,
-      65.44
+      66.79
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.96,
+    "Price": 27.91,
+    "DayChangePct": 0.9,
+    "Pos52w": 94.6,
+    "VolRatio": 0.99,
     "EPS_Growth": 8.1,
     "Revenue_YoY": 3.9,
     "BT_1M_Avg": 7.8,
@@ -8925,7 +8925,7 @@
     "Ticker": "ITW",
     "Name": "Illinois Tool Works Inc.",
     "Sector": "Specialty Industrial Machinery",
-    "RSI": 59.45,
+    "RSI": 64.68,
     "RSI_Series": [
       51.82,
       55.79,
@@ -8956,9 +8956,9 @@
       54.56,
       56.54,
       59.45,
-      59.45
+      64.68
     ],
-    "WeeklyRSI": 59.0,
+    "WeeklyRSI": 62.07,
     "WeeklyRSI_Series": [
       47.74,
       52.63,
@@ -8989,16 +8989,16 @@
       57.31,
       54.44,
       58.53,
-      59.0
+      62.07
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.73,
+    "Price": 283.02,
+    "DayChangePct": 2.21,
+    "Pos52w": 68.7,
+    "VolRatio": 0.95,
     "EPS_Growth": 11.8,
     "Revenue_YoY": 4.6,
     "BT_1M_Avg": 1.13,
@@ -9018,7 +9018,7 @@
     "Ticker": "MNST",
     "Name": "Monster Beverage Corporation",
     "Sector": "Beverages - Non-Alcoholic",
-    "RSI": 45.83,
+    "RSI": 45.62,
     "RSI_Series": [
       69.95,
       71.62,
@@ -9049,9 +9049,9 @@
       48.41,
       52.27,
       45.83,
-      45.83
+      45.62
     ],
-    "WeeklyRSI": 64.49,
+    "WeeklyRSI": 64.34,
     "WeeklyRSI_Series": [
       69.62,
       71.41,
@@ -9082,16 +9082,16 @@
       74.83,
       74.3,
       74.41,
-      64.49
+      64.34
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 0.95,
+    "Price": 93.49,
+    "DayChangePct": -0.07,
+    "Pos52w": 83.8,
+    "VolRatio": 0.98,
     "EPS_Growth": 28.9,
     "Revenue_YoY": 26.9,
     "BT_1M_Avg": 5.09,
@@ -9111,7 +9111,7 @@
     "Ticker": "CDNS",
     "Name": "Cadence Design Systems, Inc.",
     "Sector": "Software - Application",
-    "RSI": 33.44,
+    "RSI": 32.06,
     "RSI_Series": [
       55.07,
       55.54,
@@ -9142,9 +9142,9 @@
       38.37,
       35.64,
       33.44,
-      33.44
+      32.06
     ],
-    "WeeklyRSI": 46.84,
+    "WeeklyRSI": 45.77,
     "WeeklyRSI_Series": [
       45.74,
       51.31,
@@ -9175,16 +9175,16 @@
       61.53,
       64.26,
       46.74,
-      46.84
+      45.77
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "⚠️",
     "최근7일내_RSI30이하": "🕐",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.3,
+    "Price": 326.24,
+    "DayChangePct": -1.28,
+    "Pos52w": 41.2,
+    "VolRatio": 1.34,
     "EPS_Growth": 23.0,
     "Revenue_YoY": 18.7,
     "BT_1M_Avg": 4.41,
