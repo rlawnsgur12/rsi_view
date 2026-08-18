@@ -2,33 +2,33 @@
   {
     "Ticker": "SPY",
     "Label": "S&P 500",
-    "Price": 772.67,
-    "DayChangePct": -0.47,
-    "RSI": 61.78,
-    "WeeklyRSI": 66.1
+    "Price": 767.45,
+    "DayChangePct": -0.68,
+    "RSI": 56.61,
+    "WeeklyRSI": 63.81
   },
   {
     "Ticker": "QQQ",
     "Label": "NASDAQ",
-    "Price": 729.87,
-    "DayChangePct": -0.16,
-    "RSI": 58.88,
-    "WeeklyRSI": 61.77
+    "Price": 717.51,
+    "DayChangePct": -1.69,
+    "RSI": 52.18,
+    "WeeklyRSI": 58.42
   },
   {
     "Ticker": "DIA",
     "Label": "DOW",
-    "Price": 534.19,
-    "DayChangePct": -0.49,
-    "RSI": 55.65,
-    "WeeklyRSI": 67.79
+    "Price": 532.91,
+    "DayChangePct": -0.24,
+    "RSI": 53.84,
+    "WeeklyRSI": 66.7
   },
   {
     "Ticker": "IWM",
     "Label": "Russell 2000",
-    "Price": 304.06,
-    "DayChangePct": -0.34,
-    "RSI": 61.21,
-    "WeeklyRSI": 68.19
+    "Price": 300.23,
+    "DayChangePct": -1.26,
+    "RSI": 53.73,
+    "WeeklyRSI": 64.28
   }
 ]
