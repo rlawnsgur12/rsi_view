@@ -168,7 +168,7 @@
     "ret_6m_min": 20.36
   },
   "APH": {
-    "events": 6,
+    "events": 5,
     "ret_1m_avg": 2.24,
     "ret_1m_winrate": 40.0,
     "ret_1m_min": -2.71,
