@@ -3,9 +3,8 @@
     "Ticker": "NVDA",
     "Name": "NVIDIA",
     "Sector": "Technology",
-    "RSI": 55.17,
+    "RSI": 58.65,
     "RSI_Series": [
-      62.85,
       56.61,
       54.21,
       53.42,
@@ -34,11 +33,11 @@
       55.72,
       54.72,
       55.17,
-      55.17
+      58.65,
+      58.65
     ],
-    "WeeklyRSI": 58.11,
+    "WeeklyRSI": 59.62,
     "WeeklyRSI_Series": [
-      48.68,
       50.42,
       45.29,
       42.12,
@@ -67,7 +66,8 @@
       61.72,
       55.47,
       57.01,
-      58.11
+      58.11,
+      59.62
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -76,7 +76,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.22,
+    "VolRatio": 0.87,
     "EPS_Growth": 127.8,
     "Revenue_YoY": 105.9,
     "BT_1M_Avg": 3.12,
@@ -84,11 +84,11 @@
     "BT_3M_Avg": 19.62,
     "BT_3M_Win": 60.0,
     "BT_Events": 5,
-    "PER": 28.96962,
-    "PER(예상)": 14.593216,
-    "PBR": 24.133713,
+    "PER": 28.688131,
+    "PER(예상)": 14.488005,
+    "PBR": 23.959719,
     "ROE": 1.17211,
-    "EPS": 7.9,
+    "EPS": 7.92,
     "EPS(예상)": 15.68263,
     "EarningsDate": "2026년 11월 17일"
   },
@@ -96,9 +96,8 @@
     "Ticker": "AAPL",
     "Name": "Apple",
     "Sector": "Technology",
-    "RSI": 65.67,
+    "RSI": 61.79,
     "RSI_Series": [
-      43.41,
       47.86,
       53.85,
       48.93,
@@ -127,11 +126,11 @@
       62.9,
       61.32,
       65.67,
-      65.67
+      61.79,
+      61.79
     ],
-    "WeeklyRSI": 66.78,
+    "WeeklyRSI": 65.14,
     "WeeklyRSI_Series": [
-      50.18,
       46.66,
       45.66,
       46.14,
@@ -160,7 +159,8 @@
       60.1,
       64.1,
       65.28,
-      66.78
+      66.78,
+      65.14
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -169,7 +169,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.76,
+    "VolRatio": 0.89,
     "EPS_Growth": 28.7,
     "Revenue_YoY": 16.4,
     "BT_1M_Avg": 3.39,
@@ -177,9 +177,9 @@
     "BT_3M_Avg": 2.72,
     "BT_3M_Win": 50.0,
     "BT_Events": 12,
-    "PER": 38.762886,
-    "PER(예상)": 35.303875,
-    "PBR": 45.97826,
+    "PER": 37.73196,
+    "PER(예상)": 34.36494,
+    "PBR": 44.755432,
     "ROE": 1.4875101,
     "EPS": 8.73,
     "EPS(예상)": 9.58535,
@@ -189,9 +189,8 @@
     "Ticker": "MSFT",
     "Name": "Microsoft",
     "Sector": "Technology",
-    "RSI": 63.22,
+    "RSI": 58.56,
     "RSI_Series": [
-      62.19,
       62.61,
       63.53,
       61.61,
@@ -220,11 +219,11 @@
       56.19,
       54.36,
       63.22,
-      63.22
+      58.56,
+      58.56
     ],
-    "WeeklyRSI": 64.36,
+    "WeeklyRSI": 62.4,
     "WeeklyRSI_Series": [
-      34.68,
       31.89,
       29.3,
       25.26,
@@ -253,7 +252,8 @@
       62.17,
       61.15,
       60.66,
-      64.36
+      64.36,
+      62.4
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -262,7 +262,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.9,
+    "VolRatio": 0.94,
     "EPS_Growth": 31.7,
     "Revenue_YoY": 17.7,
     "BT_1M_Avg": 2.58,
@@ -270,11 +270,11 @@
     "BT_3M_Avg": 4.82,
     "BT_3M_Win": 46.2,
     "BT_Events": 13,
-    "PER": 28.353008,
-    "PER(예상)": 21.507965,
-    "PBR": 8.548981,
+    "PER": 28.401785,
+    "PER(예상)": 21.496983,
+    "PBR": 8.544615,
     "ROE": 0.34039003,
-    "EPS": 17.96,
+    "EPS": 17.92,
     "EPS(예상)": 23.67588,
     "EarningsDate": "2026년 7월 29일"
   }
