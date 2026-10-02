@@ -3,9 +3,8 @@
     "Ticker": "NVDA",
     "Name": "NVIDIA Corporation",
     "Sector": "Semiconductors",
-    "RSI": 56.59,
+    "RSI": 57.72,
     "RSI_Series": [
-      54.21,
       53.42,
       51.01,
       44.65,
@@ -34,9 +33,10 @@
       55.17,
       58.65,
       56.59,
-      56.59
+      57.72,
+      57.72
     ],
-    "WeeklyRSI": 58.98,
+    "WeeklyRSI": 59.44,
     "WeeklyRSI_Series": [
       50.42,
       45.29,
@@ -67,7 +67,7 @@
       55.47,
       57.01,
       58.11,
-      58.98
+      59.44
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -76,7 +76,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.06,
+    "VolRatio": 0.86,
     "EPS_Growth": 127.8,
     "Revenue_YoY": 105.9,
     "BT_1M_Avg": 3.12,
@@ -84,21 +84,20 @@
     "BT_3M_Avg": 19.62,
     "BT_3M_Win": 60.0,
     "BT_Events": 5,
-    "PER": 28.872314,
-    "PER(예상)": 14.562609,
-    "PBR": 24.083097,
+    "PER": 29.222784,
+    "PER(예상)": 14.709068,
+    "PBR": 24.344618,
     "ROE": 1.17211,
-    "EPS": 7.91,
-    "EPS(예상)": 15.68263,
+    "EPS": 7.9,
+    "EPS(예상)": 15.69508,
     "EarningsDate": "2026년 11월 17일"
   },
   {
     "Ticker": "AAPL",
     "Name": "Apple Inc.",
     "Sector": "Consumer Electronics",
-    "RSI": 50.88,
+    "RSI": 54.37,
     "RSI_Series": [
-      53.85,
       48.93,
       47.28,
       48.23,
@@ -127,9 +126,10 @@
       65.67,
       61.79,
       50.88,
-      50.88
+      54.37,
+      54.37
     ],
-    "WeeklyRSI": 60.16,
+    "WeeklyRSI": 62.07,
     "WeeklyRSI_Series": [
       46.66,
       45.66,
@@ -160,7 +160,7 @@
       64.1,
       65.28,
       66.78,
-      60.16
+      62.07
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -169,7 +169,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.17,
+    "VolRatio": 0.83,
     "EPS_Growth": 28.7,
     "Revenue_YoY": 16.4,
     "BT_1M_Avg": 3.39,
@@ -177,21 +177,20 @@
     "BT_3M_Avg": 2.72,
     "BT_3M_Win": 50.0,
     "BT_Events": 12,
-    "PER": 38.14662,
-    "PER(예상)": 34.7426,
-    "PBR": 45.24728,
+    "PER": 37.837345,
+    "PER(예상)": 34.46991,
+    "PBR": 44.880436,
     "ROE": 1.4875101,
     "EPS": 8.73,
-    "EPS(예상)": 9.58535,
+    "EPS(예상)": 9.58285,
     "EarningsDate": "2026년 7월 30일"
   },
   {
     "Ticker": "GOOGL",
     "Name": "Alphabet Inc.",
     "Sector": "Internet Content & Information",
-    "RSI": 47.36,
+    "RSI": 50.12,
     "RSI_Series": [
-      46.52,
       44.03,
       47.16,
       49.53,
@@ -220,9 +219,10 @@
       49.72,
       48.81,
       47.36,
-      47.36
+      50.12,
+      50.12
     ],
-    "WeeklyRSI": 49.84,
+    "WeeklyRSI": 50.97,
     "WeeklyRSI_Series": [
       55.84,
       55.2,
@@ -253,7 +253,7 @@
       49.3,
       52.9,
       50.92,
-      49.84
+      50.97
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -262,7 +262,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.41,
+    "VolRatio": 1.24,
     "EPS_Growth": 294.0,
     "Revenue_YoY": 24.2,
     "BT_1M_Avg": 4.45,
@@ -270,11 +270,11 @@
     "BT_3M_Avg": 5.51,
     "BT_3M_Win": 63.6,
     "BT_Events": 11,
-    "PER": 17.255766,
-    "PER(예상)": 22.829782,
-    "PBR": 6.7604523,
+    "PER": 16.97992,
+    "PER(예상)": 22.442299,
+    "PBR": 6.6457086,
     "ROE": 0.48676,
-    "EPS": 19.94,
+    "EPS": 19.92,
     "EPS(예상)": 15.07154,
     "EarningsDate": "2026년 7월 22일"
   },
@@ -282,9 +282,8 @@
     "Ticker": "GOOG",
     "Name": "Alphabet Inc.",
     "Sector": "Internet Content & Information",
-    "RSI": 46.86,
+    "RSI": 50.0,
     "RSI_Series": [
-      45.33,
       43.1,
       46.01,
       48.28,
@@ -313,9 +312,10 @@
       49.94,
       48.38,
       46.86,
-      46.86
+      50.0,
+      50.0
     ],
-    "WeeklyRSI": 49.32,
+    "WeeklyRSI": 50.57,
     "WeeklyRSI_Series": [
       55.36,
       54.03,
@@ -346,7 +346,7 @@
       48.89,
       51.88,
       50.69,
-      49.32
+      50.57
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -355,7 +355,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.39,
+    "VolRatio": 1.13,
     "EPS_Growth": 294.0,
     "Revenue_YoY": 24.2,
     "BT_1M_Avg": 3.88,
@@ -363,11 +363,11 @@
     "BT_3M_Avg": 5.44,
     "BT_3M_Win": 61.5,
     "BT_Events": 13,
-    "PER": 17.088264,
-    "PER(예상)": 22.608173,
-    "PBR": 6.6948285,
+    "PER": 16.805319,
+    "PER(예상)": 22.22268,
+    "PBR": 6.580674,
     "ROE": 0.48676,
-    "EPS": 19.94,
+    "EPS": 19.93,
     "EPS(예상)": 15.07154,
     "EarningsDate": "2026년 7월 22일"
   },
@@ -375,9 +375,8 @@
     "Ticker": "MSFT",
     "Name": "Microsoft Corporation",
     "Sector": "Software - Infrastructure",
-    "RSI": 58.38,
+    "RSI": 60.3,
     "RSI_Series": [
-      63.53,
       61.61,
       62.42,
       64.01,
@@ -406,9 +405,10 @@
       63.22,
       58.56,
       58.38,
-      58.38
+      60.3,
+      60.3
     ],
-    "WeeklyRSI": 62.33,
+    "WeeklyRSI": 63.42,
     "WeeklyRSI_Series": [
       31.89,
       29.3,
@@ -439,7 +439,7 @@
       61.15,
       60.66,
       64.36,
-      62.33
+      63.42
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -448,29 +448,28 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.28,
+    "VolRatio": 0.89,
     "EPS_Growth": 31.7,
     "Revenue_YoY": 17.7,
-    "BT_1M_Avg": 2.19,
-    "BT_1M_Win": 50.0,
-    "BT_3M_Avg": 3.94,
-    "BT_3M_Win": 42.9,
-    "BT_Events": 14,
-    "PER": 28.542017,
-    "PER(예상)": 21.692709,
-    "PBR": 8.610762,
+    "BT_1M_Avg": 2.58,
+    "BT_1M_Win": 53.8,
+    "BT_3M_Avg": 4.82,
+    "BT_3M_Win": 46.2,
+    "BT_Events": 13,
+    "PER": 28.568243,
+    "PER(예상)": 21.685333,
+    "PBR": 8.609082,
     "ROE": 0.34039003,
-    "EPS": 17.97,
-    "EPS(예상)": 23.64389,
+    "EPS": 17.95,
+    "EPS(예상)": 23.64732,
     "EarningsDate": "2026년 7월 29일"
   },
   {
     "Ticker": "AMZN",
     "Name": "Amazon.com, Inc.",
     "Sector": "Internet Retail",
-    "RSI": 41.93,
+    "RSI": 45.2,
     "RSI_Series": [
-      55.64,
       50.92,
       49.74,
       52.48,
@@ -499,9 +498,10 @@
       44.54,
       41.24,
       41.93,
-      41.93
+      45.2,
+      45.2
     ],
-    "WeeklyRSI": 48.71,
+    "WeeklyRSI": 49.83,
     "WeeklyRSI_Series": [
       42.73,
       41.73,
@@ -532,7 +532,7 @@
       53.22,
       51.87,
       50.07,
-      48.71
+      49.83
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -541,7 +541,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.22,
+    "VolRatio": 0.95,
     "EPS_Growth": 242.3,
     "Revenue_YoY": 19.6,
     "BT_1M_Avg": 0.91,
@@ -549,21 +549,20 @@
     "BT_3M_Avg": 14.73,
     "BT_3M_Win": 81.8,
     "BT_Events": 11,
-    "PER": 20.044247,
-    "PER(예상)": 23.81594,
-    "PBR": 4.8703966,
+    "PER": 19.970232,
+    "PER(예상)": 23.695768,
+    "PBR": 4.852412,
     "ROE": 0.30558002,
     "EPS": 12.43,
-    "EPS(예상)": 10.46148,
+    "EPS(예상)": 10.47571,
     "EarningsDate": "2026년 7월 30일"
   },
   {
     "Ticker": "TSM",
     "Name": "Taiwan Semiconductor Manufacturing Company Limited",
     "Sector": "Semiconductors",
-    "RSI": 65.03,
+    "RSI": 64.39,
     "RSI_Series": [
-      46.7,
       48.82,
       50.42,
       45.8,
@@ -592,9 +591,10 @@
       62.16,
       63.19,
       65.03,
-      65.03
+      64.39,
+      64.39
     ],
-    "WeeklyRSI": 68.4,
+    "WeeklyRSI": 68.23,
     "WeeklyRSI_Series": [
       60.18,
       56.37,
@@ -625,7 +625,7 @@
       62.32,
       62.72,
       66.89,
-      68.4
+      68.23
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -634,7 +634,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.9,
+    "VolRatio": 0.82,
     "EPS_Growth": 77.4,
     "Revenue_YoY": 36.0,
     "BT_1M_Avg": 8.21,
@@ -642,11 +642,11 @@
     "BT_3M_Avg": 19.96,
     "BT_3M_Win": 72.7,
     "BT_Events": 11,
-    "PER": 33.967983,
-    "PER(예상)": 20.806746,
-    "PBR": 93.80795,
+    "PER": 34.1159,
+    "PER(예상)": 20.944033,
+    "PBR": 94.42692,
     "ROE": 0.39969003,
-    "EPS": 13.43,
+    "EPS": 13.46,
     "EPS(예상)": 21.9251,
     "EarningsDate": "2026년 10월 15일"
   },
@@ -654,9 +654,8 @@
     "Ticker": "META",
     "Name": "Meta Platforms, Inc.",
     "Sector": "Internet Content & Information",
-    "RSI": 64.51,
+    "RSI": 60.98,
     "RSI_Series": [
-      37.05,
       37.01,
       38.66,
       42.3,
@@ -685,9 +684,10 @@
       71.33,
       60.93,
       64.51,
-      64.51
+      60.98,
+      60.98
     ],
-    "WeeklyRSI": 62.44,
+    "WeeklyRSI": 60.65,
     "WeeklyRSI_Series": [
       42.55,
       40.02,
@@ -718,7 +718,7 @@
       54.64,
       56.51,
       64.22,
-      62.44
+      60.65
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -727,7 +727,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.8,
+    "VolRatio": 0.51,
     "EPS_Growth": -13.4,
     "Revenue_YoY": 28.0,
     "BT_1M_Avg": 6.3,
@@ -735,21 +735,20 @@
     "BT_3M_Avg": 4.23,
     "BT_3M_Win": 53.8,
     "BT_Events": 13,
-    "PER": 26.456768,
-    "PER(예상)": 20.739243,
-    "PBR": 7.073547,
+    "PER": 27.352297,
+    "PER(예상)": 20.796753,
+    "PBR": 7.0808625,
     "ROE": 0.29848,
-    "EPS": 27.41,
-    "EPS(예상)": 34.96656,
+    "EPS": 26.54,
+    "EPS(예상)": 34.90593,
     "EarningsDate": "2026년 7월 29일"
   },
   {
     "Ticker": "AVGO",
     "Name": "Broadcom Inc.",
     "Sector": "Semiconductors",
-    "RSI": 45.96,
+    "RSI": 43.66,
     "RSI_Series": [
-      35.33,
       36.19,
       38.71,
       35.41,
@@ -778,9 +777,10 @@
       43.71,
       41.95,
       45.96,
-      45.96
+      43.66,
+      43.66
     ],
-    "WeeklyRSI": 46.01,
+    "WeeklyRSI": 45.12,
     "WeeklyRSI_Series": [
       47.98,
       44.78,
@@ -811,7 +811,7 @@
       47.22,
       46.39,
       45.45,
-      46.01
+      45.12
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -820,7 +820,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.67,
+    "VolRatio": 0.81,
     "EPS_Growth": 215.3,
     "Revenue_YoY": 85.5,
     "BT_1M_Avg": 12.68,
@@ -828,21 +828,20 @@
     "BT_3M_Avg": 35.98,
     "BT_3M_Win": 100.0,
     "BT_Events": 3,
-    "PER": 44.73758,
-    "PER(예상)": 18.119997,
-    "PBR": 16.817833,
+    "PER": 43.887615,
+    "PER(예상)": 17.728107,
+    "PBR": 16.45628,
     "ROE": 0.44245,
-    "EPS": 7.85,
-    "EPS(예상)": 19.38135,
+    "EPS": 7.83,
+    "EPS(예상)": 19.38391,
     "EarningsDate": "2026년 12월 9일"
   },
   {
     "Ticker": "TSLA",
     "Name": "Tesla, Inc.",
     "Sector": "Auto Manufacturers",
-    "RSI": 44.8,
+    "RSI": 46.0,
     "RSI_Series": [
-      53.43,
       50.4,
       58.01,
       51.35,
@@ -871,9 +870,10 @@
       55.31,
       47.06,
       44.8,
-      44.8
+      46.0,
+      46.0
     ],
-    "WeeklyRSI": 45.24,
+    "WeeklyRSI": 45.64,
     "WeeklyRSI_Series": [
       44.65,
       39.65,
@@ -904,7 +904,7 @@
       47.91,
       47.66,
       49.54,
-      45.24
+      45.64
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -913,7 +913,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.0,
+    "VolRatio": 0.78,
     "EPS_Growth": -3.0,
     "Revenue_YoY": 25.5,
     "BT_1M_Avg": 2.64,
@@ -921,11 +921,11 @@
     "BT_3M_Avg": 17.41,
     "BT_3M_Win": 75.0,
     "BT_Events": 17,
-    "PER": 325.51376,
-    "PER(예상)": 164.03606,
-    "PBR": 16.131393,
+    "PER": 334.06604,
+    "PER(예상)": 163.71242,
+    "PBR": 16.099567,
     "ROE": 0.046669997,
-    "EPS": 1.09,
+    "EPS": 1.06,
     "EPS(예상)": 2.163,
     "EarningsDate": "2026년 7월 22일"
   },
@@ -933,9 +933,8 @@
     "Ticker": "BRK-A",
     "Name": "Berkshire Hathaway Inc.",
     "Sector": "Insurance - Diversified",
-    "RSI": 40.75,
+    "RSI": 44.85,
     "RSI_Series": [
-      45.38,
       42.53,
       41.97,
       49.82,
@@ -964,9 +963,10 @@
       48.37,
       45.25,
       44.91,
-      40.75
+      40.75,
+      44.85
     ],
-    "WeeklyRSI": 49.95,
+    "WeeklyRSI": 51.63,
     "WeeklyRSI_Series": [
       46.96,
       42.85,
@@ -997,16 +997,16 @@
       57.12,
       56.21,
       54.23,
-      49.95
+      51.63
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": 747005.0,
-    "DayChangePct": -0.84,
-    "Pos52w": 45.3,
-    "VolRatio": 0.83,
+    "Price": 751745.0,
+    "DayChangePct": 0.63,
+    "Pos52w": 49.7,
+    "VolRatio": 0.34,
     "EPS_Growth": 107.8,
     "Revenue_YoY": 10.0,
     "BT_1M_Avg": 1.43,
@@ -1014,21 +1014,20 @@
     "BT_3M_Avg": 5.04,
     "BT_3M_Win": 66.7,
     "BT_Events": 9,
-    "PER": 12.519622,
-    "PER(예상)": 22.28156,
-    "PBR": 1.430425,
+    "PER": 12.59506,
+    "PER(예상)": 23.238008,
+    "PBR": 1.4395015,
     "ROE": 0.121199995,
-    "EPS": 59666.74,
-    "EPS(예상)": 33525.703,
+    "EPS": 59685.7,
+    "EPS(예상)": 32349.803,
     "EarningsDate": "2026년 8월 8일"
   },
   {
     "Ticker": "BRK-B",
     "Name": "Berkshire Hathaway Inc.",
     "Sector": "Insurance - Diversified",
-    "RSI": 44.41,
+    "RSI": 39.6,
     "RSI_Series": [
-      44.86,
       42.76,
       41.97,
       50.12,
@@ -1057,9 +1056,10 @@
       48.05,
       45.27,
       44.41,
-      44.41
+      39.6,
+      39.6
     ],
-    "WeeklyRSI": 52.22,
+    "WeeklyRSI": 49.89,
     "WeeklyRSI_Series": [
       47.29,
       43.41,
@@ -1090,7 +1090,7 @@
       56.81,
       56.48,
       54.01,
-      52.22
+      49.89
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1099,7 +1099,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.56,
+    "VolRatio": 0.99,
     "EPS_Growth": 107.8,
     "Revenue_YoY": 10.0,
     "BT_1M_Avg": 2.06,
@@ -1107,21 +1107,20 @@
     "BT_3M_Avg": 4.02,
     "BT_3M_Win": 63.6,
     "BT_Events": 11,
-    "PER": 12.514451,
-    "PER(예상)": 22.437721,
-    "PBR": 0.0009535146,
+    "PER": 12.578537,
+    "PER(예상)": 23.123764,
+    "PBR": 0.0009583975,
     "ROE": 0.121199995,
     "EPS": 39.79,
-    "EPS(예상)": 22.19254,
+    "EPS(예상)": 21.6444,
     "EarningsDate": "2026년 8월 8일"
   },
   {
     "Ticker": "WMT",
     "Name": "Walmart Inc.",
     "Sector": "Discount Stores",
-    "RSI": 45.88,
+    "RSI": 38.92,
     "RSI_Series": [
-      52.37,
       29.78,
       29.6,
       37.84,
@@ -1150,9 +1149,10 @@
       49.34,
       51.63,
       45.88,
-      45.88
+      38.92,
+      38.92
     ],
-    "WeeklyRSI": 41.68,
+    "WeeklyRSI": 38.77,
     "WeeklyRSI_Series": [
       61.73,
       53.44,
@@ -1183,7 +1183,7 @@
       41.58,
       41.17,
       43.0,
-      41.68
+      38.77
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1192,29 +1192,28 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.24,
+    "VolRatio": 0.87,
     "EPS_Growth": -9.1,
     "Revenue_YoY": 5.9,
     "BT_1M_Avg": 3.25,
     "BT_1M_Win": 77.8,
-    "BT_3M_Avg": NaN,
+    "BT_3M_Avg": 6.06,
     "BT_3M_Win": 75.0,
     "BT_Events": 9,
-    "PER": 37.516247,
-    "PER(예상)": 32.173874,
-    "PBR": 8.771101,
+    "PER": 38.902985,
+    "PER(예상)": 32.324173,
+    "PBR": 8.429137,
     "ROE": 0.22313999,
-    "EPS": 2.77,
-    "EPS(예상)": 3.22995,
+    "EPS": 2.68,
+    "EPS(예상)": 3.22545,
     "EarningsDate": "2026년 11월 19일"
   },
   {
     "Ticker": "LLY",
     "Name": "Eli Lilly and Company",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 55.99,
+    "RSI": 47.0,
     "RSI_Series": [
-      64.94,
       58.02,
       59.45,
       57.82,
@@ -1243,9 +1242,10 @@
       55.69,
       56.04,
       55.99,
-      55.99
+      47.0,
+      47.0
     ],
-    "WeeklyRSI": 57.21,
+    "WeeklyRSI": 54.14,
     "WeeklyRSI_Series": [
       51.48,
       43.27,
@@ -1276,7 +1276,7 @@
       50.96,
       54.42,
       57.1,
-      57.21
+      54.14
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1285,7 +1285,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.51,
+    "VolRatio": 0.95,
     "EPS_Growth": 26.2,
     "Revenue_YoY": 47.7,
     "BT_1M_Avg": 6.75,
@@ -1293,21 +1293,20 @@
     "BT_3M_Avg": 22.11,
     "BT_3M_Win": 87.5,
     "BT_Events": 8,
-    "PER": 38.91961,
-    "PER(예상)": 24.337812,
-    "PBR": 30.44787,
+    "PER": 38.663414,
+    "PER(예상)": 24.286957,
+    "PBR": 30.257618,
     "ROE": 1.02286,
-    "EPS": 29.73,
-    "EPS(예상)": 47.54248,
+    "EPS": 29.74,
+    "EPS(예상)": 47.34434,
     "EarningsDate": "2026년 10월 29일"
   },
   {
     "Ticker": "JPM",
     "Name": "JPMorgan Chase & Co.",
     "Sector": "Banks - Diversified",
-    "RSI": 34.7,
+    "RSI": 31.6,
     "RSI_Series": [
-      55.37,
       48.46,
       48.5,
       54.09,
@@ -1336,9 +1335,10 @@
       41.66,
       35.97,
       34.7,
-      34.7
+      31.6,
+      31.6
     ],
-    "WeeklyRSI": 50.27,
+    "WeeklyRSI": 48.03,
     "WeeklyRSI_Series": [
       41.66,
       43.19,
@@ -1369,7 +1369,7 @@
       64.78,
       59.86,
       55.31,
-      50.27
+      48.03
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1378,7 +1378,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.14,
+    "VolRatio": 0.98,
     "EPS_Growth": 46.9,
     "Revenue_YoY": 30.4,
     "BT_1M_Avg": 7.13,
@@ -1386,21 +1386,20 @@
     "BT_3M_Avg": 8.24,
     "BT_3M_Win": 54.5,
     "BT_Events": 11,
-    "PER": 14.168307,
-    "PER(예상)": 13.23956,
-    "PBR": 2.4873126,
+    "PER": 14.287307,
+    "PER(예상)": 13.300848,
+    "PBR": 2.5049808,
     "ROE": 0.17789,
-    "EPS": 23.35,
-    "EPS(예상)": 24.98799,
+    "EPS": 23.32,
+    "EPS(예상)": 25.04953,
     "EarningsDate": "2026년 10월 13일"
   },
   {
     "Ticker": "XOM",
     "Name": "Exxon Mobil Corporation",
     "Sector": "Oil & Gas Integrated",
-    "RSI": 50.01,
+    "RSI": 52.64,
     "RSI_Series": [
-      69.17,
       70.83,
       67.87,
       64.88,
@@ -1429,9 +1428,10 @@
       48.72,
       52.26,
       50.01,
-      50.01
+      52.64,
+      52.64
     ],
-    "WeeklyRSI": 57.47,
+    "WeeklyRSI": 58.39,
     "WeeklyRSI_Series": [
       79.96,
       81.52,
@@ -1462,7 +1462,7 @@
       61.73,
       59.56,
       56.96,
-      57.47
+      58.39
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1471,7 +1471,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.92,
+    "VolRatio": 0.82,
     "EPS_Growth": 112.8,
     "Revenue_YoY": 44.1,
     "BT_1M_Avg": 8.35,
@@ -1479,21 +1479,20 @@
     "BT_3M_Avg": 10.89,
     "BT_3M_Win": 100.0,
     "BT_Events": 5,
-    "PER": 20.919024,
-    "PER(예상)": 14.432554,
-    "PBR": 2.580057,
+    "PER": 21.110825,
+    "PER(예상)": 14.488307,
+    "PBR": 2.5970197,
     "ROE": 0.12584,
-    "EPS": 7.78,
-    "EPS(예상)": 11.27659,
+    "EPS": 7.76,
+    "EPS(예상)": 11.30705,
     "EarningsDate": "2026년 7월 31일"
   },
   {
     "Ticker": "V",
     "Name": "Visa Inc.",
     "Sector": "Credit Services",
-    "RSI": 46.14,
+    "RSI": 39.23,
     "RSI_Series": [
-      56.21,
       56.4,
       61.35,
       69.38,
@@ -1522,9 +1521,10 @@
       47.93,
       48.39,
       46.14,
-      46.14
+      39.23,
+      39.23
     ],
-    "WeeklyRSI": 58.76,
+    "WeeklyRSI": 54.62,
     "WeeklyRSI_Series": [
       36.98,
       34.93,
@@ -1555,7 +1555,7 @@
       61.77,
       60.4,
       59.8,
-      58.76
+      54.62
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1564,7 +1564,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.22,
+    "VolRatio": 0.86,
     "EPS_Growth": 10.2,
     "Revenue_YoY": 14.4,
     "BT_1M_Avg": 4.8,
@@ -1572,11 +1572,11 @@
     "BT_3M_Avg": 9.48,
     "BT_3M_Win": 87.5,
     "BT_Events": 8,
-    "PER": 30.685738,
-    "PER(예상)": 23.948467,
-    "PBR": 19.042395,
+    "PER": 30.625532,
+    "PER(예상)": 23.983126,
+    "PBR": 19.069952,
     "ROE": 0.6119,
-    "EPS": 11.71,
+    "EPS": 11.75,
     "EPS(예상)": 15.0043,
     "EarningsDate": "2026년 7월 28일"
   },
@@ -1584,9 +1584,8 @@
     "Ticker": "JNJ",
     "Name": "Johnson & Johnson",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 48.53,
+    "RSI": 43.54,
     "RSI_Series": [
-      68.56,
       59.13,
       61.82,
       64.29,
@@ -1615,9 +1614,10 @@
       56.78,
       58.1,
       48.53,
-      48.53
+      43.54,
+      43.54
     ],
-    "WeeklyRSI": 59.87,
+    "WeeklyRSI": 57.93,
     "WeeklyRSI_Series": [
       73.46,
       66.73,
@@ -1648,7 +1648,7 @@
       60.13,
       62.03,
       62.56,
-      59.87
+      57.93
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1657,7 +1657,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.0,
+    "VolRatio": 1.29,
     "EPS_Growth": -0.9,
     "Revenue_YoY": 6.6,
     "BT_1M_Avg": -0.88,
@@ -1665,11 +1665,11 @@
     "BT_3M_Avg": 4.42,
     "BT_3M_Win": 71.4,
     "BT_Events": 21,
-    "PER": 30.712296,
-    "PER(예상)": 21.810843,
-    "PBR": 7.503117,
+    "PER": 29.97219,
+    "PER(예상)": 21.309937,
+    "PBR": 7.3308015,
     "ROE": 0.25742,
-    "EPS": 8.62,
+    "EPS": 8.63,
     "EPS(예상)": 12.138,
     "EarningsDate": "2026년 10월 13일"
   },
@@ -1677,9 +1677,8 @@
     "Ticker": "ASML",
     "Name": "ASML Holding N.V.",
     "Sector": "Semiconductor Equipment & Materials",
-    "RSI": 63.15,
+    "RSI": 60.03,
     "RSI_Series": [
-      49.32,
       49.19,
       50.48,
       48.18,
@@ -1708,9 +1707,10 @@
       54.62,
       57.46,
       63.15,
-      63.15
+      60.03,
+      60.03
     ],
-    "WeeklyRSI": 61.4,
+    "WeeklyRSI": 60.38,
     "WeeklyRSI_Series": [
       63.0,
       60.32,
@@ -1741,7 +1741,7 @@
       54.74,
       53.57,
       57.02,
-      61.4
+      60.38
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1750,7 +1750,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.9,
+    "VolRatio": 1.05,
     "EPS_Growth": 28.5,
     "Revenue_YoY": 21.3,
     "BT_1M_Avg": 9.1,
@@ -1758,12 +1758,12 @@
     "BT_3M_Avg": 18.84,
     "BT_3M_Win": 75.0,
     "BT_Events": 8,
-    "PER": 62.514496,
-    "PER(예상)": 30.80547,
-    "PBR": 1561.9581,
+    "PER": 62.772995,
+    "PER(예상)": 30.745815,
+    "PBR": 1555.0887,
     "ROE": 0.53942,
-    "EPS": 28.98,
-    "EPS(예상)": 58.810013,
+    "EPS": 28.81,
+    "EPS(예상)": 58.820686,
     "EarningsDate": "2026년 10월 14일"
   },
   {
@@ -1772,7 +1772,6 @@
     "Sector": "Semiconductors",
     "RSI": 59.66,
     "RSI_Series": [
-      51.81,
       55.16,
       54.34,
       48.5,
@@ -1800,6 +1799,7 @@
       63.02,
       63.2,
       58.35,
+      59.66,
       59.66,
       59.66
     ],
@@ -1843,7 +1843,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.15,
+    "VolRatio": 1.79,
     "EPS_Growth": 1368.5,
     "Revenue_YoY": 345.7,
     "BT_1M_Avg": 4.65,
@@ -1851,21 +1851,20 @@
     "BT_3M_Avg": 10.31,
     "BT_3M_Win": 71.4,
     "BT_Events": 7,
-    "PER": 24.097511,
-    "PER(예상)": 6.59541,
-    "PBR": 11.938687,
+    "PER": 14.761771,
+    "PER(예상)": 5.345326,
+    "PBR": 12.30051,
     "ROE": 0.66638,
-    "EPS": 44.2,
-    "EPS(예상)": 161.49261,
+    "EPS": 74.34,
+    "EPS(예상)": 205.299,
     "EarningsDate": "2026년 9월 30일"
   },
   {
     "Ticker": "MA",
     "Name": "Mastercard Incorporated",
     "Sector": "Credit Services",
-    "RSI": 45.38,
+    "RSI": 37.44,
     "RSI_Series": [
-      62.22,
       62.29,
       65.78,
       73.33,
@@ -1894,9 +1893,10 @@
       48.6,
       49.12,
       45.38,
-      45.38
+      37.44,
+      37.44
     ],
-    "WeeklyRSI": 56.33,
+    "WeeklyRSI": 52.01,
     "WeeklyRSI_Series": [
       37.15,
       36.8,
@@ -1927,7 +1927,7 @@
       58.7,
       57.27,
       57.94,
-      56.33
+      52.01
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -1936,17 +1936,17 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.86,
+    "VolRatio": 1.06,
     "EPS_Growth": 22.1,
     "Revenue_YoY": 14.1,
-    "BT_1M_Avg": 4.24,
-    "BT_1M_Win": 50.0,
-    "BT_3M_Avg": 9.62,
-    "BT_3M_Win": 70.0,
-    "BT_Events": 10,
-    "PER": 30.300547,
-    "PER(예상)": 23.951118,
-    "PBR": 86.22107,
+    "BT_1M_Avg": 4.99,
+    "BT_1M_Win": 55.6,
+    "BT_3M_Avg": 8.38,
+    "BT_3M_Win": 66.7,
+    "BT_Events": 9,
+    "PER": 30.219778,
+    "PER(예상)": 23.887276,
+    "PBR": 85.99125,
     "ROE": 2.41202,
     "EPS": 18.2,
     "EPS(예상)": 23.02481,
@@ -1956,9 +1956,8 @@
     "Ticker": "COST",
     "Name": "Costco Wholesale Corporation",
     "Sector": "Discount Stores",
-    "RSI": 53.14,
+    "RSI": 46.19,
     "RSI_Series": [
-      52.8,
       42.5,
       48.99,
       57.57,
@@ -1987,9 +1986,10 @@
       52.3,
       52.36,
       53.14,
-      53.14
+      46.19,
+      46.19
     ],
-    "WeeklyRSI": 44.78,
+    "WeeklyRSI": 42.05,
     "WeeklyRSI_Series": [
       58.56,
       52.42,
@@ -2020,7 +2020,7 @@
       38.91,
       37.34,
       44.34,
-      44.78
+      42.05
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2029,7 +2029,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.93,
+    "VolRatio": 0.87,
     "EPS_Growth": 15.0,
     "Revenue_YoY": 11.1,
     "BT_1M_Avg": 4.55,
@@ -2037,11 +2037,11 @@
     "BT_3M_Avg": 9.98,
     "BT_3M_Win": 72.7,
     "BT_Events": 11,
-    "PER": 43.76635,
-    "PER(예상)": 36.39254,
-    "PBR": 11.270629,
+    "PER": 44.072254,
+    "PER(예상)": 36.57643,
+    "PBR": 11.3275795,
     "ROE": 0.28402,
-    "EPS": 20.8,
+    "EPS": 20.76,
     "EPS(예상)": 25.01447,
     "EarningsDate": "2026년 12월 10일"
   },
@@ -2049,9 +2049,8 @@
     "Ticker": "ORCL",
     "Name": "Oracle Corporation",
     "Sector": "Software - Infrastructure",
-    "RSI": 43.07,
+    "RSI": 42.67,
     "RSI_Series": [
-      50.34,
       48.82,
       52.71,
       49.04,
@@ -2080,9 +2079,10 @@
       40.6,
       37.27,
       43.07,
-      43.07
+      42.67,
+      42.67
     ],
-    "WeeklyRSI": 42.33,
+    "WeeklyRSI": 42.12,
     "WeeklyRSI_Series": [
       37.41,
       36.02,
@@ -2113,7 +2113,7 @@
       46.21,
       45.35,
       42.04,
-      42.33
+      42.12
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2122,7 +2122,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.62,
+    "VolRatio": 0.65,
     "EPS_Growth": 54.5,
     "Revenue_YoY": 29.6,
     "BT_1M_Avg": 1.54,
@@ -2130,9 +2130,9 @@
     "BT_3M_Avg": 0.15,
     "BT_3M_Win": 37.5,
     "BT_Events": 20,
-    "PER": 21.520376,
-    "PER(예상)": 12.485007,
-    "PBR": 10.529141,
+    "PER": 21.641068,
+    "PER(예상)": 12.555025,
+    "PBR": 6.754232,
     "ROE": 0.41192,
     "EPS": 6.38,
     "EPS(예상)": 10.99719,
@@ -2142,9 +2142,8 @@
     "Ticker": "ABBV",
     "Name": "AbbVie Inc.",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 54.97,
+    "RSI": 51.63,
     "RSI_Series": [
-      67.41,
       61.58,
       64.11,
       63.47,
@@ -2173,9 +2172,10 @@
       58.51,
       61.46,
       54.97,
-      54.97
+      51.63,
+      51.63
     ],
-    "WeeklyRSI": 62.01,
+    "WeeklyRSI": 60.81,
     "WeeklyRSI_Series": [
       48.71,
       40.04,
@@ -2206,7 +2206,7 @@
       59.83,
       62.61,
       62.77,
-      62.01
+      60.81
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2215,7 +2215,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.05,
+    "VolRatio": 0.93,
     "EPS_Growth": 290.4,
     "Revenue_YoY": 10.2,
     "BT_1M_Avg": 1.57,
@@ -2223,21 +2223,20 @@
     "BT_3M_Avg": 7.25,
     "BT_3M_Win": 93.8,
     "BT_Events": 16,
-    "PER": 73.687325,
-    "PER(예상)": 16.080488,
-    "PBR": -77.87734,
+    "PER": 74.05413,
+    "PER(예상)": 15.986916,
+    "PBR": -77.38315,
     "ROE": null,
-    "EPS": 3.55,
-    "EPS(예상)": 16.26754,
-    "EarningsDate": "2026년 7월 31일"
+    "EPS": 3.51,
+    "EPS(예상)": 16.25892,
+    "EarningsDate": "2026년 10월 30일"
   },
   {
     "Ticker": "NFLX",
     "Name": "Netflix, Inc.",
     "Sector": "Entertainment",
-    "RSI": 37.14,
+    "RSI": 35.7,
     "RSI_Series": [
-      63.89,
       63.61,
       61.61,
       62.58,
@@ -2266,9 +2265,10 @@
       37.08,
       33.44,
       37.14,
-      37.14
+      35.7,
+      35.7
     ],
-    "WeeklyRSI": 36.46,
+    "WeeklyRSI": 35.8,
     "WeeklyRSI_Series": [
       47.85,
       44.88,
@@ -2299,7 +2299,7 @@
       43.48,
       37.86,
       37.27,
-      36.46
+      35.8
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2308,7 +2308,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.04,
+    "VolRatio": 1.19,
     "EPS_Growth": 11.1,
     "Revenue_YoY": 13.4,
     "BT_1M_Avg": 1.56,
@@ -2316,21 +2316,20 @@
     "BT_3M_Avg": 7.8,
     "BT_3M_Win": 63.2,
     "BT_Events": 20,
-    "PER": 21.880503,
-    "PER(예상)": 18.250301,
-    "PBR": 9.60917,
+    "PER": 21.336477,
+    "PER(예상)": 17.794388,
+    "PBR": 9.370253,
     "ROE": 0.49541,
     "EPS": 3.18,
-    "EPS(예상)": 3.81254,
+    "EPS(예상)": 3.813,
     "EarningsDate": "2026년 10월 20일"
   },
   {
     "Ticker": "PG",
     "Name": "The Procter & Gamble Company",
     "Sector": "Household & Personal Products",
-    "RSI": 56.24,
+    "RSI": 46.93,
     "RSI_Series": [
-      44.77,
       40.95,
       46.87,
       52.61,
@@ -2359,9 +2358,10 @@
       50.65,
       58.77,
       56.24,
-      56.24
+      46.93,
+      46.93
     ],
-    "WeeklyRSI": 52.23,
+    "WeeklyRSI": 46.58,
     "WeeklyRSI_Series": [
       47.28,
       41.5,
@@ -2392,7 +2392,7 @@
       46.56,
       48.6,
       48.32,
-      52.23
+      46.58
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2401,7 +2401,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.07,
+    "VolRatio": 0.92,
     "EPS_Growth": -15.5,
     "Revenue_YoY": 1.5,
     "BT_1M_Avg": 3.32,
@@ -2409,21 +2409,20 @@
     "BT_3M_Avg": 6.12,
     "BT_3M_Win": 81.2,
     "BT_Events": 16,
-    "PER": 21.94562,
-    "PER(예상)": 19.636015,
-    "PBR": 6.3311105,
+    "PER": 21.744713,
+    "PER(예상)": 19.452833,
+    "PBR": 6.273151,
     "ROE": 0.30290002,
     "EPS": 6.62,
-    "EPS(예상)": 7.39865,
+    "EPS(예상)": 7.39995,
     "EarningsDate": "2026년 10월 22일"
   },
   {
     "Ticker": "HD",
     "Name": "The Home Depot, Inc.",
     "Sector": "Home Improvement Retail",
-    "RSI": 28.15,
+    "RSI": 26.24,
     "RSI_Series": [
-      52.39,
       45.09,
       46.01,
       47.56,
@@ -2452,9 +2451,10 @@
       31.07,
       29.18,
       28.15,
-      28.15
+      26.24,
+      26.24
     ],
-    "WeeklyRSI": 33.77,
+    "WeeklyRSI": 32.89,
     "WeeklyRSI_Series": [
       37.78,
       33.3,
@@ -2485,7 +2485,7 @@
       39.4,
       36.95,
       35.13,
-      33.77
+      32.89
     ],
     "DualOversold": "🎯",
     "RSI_30이하": "✅",
@@ -2494,7 +2494,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.21,
+    "VolRatio": 1.6,
     "EPS_Growth": 4.6,
     "Revenue_YoY": 5.7,
     "BT_1M_Avg": 0.32,
@@ -2502,11 +2502,11 @@
     "BT_3M_Avg": 4.44,
     "BT_3M_Win": 56.2,
     "BT_Events": 20,
-    "PER": 20.034506,
-    "PER(예상)": 17.753107,
-    "PBR": 17.086487,
+    "PER": 19.780111,
+    "PER(예상)": 17.626429,
+    "PBR": 16.964565,
     "ROE": 1.0429599,
-    "EPS": 14.2,
+    "EPS": 14.28,
     "EPS(예상)": 16.0248,
     "EarningsDate": "2026년 11월 17일"
   },
@@ -2514,9 +2514,8 @@
     "Ticker": "CVX",
     "Name": "Chevron Corporation",
     "Sector": "Oil & Gas Integrated",
-    "RSI": 47.67,
+    "RSI": 47.4,
     "RSI_Series": [
-      69.8,
       69.81,
       68.66,
       63.74,
@@ -2545,9 +2544,10 @@
       47.73,
       50.86,
       47.67,
-      47.67
+      47.4,
+      47.4
     ],
-    "WeeklyRSI": 57.97,
+    "WeeklyRSI": 57.85,
     "WeeklyRSI_Series": [
       80.4,
       82.22,
@@ -2578,7 +2578,7 @@
       65.33,
       61.79,
       58.03,
-      57.97
+      57.85
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2587,7 +2587,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.62,
+    "VolRatio": 0.61,
     "EPS_Growth": 321.9,
     "Revenue_YoY": 53.5,
     "BT_1M_Avg": 6.09,
@@ -2595,21 +2595,20 @@
     "BT_3M_Avg": 11.97,
     "BT_3M_Win": 100.0,
     "BT_Events": 11,
-    "PER": 19.67341,
-    "PER(예상)": 15.048903,
-    "PBR": 2.1096075,
+    "PER": 20.145916,
+    "PER(예상)": 14.649834,
+    "PBR": 2.1394627,
     "ROE": 0.12231,
-    "EPS": 10.38,
-    "EPS(예상)": 13.56976,
-    "EarningsDate": "2026년 7월 31일"
+    "EPS": 10.28,
+    "EPS(예상)": 14.13668,
+    "EarningsDate": "2026년 10월 30일"
   },
   {
     "Ticker": "GE",
     "Name": "GE Aerospace",
     "Sector": "Aerospace & Defense",
-    "RSI": 40.36,
+    "RSI": 36.57,
     "RSI_Series": [
-      46.08,
       40.08,
       42.66,
       39.45,
@@ -2638,9 +2637,10 @@
       47.32,
       40.6,
       40.36,
-      40.36
+      36.57,
+      36.57
     ],
-    "WeeklyRSI": 45.32,
+    "WeeklyRSI": 43.68,
     "WeeklyRSI_Series": [
       48.85,
       44.99,
@@ -2671,7 +2671,7 @@
       46.42,
       43.5,
       48.28,
-      45.32
+      43.68
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2680,7 +2680,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.98,
+    "VolRatio": 0.79,
     "EPS_Growth": 19.4,
     "Revenue_YoY": 21.1,
     "BT_1M_Avg": 6.53,
@@ -2688,9 +2688,9 @@
     "BT_3M_Avg": 15.79,
     "BT_3M_Win": 83.3,
     "BT_Events": 13,
-    "PER": 36.783276,
-    "PER(예상)": 34.414356,
-    "PBR": 18.368921,
+    "PER": 36.795055,
+    "PER(예상)": 34.425377,
+    "PBR": 18.374804,
     "ROE": 0.48231998,
     "EPS": 8.49,
     "EPS(예상)": 9.07441,
@@ -2700,9 +2700,8 @@
     "Ticker": "BAC",
     "Name": "Bank of America Corporation",
     "Sector": "Banks - Diversified",
-    "RSI": 25.3,
+    "RSI": 23.8,
     "RSI_Series": [
-      55.89,
       47.36,
       46.38,
       50.56,
@@ -2731,9 +2730,10 @@
       30.96,
       26.82,
       25.3,
-      25.3
+      23.8,
+      23.8
     ],
-    "WeeklyRSI": 43.09,
+    "WeeklyRSI": 42.0,
     "WeeklyRSI_Series": [
       38.37,
       39.67,
@@ -2764,7 +2764,7 @@
       65.58,
       49.68,
       47.12,
-      43.09
+      42.0
     ],
     "DualOversold": "",
     "RSI_30이하": "✅",
@@ -2773,7 +2773,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.9,
+    "VolRatio": 1.62,
     "EPS_Growth": 34.1,
     "Revenue_YoY": 16.8,
     "BT_1M_Avg": 0.69,
@@ -2781,9 +2781,9 @@
     "BT_3M_Avg": 4.21,
     "BT_3M_Win": 53.3,
     "BT_Events": 19,
-    "PER": 12.570439,
-    "PER(예상)": 10.308497,
-    "PBR": 1.3835088,
+    "PER": 12.408776,
+    "PER(예상)": 10.175924,
+    "PBR": 1.3657161,
     "ROE": 0.111990005,
     "EPS": 4.33,
     "EPS(예상)": 5.28011,
@@ -2793,9 +2793,8 @@
     "Ticker": "KO",
     "Name": "The Coca-Cola Company",
     "Sector": "Beverages - Non-Alcoholic",
-    "RSI": 43.22,
+    "RSI": 39.51,
     "RSI_Series": [
-      68.72,
       69.13,
       70.78,
       73.07,
@@ -2824,9 +2823,10 @@
       48.36,
       44.98,
       43.22,
-      43.22
+      39.51,
+      39.51
     ],
-    "WeeklyRSI": 58.51,
+    "WeeklyRSI": 56.36,
     "WeeklyRSI_Series": [
       60.75,
       53.24,
@@ -2857,7 +2857,7 @@
       62.97,
       62.85,
       61.5,
-      58.51
+      56.36
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2866,7 +2866,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.02,
+    "VolRatio": 1.04,
     "EPS_Growth": 16.9,
     "Revenue_YoY": 6.7,
     "BT_1M_Avg": -0.1,
@@ -2874,11 +2874,11 @@
     "BT_3M_Avg": 5.46,
     "BT_3M_Win": 66.7,
     "BT_Events": 9,
-    "PER": 26.08485,
-    "PER(예상)": 24.410301,
-    "PBR": 10.2464,
+    "PER": 25.855856,
+    "PER(예상)": 24.415972,
+    "PBR": 10.248779,
     "ROE": 0.42054,
-    "EPS": 3.3,
+    "EPS": 3.33,
     "EPS(예상)": 3.52638,
     "EarningsDate": "2026년 10월 27일"
   },
@@ -2886,9 +2886,8 @@
     "Ticker": "CAT",
     "Name": "Caterpillar Inc.",
     "Sector": "Farm & Heavy Construction Machinery",
-    "RSI": 53.89,
+    "RSI": 48.24,
     "RSI_Series": [
-      39.77,
       39.64,
       42.81,
       39.78,
@@ -2917,9 +2916,10 @@
       52.24,
       51.67,
       53.89,
-      53.89
+      48.24,
+      48.24
     ],
-    "WeeklyRSI": 50.82,
+    "WeeklyRSI": 48.33,
     "WeeklyRSI_Series": [
       63.54,
       61.02,
@@ -2950,7 +2950,7 @@
       49.42,
       48.05,
       50.02,
-      50.82
+      48.33
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -2959,7 +2959,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.82,
+    "VolRatio": 0.9,
     "EPS_Growth": 68.2,
     "Revenue_YoY": 24.0,
     "BT_1M_Avg": 6.72,
@@ -2967,11 +2967,11 @@
     "BT_3M_Avg": 11.98,
     "BT_3M_Win": 73.3,
     "BT_Events": 16,
-    "PER": 34.90271,
-    "PER(예상)": 25.041897,
-    "PBR": 19.216219,
+    "PER": 35.633892,
+    "PER(예상)": 25.52248,
+    "PBR": 19.585001,
     "ROE": 0.56972003,
-    "EPS": 23.23,
+    "EPS": 23.19,
     "EPS(예상)": 32.37734,
     "EarningsDate": "2026년 10월 29일"
   },
@@ -2979,9 +2979,8 @@
     "Ticker": "PLTR",
     "Name": "Palantir Technologies Inc.",
     "Sector": "Software - Infrastructure",
-    "RSI": 60.37,
+    "RSI": 60.44,
     "RSI_Series": [
-      67.61,
       66.3,
       69.41,
       65.03,
@@ -3010,9 +3009,10 @@
       63.7,
       61.01,
       60.37,
-      60.37
+      60.44,
+      60.44
     ],
-    "WeeklyRSI": 61.54,
+    "WeeklyRSI": 61.58,
     "WeeklyRSI_Series": [
       47.43,
       47.33,
@@ -3043,7 +3043,7 @@
       56.09,
       59.36,
       62.8,
-      61.54
+      61.58
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3052,7 +3052,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.66,
+    "VolRatio": 0.71,
     "EPS_Growth": 215.4,
     "Revenue_YoY": 92.8,
     "BT_1M_Avg": 3.97,
@@ -3060,21 +3060,20 @@
     "BT_3M_Avg": -9.76,
     "BT_3M_Win": 18.2,
     "BT_Events": 11,
-    "PER": 159.87181,
-    "PER(예상)": 80.521225,
-    "PBR": 45.980827,
+    "PER": 161.05084,
+    "PER(예상)": 81.67931,
+    "PBR": 46.71583,
     "ROE": 0.38097,
-    "EPS": 1.17,
-    "EPS(예상)": 2.32299,
+    "EPS": 1.18,
+    "EPS(예상)": 2.32666,
     "EarningsDate": "2026년 8월 3일"
   },
   {
     "Ticker": "AMD",
     "Name": "Advanced Micro Devices, Inc.",
     "Sector": "Semiconductors",
-    "RSI": 65.52,
+    "RSI": 66.25,
     "RSI_Series": [
-      44.16,
       44.87,
       45.8,
       42.46,
@@ -3103,9 +3102,10 @@
       73.0,
       65.62,
       65.52,
-      65.52
+      66.25,
+      66.25
     ],
-    "WeeklyRSI": 67.39,
+    "WeeklyRSI": 68.04,
     "WeeklyRSI_Series": [
       46.94,
       49.6,
@@ -3136,7 +3136,7 @@
       61.62,
       65.72,
       71.11,
-      67.39
+      68.04
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3153,21 +3153,20 @@
     "BT_3M_Avg": 9.25,
     "BT_3M_Win": 62.5,
     "BT_Events": 8,
-    "PER": 162.27055,
-    "PER(예상)": 39.270035,
-    "PBR": 14.851788,
+    "PER": 157.07397,
+    "PER(예상)": 39.512196,
+    "PBR": 14.948167,
     "ROE": 0.10196,
-    "EPS": 3.77,
-    "EPS(예상)": 15.57829,
+    "EPS": 3.92,
+    "EPS(예상)": 15.58329,
     "EarningsDate": "2026년 8월 4일"
   },
   {
     "Ticker": "AZN",
     "Name": "AstraZeneca PLC",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 49.53,
+    "RSI": 44.66,
     "RSI_Series": [
-      49.58,
       48.9,
       51.23,
       52.37,
@@ -3196,9 +3195,10 @@
       54.21,
       53.35,
       49.53,
-      49.53
+      44.66,
+      44.66
     ],
-    "WeeklyRSI": 43.03,
+    "WeeklyRSI": 41.31,
     "WeeklyRSI_Series": [
       56.07,
       51.08,
@@ -3229,7 +3229,7 @@
       39.33,
       44.22,
       44.63,
-      43.03
+      41.31
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3238,7 +3238,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.74,
+    "VolRatio": 0.92,
     "EPS_Growth": 2.5,
     "Revenue_YoY": 6.4,
     "BT_1M_Avg": 2.91,
@@ -3246,11 +3246,11 @@
     "BT_3M_Avg": 6.5,
     "BT_3M_Win": 80.0,
     "BT_Events": 15,
-    "PER": 23.99257,
-    "PER(예상)": 13.943869,
-    "PBR": 4.9794927,
+    "PER": 23.607784,
+    "PER(예상)": 13.618307,
+    "PBR": 4.8632317,
     "ROE": 0.21965,
-    "EPS": 6.73,
+    "EPS": 6.68,
     "EPS(예상)": 11.58,
     "EarningsDate": "2026년 10월 30일"
   },
@@ -3258,9 +3258,8 @@
     "Ticker": "NVS",
     "Name": "Novartis AG",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 48.49,
+    "RSI": 43.03,
     "RSI_Series": [
-      61.79,
       53.11,
       57.27,
       55.57,
@@ -3289,9 +3288,10 @@
       48.03,
       50.72,
       48.49,
-      48.49
+      43.03,
+      43.03
     ],
-    "WeeklyRSI": 46.93,
+    "WeeklyRSI": 44.79,
     "WeeklyRSI_Series": [
       60.84,
       53.14,
@@ -3322,7 +3322,7 @@
       39.96,
       42.65,
       46.74,
-      46.93
+      44.79
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3331,7 +3331,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.12,
+    "VolRatio": 0.79,
     "EPS_Growth": -17.0,
     "Revenue_YoY": 0.8,
     "BT_1M_Avg": 2.37,
@@ -3339,21 +3339,20 @@
     "BT_3M_Avg": 10.27,
     "BT_3M_Win": 78.6,
     "BT_Events": 14,
-    "PER": 21.536255,
-    "PER(예상)": 14.491885,
-    "PBR": 6.5231514,
+    "PER": 21.306648,
+    "PER(예상)": 14.338532,
+    "PBR": 6.453605,
     "ROE": 0.3035,
     "EPS": 6.62,
-    "EPS(예상)": 9.83792,
+    "EPS(예상)": 9.83713,
     "EarningsDate": "2026년 10월 27일"
   },
   {
     "Ticker": "BABA",
     "Name": "Alibaba Group Holding Limited",
     "Sector": "Internet Retail",
-    "RSI": 38.91,
+    "RSI": 38.58,
     "RSI_Series": [
-      61.58,
       63.55,
       46.03,
       44.99,
@@ -3382,9 +3381,10 @@
       42.14,
       40.55,
       38.91,
-      38.91
+      38.58,
+      38.58
     ],
-    "WeeklyRSI": 40.81,
+    "WeeklyRSI": 40.7,
     "WeeklyRSI_Series": [
       41.45,
       36.16,
@@ -3415,7 +3415,7 @@
       41.02,
       43.97,
       41.96,
-      40.81
+      40.7
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3424,7 +3424,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.77,
+    "VolRatio": 0.85,
     "EPS_Growth": -79.4,
     "Revenue_YoY": 8.6,
     "BT_1M_Avg": 1.95,
@@ -3432,21 +3432,20 @@
     "BT_3M_Avg": 7.16,
     "BT_3M_Win": 46.7,
     "BT_Events": 15,
-    "PER": 24.330317,
-    "PER(예상)": 11.70119,
-    "PBR": 1.6057873,
+    "PER": 24.309954,
+    "PER(예상)": 11.696813,
+    "PBR": 1.6044433,
     "ROE": 0.0636,
     "EPS": 4.42,
-    "EPS(예상)": 9.190518,
+    "EPS(예상)": 9.186263,
     "EarningsDate": "2026년 8월 20일"
   },
   {
     "Ticker": "HSBC",
     "Name": "HSBC Holdings plc",
     "Sector": "Banks - Diversified",
-    "RSI": 43.12,
+    "RSI": 38.85,
     "RSI_Series": [
-      49.74,
       49.85,
       56.55,
       56.29,
@@ -3475,9 +3474,10 @@
       43.71,
       44.61,
       43.12,
-      43.12
+      38.85,
+      38.85
     ],
-    "WeeklyRSI": 56.93,
+    "WeeklyRSI": 54.29,
     "WeeklyRSI_Series": [
       50.72,
       49.16,
@@ -3508,7 +3508,7 @@
       66.15,
       59.06,
       57.38,
-      56.93
+      54.29
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3517,7 +3517,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.38,
+    "VolRatio": 2.36,
     "EPS_Growth": 67.2,
     "Revenue_YoY": 25.4,
     "BT_1M_Avg": 6.76,
@@ -3525,9 +3525,9 @@
     "BT_3M_Avg": 11.6,
     "BT_3M_Win": 100.0,
     "BT_Events": 9,
-    "PER": 14.187142,
-    "PER(예상)": 10.485848,
-    "PBR": 7.8833103,
+    "PER": 13.688571,
+    "PER(예상)": 10.11735,
+    "PBR": 7.6062713,
     "ROE": 0.13104999,
     "EPS": 7.0,
     "EPS(예상)": 9.47086,
@@ -3537,9 +3537,8 @@
     "Ticker": "TM",
     "Name": "Toyota Motor Corporation",
     "Sector": "Auto Manufacturers",
-    "RSI": 41.8,
+    "RSI": 37.05,
     "RSI_Series": [
-      55.91,
       61.11,
       67.26,
       60.16,
@@ -3568,9 +3567,10 @@
       47.22,
       44.11,
       41.8,
-      41.8
+      37.05,
+      37.05
     ],
-    "WeeklyRSI": 44.69,
+    "WeeklyRSI": 41.99,
     "WeeklyRSI_Series": [
       47.45,
       44.72,
@@ -3601,7 +3601,7 @@
       55.0,
       48.82,
       47.79,
-      44.69
+      41.99
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3610,7 +3610,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.91,
+    "VolRatio": 1.26,
     "EPS_Growth": 86.9,
     "Revenue_YoY": 10.4,
     "BT_1M_Avg": 1.41,
@@ -3618,11 +3618,11 @@
     "BT_3M_Avg": -2.18,
     "BT_3M_Win": 47.1,
     "BT_Events": 17,
-    "PER": 8.207083,
-    "PER(예상)": 11.603296,
-    "PBR": 14.524459,
+    "PER": 8.214158,
+    "PER(예상)": 11.618505,
+    "PBR": 14.9091215,
     "ROE": 0.12404,
-    "EPS": 22.31,
+    "EPS": 22.32,
     "EPS(예상)": 15.78,
     "EarningsDate": "2026년 11월 5일"
   },
@@ -3630,9 +3630,8 @@
     "Ticker": "CSCO",
     "Name": "Cisco Systems, Inc.",
     "Sector": "Communication Equipment",
-    "RSI": 42.42,
+    "RSI": 44.66,
     "RSI_Series": [
-      40.68,
       39.35,
       42.42,
       41.16,
@@ -3661,9 +3660,10 @@
       41.67,
       41.78,
       42.42,
-      42.42
+      44.66,
+      44.66
     ],
-    "WeeklyRSI": 51.13,
+    "WeeklyRSI": 51.89,
     "WeeklyRSI_Series": [
       55.99,
       54.6,
@@ -3694,7 +3694,7 @@
       57.27,
       54.11,
       50.86,
-      51.13
+      51.89
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3703,7 +3703,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.93,
+    "VolRatio": 0.7,
     "EPS_Growth": 52.1,
     "Revenue_YoY": 17.6,
     "BT_1M_Avg": 3.87,
@@ -3711,21 +3711,20 @@
     "BT_3M_Avg": 5.9,
     "BT_3M_Win": 70.0,
     "BT_Events": 10,
-    "PER": 32.32132,
-    "PER(예상)": 19.150122,
-    "PBR": 8.446205,
+    "PER": 32.660664,
+    "PER(예상)": 19.345842,
+    "PBR": 8.534882,
     "ROE": 0.27319,
     "EPS": 3.33,
-    "EPS(예상)": 5.62033,
+    "EPS(예상)": 5.62188,
     "EarningsDate": "2026년 11월 12일"
   },
   {
     "Ticker": "MRK",
     "Name": "Merck & Co., Inc.",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 57.76,
+    "RSI": 48.13,
     "RSI_Series": [
-      83.13,
       75.38,
       77.85,
       73.63,
@@ -3754,9 +3753,10 @@
       56.79,
       56.56,
       57.76,
-      57.76
+      48.13,
+      48.13
     ],
-    "WeeklyRSI": 66.64,
+    "WeeklyRSI": 62.5,
     "WeeklyRSI_Series": [
       63.07,
       60.91,
@@ -3787,7 +3787,7 @@
       63.56,
       65.25,
       66.35,
-      66.64
+      62.5
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3796,17 +3796,17 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.05,
+    "VolRatio": 0.81,
     "EPS_Growth": null,
     "Revenue_YoY": 5.1,
-    "BT_1M_Avg": 2.07,
+    "BT_1M_Avg": 2.11,
     "BT_1M_Win": 66.7,
-    "BT_3M_Avg": 0.81,
+    "BT_3M_Avg": 0.83,
     "BT_3M_Win": 46.7,
     "BT_Events": 15,
-    "PER": 116.248,
-    "PER(예상)": 15.242776,
-    "PBR": 8.554692,
+    "PER": 115.048,
+    "PER(예상)": 15.085429,
+    "PBR": 8.466384,
     "ROE": 0.06961,
     "EPS": 1.25,
     "EPS(예상)": 9.53304,
@@ -3816,9 +3816,8 @@
     "Ticker": "AMAT",
     "Name": "Applied Materials, Inc.",
     "Sector": "Semiconductor Equipment & Materials",
-    "RSI": 63.01,
+    "RSI": 62.75,
     "RSI_Series": [
-      43.75,
       43.76,
       43.11,
       41.71,
@@ -3847,9 +3846,10 @@
       55.71,
       56.24,
       63.01,
-      63.01
+      62.75,
+      62.75
     ],
-    "WeeklyRSI": 57.44,
+    "WeeklyRSI": 57.36,
     "WeeklyRSI_Series": [
       66.48,
       69.15,
@@ -3880,7 +3880,7 @@
       48.85,
       46.92,
       53.6,
-      57.44
+      57.36
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3889,7 +3889,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.96,
+    "VolRatio": 0.95,
     "EPS_Growth": 42.8,
     "Revenue_YoY": 24.8,
     "BT_1M_Avg": 13.83,
@@ -3897,11 +3897,11 @@
     "BT_3M_Avg": 32.64,
     "BT_3M_Win": 83.3,
     "BT_Events": 6,
-    "PER": 44.19879,
-    "PER(예상)": 27.702793,
-    "PBR": 15.836611,
+    "PER": 45.590008,
+    "PER(예상)": 28.673565,
+    "PBR": 16.391563,
     "ROE": 0.41068,
-    "EPS": 11.57,
+    "EPS": 11.61,
     "EPS(예상)": 18.45951,
     "EarningsDate": "2026년 11월 12일"
   },
@@ -3909,9 +3909,8 @@
     "Ticker": "LRCX",
     "Name": "Lam Research Corporation",
     "Sector": "Semiconductor Equipment & Materials",
-    "RSI": 59.54,
+    "RSI": 61.29,
     "RSI_Series": [
-      46.2,
       47.27,
       48.42,
       47.2,
@@ -3940,9 +3939,10 @@
       56.17,
       55.79,
       59.54,
-      59.54
+      61.29,
+      61.29
     ],
-    "WeeklyRSI": 56.84,
+    "WeeklyRSI": 57.73,
     "WeeklyRSI_Series": [
       60.96,
       65.19,
@@ -3973,7 +3973,7 @@
       51.39,
       48.98,
       55.07,
-      56.84
+      57.73
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -3982,7 +3982,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.82,
+    "VolRatio": 0.91,
     "EPS_Growth": 34.8,
     "Revenue_YoY": 30.0,
     "BT_1M_Avg": 15.75,
@@ -3990,11 +3990,11 @@
     "BT_3M_Avg": 29.82,
     "BT_3M_Win": 87.5,
     "BT_Events": 8,
-    "PER": 57.132175,
-    "PER(예상)": 27.98321,
-    "PBR": 32.959766,
+    "PER": 58.136753,
+    "PER(예상)": 28.97047,
+    "PBR": 34.122604,
     "ROE": 0.65066004,
-    "EPS": 5.75,
+    "EPS": 5.85,
     "EPS(예상)": 11.73954,
     "EarningsDate": "2026년 10월 21일"
   },
@@ -4002,9 +4002,8 @@
     "Ticker": "PM",
     "Name": "Philip Morris International Inc.",
     "Sector": "Tobacco",
-    "RSI": 57.61,
+    "RSI": 51.12,
     "RSI_Series": [
-      52.88,
       54.96,
       50.04,
       54.36,
@@ -4033,9 +4032,10 @@
       51.72,
       57.38,
       57.61,
-      57.61
+      51.12,
+      51.12
     ],
-    "WeeklyRSI": 59.31,
+    "WeeklyRSI": 57.1,
     "WeeklyRSI_Series": [
       54.25,
       46.44,
@@ -4066,7 +4066,7 @@
       57.7,
       55.47,
       56.84,
-      59.31
+      57.1
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -4075,7 +4075,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.99,
+    "VolRatio": 0.81,
     "EPS_Growth": -7.5,
     "Revenue_YoY": 10.4,
     "BT_1M_Avg": 5.99,
@@ -4083,9 +4083,9 @@
     "BT_3M_Avg": 7.78,
     "BT_3M_Win": 70.0,
     "BT_Events": 10,
-    "PER": 26.175585,
-    "PER(예상)": 20.762114,
-    "PBR": -34.650448,
+    "PER": 25.813442,
+    "PER(예상)": 20.474867,
+    "PBR": -34.171055,
     "ROE": null,
     "EPS": 7.29,
     "EPS(예상)": 9.19078,
@@ -4095,9 +4095,8 @@
     "Ticker": "RTX",
     "Name": "RTX Corporation",
     "Sector": "Aerospace & Defense",
-    "RSI": 26.34,
+    "RSI": 24.93,
     "RSI_Series": [
-      60.14,
       47.72,
       44.78,
       43.93,
@@ -4126,9 +4125,10 @@
       29.12,
       27.14,
       26.34,
-      26.34
+      24.93,
+      24.93
     ],
-    "WeeklyRSI": 43.54,
+    "WeeklyRSI": 42.8,
     "WeeklyRSI_Series": [
       67.5,
       60.72,
@@ -4159,7 +4159,7 @@
       50.29,
       47.91,
       45.04,
-      43.54
+      42.8
     ],
     "DualOversold": "",
     "RSI_30이하": "✅",
@@ -4168,7 +4168,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.18,
+    "VolRatio": 0.79,
     "EPS_Growth": 28.7,
     "Revenue_YoY": 14.5,
     "BT_1M_Avg": 3.52,
@@ -4176,21 +4176,20 @@
     "BT_3M_Avg": 13.1,
     "BT_3M_Win": 77.8,
     "BT_Events": 13,
-    "PER": 32.68486,
-    "PER(예상)": 23.62753,
-    "PBR": 3.769543,
+    "PER": 32.57218,
+    "PER(예상)": 23.56398,
+    "PBR": 3.7565482,
     "ROE": 0.12274,
     "EPS": 5.68,
-    "EPS(예상)": 7.85736,
+    "EPS(예상)": 7.85139,
     "EarningsDate": "2026년 10월 20일"
   },
   {
     "Ticker": "UNH",
     "Name": "UnitedHealth Group Incorporated",
     "Sector": "Healthcare Plans",
-    "RSI": 38.99,
+    "RSI": 33.25,
     "RSI_Series": [
-      35.16,
       33.26,
       38.28,
       45.54,
@@ -4219,9 +4218,10 @@
       39.93,
       41.44,
       38.99,
-      38.99
+      33.25,
+      33.25
     ],
-    "WeeklyRSI": 47.35,
+    "WeeklyRSI": 44.4,
     "WeeklyRSI_Series": [
       38.98,
       37.55,
@@ -4252,16 +4252,16 @@
       48.94,
       48.14,
       48.02,
-      47.35
+      44.4
     ],
     "DualOversold": "",
     "RSI_30이하": "",
-    "RSI_30초과_35이하": "",
+    "RSI_30초과_35이하": "⚠️",
     "최근7일내_RSI30이하": "",
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.94,
+    "VolRatio": 0.76,
     "EPS_Growth": 61.5,
     "Revenue_YoY": 0.4,
     "BT_1M_Avg": 4.38,
@@ -4269,9 +4269,9 @@
     "BT_3M_Avg": 4.38,
     "BT_3M_Win": 75.0,
     "BT_Events": 20,
-    "PER": 23.591259,
-    "PER(예상)": 16.235157,
-    "PBR": 3.3744862,
+    "PER": 23.470438,
+    "PER(예상)": 16.15201,
+    "PBR": 3.3572042,
     "ROE": 0.14152999,
     "EPS": 15.56,
     "EPS(예상)": 22.61019,
@@ -4281,9 +4281,8 @@
     "Ticker": "GS",
     "Name": "The Goldman Sachs Group, Inc.",
     "Sector": "Capital Markets",
-    "RSI": 32.91,
+    "RSI": 30.26,
     "RSI_Series": [
-      44.57,
       40.5,
       49.85,
       49.18,
@@ -4312,9 +4311,10 @@
       36.22,
       32.92,
       32.91,
-      32.91
+      30.26,
+      30.26
     ],
-    "WeeklyRSI": 39.03,
+    "WeeklyRSI": 37.12,
     "WeeklyRSI_Series": [
       41.32,
       46.52,
@@ -4345,7 +4345,7 @@
       57.77,
       42.5,
       41.61,
-      39.03
+      37.12
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -4354,7 +4354,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.83,
+    "VolRatio": 1.19,
     "EPS_Growth": 92.3,
     "Revenue_YoY": 42.5,
     "BT_1M_Avg": 5.13,
@@ -4362,21 +4362,20 @@
     "BT_3M_Avg": 17.04,
     "BT_3M_Win": 91.7,
     "BT_Events": 12,
-    "PER": 13.898734,
-    "PER(예상)": 12.285257,
-    "PBR": 2.4868455,
+    "PER": 13.850325,
+    "PER(예상)": 12.274574,
+    "PBR": 2.4766536,
     "ROE": 0.16902,
-    "EPS": 64.78,
-    "EPS(예상)": 73.28784,
+    "EPS": 64.74,
+    "EPS(예상)": 73.051,
     "EarningsDate": "2026년 10월 13일"
   },
   {
     "Ticker": "MS",
     "Name": "Morgan Stanley",
     "Sector": "Capital Markets",
-    "RSI": 28.43,
+    "RSI": 24.58,
     "RSI_Series": [
-      47.84,
       39.51,
       49.03,
       48.88,
@@ -4405,9 +4404,10 @@
       31.75,
       29.23,
       28.43,
-      28.43
+      24.58,
+      24.58
     ],
-    "WeeklyRSI": 42.77,
+    "WeeklyRSI": 40.03,
     "WeeklyRSI_Series": [
       41.02,
       46.58,
@@ -4438,7 +4438,7 @@
       59.88,
       49.56,
       45.11,
-      42.77
+      40.03
     ],
     "DualOversold": "",
     "RSI_30이하": "✅",
@@ -4447,7 +4447,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.39,
+    "VolRatio": 1.84,
     "EPS_Growth": 62.4,
     "Revenue_YoY": 28.0,
     "BT_1M_Avg": 3.39,
@@ -4455,21 +4455,20 @@
     "BT_3M_Avg": 11.49,
     "BT_3M_Win": 66.7,
     "BT_Events": 13,
-    "PER": 15.1922455,
-    "PER(예상)": 13.827043,
-    "PBR": 2.7740004,
+    "PER": 15.186591,
+    "PER(예상)": 13.802668,
+    "PBR": 2.7729678,
     "ROE": 0.17969999,
     "EPS": 12.38,
-    "EPS(예상)": 13.60233,
+    "EPS(예상)": 13.62128,
     "EarningsDate": "2026년 10월 14일"
   },
   {
     "Ticker": "WFC",
     "Name": "Wells Fargo & Company",
     "Sector": "Banks - Diversified",
-    "RSI": 32.54,
+    "RSI": 31.59,
     "RSI_Series": [
-      46.09,
       39.02,
       39.64,
       43.55,
@@ -4498,9 +4497,10 @@
       38.41,
       33.26,
       32.54,
-      32.54
+      31.59,
+      31.59
     ],
-    "WeeklyRSI": 43.54,
+    "WeeklyRSI": 43.0,
     "WeeklyRSI_Series": [
       36.76,
       41.62,
@@ -4531,7 +4531,7 @@
       59.13,
       51.74,
       46.96,
-      43.54
+      43.0
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -4540,7 +4540,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.26,
+    "VolRatio": 1.17,
     "EPS_Growth": 25.0,
     "Revenue_YoY": 9.5,
     "BT_1M_Avg": 5.9,
@@ -4548,21 +4548,20 @@
     "BT_3M_Avg": 13.54,
     "BT_3M_Win": 85.7,
     "BT_Events": 14,
-    "PER": 11.635175,
-    "PER(예상)": 10.085243,
-    "PBR": 1.504869,
+    "PER": 11.664244,
+    "PER(예상)": 10.079139,
+    "PBR": 1.4743707,
     "ROE": 0.12575,
     "EPS": 6.88,
-    "EPS(예상)": 7.93734,
+    "EPS(예상)": 7.96199,
     "EarningsDate": "2026년 10월 13일"
   },
   {
     "Ticker": "MCD",
     "Name": "McDonald's Corporation",
     "Sector": "Restaurants",
-    "RSI": 23.57,
+    "RSI": 21.54,
     "RSI_Series": [
-      44.7,
       47.24,
       49.93,
       52.22,
@@ -4591,9 +4590,10 @@
       24.65,
       22.73,
       23.57,
-      23.57
+      21.54,
+      21.54
     ],
-    "WeeklyRSI": 23.82,
+    "WeeklyRSI": 22.92,
     "WeeklyRSI_Series": [
       58.35,
       45.85,
@@ -4624,7 +4624,7 @@
       30.59,
       28.82,
       24.63,
-      23.82
+      22.92
     ],
     "DualOversold": "🎯",
     "RSI_30이하": "✅",
@@ -4633,7 +4633,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.93,
+    "VolRatio": 0.98,
     "EPS_Growth": 5.7,
     "Revenue_YoY": 3.7,
     "BT_1M_Avg": 0.86,
@@ -4641,21 +4641,20 @@
     "BT_3M_Avg": 2.12,
     "BT_3M_Win": 52.6,
     "BT_Events": 20,
-    "PER": 18.760357,
-    "PER(예상)": 16.665886,
-    "PBR": -159.70955,
+    "PER": 18.832655,
+    "PER(예상)": 16.771336,
+    "PBR": -160.32504,
     "ROE": null,
     "EPS": 12.31,
-    "EPS(예상)": 13.85705,
+    "EPS(예상)": 13.82299,
     "EarningsDate": "2026년 8월 4일"
   },
   {
     "Ticker": "TMUS",
     "Name": "T-Mobile US, Inc.",
     "Sector": "Telecom Services",
-    "RSI": 34.79,
+    "RSI": 34.98,
     "RSI_Series": [
-      51.92,
       50.49,
       52.74,
       52.15,
@@ -4684,9 +4683,10 @@
       36.63,
       38.44,
       34.79,
-      34.79
+      34.98,
+      34.98
     ],
-    "WeeklyRSI": 34.37,
+    "WeeklyRSI": 34.42,
     "WeeklyRSI_Series": [
       52.28,
       46.75,
@@ -4717,7 +4717,7 @@
       44.97,
       36.9,
       35.56,
-      34.37
+      34.42
     ],
     "DualOversold": "🎯",
     "RSI_30이하": "",
@@ -4726,7 +4726,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.74,
+    "VolRatio": 0.72,
     "EPS_Growth": 5.3,
     "Revenue_YoY": 7.9,
     "BT_1M_Avg": 5.45,
@@ -4734,11 +4734,11 @@
     "BT_3M_Avg": 4.66,
     "BT_3M_Win": 61.5,
     "BT_Events": 13,
-    "PER": 17.040752,
-    "PER(예상)": 11.295881,
-    "PBR": 3.1153054,
+    "PER": 16.917362,
+    "PER(예상)": 11.202373,
+    "PBR": 3.0895162,
     "ROE": 0.17994,
-    "EPS": 9.57,
+    "EPS": 9.56,
     "EPS(예상)": 14.43712,
     "EarningsDate": "2026년 10월 28일"
   },
@@ -4746,9 +4746,8 @@
     "Ticker": "SAP",
     "Name": "SAP SE",
     "Sector": "Software - Application",
-    "RSI": 52.33,
+    "RSI": 48.92,
     "RSI_Series": [
-      74.43,
       75.15,
       75.94,
       75.91,
@@ -4777,9 +4776,10 @@
       52.13,
       50.24,
       52.33,
-      52.33
+      48.92,
+      48.92
     ],
-    "WeeklyRSI": 58.12,
+    "WeeklyRSI": 56.7,
     "WeeklyRSI_Series": [
       25.28,
       21.74,
@@ -4810,7 +4810,7 @@
       56.24,
       57.52,
       58.05,
-      58.12
+      56.7
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -4819,7 +4819,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.28,
+    "VolRatio": 1.03,
     "EPS_Growth": 30.6,
     "Revenue_YoY": 9.4,
     "BT_1M_Avg": 4.58,
@@ -4827,9 +4827,9 @@
     "BT_3M_Avg": -2.4,
     "BT_3M_Win": 25.0,
     "BT_Events": 20,
-    "PER": 27.46772,
-    "PER(예상)": 21.520872,
-    "PBR": 65.61774,
+    "PER": 27.772066,
+    "PER(예상)": 21.759327,
+    "PBR": 66.34479,
     "ROE": 0.18320999,
     "EPS": 7.59,
     "EPS(예상)": 9.68734,
@@ -4839,9 +4839,8 @@
     "Ticker": "GEV",
     "Name": "GE Vernova Inc.",
     "Sector": "Specialty Industrial Machinery",
-    "RSI": 52.83,
+    "RSI": 50.0,
     "RSI_Series": [
-      44.8,
       42.13,
       41.0,
       39.19,
@@ -4870,9 +4869,10 @@
       51.8,
       50.04,
       52.83,
-      52.83
+      50.0,
+      50.0
     ],
-    "WeeklyRSI": 50.88,
+    "WeeklyRSI": 49.77,
     "WeeklyRSI_Series": [
       64.44,
       67.95,
@@ -4903,7 +4903,7 @@
       50.32,
       48.9,
       50.44,
-      50.88
+      49.77
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -4912,7 +4912,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.82,
+    "VolRatio": 1.4,
     "EPS_Growth": 32.8,
     "Revenue_YoY": 21.9,
     "BT_1M_Avg": 13.22,
@@ -4920,11 +4920,11 @@
     "BT_3M_Avg": 42.12,
     "BT_3M_Win": 100.0,
     "BT_Events": 2,
-    "PER": 27.281572,
-    "PER(예상)": 37.82929,
-    "PBR": 21.1714,
+    "PER": 28.30992,
+    "PER(예상)": 39.30029,
+    "PBR": 21.994654,
     "ROE": 0.82577,
-    "EPS": 34.84,
+    "EPS": 34.88,
     "EPS(예상)": 25.12577,
     "EarningsDate": "2026년 10월 28일"
   },
@@ -4932,9 +4932,8 @@
     "Ticker": "LIN",
     "Name": "Linde plc",
     "Sector": "Specialty Chemicals",
-    "RSI": 50.09,
+    "RSI": 51.54,
     "RSI_Series": [
-      39.85,
       40.0,
       45.64,
       47.71,
@@ -4963,9 +4962,10 @@
       46.19,
       48.6,
       50.09,
-      50.09
+      51.54,
+      51.54
     ],
-    "WeeklyRSI": 44.89,
+    "WeeklyRSI": 45.36,
     "WeeklyRSI_Series": [
       62.38,
       59.97,
@@ -4996,7 +4996,7 @@
       41.42,
       39.88,
       43.56,
-      44.89
+      45.36
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5005,7 +5005,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.33,
+    "VolRatio": 1.04,
     "EPS_Growth": 11.3,
     "Revenue_YoY": 9.3,
     "BT_1M_Avg": 1.69,
@@ -5013,21 +5013,20 @@
     "BT_3M_Avg": 9.37,
     "BT_3M_Win": 85.7,
     "BT_Events": 16,
-    "PER": 30.662146,
-    "PER(예상)": 24.267998,
-    "PBR": 5.59874,
+    "PER": 30.248068,
+    "PER(예상)": 24.00228,
+    "PBR": 5.5374036,
     "ROE": 0.18400998,
-    "EPS": 15.48,
-    "EPS(예상)": 19.55868,
+    "EPS": 15.52,
+    "EPS(예상)": 19.55856,
     "EarningsDate": "2026년 7월 31일"
   },
   {
     "Ticker": "SHEL",
     "Name": "Shell plc",
     "Sector": "Oil & Gas Integrated",
-    "RSI": 54.11,
+    "RSI": 55.85,
     "RSI_Series": [
-      66.22,
       68.42,
       66.72,
       64.93,
@@ -5056,9 +5055,10 @@
       57.85,
       60.09,
       54.11,
-      54.11
+      53.72,
+      55.85
     ],
-    "WeeklyRSI": 61.29,
+    "WeeklyRSI": 62.2,
     "WeeklyRSI_Series": [
       74.98,
       75.91,
@@ -5089,38 +5089,37 @@
       65.26,
       61.12,
       62.54,
-      61.29
+      62.2
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 1.54,
+    "Price": 95.61,
+    "DayChangePct": 0.59,
+    "Pos52w": 88.4,
+    "VolRatio": 1.51,
     "EPS_Growth": 220.0,
     "Revenue_YoY": 44.7,
     "BT_1M_Avg": 8.51,
     "BT_1M_Win": 91.7,
-    "BT_3M_Avg": NaN,
-    "BT_3M_Win": 75.0,
+    "BT_3M_Avg": 11.33,
+    "BT_3M_Win": 83.3,
     "BT_Events": 12,
-    "PER": 10.502763,
-    "PER(예상)": 9.1785555,
-    "PBR": 1.4644706,
+    "PER": 10.576327,
+    "PER(예상)": 9.281272,
+    "PBR": 1.4730988,
     "ROE": 0.14341,
-    "EPS": 9.05,
-    "EPS(예상)": 10.35566,
+    "EPS": 9.04,
+    "EPS(예상)": 10.30139,
     "EarningsDate": "2026년 10월 29일"
   },
   {
     "Ticker": "RY",
     "Name": "Royal Bank of Canada",
     "Sector": "Banks - Diversified",
-    "RSI": 39.19,
+    "RSI": 34.15,
     "RSI_Series": [
-      44.38,
       40.61,
       40.66,
       38.74,
@@ -5149,9 +5148,10 @@
       43.05,
       41.21,
       39.19,
-      39.19
+      34.15,
+      34.15
     ],
-    "WeeklyRSI": 53.73,
+    "WeeklyRSI": 50.51,
     "WeeklyRSI_Series": [
       53.94,
       50.86,
@@ -5182,16 +5182,16 @@
       60.5,
       57.62,
       56.15,
-      53.73
+      50.51
     ],
     "DualOversold": "",
     "RSI_30이하": "",
-    "RSI_30초과_35이하": "",
+    "RSI_30초과_35이하": "⚠️",
     "최근7일내_RSI30이하": "",
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.89,
+    "VolRatio": 1.32,
     "EPS_Growth": 12.8,
     "Revenue_YoY": 8.9,
     "BT_1M_Avg": 3.63,
@@ -5199,21 +5199,20 @@
     "BT_3M_Avg": 6.27,
     "BT_3M_Win": 63.6,
     "BT_Events": 11,
-    "PER": 17.53702,
-    "PER(예상)": 15.591278,
-    "PBR": 2.8816705,
+    "PER": 17.458447,
+    "PER(예상)": 15.557477,
+    "PBR": 2.8278167,
     "ROE": 0.16209,
-    "EPS": 11.21,
-    "EPS(예상)": 12.608973,
+    "EPS": 11.19,
+    "EPS(예상)": 12.557306,
     "EarningsDate": "2026년 12월 3일"
   },
   {
     "Ticker": "PEP",
     "Name": "PepsiCo, Inc.",
     "Sector": "Beverages - Non-Alcoholic",
-    "RSI": 29.57,
+    "RSI": 25.82,
     "RSI_Series": [
-      57.68,
       56.19,
       59.36,
       61.89,
@@ -5242,9 +5241,10 @@
       28.88,
       28.64,
       29.57,
-      29.57
+      25.82,
+      25.82
     ],
-    "WeeklyRSI": 32.23,
+    "WeeklyRSI": 30.56,
     "WeeklyRSI_Series": [
       56.48,
       48.24,
@@ -5275,7 +5275,7 @@
       39.16,
       33.04,
       32.12,
-      32.23
+      30.56
     ],
     "DualOversold": "🎯",
     "RSI_30이하": "✅",
@@ -5284,7 +5284,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.05,
+    "VolRatio": 0.89,
     "EPS_Growth": 137.0,
     "Revenue_YoY": 6.4,
     "BT_1M_Avg": 2.76,
@@ -5292,21 +5292,20 @@
     "BT_3M_Avg": 0.75,
     "BT_3M_Win": 46.2,
     "BT_Events": 15,
-    "PER": 16.608126,
-    "PER(예상)": 14.197475,
-    "PBR": 7.8333435,
+    "PER": 16.461336,
+    "PER(예상)": 14.076977,
+    "PBR": 7.7641096,
     "ROE": 0.51508,
     "EPS": 7.63,
-    "EPS(예상)": 8.92553,
+    "EPS(예상)": 8.92237,
     "EarningsDate": "2026년 10월 8일"
   },
   {
     "Ticker": "INTC",
     "Name": "Intel Corporation",
     "Sector": "Semiconductors",
-    "RSI": 58.41,
+    "RSI": 61.82,
     "RSI_Series": [
-      41.98,
       41.4,
       39.6,
       37.23,
@@ -5335,9 +5334,10 @@
       66.9,
       58.52,
       58.41,
-      58.41
+      61.82,
+      61.82
     ],
-    "WeeklyRSI": 59.65,
+    "WeeklyRSI": 62.04,
     "WeeklyRSI_Series": [
       60.24,
       56.62,
@@ -5368,7 +5368,7 @@
       56.0,
       58.36,
       63.69,
-      59.65
+      62.04
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5377,17 +5377,17 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.87,
+    "VolRatio": 0.94,
     "EPS_Growth": null,
     "Revenue_YoY": 25.4,
-    "BT_1M_Avg": -1.45,
-    "BT_1M_Win": 40.0,
+    "BT_1M_Avg": -1.6,
+    "BT_1M_Win": 35.7,
     "BT_3M_Avg": 5.01,
-    "BT_3M_Win": 33.3,
-    "BT_Events": 15,
+    "BT_3M_Win": 28.6,
+    "BT_Events": 14,
     "PER": null,
-    "PER(예상)": 58.30521,
-    "PBR": 6.9260907,
+    "PER(예상)": 58.193672,
+    "PBR": 6.912841,
     "ROE": -0.10715,
     "EPS": -2.09,
     "EPS(예상)": 2.06208,
@@ -5397,9 +5397,8 @@
     "Ticker": "IBM",
     "Name": "International Business Machines Corporation",
     "Sector": "Information Technology Services",
-    "RSI": 37.12,
+    "RSI": 37.07,
     "RSI_Series": [
-      50.66,
       47.92,
       49.6,
       45.88,
@@ -5428,9 +5427,10 @@
       41.16,
       37.6,
       37.12,
-      37.12
+      37.07,
+      37.07
     ],
-    "WeeklyRSI": 41.9,
+    "WeeklyRSI": 41.89,
     "WeeklyRSI_Series": [
       38.61,
       37.42,
@@ -5461,7 +5461,7 @@
       48.17,
       44.44,
       43.38,
-      41.9
+      41.89
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5470,7 +5470,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.83,
+    "VolRatio": 1.6,
     "EPS_Growth": -1.8,
     "Revenue_YoY": 1.1,
     "BT_1M_Avg": 6.47,
@@ -5478,9 +5478,9 @@
     "BT_3M_Avg": 14.8,
     "BT_3M_Win": 100.0,
     "BT_Events": 15,
-    "PER": 19.531971,
-    "PER(예상)": 16.727602,
-    "PBR": 6.0142746,
+    "PER": 20.0373,
+    "PER(예상)": 17.160376,
+    "PBR": 6.169875,
     "ROE": 0.34460998,
     "EPS": 11.26,
     "EPS(예상)": 13.14773,
@@ -5490,9 +5490,8 @@
     "Ticker": "MUFG",
     "Name": "Mitsubishi UFJ Financial Group, Inc.",
     "Sector": "Banks - Diversified",
-    "RSI": 50.66,
+    "RSI": 49.96,
     "RSI_Series": [
-      43.16,
       43.16,
       48.89,
       48.02,
@@ -5521,9 +5520,10 @@
       54.7,
       53.43,
       50.66,
-      50.66
+      49.96,
+      49.96
     ],
-    "WeeklyRSI": 61.44,
+    "WeeklyRSI": 61.04,
     "WeeklyRSI_Series": [
       48.32,
       48.44,
@@ -5554,7 +5554,7 @@
       67.83,
       62.51,
       63.92,
-      61.44
+      61.04
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5563,17 +5563,17 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.93,
+    "VolRatio": 1.66,
     "EPS_Growth": 50.9,
     "Revenue_YoY": 28.8,
-    "BT_1M_Avg": 3.64,
-    "BT_1M_Win": 75.0,
-    "BT_3M_Avg": 21.97,
+    "BT_1M_Avg": 4.28,
+    "BT_1M_Win": 81.8,
+    "BT_3M_Avg": 23.2,
     "BT_3M_Win": 100.0,
-    "BT_Events": 12,
-    "PER": 15.38,
-    "PER(예상)": 22.398058,
-    "PBR": 1.7966579,
+    "BT_Events": 11,
+    "PER": 15.080001,
+    "PER(예상)": 21.961166,
+    "PBR": 1.7643838,
     "ROE": 0.09458999,
     "EPS": 1.5,
     "EPS(예상)": 1.03,
@@ -5583,9 +5583,8 @@
     "Ticker": "AXP",
     "Name": "American Express Company",
     "Sector": "Credit Services",
-    "RSI": 34.19,
+    "RSI": 33.18,
     "RSI_Series": [
-      48.62,
       40.95,
       46.03,
       47.37,
@@ -5614,9 +5613,10 @@
       36.81,
       34.89,
       34.19,
-      34.19
+      33.18,
+      33.18
     ],
-    "WeeklyRSI": 38.49,
+    "WeeklyRSI": 38.01,
     "WeeklyRSI_Series": [
       35.27,
       34.15,
@@ -5647,7 +5647,7 @@
       46.33,
       40.88,
       39.85,
-      38.49
+      38.01
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5656,7 +5656,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.24,
+    "VolRatio": 1.15,
     "EPS_Growth": 11.0,
     "Revenue_YoY": 12.8,
     "BT_1M_Avg": 4.18,
@@ -5664,21 +5664,20 @@
     "BT_3M_Avg": 13.94,
     "BT_3M_Win": 92.3,
     "BT_Events": 14,
-    "PER": 18.44148,
-    "PER(예상)": 15.080204,
-    "PBR": 5.987989,
+    "PER": 18.330704,
+    "PER(예상)": 14.9715605,
+    "PBR": 5.94841,
     "ROE": 0.34377,
-    "EPS": 16.49,
-    "EPS(예상)": 20.16551,
+    "EPS": 16.48,
+    "EPS(예상)": 20.17759,
     "EarningsDate": "2026년 10월 23일"
   },
   {
     "Ticker": "VZ",
     "Name": "Verizon Communications Inc.",
     "Sector": "Telecom Services",
-    "RSI": 34.27,
+    "RSI": 33.75,
     "RSI_Series": [
-      67.38,
       65.88,
       67.09,
       70.16,
@@ -5707,9 +5706,10 @@
       39.74,
       37.65,
       34.27,
-      34.27
+      33.75,
+      33.75
     ],
-    "WeeklyRSI": 46.71,
+    "WeeklyRSI": 46.42,
     "WeeklyRSI_Series": [
       75.43,
       68.44,
@@ -5740,7 +5740,7 @@
       61.53,
       52.87,
       49.84,
-      46.71
+      46.42
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5749,7 +5749,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.92,
+    "VolRatio": 1.0,
     "EPS_Growth": -22.0,
     "Revenue_YoY": -0.7,
     "BT_1M_Avg": 2.16,
@@ -5757,21 +5757,20 @@
     "BT_3M_Avg": 2.62,
     "BT_3M_Win": 45.5,
     "BT_Events": 22,
-    "PER": 11.9453125,
-    "PER(예상)": 8.660877,
-    "PBR": 1.8339198,
+    "PER": 11.973958,
+    "PER(예상)": 8.707575,
+    "PBR": 1.8383176,
     "ROE": 0.15842,
     "EPS": 3.84,
-    "EPS(예상)": 5.29623,
+    "EPS(예상)": 5.28046,
     "EarningsDate": "2026년 10월 26일"
   },
   {
     "Ticker": "BHP",
     "Name": "BHP Group Limited",
     "Sector": "Other Industrial Metals & Mining",
-    "RSI": 40.39,
+    "RSI": 40.48,
     "RSI_Series": [
-      63.88,
       66.21,
       71.26,
       71.4,
@@ -5800,9 +5799,10 @@
       40.42,
       39.47,
       40.39,
-      40.39
+      40.48,
+      40.48
     ],
-    "WeeklyRSI": 51.85,
+    "WeeklyRSI": 51.88,
     "WeeklyRSI_Series": [
       57.43,
       52.05,
@@ -5833,7 +5833,7 @@
       54.56,
       53.55,
       52.03,
-      51.85
+      51.88
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5842,7 +5842,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 2.32,
+    "VolRatio": 1.36,
     "EPS_Growth": -9.0,
     "Revenue_YoY": 18.3,
     "BT_1M_Avg": 4.62,
@@ -5850,21 +5850,20 @@
     "BT_3M_Avg": -1.01,
     "BT_3M_Win": 33.3,
     "BT_Events": 6,
-    "PER": 21.865978,
-    "PER(예상)": 18.11489,
-    "PBR": 4.2318435,
+    "PER": 21.930054,
+    "PER(예상)": 18.112223,
+    "PBR": 4.2223663,
     "ROE": 0.24002,
-    "EPS": 3.88,
-    "EPS(예상)": 4.68344,
+    "EPS": 3.86,
+    "EPS(예상)": 4.67364,
     "EarningsDate": "2026년 8월 17일"
   },
   {
     "Ticker": "AMGN",
     "Name": "Amgen Inc.",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 60.7,
+    "RSI": 59.16,
     "RSI_Series": [
-      79.78,
       71.51,
       73.43,
       74.9,
@@ -5893,9 +5892,10 @@
       56.36,
       58.08,
       60.7,
-      60.7
+      59.16,
+      59.16
     ],
-    "WeeklyRSI": 61.0,
+    "WeeklyRSI": 60.59,
     "WeeklyRSI_Series": [
       60.1,
       53.18,
@@ -5926,7 +5926,7 @@
       50.49,
       52.62,
       59.18,
-      61.0
+      60.59
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -5935,7 +5935,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.97,
+    "VolRatio": 0.77,
     "EPS_Growth": 64.9,
     "Revenue_YoY": 9.5,
     "BT_1M_Avg": 0.61,
@@ -5943,9 +5943,9 @@
     "BT_3M_Avg": 6.45,
     "BT_3M_Win": 61.1,
     "BT_Events": 18,
-    "PER": 26.180746,
-    "PER(예상)": 17.240398,
-    "PBR": 19.4963,
+    "PER": 25.296272,
+    "PER(예상)": 16.65796,
+    "PBR": 18.837648,
     "ROE": 0.91473,
     "EPS": 16.1,
     "EPS(예상)": 24.44897,
@@ -5955,9 +5955,8 @@
     "Ticker": "ABT",
     "Name": "Abbott Laboratories",
     "Sector": "Medical Devices",
-    "RSI": 35.18,
+    "RSI": 29.86,
     "RSI_Series": [
-      75.6,
       74.32,
       77.8,
       77.84,
@@ -5986,9 +5985,10 @@
       36.08,
       35.27,
       35.18,
-      35.18
+      29.86,
+      29.86
     ],
-    "WeeklyRSI": 46.79,
+    "WeeklyRSI": 44.49,
     "WeeklyRSI_Series": [
       33.74,
       31.56,
@@ -6019,26 +6019,26 @@
       47.9,
       48.65,
       47.18,
-      46.79
+      44.49
     ],
     "DualOversold": "",
-    "RSI_30이하": "",
+    "RSI_30이하": "✅",
     "RSI_30초과_35이하": "",
-    "최근7일내_RSI30이하": "",
+    "최근7일내_RSI30이하": "🕐",
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.87,
+    "VolRatio": 1.0,
     "EPS_Growth": -47.5,
     "Revenue_YoY": 13.0,
     "BT_1M_Avg": -0.35,
     "BT_1M_Win": 50.0,
     "BT_3M_Avg": 2.45,
     "BT_3M_Win": 65.0,
-    "BT_Events": 20,
-    "PER": 31.98382,
-    "PER(예상)": 16.293926,
-    "PBR": 3.3459728,
+    "BT_Events": 21,
+    "PER": 31.291264,
+    "PER(예상)": 15.941109,
+    "PBR": 3.2735214,
     "ROE": 0.10576,
     "EPS": 3.09,
     "EPS(예상)": 6.06545,
@@ -6048,9 +6048,8 @@
     "Ticker": "KLAC",
     "Name": "KLA Corporation",
     "Sector": "Semiconductor Equipment & Materials",
-    "RSI": 60.97,
+    "RSI": 59.19,
     "RSI_Series": [
-      41.28,
       40.66,
       39.81,
       38.68,
@@ -6079,9 +6078,10 @@
       54.14,
       55.21,
       60.97,
-      60.97
+      59.19,
+      59.19
     ],
-    "WeeklyRSI": 53.19,
+    "WeeklyRSI": 52.68,
     "WeeklyRSI_Series": [
       59.36,
       63.17,
@@ -6112,7 +6112,7 @@
       47.61,
       46.47,
       50.33,
-      53.19
+      52.68
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6121,7 +6121,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.71,
+    "VolRatio": 0.91,
     "EPS_Growth": 13.8,
     "Revenue_YoY": 15.2,
     "BT_1M_Avg": 20.43,
@@ -6129,21 +6129,20 @@
     "BT_3M_Avg": 44.11,
     "BT_3M_Win": 100.0,
     "BT_Events": 5,
-    "PER": 53.25956,
-    "PER(예상)": 29.070642,
-    "PBR": 40.125565,
+    "PER": 54.73497,
+    "PER(예상)": 29.875965,
+    "PBR": 41.237137,
     "ROE": 0.87496,
     "EPS": 3.66,
     "EPS(예상)": 6.70539,
-    "EarningsDate": "2026년 7월 28일"
+    "EarningsDate": "2026년 10월 28일"
   },
   {
     "Ticker": "T",
     "Name": "AT&T Inc.",
     "Sector": "Telecom Services",
-    "RSI": 39.93,
+    "RSI": 39.13,
     "RSI_Series": [
-      66.17,
       66.41,
       67.56,
       70.66,
@@ -6172,9 +6171,10 @@
       50.26,
       44.35,
       39.93,
-      39.93
+      39.13,
+      39.13
     ],
-    "WeeklyRSI": 48.32,
+    "WeeklyRSI": 47.97,
     "WeeklyRSI_Series": [
       56.82,
       59.51,
@@ -6205,7 +6205,7 @@
       55.95,
       52.76,
       52.67,
-      48.32
+      47.97
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6214,7 +6214,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.01,
+    "VolRatio": 0.67,
     "EPS_Growth": 6.2,
     "Revenue_YoY": 2.3,
     "BT_1M_Avg": 1.71,
@@ -6222,21 +6222,20 @@
     "BT_3M_Avg": 0.82,
     "BT_3M_Win": 48.1,
     "BT_Events": 27,
-    "PER": 8.052805,
-    "PER(예상)": 9.48302,
-    "PBR": 1.5196811,
+    "PER": 8.019802,
+    "PER(예상)": 9.463686,
+    "PBR": 1.5134529,
     "ROE": 0.18339,
     "EPS": 3.03,
-    "EPS(예상)": 2.57302,
+    "EPS(예상)": 2.56771,
     "EarningsDate": "2026년 10월 21일"
   },
   {
     "Ticker": "NEE",
     "Name": "NextEra Energy, Inc.",
     "Sector": "Utilities - Regulated Electric",
-    "RSI": 24.6,
+    "RSI": 24.22,
     "RSI_Series": [
-      43.27,
       38.1,
       31.71,
       35.51,
@@ -6265,9 +6264,10 @@
       22.77,
       21.48,
       24.6,
-      24.6
+      24.22,
+      24.22
     ],
-    "WeeklyRSI": 30.92,
+    "WeeklyRSI": 30.74,
     "WeeklyRSI_Series": [
       65.18,
       58.11,
@@ -6298,7 +6298,7 @@
       40.38,
       37.29,
       31.16,
-      30.92
+      30.74
     ],
     "DualOversold": "🎯",
     "RSI_30이하": "✅",
@@ -6307,7 +6307,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.08,
+    "VolRatio": 1.42,
     "EPS_Growth": 53.1,
     "Revenue_YoY": 12.4,
     "BT_1M_Avg": 0.5,
@@ -6315,9 +6315,9 @@
     "BT_3M_Avg": 3.81,
     "BT_3M_Win": 60.0,
     "BT_Events": 18,
-    "PER": 17.020226,
-    "PER(예상)": 17.23867,
-    "PBR": 2.7654445,
+    "PER": 17.157303,
+    "PER(예상)": 17.37751,
+    "PBR": 2.787717,
     "ROE": 0.11677,
     "EPS": 4.45,
     "EPS(예상)": 4.39361,
@@ -6327,9 +6327,8 @@
     "Ticker": "TMO",
     "Name": "Thermo Fisher Scientific Inc.",
     "Sector": "Diagnostics & Research",
-    "RSI": 73.76,
+    "RSI": 70.14,
     "RSI_Series": [
-      70.72,
       74.24,
       74.64,
       74.26,
@@ -6358,9 +6357,10 @@
       72.5,
       73.48,
       73.76,
-      73.76
+      70.14,
+      70.14
     ],
-    "WeeklyRSI": 73.98,
+    "WeeklyRSI": 73.48,
     "WeeklyRSI_Series": [
       34.77,
       37.4,
@@ -6391,7 +6391,7 @@
       64.94,
       70.78,
       73.48,
-      73.98
+      73.48
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6400,7 +6400,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.03,
+    "VolRatio": 1.04,
     "EPS_Growth": 9.4,
     "Revenue_YoY": 10.5,
     "BT_1M_Avg": -0.27,
@@ -6408,21 +6408,20 @@
     "BT_3M_Avg": 0.52,
     "BT_3M_Win": 44.4,
     "BT_Events": 18,
-    "PER": 36.371227,
-    "PER(예상)": 24.508986,
-    "PBR": 4.7380905,
+    "PER": 35.15679,
+    "PER(예상)": 23.686079,
+    "PBR": 4.579885,
     "ROE": 0.13515,
     "EPS": 18.56,
-    "EPS(예상)": 27.54296,
+    "EPS(예상)": 27.54825,
     "EarningsDate": "2026년 10월 21일"
   },
   {
     "Ticker": "TXN",
     "Name": "Texas Instruments Incorporated",
     "Sector": "Semiconductors",
-    "RSI": 62.88,
+    "RSI": 60.83,
     "RSI_Series": [
-      40.66,
       39.7,
       39.04,
       36.18,
@@ -6451,9 +6450,10 @@
       60.06,
       60.25,
       62.88,
-      62.88
+      60.83,
+      60.83
     ],
-    "WeeklyRSI": 55.94,
+    "WeeklyRSI": 55.44,
     "WeeklyRSI_Series": [
       48.95,
       47.1,
@@ -6484,7 +6484,7 @@
       51.72,
       50.99,
       54.78,
-      55.94
+      55.44
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6493,7 +6493,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.65,
+    "VolRatio": 0.63,
     "EPS_Growth": 51.8,
     "Revenue_YoY": 22.8,
     "BT_1M_Avg": 6.37,
@@ -6501,21 +6501,20 @@
     "BT_3M_Avg": 13.4,
     "BT_3M_Win": 70.0,
     "BT_Events": 10,
-    "PER": 42.502274,
-    "PER(예상)": 26.312254,
-    "PBR": 14.201186,
+    "PER": 42.75228,
+    "PER(예상)": 26.426865,
+    "PBR": 14.263043,
     "ROE": 0.35176,
-    "EPS": 6.59,
+    "EPS": 6.58,
     "EPS(예상)": 10.64485,
-    "EarningsDate": "2026년 7월 22일"
+    "EarningsDate": "2026년 10월 21일"
   },
   {
     "Ticker": "C",
     "Name": "Citigroup Inc.",
     "Sector": "Banks - Diversified",
-    "RSI": 41.95,
+    "RSI": 39.27,
     "RSI_Series": [
-      44.25,
       38.91,
       43.43,
       43.59,
@@ -6544,9 +6543,10 @@
       49.76,
       43.0,
       41.95,
-      41.95
+      39.27,
+      39.27
     ],
-    "WeeklyRSI": 50.72,
+    "WeeklyRSI": 49.48,
     "WeeklyRSI_Series": [
       48.76,
       52.41,
@@ -6577,7 +6577,7 @@
       59.8,
       52.04,
       54.31,
-      50.72
+      49.48
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6586,7 +6586,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.02,
+    "VolRatio": 1.39,
     "EPS_Growth": 61.0,
     "Revenue_YoY": 15.5,
     "BT_1M_Avg": 1.0,
@@ -6594,11 +6594,11 @@
     "BT_3M_Avg": 4.34,
     "BT_3M_Win": 45.5,
     "BT_Events": 22,
-    "PER": 13.967636,
-    "PER(예상)": 10.04019,
-    "PBR": 1.128484,
+    "PER": 13.685346,
+    "PER(예상)": 9.847885,
+    "PBR": 1.1068696,
     "ROE": 0.08529,
-    "EPS": 9.27,
+    "EPS": 9.28,
     "EPS(예상)": 12.89617,
     "EarningsDate": "2026년 10월 13일"
   },
@@ -6606,9 +6606,8 @@
     "Ticker": "DIS",
     "Name": "The Walt Disney Company",
     "Sector": "Entertainment",
-    "RSI": 50.56,
+    "RSI": 48.96,
     "RSI_Series": [
-      63.63,
       64.32,
       65.16,
       69.84,
@@ -6637,9 +6636,10 @@
       52.77,
       51.11,
       50.56,
-      50.56
+      48.96,
+      48.96
     ],
-    "WeeklyRSI": 52.57,
+    "WeeklyRSI": 51.84,
     "WeeklyRSI_Series": [
       34.64,
       35.1,
@@ -6670,7 +6670,7 @@
       54.7,
       49.02,
       53.67,
-      52.57
+      51.84
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6679,7 +6679,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.35,
+    "VolRatio": 1.07,
     "EPS_Growth": -48.3,
     "Revenue_YoY": 6.8,
     "BT_1M_Avg": 0.55,
@@ -6687,21 +6687,20 @@
     "BT_3M_Avg": 2.59,
     "BT_3M_Win": 48.0,
     "BT_Events": 25,
-    "PER": 21.628866,
-    "PER(예상)": 14.022002,
-    "PBR": 1.6493192,
+    "PER": 20.892784,
+    "PER(예상)": 13.536784,
+    "PBR": 1.5931889,
     "ROE": 0.0801,
     "EPS": 4.85,
-    "EPS(예상)": 7.4811,
+    "EPS(예상)": 7.48553,
     "EarningsDate": "2026년 8월 5일"
   },
   {
     "Ticker": "SAN",
     "Name": "Banco Santander, S.A.",
     "Sector": "Banks - Diversified",
-    "RSI": 44.44,
+    "RSI": 38.86,
     "RSI_Series": [
-      49.33,
       50.23,
       57.91,
       60.18,
@@ -6730,9 +6729,10 @@
       48.3,
       44.94,
       44.44,
-      44.44
+      38.86,
+      38.86
     ],
-    "WeeklyRSI": 58.04,
+    "WeeklyRSI": 53.73,
     "WeeklyRSI_Series": [
       47.25,
       45.23,
@@ -6763,7 +6763,7 @@
       69.57,
       60.21,
       61.16,
-      58.04
+      53.73
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6772,7 +6772,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.87,
+    "VolRatio": 1.4,
     "EPS_Growth": 8.7,
     "Revenue_YoY": 10.2,
     "BT_1M_Avg": 7.25,
@@ -6780,9 +6780,9 @@
     "BT_3M_Avg": -0.4,
     "BT_3M_Win": 55.6,
     "BT_Events": 9,
-    "PER": 13.693069,
-    "PER(예상)": 9.663017,
-    "PBR": 1.5688506,
+    "PER": 13.148515,
+    "PER(예상)": 9.278732,
+    "PBR": 1.5064596,
     "ROE": 0.13109,
     "EPS": 1.01,
     "EPS(예상)": 1.43123,
@@ -6792,9 +6792,8 @@
     "Ticker": "GILD",
     "Name": "Gilead Sciences, Inc.",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 59.34,
+    "RSI": 53.38,
     "RSI_Series": [
-      73.98,
       63.82,
       66.97,
       67.67,
@@ -6823,9 +6822,10 @@
       59.7,
       62.03,
       59.34,
-      59.34
+      53.38,
+      53.38
     ],
-    "WeeklyRSI": 63.83,
+    "WeeklyRSI": 61.22,
     "WeeklyRSI_Series": [
       64.85,
       55.48,
@@ -6856,7 +6856,7 @@
       58.21,
       63.0,
       63.57,
-      63.83
+      61.22
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6865,7 +6865,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.89,
+    "VolRatio": 0.74,
     "EPS_Growth": null,
     "Revenue_YoY": 10.2,
     "BT_1M_Avg": -0.21,
@@ -6874,8 +6874,8 @@
     "BT_3M_Win": 62.5,
     "BT_Events": 16,
     "PER": null,
-    "PER(예상)": 15.072136,
-    "PBR": 15.636804,
+    "PER(예상)": 14.915398,
+    "PBR": 15.474193,
     "ROE": -0.2068,
     "EPS": -2.65,
     "EPS(예상)": 9.88911,
@@ -6885,9 +6885,8 @@
     "Ticker": "CRM",
     "Name": "Salesforce, Inc.",
     "Sector": "Software - Application",
-    "RSI": 44.02,
+    "RSI": 47.57,
     "RSI_Series": [
-      64.76,
       64.13,
       66.15,
       66.03,
@@ -6916,9 +6915,10 @@
       50.11,
       45.33,
       44.02,
-      44.02
+      47.57,
+      47.57
     ],
-    "WeeklyRSI": 56.33,
+    "WeeklyRSI": 57.98,
     "WeeklyRSI_Series": [
       35.56,
       36.86,
@@ -6949,7 +6949,7 @@
       65.39,
       61.38,
       59.81,
-      56.33
+      57.98
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -6966,11 +6966,11 @@
     "BT_3M_Avg": -2.14,
     "BT_3M_Win": 42.9,
     "BT_Events": 21,
-    "PER": 21.00366,
-    "PER(예상)": 14.342083,
-    "PBR": 4.923014,
+    "PER": 21.265947,
+    "PER(예상)": 14.786896,
+    "PBR": 5.0756993,
     "ROE": 0.19381,
-    "EPS": 10.93,
+    "EPS": 11.13,
     "EPS(예상)": 16.00674,
     "EarningsDate": "2026년 8월 26일"
   },
@@ -6978,9 +6978,8 @@
     "Ticker": "SCCO",
     "Name": "Southern Copper Corporation",
     "Sector": "Copper",
-    "RSI": 53.58,
+    "RSI": 53.67,
     "RSI_Series": [
-      56.99,
       59.71,
       68.76,
       67.11,
@@ -7009,9 +7008,10 @@
       55.0,
       53.67,
       53.58,
-      53.58
+      53.67,
+      53.67
     ],
-    "WeeklyRSI": 57.29,
+    "WeeklyRSI": 57.33,
     "WeeklyRSI_Series": [
       55.74,
       48.02,
@@ -7042,7 +7042,7 @@
       54.42,
       55.17,
       57.93,
-      57.29
+      57.33
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7051,7 +7051,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.22,
+    "VolRatio": 0.92,
     "EPS_Growth": 71.6,
     "Revenue_YoY": 40.6,
     "BT_1M_Avg": 2.36,
@@ -7059,11 +7059,11 @@
     "BT_3M_Avg": -4.85,
     "BT_3M_Win": 33.3,
     "BT_Events": 6,
-    "PER": 30.426428,
-    "PER(예상)": 27.848974,
-    "PBR": 13.796296,
+    "PER": 29.868065,
+    "PER(예상)": 27.378962,
+    "PBR": 13.563454,
     "ROE": 0.49897,
-    "EPS": 6.66,
+    "EPS": 6.67,
     "EPS(예상)": 7.27639,
     "EarningsDate": null
   },
@@ -7071,9 +7071,8 @@
     "Ticker": "APH",
     "Name": "Amphenol Corporation",
     "Sector": "Electronic Components",
-    "RSI": 58.39,
+    "RSI": 58.26,
     "RSI_Series": [
-      43.66,
       41.14,
       45.63,
       44.27,
@@ -7102,9 +7101,10 @@
       58.17,
       59.25,
       58.39,
-      58.39
+      58.26,
+      58.26
     ],
-    "WeeklyRSI": 58.22,
+    "WeeklyRSI": 58.19,
     "WeeklyRSI_Series": [
       50.77,
       46.07,
@@ -7135,7 +7135,7 @@
       59.85,
       51.56,
       58.0,
-      58.22
+      58.19
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7144,7 +7144,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.28,
+    "VolRatio": 0.96,
     "EPS_Growth": 59.3,
     "Revenue_YoY": 55.0,
     "BT_1M_Avg": 2.24,
@@ -7152,9 +7152,9 @@
     "BT_3M_Avg": 5.34,
     "BT_3M_Win": 60.0,
     "BT_Events": 5,
-    "PER": 42.15,
-    "PER(예상)": 25.641493,
-    "PBR": 13.415023,
+    "PER": 42.835,
+    "PER(예상)": 26.058205,
+    "PBR": 13.633037,
     "ROE": 0.38115,
     "EPS": 2.0,
     "EPS(예상)": 3.28764,
@@ -7164,9 +7164,8 @@
     "Ticker": "TJX",
     "Name": "The TJX Companies, Inc.",
     "Sector": "Apparel Retail",
-    "RSI": 50.97,
+    "RSI": 47.38,
     "RSI_Series": [
-      29.4,
       25.54,
       25.39,
       25.92,
@@ -7195,9 +7194,10 @@
       40.49,
       41.08,
       50.97,
-      50.97
+      47.38,
+      47.38
     ],
-    "WeeklyRSI": 38.95,
+    "WeeklyRSI": 37.36,
     "WeeklyRSI_Series": [
       57.28,
       56.58,
@@ -7228,7 +7228,7 @@
       30.15,
       31.55,
       34.8,
-      38.95
+      37.36
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7237,7 +7237,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.83,
+    "VolRatio": 0.62,
     "EPS_Growth": 23.6,
     "Revenue_YoY": 5.4,
     "BT_1M_Avg": 5.06,
@@ -7245,11 +7245,11 @@
     "BT_3M_Avg": 4.36,
     "BT_3M_Win": 80.0,
     "BT_Events": 6,
-    "PER": 24.456562,
-    "PER(예상)": 22.916695,
-    "PBR": 14.0546,
+    "PER": 24.738888,
+    "PER(예상)": 23.138397,
+    "PBR": 14.190568,
     "ROE": 0.62171,
-    "EPS": 5.41,
+    "EPS": 5.4,
     "EPS(예상)": 5.77352,
     "EarningsDate": "2026년 11월 18일"
   },
@@ -7257,9 +7257,8 @@
     "Ticker": "ISRG",
     "Name": "Intuitive Surgical, Inc.",
     "Sector": "Medical Instruments & Supplies",
-    "RSI": 67.21,
+    "RSI": 62.32,
     "RSI_Series": [
-      57.13,
       45.4,
       47.56,
       45.23,
@@ -7288,9 +7287,10 @@
       65.4,
       69.59,
       67.21,
-      67.21
+      62.32,
+      62.32
     ],
-    "WeeklyRSI": 50.35,
+    "WeeklyRSI": 48.95,
     "WeeklyRSI_Series": [
       40.32,
       41.85,
@@ -7321,7 +7321,7 @@
       38.59,
       45.51,
       48.57,
-      50.35
+      48.95
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7330,7 +7330,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.67,
+    "VolRatio": 0.62,
     "EPS_Growth": 26.5,
     "Revenue_YoY": 18.5,
     "BT_1M_Avg": 1.25,
@@ -7338,21 +7338,20 @@
     "BT_3M_Avg": 4.38,
     "BT_3M_Win": 50.0,
     "BT_Events": 15,
-    "PER": 46.525173,
-    "PER(예상)": 33.629215,
-    "PBR": 7.9206433,
+    "PER": 46.11954,
+    "PER(예상)": 33.184464,
+    "PBR": 7.815653,
     "ROE": 0.17423001,
-    "EPS": 8.74,
-    "EPS(예상)": 12.09157,
+    "EPS": 8.7,
+    "EPS(예상)": 12.0912,
     "EarningsDate": "2026년 10월 20일"
   },
   {
     "Ticker": "BA",
     "Name": "The Boeing Company",
     "Sector": "Aerospace & Defense",
-    "RSI": 32.24,
+    "RSI": 31.14,
     "RSI_Series": [
-      46.96,
       40.77,
       40.05,
       37.12,
@@ -7381,9 +7380,10 @@
       37.76,
       27.45,
       32.24,
-      32.24
+      31.14,
+      31.14
     ],
-    "WeeklyRSI": 36.79,
+    "WeeklyRSI": 36.24,
     "WeeklyRSI_Series": [
       44.88,
       39.62,
@@ -7414,7 +7414,7 @@
       45.81,
       40.8,
       40.75,
-      36.79
+      36.24
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7423,7 +7423,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.54,
+    "VolRatio": 1.73,
     "EPS_Growth": null,
     "Revenue_YoY": 8.0,
     "BT_1M_Avg": 7.64,
@@ -7431,21 +7431,20 @@
     "BT_3M_Avg": 19.17,
     "BT_3M_Win": 91.3,
     "BT_Events": 24,
-    "PER": 66.92446,
-    "PER(예상)": 45.48477,
-    "PBR": 24.112234,
+    "PER": 69.41516,
+    "PER(예상)": 46.592663,
+    "PBR": 24.919647,
     "ROE": 1.73537,
-    "EPS": 2.78,
-    "EPS(예상)": 4.09038,
+    "EPS": 2.77,
+    "EPS(예상)": 4.12683,
     "EarningsDate": "2026년 10월 27일"
   },
   {
     "Ticker": "ADI",
     "Name": "Analog Devices, Inc.",
     "Sector": "Semiconductors",
-    "RSI": 64.55,
+    "RSI": 63.21,
     "RSI_Series": [
-      44.98,
       43.43,
       45.34,
       44.25,
@@ -7474,9 +7473,10 @@
       62.35,
       63.21,
       64.55,
-      64.55
+      63.21,
+      63.21
     ],
-    "WeeklyRSI": 58.22,
+    "WeeklyRSI": 57.85,
     "WeeklyRSI_Series": [
       56.71,
       57.71,
@@ -7507,7 +7507,7 @@
       53.25,
       52.32,
       57.06,
-      58.22
+      57.85
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7516,7 +7516,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.7,
+    "VolRatio": 0.96,
     "EPS_Growth": 163.5,
     "Revenue_YoY": 39.6,
     "BT_1M_Avg": 6.25,
@@ -7524,11 +7524,11 @@
     "BT_3M_Avg": 16.84,
     "BT_3M_Win": 87.5,
     "BT_Events": 8,
-    "PER": 47.227383,
-    "PER(예상)": 24.2664,
-    "PBR": 5.729574,
+    "PER": 48.109394,
+    "PER(예상)": 24.749023,
+    "PBR": 5.843528,
     "ROE": 0.12227,
-    "EPS": 8.4,
+    "EPS": 8.41,
     "EPS(예상)": 16.34812,
     "EarningsDate": "2026년 8월 19일"
   },
@@ -7536,9 +7536,8 @@
     "Ticker": "BLK",
     "Name": "BlackRock, Inc.",
     "Sector": "Asset Management",
-    "RSI": 44.3,
+    "RSI": 42.06,
     "RSI_Series": [
-      62.76,
       56.8,
       60.35,
       63.46,
@@ -7567,9 +7566,10 @@
       48.6,
       45.06,
       44.3,
-      44.3
+      42.06,
+      42.06
     ],
-    "WeeklyRSI": 48.88,
+    "WeeklyRSI": 47.74,
     "WeeklyRSI_Series": [
       33.48,
       38.37,
@@ -7600,7 +7600,7 @@
       50.35,
       49.19,
       51.22,
-      48.88
+      47.74
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7609,7 +7609,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.01,
+    "VolRatio": 0.96,
     "EPS_Growth": 19.6,
     "Revenue_YoY": 30.6,
     "BT_1M_Avg": 5.3,
@@ -7617,21 +7617,20 @@
     "BT_3M_Avg": 7.53,
     "BT_3M_Win": 61.9,
     "BT_Events": 21,
-    "PER": 25.342196,
-    "PER(예상)": 16.46204,
-    "PBR": 2.847131,
+    "PER": 25.52422,
+    "PER(예상)": 16.537691,
+    "PBR": 2.863461,
     "ROE": 0.122779995,
-    "EPS": 41.76,
-    "EPS(예상)": 64.28669,
+    "EPS": 41.7,
+    "EPS(예상)": 64.35965,
     "EarningsDate": "2026년 10월 14일"
   },
   {
     "Ticker": "TTE",
     "Name": "TotalEnergies SE",
     "Sector": "Oil & Gas Integrated",
-    "RSI": 42.5,
+    "RSI": 36.68,
     "RSI_Series": [
-      65.82,
       67.94,
       62.84,
       60.23,
@@ -7660,9 +7659,10 @@
       53.95,
       51.52,
       42.5,
-      42.5
+      36.68,
+      36.68
     ],
-    "WeeklyRSI": 53.66,
+    "WeeklyRSI": 50.35,
     "WeeklyRSI_Series": [
       77.18,
       81.71,
@@ -7693,7 +7693,7 @@
       61.06,
       59.21,
       59.35,
-      53.66
+      50.35
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7702,7 +7702,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.2,
+    "VolRatio": 1.7,
     "EPS_Growth": 106.0,
     "Revenue_YoY": 27.8,
     "BT_1M_Avg": 1.79,
@@ -7710,21 +7710,20 @@
     "BT_3M_Avg": 12.18,
     "BT_3M_Win": 91.7,
     "BT_Events": 12,
-    "PER": 10.700876,
-    "PER(예상)": 7.991409,
-    "PBR": 1.4809554,
+    "PER": 10.576972,
+    "PER(예상)": 7.897031,
+    "PBR": 1.4638075,
     "ROE": 0.14479999,
     "EPS": 7.99,
-    "EPS(예상)": 10.69899,
+    "EPS(예상)": 10.70149,
     "EarningsDate": "2026년 10월 29일"
   },
   {
     "Ticker": "DE",
     "Name": "Deere & Company",
     "Sector": "Farm & Heavy Construction Machinery",
-    "RSI": 53.74,
+    "RSI": 49.79,
     "RSI_Series": [
-      39.32,
       55.32,
       62.36,
       62.64,
@@ -7753,9 +7752,10 @@
       58.51,
       58.09,
       53.74,
-      53.74
+      49.79,
+      49.79
     ],
-    "WeeklyRSI": 61.61,
+    "WeeklyRSI": 59.77,
     "WeeklyRSI_Series": [
       59.39,
       55.6,
@@ -7786,7 +7786,7 @@
       62.02,
       63.0,
       63.79,
-      61.61
+      59.77
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7795,7 +7795,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.26,
+    "VolRatio": 1.21,
     "EPS_Growth": 7.4,
     "Revenue_YoY": 4.9,
     "BT_1M_Avg": 11.36,
@@ -7803,11 +7803,11 @@
     "BT_3M_Avg": 10.63,
     "BT_3M_Win": 75.0,
     "BT_Events": 8,
-    "PER": 37.8125,
-    "PER(예상)": 29.39854,
-    "PBR": 6.468968,
+    "PER": 37.07,
+    "PER(예상)": 29.210737,
+    "PBR": 6.427643,
     "ROE": 0.18242,
-    "EPS": 17.76,
+    "EPS": 18.0,
     "EPS(예상)": 22.84297,
     "EarningsDate": "2026년 11월 25일"
   },
@@ -7815,9 +7815,8 @@
     "Ticker": "RIO",
     "Name": "Rio Tinto Group",
     "Sector": "Other Industrial Metals & Mining",
-    "RSI": 35.76,
+    "RSI": 35.81,
     "RSI_Series": [
-      57.65,
       60.78,
       65.72,
       64.33,
@@ -7846,9 +7845,10 @@
       36.75,
       36.39,
       35.76,
-      35.76
+      35.81,
+      35.81
     ],
-    "WeeklyRSI": 47.57,
+    "WeeklyRSI": 47.58,
     "WeeklyRSI_Series": [
       59.81,
       52.51,
@@ -7879,7 +7879,7 @@
       54.14,
       51.13,
       48.02,
-      47.57
+      47.58
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7888,7 +7888,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.38,
+    "VolRatio": 1.19,
     "EPS_Growth": 46.9,
     "Revenue_YoY": 15.5,
     "BT_1M_Avg": 7.85,
@@ -7896,21 +7896,20 @@
     "BT_3M_Avg": 2.07,
     "BT_3M_Win": 55.6,
     "BT_Events": 9,
-    "PER": 12.760162,
-    "PER(예상)": 11.241938,
-    "PBR": 2.3388138,
+    "PER": 12.584011,
+    "PER(예상)": 10.810528,
+    "PBR": 2.306527,
     "ROE": 0.19312,
     "EPS": 7.38,
-    "EPS(예상)": 8.37667,
+    "EPS(예상)": 8.5907,
     "EarningsDate": "2026년 7월 28일"
   },
   {
     "Ticker": "ANET",
     "Name": "Arista Networks, Inc.",
     "Sector": "Computer Hardware",
-    "RSI": 55.85,
+    "RSI": 56.54,
     "RSI_Series": [
-      50.23,
       48.51,
       51.73,
       51.38,
@@ -7939,9 +7938,10 @@
       60.18,
       58.26,
       55.85,
-      55.85
+      56.54,
+      56.54
     ],
-    "WeeklyRSI": 63.5,
+    "WeeklyRSI": 63.93,
     "WeeklyRSI_Series": [
       51.33,
       49.67,
@@ -7972,7 +7972,7 @@
       63.52,
       63.41,
       65.78,
-      63.5
+      63.93
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -7981,7 +7981,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.02,
+    "VolRatio": 0.85,
     "EPS_Growth": 35.7,
     "Revenue_YoY": 37.7,
     "BT_1M_Avg": 11.44,
@@ -7989,21 +7989,20 @@
     "BT_3M_Avg": 26.63,
     "BT_3M_Win": 100.0,
     "BT_Events": 6,
-    "PER": 64.631744,
-    "PER(예상)": 39.246872,
-    "PBR": 17.351913,
+    "PER": 64.30503,
+    "PER(예상)": 39.309956,
+    "PBR": 17.428621,
     "ROE": 0.31476,
-    "EPS": 3.15,
-    "EPS(예상)": 5.18742,
+    "EPS": 3.18,
+    "EPS(예상)": 5.20199,
     "EarningsDate": "2026년 8월 4일"
   },
   {
     "Ticker": "NVO",
     "Name": "Novo Nordisk A/S",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 29.66,
+    "RSI": 28.56,
     "RSI_Series": [
-      47.08,
       45.73,
       48.53,
       49.37,
@@ -8032,9 +8031,10 @@
       31.0,
       30.76,
       29.66,
-      29.66
+      28.56,
+      28.56
     ],
-    "WeeklyRSI": 35.2,
+    "WeeklyRSI": 34.64,
     "WeeklyRSI_Series": [
       34.63,
       33.57,
@@ -8065,16 +8065,16 @@
       42.71,
       43.12,
       35.9,
-      35.2
+      34.64
     ],
-    "DualOversold": "",
+    "DualOversold": "🎯",
     "RSI_30이하": "✅",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "🕐",
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.54,
+    "VolRatio": 0.84,
     "EPS_Growth": -20.6,
     "Revenue_YoY": 2.1,
     "BT_1M_Avg": 1.7,
@@ -8082,11 +8082,11 @@
     "BT_3M_Avg": -1.87,
     "BT_3M_Win": 45.0,
     "BT_Events": 22,
-    "PER": 9.501253,
-    "PER(예상)": 11.297972,
-    "PBR": 4.911242,
+    "PER": 9.35,
+    "PER(예상)": 11.145982,
+    "PBR": 4.9335475,
     "ROE": 0.59815,
-    "EPS": 3.99,
+    "EPS": 4.0,
     "EPS(예상)": 3.3554695,
     "EarningsDate": "2026년 11월 4일"
   },
@@ -8094,9 +8094,8 @@
     "Ticker": "SCHW",
     "Name": "The Charles Schwab Corporation",
     "Sector": "Capital Markets",
-    "RSI": 33.05,
+    "RSI": 30.4,
     "RSI_Series": [
-      70.5,
       64.7,
       70.68,
       73.3,
@@ -8125,9 +8124,10 @@
       31.02,
       29.71,
       33.05,
-      33.05
+      30.4,
+      30.4
     ],
-    "WeeklyRSI": 47.53,
+    "WeeklyRSI": 45.61,
     "WeeklyRSI_Series": [
       44.59,
       47.72,
@@ -8158,7 +8158,7 @@
       61.59,
       57.63,
       47.42,
-      47.53
+      45.61
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8167,7 +8167,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.22,
+    "VolRatio": 0.77,
     "EPS_Growth": 42.6,
     "Revenue_YoY": 20.9,
     "BT_1M_Avg": -0.36,
@@ -8175,9 +8175,9 @@
     "BT_3M_Avg": 10.13,
     "BT_3M_Win": 76.9,
     "BT_Events": 14,
-    "PER": 17.80328,
-    "PER(예상)": 12.482041,
-    "PBR": 3.8445501,
+    "PER": 17.918034,
+    "PER(예상)": 12.562497,
+    "PBR": 3.869331,
     "ROE": 0.20273,
     "EPS": 5.49,
     "EPS(예상)": 7.83045,
@@ -8187,9 +8187,8 @@
     "Ticker": "UL",
     "Name": "Unilever PLC",
     "Sector": "Household & Personal Products",
-    "RSI": 40.12,
+    "RSI": 37.57,
     "RSI_Series": [
-      53.58,
       54.47,
       57.46,
       61.76,
@@ -8218,9 +8217,10 @@
       47.83,
       47.77,
       40.12,
-      40.12
+      37.57,
+      37.57
     ],
-    "WeeklyRSI": 47.02,
+    "WeeklyRSI": 45.77,
     "WeeklyRSI_Series": [
       41.05,
       37.16,
@@ -8251,7 +8251,7 @@
       49.07,
       48.56,
       50.54,
-      47.02
+      45.77
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8260,7 +8260,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.04,
+    "VolRatio": 1.66,
     "EPS_Growth": -5.6,
     "Revenue_YoY": 0.5,
     "BT_1M_Avg": 1.37,
@@ -8268,21 +8268,20 @@
     "BT_3M_Avg": 2.23,
     "BT_3M_Win": 55.6,
     "BT_Events": 18,
-    "PER": 20.941378,
-    "PER(예상)": 15.748984,
-    "PBR": 7.120443,
+    "PER": 20.544828,
+    "PER(예상)": 15.469173,
+    "PBR": 6.985608,
     "ROE": 0.31869,
     "EPS": 2.9,
-    "EPS(예상)": 3.8561215,
+    "EPS(예상)": 3.851531,
     "EarningsDate": "2026년 7월 28일"
   },
   {
     "Ticker": "TD",
     "Name": "The Toronto-Dominion Bank",
     "Sector": "Banks - Diversified",
-    "RSI": 44.45,
+    "RSI": 40.45,
     "RSI_Series": [
-      42.02,
       38.49,
       39.58,
       38.12,
@@ -8311,9 +8310,10 @@
       49.29,
       46.04,
       44.45,
-      44.45
+      40.45,
+      40.45
     ],
-    "WeeklyRSI": 58.72,
+    "WeeklyRSI": 55.81,
     "WeeklyRSI_Series": [
       62.02,
       58.3,
@@ -8344,7 +8344,7 @@
       64.59,
       66.25,
       62.36,
-      58.72
+      55.81
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8353,7 +8353,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.52,
+    "VolRatio": 1.03,
     "EPS_Growth": 45.0,
     "Revenue_YoY": 11.5,
     "BT_1M_Avg": 2.16,
@@ -8361,11 +8361,11 @@
     "BT_3M_Avg": 2.06,
     "BT_3M_Win": 60.0,
     "BT_Events": 15,
-    "PER": 17.834597,
-    "PER(예상)": 14.8986025,
-    "PBR": 2.1456757,
+    "PER": 17.873861,
+    "PER(예상)": 14.908744,
+    "PBR": 2.1471362,
     "ROE": 0.12828,
-    "EPS": 6.59,
+    "EPS": 6.58,
     "EPS(예상)": 7.8886595,
     "EarningsDate": "2026년 12월 3일"
   },
@@ -8373,9 +8373,8 @@
     "Ticker": "BUD",
     "Name": "Anheuser-Busch InBev SA/NV",
     "Sector": "Beverages - Brewers",
-    "RSI": 31.91,
+    "RSI": 29.79,
     "RSI_Series": [
-      39.36,
       38.79,
       43.04,
       44.62,
@@ -8404,9 +8403,10 @@
       45.15,
       41.23,
       31.91,
-      31.91
+      29.79,
+      29.79
     ],
-    "WeeklyRSI": 43.37,
+    "WeeklyRSI": 42.24,
     "WeeklyRSI_Series": [
       56.19,
       48.03,
@@ -8437,38 +8437,37 @@
       49.72,
       48.92,
       49.39,
-      43.37
+      42.24
     ],
     "DualOversold": "",
-    "RSI_30이하": "",
-    "RSI_30초과_35이하": "⚠️",
-    "최근7일내_RSI30이하": "",
+    "RSI_30이하": "✅",
+    "RSI_30초과_35이하": "",
+    "최근7일내_RSI30이하": "🕐",
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.69,
+    "VolRatio": 1.3,
     "EPS_Growth": 124.9,
     "Revenue_YoY": 11.0,
     "BT_1M_Avg": 1.59,
     "BT_1M_Win": 45.5,
     "BT_3M_Avg": 9.62,
     "BT_3M_Win": 72.7,
-    "BT_Events": 11,
-    "PER": 15.834052,
-    "PER(예상)": 14.886181,
-    "PBR": 9.27674,
+    "BT_Events": 12,
+    "PER": 15.737069,
+    "PER(예상)": 14.870327,
+    "PBR": 9.21992,
     "ROE": 0.11392,
     "EPS": 4.64,
-    "EPS(예상)": 4.93545,
+    "EPS(예상)": 4.91045,
     "EarningsDate": "2026년 10월 29일"
   },
   {
     "Ticker": "SHOP",
     "Name": "Shopify Inc.",
     "Sector": "Software - Application",
-    "RSI": 58.42,
+    "RSI": 58.46,
     "RSI_Series": [
-      58.86,
       59.32,
       60.93,
       61.36,
@@ -8497,9 +8496,10 @@
       53.43,
       54.93,
       58.42,
-      58.42
+      58.46,
+      58.46
     ],
-    "WeeklyRSI": 57.79,
+    "WeeklyRSI": 57.8,
     "WeeklyRSI_Series": [
       43.21,
       40.94,
@@ -8530,7 +8530,7 @@
       49.47,
       49.34,
       55.41,
-      57.79
+      57.8
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8539,7 +8539,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.64,
+    "VolRatio": 0.46,
     "EPS_Growth": 68.1,
     "Revenue_YoY": 33.7,
     "BT_1M_Avg": 1.15,
@@ -8547,9 +8547,9 @@
     "BT_3M_Avg": -1.05,
     "BT_3M_Win": 52.9,
     "BT_Events": 17,
-    "PER": 100.202705,
-    "PER(예상)": 60.521225,
-    "PBR": 15.072671,
+    "PER": 100.73648,
+    "PER(예상)": 60.84362,
+    "PBR": 15.152963,
     "ROE": 0.15543,
     "EPS": 1.48,
     "EPS(예상)": 2.45038,
@@ -8559,9 +8559,8 @@
     "Ticker": "UNP",
     "Name": "Union Pacific Corporation",
     "Sector": "Railroads",
-    "RSI": 33.9,
+    "RSI": 31.72,
     "RSI_Series": [
-      61.35,
       63.4,
       66.94,
       68.41,
@@ -8590,9 +8589,10 @@
       33.18,
       33.79,
       33.9,
-      33.9
+      31.72,
+      31.72
     ],
-    "WeeklyRSI": 48.45,
+    "WeeklyRSI": 47.41,
     "WeeklyRSI_Series": [
       52.41,
       47.56,
@@ -8623,7 +8623,7 @@
       53.7,
       51.07,
       48.25,
-      48.45
+      47.41
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8632,7 +8632,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.3,
+    "VolRatio": 0.94,
     "EPS_Growth": 6.6,
     "Revenue_YoY": 11.5,
     "BT_1M_Avg": 1.2,
@@ -8640,11 +8640,11 @@
     "BT_3M_Avg": 11.47,
     "BT_3M_Win": 100.0,
     "BT_Events": 11,
-    "PER": 22.052675,
-    "PER(예상)": 19.178617,
-    "PBR": 7.8184795,
+    "PER": 22.0583,
+    "PER(예상)": 19.199055,
+    "PBR": 8.32885,
     "ROE": 0.39696,
-    "EPS": 12.34,
+    "EPS": 12.35,
     "EPS(예상)": 14.18924,
     "EarningsDate": "2026년 10월 22일"
   },
@@ -8652,9 +8652,8 @@
     "Ticker": "PFE",
     "Name": "Pfizer Inc.",
     "Sector": "Drug Manufacturers - General",
-    "RSI": 66.65,
+    "RSI": 61.76,
     "RSI_Series": [
-      75.38,
       68.35,
       70.21,
       68.66,
@@ -8683,9 +8682,10 @@
       66.07,
       66.65,
       66.65,
-      66.65
+      61.76,
+      61.76
     ],
-    "WeeklyRSI": 63.71,
+    "WeeklyRSI": 62.26,
     "WeeklyRSI_Series": [
       54.52,
       56.77,
@@ -8716,7 +8716,7 @@
       58.85,
       58.4,
       63.48,
-      63.71
+      62.26
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8725,7 +8725,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.98,
+    "VolRatio": 0.92,
     "EPS_Growth": null,
     "Revenue_YoY": 2.6,
     "BT_1M_Avg": 0.62,
@@ -8733,9 +8733,9 @@
     "BT_3M_Avg": -0.4,
     "BT_3M_Win": 40.0,
     "BT_Events": 20,
-    "PER": 37.526318,
-    "PER(예상)": 9.84521,
-    "PBR": 1.9079475,
+    "PER": 37.0,
+    "PER(예상)": 9.7071295,
+    "PBR": 1.8811882,
     "ROE": 0.05014,
     "EPS": 0.76,
     "EPS(예상)": 2.89684,
@@ -8745,9 +8745,8 @@
     "Ticker": "UBER",
     "Name": "Uber Technologies, Inc.",
     "Sector": "Software - Application",
-    "RSI": 39.9,
+    "RSI": 37.42,
     "RSI_Series": [
-      60.56,
       61.5,
       61.98,
       62.96,
@@ -8776,9 +8775,10 @@
       38.3,
       34.2,
       39.9,
-      39.9
+      37.42,
+      37.42
     ],
-    "WeeklyRSI": 42.28,
+    "WeeklyRSI": 41.18,
     "WeeklyRSI_Series": [
       38.38,
       39.28,
@@ -8809,7 +8809,7 @@
       45.25,
       43.77,
       42.63,
-      42.28
+      41.18
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8818,17 +8818,17 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.83,
+    "VolRatio": 0.92,
     "EPS_Growth": 85.5,
     "Revenue_YoY": 12.2,
-    "BT_1M_Avg": 7.04,
+    "BT_1M_Avg": 7.46,
     "BT_1M_Win": 80.0,
-    "BT_3M_Avg": 8.24,
+    "BT_3M_Avg": 8.09,
     "BT_3M_Win": 60.0,
     "BT_Events": 10,
-    "PER": 15.024123,
-    "PER(예상)": 15.485987,
-    "PBR": 5.1165047,
+    "PER": 14.885964,
+    "PER(예상)": 15.34358,
+    "PBR": 5.0694547,
     "ROE": 0.3716,
     "EPS": 4.56,
     "EPS(예상)": 4.424,
@@ -8838,9 +8838,8 @@
     "Ticker": "HON",
     "Name": "Honeywell International Inc.",
     "Sector": "Conglomerates",
-    "RSI": 45.12,
+    "RSI": 46.76,
     "RSI_Series": [
-      36.82,
       34.49,
       32.91,
       32.17,
@@ -8869,9 +8868,10 @@
       49.2,
       47.45,
       45.12,
-      45.12
+      46.76,
+      46.76
     ],
-    "WeeklyRSI": 42.09,
+    "WeeklyRSI": 42.44,
     "WeeklyRSI_Series": [
       64.68,
       53.22,
@@ -8902,7 +8902,7 @@
       37.04,
       39.55,
       43.17,
-      42.09
+      42.44
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -8911,7 +8911,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.62,
+    "VolRatio": 0.79,
     "EPS_Growth": 263.9,
     "Revenue_YoY": 4.3,
     "BT_1M_Avg": 4.94,
@@ -8919,21 +8919,20 @@
     "BT_3M_Avg": 7.9,
     "BT_3M_Win": 69.2,
     "BT_Events": 15,
-    "PER": 8.109958,
-    "PER(예상)": 21.223442,
-    "PBR": 3.6066134,
+    "PER": 8.219915,
+    "PER(예상)": 21.68929,
+    "PBR": 3.6555133,
     "ROE": 0.46577,
     "EPS": 26.01,
-    "EPS(예상)": 9.93901,
+    "EPS(예상)": 9.8574,
     "EarningsDate": "2026년 10월 22일"
   },
   {
     "Ticker": "QCOM",
     "Name": "QUALCOMM Incorporated",
     "Sector": "Semiconductors",
-    "RSI": 51.79,
+    "RSI": 51.74,
     "RSI_Series": [
-      44.54,
       43.55,
       43.56,
       41.52,
@@ -8962,9 +8961,10 @@
       67.62,
       54.34,
       51.79,
-      51.79
+      51.74,
+      51.74
     ],
-    "WeeklyRSI": 52.21,
+    "WeeklyRSI": 52.2,
     "WeeklyRSI_Series": [
       32.47,
       32.54,
@@ -8995,7 +8995,7 @@
       52.57,
       51.18,
       57.99,
-      52.21
+      52.2
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -9004,7 +9004,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.48,
+    "VolRatio": 0.63,
     "EPS_Growth": -23.0,
     "Revenue_YoY": -4.0,
     "BT_1M_Avg": 6.37,
@@ -9012,9 +9012,9 @@
     "BT_3M_Avg": 22.24,
     "BT_3M_Win": 83.3,
     "BT_Events": 13,
-    "PER": 21.057207,
-    "PER(예상)": 18.036045,
-    "PBR": 7.033286,
+    "PER": 20.834097,
+    "PER(예상)": 17.844944,
+    "PBR": 6.9587646,
     "ROE": 0.33754003,
     "EPS": 8.74,
     "EPS(예상)": 10.20401,
@@ -9024,9 +9024,8 @@
     "Ticker": "LMT",
     "Name": "Lockheed Martin Corporation",
     "Sector": "Aerospace & Defense",
-    "RSI": 33.75,
+    "RSI": 32.46,
     "RSI_Series": [
-      55.36,
       48.66,
       45.98,
       46.21,
@@ -9055,9 +9054,10 @@
       37.08,
       36.4,
       33.75,
-      33.75
+      32.46,
+      32.46
     ],
-    "WeeklyRSI": 42.68,
+    "WeeklyRSI": 42.17,
     "WeeklyRSI_Series": [
       71.57,
       65.65,
@@ -9088,7 +9088,7 @@
       44.57,
       46.53,
       44.01,
-      42.68
+      42.17
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -9097,7 +9097,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.9,
+    "VolRatio": 0.73,
     "EPS_Growth": 443.8,
     "Revenue_YoY": 10.5,
     "BT_1M_Avg": 2.85,
@@ -9105,21 +9105,20 @@
     "BT_3M_Avg": 6.98,
     "BT_3M_Win": 68.4,
     "BT_Events": 19,
-    "PER": 18.791513,
-    "PER(예상)": 15.547657,
-    "PBR": 13.358428,
+    "PER": 18.625645,
+    "PER(예상)": 15.433167,
+    "PBR": 13.260059,
     "ROE": 0.89165,
-    "EPS": 27.1,
+    "EPS": 27.14,
     "EPS(예상)": 32.75413,
-    "EarningsDate": "2026년 7월 23일"
+    "EarningsDate": "2026년 10월 22일"
   },
   {
     "Ticker": "HDB",
     "Name": "HDFC Bank Limited",
     "Sector": "Banks - Regional",
-    "RSI": 46.16,
+    "RSI": 43.35,
     "RSI_Series": [
-      37.52,
       41.28,
       46.31,
       45.34,
@@ -9148,9 +9147,10 @@
       49.33,
       43.55,
       46.16,
-      46.16
+      43.35,
+      43.35
     ],
-    "WeeklyRSI": 33.9,
+    "WeeklyRSI": 32.73,
     "WeeklyRSI_Series": [
       28.65,
       23.49,
@@ -9181,7 +9181,7 @@
       36.84,
       36.11,
       35.48,
-      33.9
+      32.73
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -9190,7 +9190,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 0.74,
+    "VolRatio": 1.79,
     "EPS_Growth": 18.1,
     "Revenue_YoY": 16.6,
     "BT_1M_Avg": 0.71,
@@ -9198,21 +9198,20 @@
     "BT_3M_Avg": -0.03,
     "BT_3M_Win": 64.7,
     "BT_Events": 17,
-    "PER": 15.622378,
-    "PER(예상)": 16.054617,
-    "PBR": 8.992365,
+    "PER": 16.048952,
+    "PER(예상)": 16.496077,
+    "PBR": 9.298929,
     "ROE": 0.13838,
     "EPS": 1.43,
-    "EPS(예상)": 1.3915,
+    "EPS(예상)": 1.39124,
     "EarningsDate": "2026년 10월 17일"
   },
   {
     "Ticker": "DHR",
     "Name": "Danaher Corporation",
     "Sector": "Diagnostics & Research",
-    "RSI": 68.82,
+    "RSI": 60.47,
     "RSI_Series": [
-      63.06,
       66.3,
       68.3,
       63.17,
@@ -9241,9 +9240,10 @@
       68.87,
       71.26,
       68.82,
-      68.82
+      60.47,
+      60.47
     ],
-    "WeeklyRSI": 62.14,
+    "WeeklyRSI": 59.76,
     "WeeklyRSI_Series": [
       33.4,
       35.04,
@@ -9274,7 +9274,7 @@
       50.69,
       56.36,
       61.53,
-      62.14
+      59.76
     ],
     "DualOversold": "",
     "RSI_30이하": "",
@@ -9283,7 +9283,7 @@
     "Price": NaN,
     "DayChangePct": NaN,
     "Pos52w": NaN,
-    "VolRatio": 1.25,
+    "VolRatio": 1.26,
     "EPS_Growth": 59.7,
     "Revenue_YoY": 5.5,
     "BT_1M_Avg": 1.27,
@@ -9291,9 +9291,9 @@
     "BT_3M_Avg": 2.64,
     "BT_3M_Win": 43.8,
     "BT_Events": 16,
-    "PER": 39.491978,
-    "PER(예상)": 23.81746,
-    "PBR": 2.9616609,
+    "PER": 37.74688,
+    "PER(예상)": 22.764996,
+    "PBR": 2.8307889,
     "ROE": 0.07605,
     "EPS": 5.61,
     "EPS(예상)": 9.302,
