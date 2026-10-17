@@ -76,7 +76,7 @@
     "Price": 214.13,
     "DayChangePct": -1.43,
     "Pos52w": 63.0,
-    "VolRatio": 1.11,
+    "VolRatio": 1.12,
     "EPS_Growth": 127.8,
     "Revenue_YoY": 105.9,
     "BT_1M_Avg": 3.12,
@@ -262,7 +262,7 @@
     "Price": 529.05,
     "DayChangePct": -1.93,
     "Pos52w": 87.9,
-    "VolRatio": 1.05,
+    "VolRatio": 1.08,
     "EPS_Growth": 31.7,
     "Revenue_YoY": 17.7,
     "BT_1M_Avg": 2.19,
@@ -274,8 +274,8 @@
     "PER(예상)": 22.302853,
     "PBR": 8.881894,
     "ROE": 0.34039003,
-    "EPS": 17.75,
-    "EPS(예상)": 23.67408,
+    "EPS": 17.95,
+    "EPS(예상)": 23.72118,
     "EarningsDate": "2026년 10월 28일"
   }
 ]
