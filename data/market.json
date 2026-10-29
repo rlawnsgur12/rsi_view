@@ -4,31 +4,31 @@
     "Label": "S&P 500",
     "Price": NaN,
     "DayChangePct": NaN,
-    "RSI": 47.32,
-    "WeeklyRSI": 57.64
+    "RSI": 51.1,
+    "WeeklyRSI": 59.14
   },
   {
     "Ticker": "QQQ",
     "Label": "NASDAQ",
     "Price": NaN,
     "DayChangePct": NaN,
-    "RSI": 41.73,
-    "WeeklyRSI": 52.41
+    "RSI": 47.16,
+    "WeeklyRSI": 54.58
   },
   {
     "Ticker": "DIA",
     "Label": "DOW",
     "Price": NaN,
     "DayChangePct": NaN,
-    "RSI": 54.2,
-    "WeeklyRSI": 56.35
+    "RSI": 54.59,
+    "WeeklyRSI": 56.55
   },
   {
     "Ticker": "IWM",
     "Label": "Russell 2000",
     "Price": NaN,
     "DayChangePct": NaN,
-    "RSI": 45.67,
-    "WeeklyRSI": 45.41
+    "RSI": 51.79,
+    "WeeklyRSI": 48.21
   }
 ]
