@@ -5,7 +5,7 @@ on:
     branches:
       - main        # main 브랜치에 push될 때도 실행
   schedule:
-    - cron: '0 21 * * *'  # 매일 06:00 KST (21:00 UTC)
+    - cron: '0 22 * * *'  # 매일 07:00 KST (22:00 UTC)
   workflow_dispatch:
 
 permissions:
