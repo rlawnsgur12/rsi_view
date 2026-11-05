@@ -3,7 +3,7 @@
     "Ticker": "NVDA",
     "Name": "NVIDIA",
     "Sector": "Technology",
-    "RSI": 39.18,
+    "RSI": 34.54,
     "RSI_Series": [
       54.72,
       55.17,
@@ -34,9 +34,9 @@
       35.06,
       33.31,
       39.18,
-      39.18
+      34.54
     ],
-    "WeeklyRSI": 47.72,
+    "WeeklyRSI": 44.65,
     "WeeklyRSI_Series": [
       62.39,
       65.11,
@@ -67,15 +67,15 @@
       51.03,
       49.55,
       46.65,
-      47.72
+      44.65
     ],
     "DualOversold": "",
     "RSI_30이하": "",
-    "RSI_30초과_35이하": "",
+    "RSI_30초과_35이하": "⚠️",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 200.13,
+    "DayChangePct": -3.17,
+    "Pos52w": 45.3,
     "VolRatio": 1.48,
     "EPS_Growth": 127.8,
     "Revenue_YoY": 105.9,
@@ -84,11 +84,11 @@
     "BT_3M_Avg": 19.62,
     "BT_3M_Win": 60.0,
     "BT_Events": 5,
-    "PER": 25.300886,
+    "PER": 26.126633,
     "PER(예상)": 12.575246,
     "PBR": 21.104082,
     "ROE": 1.17211,
-    "EPS": 7.91,
+    "EPS": 7.66,
     "EPS(예상)": 15.9146,
     "EarningsDate": "2026년 11월 17일"
   },
@@ -96,7 +96,7 @@
     "Ticker": "AAPL",
     "Name": "Apple",
     "Sector": "Technology",
-    "RSI": 41.7,
+    "RSI": 57.78,
     "RSI_Series": [
       61.32,
       65.67,
@@ -127,9 +127,9 @@
       55.35,
       47.87,
       41.7,
-      41.7
+      57.78
     ],
-    "WeeklyRSI": 57.22,
+    "WeeklyRSI": 66.85,
     "WeeklyRSI_Series": [
       57.6,
       58.0,
@@ -160,16 +160,16 @@
       65.78,
       67.19,
       65.1,
-      57.22
+      66.85
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
-    "VolRatio": 2.04,
+    "Price": 349.51,
+    "DayChangePct": 5.31,
+    "Pos52w": 95.5,
+    "VolRatio": 2.05,
     "EPS_Growth": 14.2,
     "Revenue_YoY": 11.7,
     "BT_1M_Avg": 3.39,
@@ -189,7 +189,7 @@
     "Ticker": "MSFT",
     "Name": "Microsoft",
     "Sector": "Technology",
-    "RSI": 49.4,
+    "RSI": 64.32,
     "RSI_Series": [
       54.36,
       63.22,
@@ -220,9 +220,9 @@
       49.02,
       40.13,
       49.4,
-      49.4
+      64.32
     ],
-    "WeeklyRSI": 62.8,
+    "WeeklyRSI": 69.04,
     "WeeklyRSI_Series": [
       48.11,
       48.58,
@@ -253,15 +253,15 @@
       65.46,
       64.0,
       63.13,
-      62.8
+      69.04
     ],
     "DualOversold": "",
     "RSI_30이하": "",
     "RSI_30초과_35이하": "",
     "최근7일내_RSI30이하": "",
-    "Price": NaN,
-    "DayChangePct": NaN,
-    "Pos52w": NaN,
+    "Price": 555.8,
+    "DayChangePct": 6.68,
+    "Pos52w": 98.4,
     "VolRatio": 2.27,
     "EPS_Growth": 32.3,
     "Revenue_YoY": 18.8,
